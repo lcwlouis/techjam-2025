@@ -34,22 +34,22 @@ Other important pieces:
 ## Endpoints (available now)
 Base URL: http://localhost:5000 (default when running locally)
 
-- GET / => Basic hello message
+- GET `/` => Basic hello message
   - Response: {"message": "Hello World from TechJam"}
 
-- GET /health => Health check
+- GET `/health` => Health check
   - Response: {"status": "healthy"}
 
-- GET /reasoning_models => Returns a list of placeholder reasoning models
+- GET `/reasoning_models` => Returns a list of placeholder reasoning models
   - Response: {"models": ["model1", "model2", "model3"]}
 
-- GET /embedding_models => Returns a list of placeholder embedding models
+- GET `/embedding_models` => Returns a list of placeholder embedding models
   - Response: {"models": ["modelA", "modelB", "modelC"]}
 
-- GET /instruct_models => Returns a list of placeholder instruct models
+- GET `/instruct_models` => Returns a list of placeholder instruct models
   - Response: {"models": ["modelX", "modelY", "modelZ"]}
 
-- POST /process_feature => Main feature processing endpoint (stub)
+- POST `/process_feature` => Main feature processing endpoint (stub)
   - Accepts a JSON body matching the `FeatureRequest` model (see Data models below)
   - Behaviour: If `regions` is omitted, the server checks the feature against a small hard-coded list of regions and returns stand-in reasoning per region.
   - Example request body:
@@ -79,7 +79,7 @@ Base URL: http://localhost:5000 (default when running locally)
 }
 ```
 
-- POST /human_feedback => Accepts human feedback for a processed report
+- POST `/human_feedback` => Accepts human feedback for a processed report
   - Example body:
 
 ```json
@@ -118,13 +118,21 @@ python main.py
 
 # or (option B: run via uvicorn directly for reload options)
 uvicorn main:app --host 0.0.0.0 --port 8000 --reload
-
-# or (option C: run using the `uv` CLI if you prefer a shorter alias)
-If you have the `uv` command installed (a short wrapper/alias for `uvicorn`), you can also run:
+```
 
 ```bash
+# or (option C: run using the `uv`)
+# If you have the `uv` installed, you can also run:
+# To set up the venv with uv use:
+
+uv venv
+
+source .venv/bin/activate
+
+uv sync
+
+# To start the project using uv:
 uv run uvicorn main:app --host 0.0.0.0 --port 8000 --reload
-```
 ```
 
 The server prints a startup logger line and will listen on port 8000 by default (see `PORT` in `main.py`). The frontend can call the endpoints above while the agents are being developed.
