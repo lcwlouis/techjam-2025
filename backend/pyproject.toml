@@ -1,10 +1,20 @@
 [project]
-name = "backend"
+name = "techjam-backend"
 version = "0.1.0"
-description = "Add your description here"
+description = "JurAI"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "fastapi>=0.116.1",
+    "google-adk>=1.12.0",
+    "google-genai>=1.31.0",
+    "langchain-chroma>=0.2.5",
+    "langchain-community>=0.3.27",
+    "langchain[openai]>=0.3.27",
+    "lightrag-hku",
+    "litellm>=1.76.0",
     "uvicorn>=0.35.0",
 ]
+
+[tool.uv.sources]
+lightrag-hku = { git = "https://github.com/HKUDS/LightRAG.git", rev = "v1.4.6" }

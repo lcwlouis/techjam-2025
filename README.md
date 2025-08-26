@@ -2,7 +2,9 @@
 JurAI or smth 
 
 
-# backend instructions 
+# backend instructions
+Read the backend README!!!
+
 create own virtual environment using command `` python -m venv .venv ``
 
 then activate using `` source .venv/bin/activate ``
