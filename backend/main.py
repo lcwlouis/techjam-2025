@@ -4,12 +4,18 @@ from pydantic import BaseModel
 from fastapi import Body
 import uvicorn
 import logging
+from agents.tools.ingest_utils import ingest_files_to_region
 
 app = FastAPI()
 
 # Simple logger so we can see a startup message in stdout
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("techjam")
+
+logger.info("Starting TechJam backend...")
+logger.info("Ingesting sample files into NaiveRAG...")
+ingest_files_to_region(ingest_directory="/Users/louisliu/Projects/Personal/techjam-2025/backend/input_files", country="US")
+logger.info("Ingestion complete.")
 
 # Static Data to be moved elsewhere
 PORT = 8000

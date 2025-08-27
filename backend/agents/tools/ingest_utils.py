@@ -16,7 +16,7 @@ load_dotenv()
 
 ## LIGHTRAG INGESTION
 
-from __future__ import annotations
+# from __future__ import annotations
 from typing import  Optional, Tuple
 from .lightrag_tools import build_region_code, resolve_input_workspace, resolve_workspace, _get_rag
 
@@ -93,8 +93,8 @@ class ingestion():
         """
         # Load and split the document
         loader = TextLoader(
-            le_path=file_path,
-            autodetect_enficoding=True
+            file_path=file_path,
+            autodetect_encoding=True
         )
 
         docs = loader.load()
@@ -128,5 +128,7 @@ def ingest_files_to_region(ingest_directory: str, country: str, state: Optional[
     ingestor = ingestion(ingest_directory=ingest_directory, chroma_collection_name=f"chroma_{region}", overwrite_existing=True)
     ingestor.process_files()
     print(f"Finished ingesting files from {ingest_directory} to {region}.")
+
+# ingest_files_to_region(ingest_directory="/Users/louisliu/Projects/Personal/techjam-2025/backend/input_files/USCA_SB976.txt", country="US", state="CA")
 
 __all__ = ["ingest_files_to_region", "ingest_into_history_into_lightrag"]
