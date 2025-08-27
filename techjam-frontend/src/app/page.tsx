@@ -3,11 +3,12 @@
 import React, { useMemo, useState } from "react";
 import Pipeline from "./components/pipeline-instructions/pipeline-instructions";
 import SettingsPanel from "./components/settings-panel/settings-panel";
-import SubmitArea, {
+import SubmitArea from "./components/submission-area/submission-area";
+import {
   Region,
   Row,
   RegionCard,
-} from "./components/submission-area/submission-area";
+} from "./components/card-components/card-components";
 
 export default function TechJamPage() {
   const [apiBase, setApiBase] = useState(
@@ -38,6 +39,30 @@ export default function TechJamPage() {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ uuid: resp.uuid, region: regionStr, feedback }),
     });
+  }
+
+  async function submitFeature() {
+    setIsSubmitting(true);
+    setError(null);
+    setResp(null);
+
+    const payload: FeatureRequest = {
+      feature,
+      feature_description: description,
+      regions: regionsParsed || undefined,
+    };
+
+    try {
+      const data = await postJson<ProcessFeatureResponse>(
+        "/process_feature",
+        payload
+      );
+      setResp(data); // ⬅️ this updates resp in your parent
+    } catch (e: any) {
+      setError(e.message || String(e));
+    } finally {
+      setIsSubmitting(false);
+    }
   }
 
   return (
