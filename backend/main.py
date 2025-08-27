@@ -42,11 +42,10 @@ LIST_OF_AVAILABLE_REGIONS = [
 ]
 
 
-# Root endpoint
+# ------------------------------ SANITY CHECKS --------------------------------
 @app.get("/")
 async def root():
   return {"message": "Hello World from TechJam"}
-
 
 # Health checker
 @app.get("/health")
@@ -155,7 +154,7 @@ async def human_feedback(feedback: dict = Body(...)):
 
 
 
-
+# ------------------------------ DEMOS AND TESTING OF INDIVIDUAL FEATURES --------------------------------
 
 @app.get("/demo_lightrag_test")
 async def demo_lightrag_test():
