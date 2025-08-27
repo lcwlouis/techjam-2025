@@ -18,7 +18,7 @@ logger = logging.getLogger("techjam")
 
 logger.info("Starting TechJam backend...")
 logger.info("Ingesting sample files into NaiveRAG...")
-ingest_files_to_region(ingest_directory="/Users/louisliu/Projects/Personal/techjam-2025/backend/input_files", country="US")
+# ingest_files_to_region(ingest_directory="/Users/louisliu/Projects/Personal/techjam-2025/backend/input_files", country="US")
 logger.info("Ingestion complete.")
 
 # Static Data to be moved elsewhere
