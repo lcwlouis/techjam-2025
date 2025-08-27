@@ -18,7 +18,7 @@ logger = logging.getLogger("techjam")
 
 logger.info("Starting TechJam backend...")
 logger.info("Ingesting sample files into NaiveRAG...")
-# ingest_files_to_region(ingest_directory="/Users/louisliu/Projects/Personal/techjam-2025/backend/input_files", country="US")
+ingest_files_to_region(ingest_directory="/Users/louisliu/Projects/Personal/techjam-2025/backend/input_files", country="US")
 logger.info("Ingestion complete.")
 
 # Static Data to be moved elsewhere
@@ -168,7 +168,7 @@ async def demo_lightrag_test():
 
     # Step 1: Ingest a past conclusion/decision
     await ingest(
-        text="Conclusion: TikTok feature X violated California privacy law by collecting data on minors.",
+        text=("By default, PF will be turned off for all uses browsing in guest mode."),
         region_code=region
     )
     
