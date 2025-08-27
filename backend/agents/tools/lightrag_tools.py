@@ -159,7 +159,10 @@ async def lightrag_retrieve(
 	finally:
 		await rag.finalize_storages()
 
-@tool(description="This is a graph query tool that let's you search the historical records other features that has been flagged. You can use this as reference for where to direct your attention in your research." ,response_format="content_and_artifact")
+@tool(
+	description="Query historical feature flagged records for research reference.",
+	response_format="content_and_artifact"
+)
 def lightrag_retrieve_sync(
 	query: str,
 	# region: str,
