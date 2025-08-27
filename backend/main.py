@@ -4,7 +4,11 @@ from pydantic import BaseModel
 from fastapi import Body
 import uvicorn
 import logging
+from rags.light_rag.ingest import ingest
+from rags.light_rag.retrieve import lightrag_retrieve
+from rags.light_rag.utils import build_region_code
 from agents.tools.ingest_utils import ingest_files_to_region
+
 
 app = FastAPI()
 
@@ -148,6 +152,42 @@ async def human_feedback(feedback: dict = Body(...)):
       "received_feedback": feedback
     },
   }
+
+
+
+
+
+@app.get("/demo_lightrag_test")
+async def demo_lightrag_test():
+    """
+    Demo LightRAG usage:
+    - Ingest a dummy past conclusion
+    - Retrieve similar conclusions for a new query
+    """
+
+    region = build_region_code("US", "CA")
+
+    # Step 1: Ingest a past conclusion/decision
+    await ingest(
+        text="Conclusion: TikTok feature X violated California privacy law by collecting data on minors.",
+        region_code=region
+    )
+    
+
+    # Step 2: Query back
+    resp = await lightrag_retrieve(
+        query="Has TikTok violated California privacy law for minors before?",
+        region=region,
+        mode="hybrid",      # use both local region + HISTORY if available
+        enable_rerank=True
+    )
+
+    return {
+        "region": region,
+        "query": "Has TikTok violated California privacy law for minors before?",
+        "retrieval_result": resp
+    }
+
 
 # Starting the server
 if __name__ == "__main__":
