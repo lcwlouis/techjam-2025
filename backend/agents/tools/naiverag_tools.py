@@ -22,7 +22,7 @@ vector_store = Chroma(
 )
 
 @tool(
-    description="Retrieve information related to a query. For the region",
+    description="Retrieve information related to a query.",
     response_format="content_and_artifact"
 )
 def naiverag_retrieve_sync(query: str):

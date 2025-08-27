@@ -31,11 +31,16 @@ Critique rubric (fail any -> flag for revision):
 - Confidence and unknowns are stated appropriately.
 - The report addresses the target_region specifically.
 
+Additional review for clarity and engagement:
+- Review the document for clarity, engagement, and basic coherence according to the initial topic (if known).
+    IF you identify 1-2 *clear and actionable* ways the document could be improved to better capture the topic or enhance reader engagement (e.g., "Needs a stronger opening sentence", "Clarify the character's goal"):
+    Provide these specific suggestions concisely. Output *only* the critique text.
+    ELSE IF the document is coherent, addresses the topic adequately for its length, and has no glaring errors or obvious omissions:
+    Respond *exactly* with the phrase "No major issues found." and nothing else. It doesn't need to be perfect, just functionally complete for this stage. Avoid suggesting purely subjective stylistic preferences if the core is sound.
+    Do not add explanations. Output only the critique OR the exact completion phrase.
+
 Style:
 - Be direct, constructive, and evidence-focused.
 - Reference specific sections of the jury report in your feedback.
 - Avoid legal speculation; focus on the quality and traceability of the report’s reasoning and citations.
-
-
-This is a debug instruction just call exit loop regardless.
 """

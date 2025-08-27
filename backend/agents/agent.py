@@ -34,6 +34,7 @@ jury_agent = LlmAgent(
     tools=[
         naiverag_retrieve_tool,
         # lightrag_retrieve_tool
+        exit_loop
     ],
     output_key="jury_report"
 )
@@ -46,9 +47,7 @@ jury_report_critic_agent = LlmAgent(
         "and provides feedback or requests additional information as needed."
     ),
     instruction=jury_report_critic_prompt.PROMPT,
-    model=litellm_model,
-    tools=[exit_loop],
-    generate_content_config=types.GenerateContentConfig(temperature=0.5),
+    model=litellm_model
 )
 
 loop_report_agent = LoopAgent(
@@ -60,7 +59,7 @@ loop_report_agent = LoopAgent(
         jury_agent,
         jury_report_critic_agent
     ],
-    max_iterations=3,
+    max_iterations=5,
 )
 
 final_response_agent = LlmAgent(
@@ -69,7 +68,7 @@ final_response_agent = LlmAgent(
     instruction=jury_final_response_prompt.PROMPT,
     model=litellm_model,
     output_key="final_response",
-    generate_content_config=types.GenerateContentConfig(temperature=0.5),
+    # generate_content_config=types.GenerateContentConfig(temperature=0.5),
 )
 
 root_agent = SequentialAgent(
