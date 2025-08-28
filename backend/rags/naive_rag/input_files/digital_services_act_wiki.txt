@@ -1,0 +1,1796 @@
+Jump to content <#bodyContent>
+Main menu
+Main menu
+move to sidebar hide
+Navigation
+
+  * Main page <https://en.wikipedia.org/wiki/Main_Page>
+  * Contents <https://en.wikipedia.org/wiki/Wikipedia:Contents>
+  * Current events <https://en.wikipedia.org/wiki/Portal:Current_events>
+  * Random article <https://en.wikipedia.org/wiki/Special:Random>
+  * About Wikipedia <https://en.wikipedia.org/wiki/Wikipedia:About>
+  * Contact us <https://en.wikipedia.org/wiki/Wikipedia:Contact_us>
+
+Contribute
+
+  * Help <https://en.wikipedia.org/wiki/Help:Contents>
+  * Learn to edit <https://en.wikipedia.org/wiki/Help:Introduction>
+  * Community portal <https://en.wikipedia.org/wiki/
+    Wikipedia:Community_portal>
+  * Recent changes <https://en.wikipedia.org/wiki/Special:RecentChanges>
+  * Upload file <https://en.wikipedia.org/wiki/Wikipedia:File_upload_wizard>
+  * Special pages <https://en.wikipedia.org/wiki/Special:SpecialPages>
+
+Wikipedia The Free Encyclopedia <https://en.wikipedia.org/wiki/Main_Page>
+Search <https://en.wikipedia.org/wiki/Special:Search>
+Search
+
+Appearance
+
+  * Donate <https://donate.wikimedia.org/?
+    wmf_source=donate&wmf_medium=sidebar&wmf_campaign=en.wikipedia.org&uselang=en>
+  * Create account <https://en.wikipedia.org/w/index.php?
+    title=Special:CreateAccount&returnto=Digital+Services+Act>
+  * Log in <https://en.wikipedia.org/w/index.php?
+    title=Special:UserLogin&returnto=Digital+Services+Act>
+
+Personal tools
+
+  * Donate <https://donate.wikimedia.org/?
+    wmf_source=donate&wmf_medium=sidebar&wmf_campaign=en.wikipedia.org&uselang=en>
+  * Create account <https://en.wikipedia.org/w/index.php?
+    title=Special:CreateAccount&returnto=Digital+Services+Act>
+  * Log in <https://en.wikipedia.org/w/index.php?
+    title=Special:UserLogin&returnto=Digital+Services+Act>
+
+Pages for logged out editors learn more <https://en.wikipedia.org/wiki/
+Help:Introduction>
+
+  * Contributions <https://en.wikipedia.org/wiki/Special:MyContributions>
+  * Talk <https://en.wikipedia.org/wiki/Special:MyTalk>
+
+
+Contents
+
+move to sidebar hide
+
+  *
+    (Top)
+    <#>
+  *
+    1 Objectives
+    <#Objectives>
+  *
+    2 New obligations on platform companies
+    <#New_obligations_on_platform_companies>
+  *
+    3 Large online platforms
+    <#Large_online_platforms>
+  *
+    4 Legislative history
+    <#Legislative_history>
+    Toggle Legislative history subsection
+
+      o
+        4.1 Influence of the European Court of Human Rights
+        <#Influence_of_the_European_Court_of_Human_Rights>
+  *
+    5 Reactions
+    <#Reactions>
+  *
+    6 Impacts
+    <#Impacts>
+    Toggle Impacts subsection
+
+      o
+        6.1 Feature and content removal
+        <#Feature_and_content_removal>
+      o
+        6.2 Outside the EU
+        <#Outside_the_EU>
+  *
+    7 Similar legislation
+    <#Similar_legislation>
+  *
+    8 See also
+    <#See_also>
+  *
+    9 References
+    <#References>
+  *
+    10 External links
+    <#External_links>
+
+Toggle the table of contents
+
+
+  Digital Services Act
+
+20 languages
+
+  * Català <https://ca.wikipedia.org/wiki/Llei_de_serveis_digitals>
+  * Čeština <https://cs.wikipedia.org/wiki/
+    Na%C5%99%C3%ADzen%C3%AD_o_digit%C3%A1ln%C3%ADch_slu%C5%BEb%C3%A1ch>
+  * Deutsch <https://de.wikipedia.org/wiki/
+    Gesetz_%C3%BCber_digitale_Dienste>
+  * Eesti <https://et.wikipedia.org/wiki/Digiteenuste_m%C3%A4%C3%A4rus>
+  * Español <https://es.wikipedia.org/wiki/Ley_de_Servicios_Digitales>
+  * فارسی <https://fa.wikipedia.org/wiki/
+    %D9%82%D8%A7%D9%86%D9%88%D9%86_%D8%AE%D8%AF%D9%85%D8%A7%D8%AA_%D8%AF%DB%8C%D8%AC%DB%8C%D8%AA%D8%A7%D9%84>
+  * Français <https://fr.wikipedia.org/wiki/
+    R%C3%A8glement_sur_les_services_num%C3%A9riques>
+  * Gaeilge <https://ga.wikipedia.org/wiki/
+    Acht_um_Sheirbh%C3%ADs%C3%AD_Digiteacha_an_Aontais_Eorpaigh>
+  * 한국어 <https://ko.wikipedia.org/wiki/
+    %EB%94%94%EC%A7%80%ED%84%B8_%EC%84%9C%EB%B9%84%EC%8A%A4%EB%B2%95>
+  * Italiano <https://it.wikipedia.org/wiki/Digital_Services_Act>
+  * עברית <https://he.wikipedia.org/wiki/
+    %D7%97%D7%95%D7%A7_%D7%94%D7%A9%D7%99%D7%A8%D7%95%D7%AA%D7%99%D7%9D_%D7%94%D7%93%D7%99%D7%92%D7%99%D7%98%D7%9C%D7%99%D7%99%D7%9D>
+  * Nederlands <https://nl.wikipedia.org/wiki/Verordening_digitale_diensten>
+  * 日本語 <https://ja.wikipedia.org/wiki/
+    %E3%83%87%E3%82%B8%E3%82%BF%E3%83%AB%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E6%B3%95>
+  * Norsk bokmål <https://no.wikipedia.org/wiki/
+    Forordningen_om_digitale_tjenester>
+  * Polski <https://pl.wikipedia.org/wiki/Akt_o_us%C5%82ugach_cyfrowych>
+  * Română <https://ro.wikipedia.org/wiki/
+    Regulamentul_privind_serviciile_digitale>
+  * Русский <https://ru.wikipedia.org/wiki/
+    %D0%97%D0%B0%D0%BA%D0%BE%D0%BD_%D0%BE_%D1%86%D0%B8%D1%84%D1%80%D0%BE%D0%B2%D1%8B%D1%85_%D1%83%D1%81%D0%BB%D1%83%D0%B3%D0%B0%D1%85_(%D0%95%D0%A1)>
+  * Suomi <https://fi.wikipedia.org/wiki/Digipalvelus%C3%A4%C3%A4d%C3%B6s>
+  * Українська <https://uk.wikipedia.org/wiki/
+    %D0%90%D0%BA%D1%82_%D0%BF%D1%80%D0%BE_%D1%86%D0%B8%D1%84%D1%80%D0%BE%D0%B2%D1%96_%D0%BF%D0%BE%D1%81%D0%BB%D1%83%D0%B3%D0%B8>
+  * 中文 <https://zh.wikipedia.org/wiki/
+    %E6%95%B8%E4%BD%8D%E6%9C%8D%E5%8B%99%E6%B3%95%E6%A1%88>
+
+Edit links <https://www.wikidata.org/wiki/Special:EntityPage/
+Q100691575#sitelinks-wikipedia>
+
+  * Article <https://en.wikipedia.org/wiki/Digital_Services_Act>
+  * Talk <https://en.wikipedia.org/wiki/Talk:Digital_Services_Act>
+
+English
+
+  * Read <https://en.wikipedia.org/wiki/Digital_Services_Act>
+  * Edit <https://en.wikipedia.org/w/index.php?
+    title=Digital_Services_Act&action=edit>
+  * View history <https://en.wikipedia.org/w/index.php?
+    title=Digital_Services_Act&action=history>
+
+Tools
+Tools
+move to sidebar hide
+Actions
+
+  * Read <https://en.wikipedia.org/wiki/Digital_Services_Act>
+  * Edit <https://en.wikipedia.org/w/index.php?
+    title=Digital_Services_Act&action=edit>
+  * View history <https://en.wikipedia.org/w/index.php?
+    title=Digital_Services_Act&action=history>
+
+General
+
+  * What links here <https://en.wikipedia.org/wiki/
+    Special:WhatLinksHere/Digital_Services_Act>
+  * Related changes <https://en.wikipedia.org/wiki/
+    Special:RecentChangesLinked/Digital_Services_Act>
+  * Upload file <https://en.wikipedia.org/wiki/Wikipedia:File_Upload_Wizard>
+  * Permanent link <https://en.wikipedia.org/w/index.php?
+    title=Digital_Services_Act&oldid=1307569000>
+  * Page information <https://en.wikipedia.org/w/index.php?
+    title=Digital_Services_Act&action=info>
+  * Cite this page <https://en.wikipedia.org/w/index.php?
+    title=Special:CiteThisPage&page=Digital_Services_Act&id=1307569000&wpFormIdentifier=titleform>
+  * Get shortened URL <https://en.wikipedia.org/w/index.php?
+    title=Special:UrlShortener&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FDigital_Services_Act>
+  * Download QR code <https://en.wikipedia.org/w/index.php?
+    title=Special:QrCode&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FDigital_Services_Act>
+  * Expand all <#>
+  * Edit interlanguage links <https://www.wikidata.org/wiki/
+    Special:EntityPage/Q100691575#sitelinks-wikipedia>
+
+Print/export
+
+  * Download as PDF <https://en.wikipedia.org/w/index.php?
+    title=Special:DownloadAsPdf&page=Digital_Services_Act&action=show-
+    download-screen>
+  * Printable version <https://en.wikipedia.org/w/index.php?
+    title=Digital_Services_Act&printable=yes>
+
+In other projects
+
+  * Wikidata item <https://www.wikidata.org/wiki/Special:EntityPage/
+    Q100691575>
+
+Appearance
+move to sidebar hide
+Text
+
+  *
+    Small
+
+    Standard
+
+    Large
+
+This page always uses small font size
+Width
+
+  *
+    Standard
+
+    Wide
+
+The content is as wide as possible for your browser window.
+Color (beta)
+
+  *
+    Automatic
+
+    Light
+
+    Dark
+
+This page is always in light mode.
+
+From Wikipedia, the free encyclopedia
+EU regulation on digital services content
+
+Regulation (EU) 2022/2065 <https://eur-lex.europa.eu/legal-content/EN/
+TXT/?uri=celex%3A32022R2065>European Union regulation <https://
+en.wikipedia.org/wiki/Regulation_(European_Union)>
+Text with EEA <https://en.wikipedia.org/wiki/European_Economic_Area>
+relevance
+Title	Regulation on a Single Market For Digital Services
+Made by	European Parliament <https://en.wikipedia.org/wiki/
+European_Parliament> and Council of the European Union <https://
+en.wikipedia.org/wiki/Council_of_the_European_Union>
+Journal <https://en.wikipedia.org/wiki/
+Official_Journal_of_the_European_Union> reference	OJ L 277, 27.10.2022,
+p. 1–102 <http://data.europa.eu/eli/reg/2022/2065/oj>
+History
+Date made	19 October 2022
+Preparative texts
+Commission <https://en.wikipedia.org/wiki/European_Commission> proposal	
+COM/2020/825 final
+Current legislation
+
+The *Digital Services Act*^[1] <#cite_note-:2-1> (*DSA*) is an EU
+regulation <https://en.wikipedia.org/wiki/EU_regulation> adopted in 2022
+that addresses illegal content, transparent advertising and
+disinformation. It updates the Electronic Commerce Directive 2000
+<https://en.wikipedia.org/wiki/Electronic_Commerce_Directive_2000> in EU
+law <https://en.wikipedia.org/wiki/EU_law>,^[2] <#cite_note-
+euractive20200808-2> ^[3] <#cite_note-ft20201028-3> and was proposed
+alongside the Digital Markets Act <https://en.wikipedia.org/wiki/
+Digital_Markets_Act> (DMA).
+
+The DSA applies to online platforms and intermediaries such as social
+networks <https://en.wikipedia.org/wiki/Social_network>, marketplaces
+<https://en.wikipedia.org/wiki/Marketplace>, pornographic platforms
+<https://en.wikipedia.org/wiki/Internet_pornography>,^[4] <#cite_note-4>
+and app stores <https://en.wikipedia.org/wiki/App_store>.^[5]
+<#cite_note-:3-5> Key requirements include disclosing to regulators how
+their algorithms work, providing users with explanations for content
+moderation decisions, and implementing stricter controls on targeted
+advertising. It also imposes specific rules on "very large" online
+platforms and search engines (those having more than 45 million monthly
+active users in the EU).^[6] <#cite_note-6>
+
+
+Objectives
+
+[edit <https://en.wikipedia.org/w/index.php?
+title=Digital_Services_Act&action=edit&section=1>]
+
+Ursula von der Leyen <https://en.wikipedia.org/wiki/
+Ursula_von_der_Leyen> proposed a "new Digital Services Act" in her 2019
+bid for the European Commission's presidency.^[7] <#cite_note-7>
+
+The expressed purpose of the DSA was to update the European Union's
+legal framework for illegal content on intermediaries, in particular by
+modernising the e-Commerce Directive <https://en.wikipedia.org/wiki/
+Electronic_Commerce_Directive_2000> that had been adopted in 2000. In
+doing so, the DSA aimed to harmonise different national laws in the
+European Union that have emerged to address illegal content at national
+level.^[2] <#cite_note-euractive20200808-2> Most prominent amongst these
+laws was the German NetzDG <https://en.wikipedia.org/wiki/
+Network_Enforcement_Act>, and similar laws in Austria
+("Kommunikationsplattformen-Gesetz") and France ("Loi Avia <https://
+en.wikipedia.org/wiki/Loi_Avia>"). With the adoption of the Digital
+Services Act at European level, those national laws were planned to be
+overridden and would have to be amended.^[8] <#cite_note-8>
+
+In practice, this would lead to new legislation regarding illegal
+content, transparent advertising and disinformation.^[3] <#cite_note-
+ft20201028-3> ^[/needs update <https://en.wikipedia.org/wiki/
+Wikipedia:Manual_of_Style/Dates_and_numbers#Chronological_items>/]
+
+
+New obligations on platform companies
+
+[edit <https://en.wikipedia.org/w/index.php?
+title=Digital_Services_Act&action=edit&section=2>]
+
+The DSA is meant to "govern the content moderation practices of social
+media platforms" and address illegal content.^[9] <#cite_note-EDRi-9> It
+is organised in five chapters, with the most important chapters
+regulating the liability exemption of intermediaries (Chapter 2), the
+obligations on intermediaries (Chapter 3), and the cooperation and
+enforcement framework between the commission and national authorities
+(Chapter 4).
+
+The DSA proposal maintains the current rule according to which companies
+that host others' data become liable when informed that this data is
+illegal.^[9] <#cite_note-EDRi-9> This so-called "conditional liability
+exemption" is fundamentally different^[10] <#cite_note-10> ^[11]
+<#cite_note-11> from the broad immunities given to intermediaries under
+the equivalent rule ("Section 230 CDA <https://en.wikipedia.org/wiki/
+Section_230>") in the United States.
+
+The DSA applies to intermediary service providers that offer their
+services to users based in the European Union, irrespective of whether
+the intermediary service provider is established in the European
+Union.^[12] <#cite_note-12>
+
+In addition to the liability exemptions, the DSA would introduce a wide-
+ranging set of new obligations on platforms, including some that aim to
+disclose to regulators how their algorithms work, while other
+obligations would create transparency on how decisions to remove content
+are taken and on the way advertisers target users. The European Centre
+for Algorithmic Transparency <https://en.wikipedia.org/wiki/
+European_Centre_for_Algorithmic_Transparency> was created to aid the
+enforcement of this.^[13] <#cite_note-13>
+
+A December 2020 /Time <https://en.wikipedia.org/wiki/Time_(magazine)>/
+article said that while many of its provisions only apply to platforms
+which have more than 45 million users in the European Union <https://
+en.wikipedia.org/wiki/European_Union>, the Act could have repercussions
+beyond Europe. Platforms including Facebook <https://en.wikipedia.org/
+wiki/Facebook>, Twitter <https://en.wikipedia.org/wiki/Twitter>, TikTok
+<https://en.wikipedia.org/wiki/TikTok>, and Google's subsidiary YouTube
+<https://en.wikipedia.org/wiki/YouTube> would meet that threshold and be
+subjected to the new obligations.^[14] <#cite_note-Perrigo_20201215-14>
+
+A 16 November 2021 /Internet Policy Review/ listed some of new
+obligations including mandatory "notice-and-action" requirements, for
+example, respect fundamental rights, mandatory redress for content
+removal decisions, and a comprehensive risk management and audit
+framework.^[15] <#cite_note-15>
+
+Companies that do not comply with the new obligations risk fines of up
+to 6% on their global annual turnover. In addition, the Commission can
+apply periodic penalties up to 5% of the average daily worldwide
+turnover for each day of delay in complying with remedies, interim
+measures, and commitments. As a last resort measure, if the infringement
+persists and causes serious harm to users and entails criminal offences
+involving threat to persons' life or safety, the Commission can request
+the temporary suspension of the service.^[16] <#cite_note-digital-
+strategy.ec.europa.eu-16>
+
+
+Large online platforms
+
+[edit <https://en.wikipedia.org/w/index.php?
+title=Digital_Services_Act&action=edit&section=3>]
+
+On 23 April 2023, the European Commission named a first list of 19
+online platforms <https://en.wikipedia.org/wiki/
+Online_marketing_platform> that will be required to comply starting 25
+August 2023.^[17] <#cite_note-17> They include the following very large
+online platforms (VLOPs) with more than 45 million monthly active users
+in the EU as of 17 February 2023.^[18] <#cite_note-18>
+
+  * Alibaba AliExpress <https://en.wikipedia.org/wiki/AliExpress>
+  * Amazon Store <https://en.wikipedia.org/wiki/Amazon_(company)#Website>
+  * Apple AppStore <https://en.wikipedia.org/wiki/App_Store_(iOS/iPadOS)>
+  * Booking.com <https://en.wikipedia.org/wiki/Booking.com>
+  * Facebook <https://en.wikipedia.org/wiki/Facebook>
+  * Google Play <https://en.wikipedia.org/wiki/Google_Play>
+  * Google Maps <https://en.wikipedia.org/wiki/Google_Maps>
+  * Google Shopping <https://en.wikipedia.org/wiki/Google_Shopping>
+  * Instagram <https://en.wikipedia.org/wiki/Instagram>
+  * LinkedIn <https://en.wikipedia.org/wiki/LinkedIn>
+  * Pinterest <https://en.wikipedia.org/wiki/Pinterest>
+  * PornHub <https://en.wikipedia.org/wiki/PornHub> (added 20 December 2023)
+  * Shein <https://en.wikipedia.org/wiki/Shein> (added 26 April 2024)
+  * Snapchat <https://en.wikipedia.org/wiki/Snapchat>
+  * Stripchat <https://en.wikipedia.org/wiki/Stripchat> (added 20
+    December 2023)
+  * Temu <https://en.wikipedia.org/wiki/Temu> (added 31 May 2024)
+  * TikTok <https://en.wikipedia.org/wiki/TikTok>
+  * Wikipedia <https://en.wikipedia.org/wiki/Wikipedia>
+  * X <https://en.wikipedia.org/wiki/Twitter> (formerly Twitter)
+  * XNXX <https://en.wikipedia.org/wiki/XNXX> (added 10 July 2024)
+  * XVideos <https://en.wikipedia.org/wiki/XVideos> (added 20 December 2023)
+  * YouTube <https://en.wikipedia.org/wiki/YouTube>
+  * Zalando <https://en.wikipedia.org/wiki/Zalando>
+
+Very Large Online Search Engines (VLOSEs):
+
+  * Bing <https://en.wikipedia.org/wiki/Microsoft_Bing>
+  * Google Search <https://en.wikipedia.org/wiki/Google_Search>
+
+Amazon and Zalando both initiated proceedings in the General Court
+<https://en.wikipedia.org/wiki/General_Court_(European_Union)>
+challenging the designations, claiming unequal treatment compared to
+other large retailers, and that their core business models are retail
+not distributing third party content/products. Zalando argued the
+criteria and methodology lack transparency, for instance in how it
+counts active users, while Amazon said VLOP rules are disproportionate
+for its business model and asked to be exempted from transparency around
+targeted ads.^[19] <#cite_note-19> ^[20] <#cite_note-20>
+
+As of December 2023, 13 VLOPs have received a request for information
+(RFI),^[16] <#cite_note-digital-strategy.ec.europa.eu-16> the procedure
+necessary to verify compliance with the DSA, and one is being subjected
+to a formal proceedings.^[21] <#cite_note-21> 3 further platforms, all
+of them providing adult content, were added on 20 December 2023.^[22]
+<#cite_note-22>
+
+
+Legislative history
+
+[edit <https://en.wikipedia.org/w/index.php?
+title=Digital_Services_Act&action=edit&section=4>]
+
+The European Commission <https://en.wikipedia.org/wiki/
+European_Commission> submitted the DSA alongside the Digital Markets Act
+<https://en.wikipedia.org/wiki/Digital_Markets_Act> (DMA) to the
+European Parliament <https://en.wikipedia.org/wiki/European_Parliament>
+and the Council <https://en.wikipedia.org/wiki/
+Council_of_the_European_Union> on 15 December 2020.^[5]
+<#cite_note-:3-5> ^[23] <#cite_note-auto1-23> The DSA was prepared by
+von der Leyen Commission <https://en.wikipedia.org/wiki/
+Von_der_Leyen_Commission_I> members Margrethe Vestager <https://
+en.wikipedia.org/wiki/Margrethe_Vestager> (Executive Vice President of
+the European Commission for A Europe Fit for the Digital Age <https://
+en.wikipedia.org/wiki/
+Executive_Vice_President_of_the_European_Commission_for_A_Europe_Fit_for_the_Digital_Age>) and Thierry Breton <https://en.wikipedia.org/wiki/Thierry_Breton> (European Commissioner for Internal Market <https://en.wikipedia.org/wiki/European_Commissioner_for_Internal_Market>).^[24] <#cite_note-24>
+
+The Digital Services Act builds in large parts on the non-binding
+Commission Recommendation 2018/314 of 1 March 2018^[25] <#cite_note-25>
+when it comes to illegal content on platforms. However, it goes further
+in addressing topics such as disinformation and other risks especially
+on very large online platforms. As part of the preparatory phase, the
+European Commission launched a public consultation on the package to
+gather evidence between July and September 2020.^[26] <#cite_note-26>
+^[27] <#cite_note-27> An impact assessment was published alongside the
+proposal on 15 December 2020 with the relevant evidence base.^[28]
+<#cite_note-28>
+
+The European Parliament appointed Danish Social Democrat Christel
+Schaldemose <https://en.wikipedia.org/wiki/Christel_Schaldemose> as
+rapporteur for the Digital Services Act. On 20 January 2022 the
+Parliament voted to introduce amendments in the DSA for tracking-free
+advertising and a ban on using a minor's data for targeted ads, as well
+as a new right for users to seek compensation for damages.^[29]
+<#cite_note-29> In the wake of the Facebook Files revelations <https://
+en.wikipedia.org/wiki/2021_Facebook_leak> and a hearing by Facebook
+Whistleblower Frances Haugen <https://en.wikipedia.org/wiki/
+Frances_Haugen> in the European Parliament,^[30] <#cite_note-30> the
+European Parliament also strengthened the rules on fighting
+disinformation and harmful content, as well as tougher auditing
+requirements.^[31] <#cite_note-31>
+
+The Council of the European Union adopted its position on 25 November
+2021.^[32] <#cite_note-32> The most significant changes introduced by
+the Member States are to entrust the European Commission with the
+enforcement of the new rules, in the wake of allegations and complaints
+that the Irish Data Protection Watchdog was not effectively policing the
+bloc's data protection rules against platform companies.^[33]
+<#cite_note-33>
+
+The Data Governance Act <https://en.wikipedia.org/wiki/
+Data_Governance_Act> (DGA) was formally approved by the European
+Parliament on 6 April 2022.^[34] <#cite_note-EP_20220406-34> This sets
+up a legal framework for common data spaces in Europe which will
+increase data sharing in sectors such as finance, health, and the
+environment.^[34] <#cite_note-EP_20220406-34> ^[35] <#cite_note-
+Daly_20220427-35>
+
+With Russia using social media platforms to spread misinformation about
+the 2022 Russian invasion of Ukraine <https://en.wikipedia.org/
+wiki/2022_Russian_invasion_of_Ukraine>, European policymakers felt a
+greater sense of urgency to move the legislation forward to ensure that
+major tech platforms were transparent and properly regulated, according
+to /The Washington Post/.^[36] <#cite_note-Zakrzewski_20220422-36> On 22
+April 2022, the Council of the European Union and the European
+Parliament reached a deal on the Digital Services Act in Brussels
+following sixteen hours of negotiations.^[37] <#cite_note-
+Satariano_20220422-37> ^[38] <#cite_note-EU_PR_20220423-38> ^[39]
+<#cite_note-39> According to /The Washington Post/, the agreement
+reached in Brussels solidifies the two-bill plan— the Digital Services
+Act and the Digital Markets Act, a law regulating competition. The
+latter is aimed at preventing abuse of power against smaller competitors
+by larger "gatekeepers".^[36] <#cite_note-Zakrzewski_20220422-36>
+
+On 5 July 2022, the European Parliament approved both the DSA and the
+DMA.^[40] <#cite_note-parl072022-40> Following this, on 4 October 2022,
+the European Council <https://en.wikipedia.org/wiki/European_Council>
+gave its final approval to the DSA.^[41] <#cite_note-41> The DSA was
+adopted on 19 October 2022 and was published in the Official Journal of
+the European Union <https://en.wikipedia.org/wiki/
+Official_Journal_of_the_European_Union> on 27 October 2022.^[1]
+<#cite_note-:2-1> It came into force <https://en.wikipedia.org/wiki/
+Entry_into_force> on 16 November 2022.^[42] <#cite_note-42> Most
+services were given 15 months to comply with its provisions (until 17
+February 2024^[43] <#cite_note-43> ). However, "very large" online
+platforms and search engines, after their designation as such, had only
+four months to comply (until 23 August 2023).^[40] <#cite_note-
+parl072022-40>
+
+
+Influence of the European Court of Human Rights
+
+[edit <https://en.wikipedia.org/w/index.php?
+title=Digital_Services_Act&action=edit&section=5>]
+
+The DSA was passed alongside the Digital Markets Act <https://
+en.wikipedia.org/wiki/Digital_Markets_Act> and the Democracy Action
+Plan.^[44] <#cite_note-44> The latter of these is focused on addressing
+the nuanced legal interpretation of free speech on digital platforms, a
+fundamental right that has been extensively guided by the European Court
+of Human Rights <https://en.wikipedia.org/wiki/
+European_Court_of_Human_Rights> (ECtHR) and the European Convention on
+Human Rights <https://en.wikipedia.org/wiki/
+European_Convention_on_Human_Rights>.^[45] <#cite_note-45> Accordingly,
+the Democracy Action Plan, and subsequently the DSA, were strongly
+influenced by the /Delfi AS v. Estonia <https://en.wikipedia.org/wiki/
+Delfi_AS_v._Estonia>/ and /Magyar Tartalomszolgáltatók Egyesülete and
+Index.hu Zrt v. Hungary/ ECtHR cases, which outlined a framework for
+assessing intermediary liability on digital platforms.^[46] <#cite_note-46>
+
+In /Delfi AS v. Estonia/, the ECtHR applied proportionality analysis
+when considering whether the Estonian courts' decision to hold the
+online platform Delfi liable for hate speech posted by its users was a
+proportionate restriction on Delfi's right to freedom of
+expression.^[47] <#cite_note-:0-47> The court found that, given the
+serious nature of the hate speech, the Estonian courts' actions were
+justified to protect the rights of others.^[48] <#cite_note-48> In other
+words, the ECtHR upheld the liability of online platforms for hate
+speech posted by their users, underlining that platforms could be
+expected to take proactive steps to control content when there is a
+clear risk of harm from unlawful comments. This case highlighted the
+responsibilities of platforms to prevent the spread of harmful
+content.^[47] <#cite_note-:0-47>
+
+On the other hand, the /MTE and Index.hu v. Hungary/ case illustrated
+the nuanced limits of freedom of speech on digital platforms.^[49]
+<#cite_note-:1-49> In its application of proportionality analysis, the
+ECtHR found that the Hungarian courts had failed to strike a fair
+balance between protecting reputation and ensuring freedom of
+expression.^[50] <#cite_note-50> The Hungarian courts imposed strict
+liability on the platforms for user comments that were offensive but did
+not constitute hate speech, constituting a disproportionate interference
+in the platforms' right to freedom of expression. The ECtHR ruled that
+imposing strict liability on platforms for user comments, without
+consideration of the nature of the comments or the context in which they
+were made, could infringe on freedom of expression. This judgment
+emphasized the need for a balance between protecting reputation and
+upholding free speech on digital platforms.^[49] <#cite_note-:1-49>
+
+These decisions by the ECtHR provided critical legal precedents that
+shaped the EU's decision-making process on the framework of the DSA. In
+particular, the DSA drew from the ECtHR's distinction between different
+types of illegal content, as well as its proportionality analysis in
+both cases, by incorporating nuanced rules on intermediary liability and
+ensuring that measures taken by platforms do not unreasonably restrict
+users' freedom of expression and information.^[51] <#cite_note-51>
+
+
+Reactions
+
+[edit <https://en.wikipedia.org/w/index.php?
+title=Digital_Services_Act&action=edit&section=6>]
+
+Media reactions to the Digital Services Act have been mixed. In January
+2022, the editorial board of /The Washington Post <https://
+en.wikipedia.org/wiki/The_Washington_Post>/ stated that the U.S. could
+learn from these rules,^[52] <#cite_note-52> while whistleblower Frances
+Haugen stated that it could set a "gold standard" of regulation
+worldwide.^[53] <#cite_note-53> Tech journalist Casey Newton <https://
+en.wikipedia.org/wiki/Casey_Newton> has argued that the DSA will shape
+US tech policy.^[54] <#cite_note-54> Mike Masnick of Techdirt <https://
+en.wikipedia.org/wiki/Techdirt> praised the DSA for ensuring the right
+to pay for digital services anonymously, but criticised the act for not
+including provisions that would have required a court order for the
+removal of illegal content.^[55] <#cite_note-55>
+
+Scholars have begun critically examining the Digital Services Act.^[56]
+<#cite_note-56> ^[57] <#cite_note-57> Some academics have expressed
+concerns that the Digital Services Act might be too rigid and
+prescribed,^[58] <#cite_note-58> excessively focused on individual
+content decisions or vague risk assessments.^[59] <#cite_note-59>
+
+Civil Society organisations such as Electronic Frontier Foundation
+<https://en.wikipedia.org/wiki/Electronic_Frontier_Foundation> have
+called for stronger privacy protections.^[60] <#cite_note-60> Human
+Rights Watch <https://en.wikipedia.org/wiki/Human_Rights_Watch> has
+welcomed the transparency and user remedies but called for an end to
+abusive surveillance and profiling.^[61] <#cite_note-61> Amnesty
+International <https://en.wikipedia.org/wiki/Amnesty_International> has
+welcomed many aspects of the proposal in terms of fundamental rights
+balance, but also asked for further restrictions on advertising.^[62]
+<#cite_note-62> Advocacy organisation Avaaz <https://en.wikipedia.org/
+wiki/Avaaz> has compared the Digital Services Act to the Paris Agreement
+for climate change.^[63] <#cite_note-63>
+
+Following the 2023 Hamas-led attack on Israel <https://en.wikipedia.org/
+wiki/2023_Hamas-led_attack_on_Israel>, Thierry Breton <https://
+en.wikipedia.org/wiki/Thierry_Breton> wrote public letters to X
+<https://en.wikipedia.org/wiki/Twitter>, Meta Platforms <https://
+en.wikipedia.org/wiki/Meta_Platforms>, TikTok <https://en.wikipedia.org/
+wiki/TikTok>, and YouTube <https://en.wikipedia.org/wiki/YouTube> on how
+their platforms complied with the DSA regarding content related to the
+conflict and upcoming elections. The Atlantic Council <https://
+en.wikipedia.org/wiki/Atlantic_Council>'s Digital Forensic Research Lab
+reported that Breton's letters did not follow DSA processes, and digital
+rights group Access Now <https://en.wikipedia.org/wiki/Access_Now>
+criticised Breton's letters for drawing a "false equivalence" between
+illegal content and disinformation.^[64] <#cite_note-64>
+
+Tech companies have repeatedly criticised the heavy burden of the rules
+and the alleged lack of clarity of the Digital Services Act,^[65]
+<#cite_note-65> and have been accused of lobbying to undermine some of
+the more far-reaching demands by law-makers, notably on bans for
+targeted advertising,^[66] <#cite_note-66> and a high-profile apology
+from Sundar Pichai <https://en.wikipedia.org/wiki/Sundar_Pichai> to
+Breton on leaked plans by Google to lobby against the Digital Services
+Act.^[67] <#cite_note-67>
+
+A bipartisan group of US senators have called the DSA and DMA
+discriminatory, claiming that the legislation would "focus on
+regulations on a handful of American companies while failing to regulate
+similar companies based in Europe, China, Russia and elsewhere."^[68]
+<#cite_note-68> ^[69] <#cite_note-69>
+
+The DSA was mostly welcomed by the European media sector.^[70]
+<#cite_note-70> Due to the influence gatekeepers have in selecting and
+controlling the visibility of certain journalistic articles over others
+through their online platforms, the European Federation of Journalists
+<https://en.wikipedia.org/wiki/European_Federation_of_Journalists>
+encouraged EU legislators to further increase the transparency of
+platforms' recommendation systems via the DSA.^[71] <#cite_note-71>
+
+Nevertheless, the DSA's later stage inter-institutional negotiations, or
+trilogues <https://en.wikipedia.org/wiki/Formal_trilogue_meeting>, have
+been criticized as lacking transparency and equitable
+participation.^[72] <#cite_note-72> These criticisms mirror past
+experiences with the drafting of the EU Regulation on Preventing the
+Dissemination of Terrorist Content Online as well as the General Data
+Protection Regulation <https://en.wikipedia.org/wiki/
+General_Data_Protection_Regulation> (GDPR).^[73] <#cite_note-73>
+
+Swedish member of the European Parliament Jessica Stegrud <https://
+en.wikipedia.org/wiki/Jessica_Stegrud> argued that the DSA's focus on
+preventing the spread of disinformation and "harmful content" would
+undermine freedom of speech <https://en.wikipedia.org/wiki/
+Freedom_of_speech>.^[74] <#cite_note-74>
+
+After the first round of the 2024 Romanian presidential election
+<https://en.wikipedia.org/wiki/2024_Romanian_presidential_election> was
+invalidated due to reports allegedly showing Russian involvement on
+TikTok in favor of Călin Georgescu <https://en.wikipedia.org/wiki/
+C%C4%83lin_Georgescu>, an investigation was conducted to determine
+whether TikTok had breached the DSA.^[75] <#cite_note-75>
+
+
+Impacts
+
+[edit <https://en.wikipedia.org/w/index.php?
+title=Digital_Services_Act&action=edit&section=7>]
+
+
+Feature and content removal
+
+[edit <https://en.wikipedia.org/w/index.php?
+title=Digital_Services_Act&action=edit&section=8>]
+
+In August 2024, TikTok <https://en.wikipedia.org/wiki/TikTok> agreed to
+withdraw its TikTok Lite rewards feature after it was investigated under
+the DSA due to concerns about its "addictive effect", especially for
+children.^[76] <#cite_note-g958-76> ^[77] <#cite_note-o819-77>
+
+A 2024 study of deleted Facebook and YouTube comments by the Future of
+Free Speech think tank at Vanderbilt University <https://
+en.wikipedia.org/wiki/Vanderbilt_University> suggested that "platforms,
+pages, or channels may be over-removing content to avoid regulatory
+penalties" under the DSA.^[78] <#cite_note-x614-78>
+
+
+Outside the EU
+
+[edit <https://en.wikipedia.org/w/index.php?
+title=Digital_Services_Act&action=edit&section=9>]
+
+/The Washington Post <https://en.wikipedia.org/wiki/
+The_Washington_Post>/ wrote in 2023 that tech companies may apply
+features instituted to comply with the DSA to countries outside of the
+EU, and that researchers have argued that the DSA could provide a
+framework for the United States to impose stricter regulations on tech
+companies.^[79] <#cite_note-g454-79> /The Economist <https://
+en.wikipedia.org/wiki/The_Economist>/ wrote in 2023 that the Brussels
+effect <https://en.wikipedia.org/wiki/Brussels_effect>, whereby social
+media platforms implement EU regulations globally to save costs, "is far
+from guaranteed" with the DSA due to tech companies being unwilling to
+"[lose] sovereignty over their digital territories everywhere".^[80]
+<#cite_note-h670-80>
+
+Among legal academics, Dawn Nunziato of the George Washington University
+<https://en.wikipedia.org/wiki/George_Washington_University> argued in
+2022 that the DSA "will further instantiate the Brussels Effect, whereby
+EU regulators wield powerful influence on how social media platforms
+moderate content on the global scale".^[81] <#cite_note-r313-81> Suzanne
+Vergnolle of the Conservatoire national des arts et métiers <https://
+en.wikipedia.org/wiki/Conservatoire_national_des_arts_et_m%C3%A9tiers>
+stated her belief in 2023 that the DSA would have a Brussels effect,
+similar to that of the General Data Protection Regulation <https://
+en.wikipedia.org/wiki/General_Data_Protection_Regulation>, but that
+"it's going to take years".^[82] <#cite_note-p803-82> Martin Husovec of
+the London School of Economics <https://en.wikipedia.org/wiki/
+London_School_of_Economics> and Jennifer Urban of the University of
+California, Berkeley <https://en.wikipedia.org/wiki/
+University_of_California,_Berkeley> wrote in 2024 that "the chances of
+spontaneous voluntary implementation beyond the EU's borders for four
+key parts of the DSA — content moderation procedures, transparency and
+governance obligations, and risk management rules — seem modest."^[83]
+<#cite_note-d321-83>
+
+
+Similar legislation
+
+[edit <https://en.wikipedia.org/w/index.php?
+title=Digital_Services_Act&action=edit&section=10>]
+
+The 2023 Brazilian Fake News Bill <https://en.wikipedia.org/wiki/
+Brazilian_Congressional_Bill_No._2630>, a proposed new social media
+regulation framework introduced in the National Congress <https://
+en.wikipedia.org/wiki/Brazilian_National_Congress>, heavily referenced
+the DSA and contained similar provisions.^[84] <#cite_note-c058-84>
+^[85] <#cite_note-m580-85>
+
+
+See also
+
+[edit <https://en.wikipedia.org/w/index.php?
+title=Digital_Services_Act&action=edit&section=11>]
+
+  * Digital Markets Act <https://en.wikipedia.org/wiki/Digital_Markets_Act>
+  * Trade and Technology Council <https://en.wikipedia.org/wiki/
+    Trade_and_Technology_Council>
+  * Big Tech <https://en.wikipedia.org/wiki/Big_Tech>
+  * Platform economy <https://en.wikipedia.org/wiki/Platform_economy>
+  * Online Streaming Act <https://en.wikipedia.org/wiki/
+    Online_Streaming_Act>
+  * WeChat <https://en.wikipedia.org/wiki/WeChat>
+  * Transparency and targeting of political advertising <https://
+    en.wikipedia.org/wiki/
+    Transparency_and_targeting_of_political_advertising>
+
+
+References
+
+[edit <https://en.wikipedia.org/w/index.php?
+title=Digital_Services_Act&action=edit&section=12>]
+
+ 1. ^ Jump up to: ^/*a*/ <#cite_ref-:2_1-0> ^/*b*/ <#cite_ref-:2_1-1>
+    "Regulation - 2022/2065 - EN - DSA - EUR-Lex" <http://
+    data.europa.eu/eli/reg/2022/2065/oj/eng>.
+ 2. ^ Jump up to: ^/*a*/ <#cite_ref-euractive20200808_2-0> ^/*b*/
+    <#cite_ref-euractive20200808_2-1> Stolton, Samuel (18 August 2020).
+    "Digital agenda: Autumn/Winter Policy Briefing" <https://
+    www.euractiv.com/section/digital/news/digital-agenda-autumn-winter-
+    policy-briefing/>. /Euractiv/. Archived <https://web.archive.org/
+    web/20200904043730/https://www.euractiv.com/section/digital/news/
+    digital-agenda-autumn-winter-policy-briefing/> from the original on
+    4 September 2020. Retrieved 2 September 2020.
+ 3. ^ Jump up to: ^/*a*/ <#cite_ref-ft20201028_3-0> ^/*b*/ <#cite_ref-
+    ft20201028_3-1> Espinoza, Javier (28 October 2020). "Internal Google
+    document reveals campaign against EU lawmakers" <https://www.ft.com/
+    content/d9d05b1e-45c0-44b8-a1ba-3aa6d0561bed>. /Financial Times/.
+    Archived <https://web.archive.org/web/20211030131912/https://
+    www.ft.com/content/d9d05b1e-45c0-44b8-a1ba-3aa6d0561bed> from the
+    original on 30 October 2021. Retrieved 29 October 2020.
+ 4. *^ <#cite_ref-4>* Gosztonyi, Gergely; Ruszkai, Szonja; Lendvai,
+    Gergely Ferenc (2025). "The European regulation of porn platforms
+    before and after the Digital Services Act" <https://
+    doi.org/10.1080%2F23268743.2025.2476962>. /Porn Studies/: 1–16. doi
+    <https://en.wikipedia.org/wiki/
+    Doi_(identifier)>:10.1080/23268743.2025.2476962 <https://
+    doi.org/10.1080%2F23268743.2025.2476962>.
+ 5. ^ Jump up to: ^/*a*/ <#cite_ref-:3_5-0> ^/*b*/ <#cite_ref-:3_5-1>
+    "The Digital Services Act package" <https://ec.europa.eu/digital-
+    single-market/en/digital-services-act-package>. Directorate-General
+    CONNECT of the European Commission <https://en.wikipedia.org/wiki/
+    European_Commission>. Archived <https://web.archive.org/
+    web/20210417174024/https://ec.europa.eu/digital-single-market/en/
+    digital-services-act-package> from the original on 17 April 2021.
+    Retrieved 29 December 2020.
+ 6. *^ <#cite_ref-6>* Roth, Emma (25 August 2023). "The EU's Digital
+    Services Act goes into effect today: here's what that means"
+    <https://www.theverge.com/23845672/eu-digital-services-act-
+    explained>. /The Verge/. Retrieved 1 August 2024.
+ 7. *^ <#cite_ref-7>* Candidate for President of the European Commission
+    Ursula von der Leyen, 'A Union that strives for more: My agenda for
+    Europe' (2019) <https://ec.europa.eu/commission/sites/beta-
+    political/files/political-guidelines-next-commission_en.pdf>
+    Archived <https://web.archive.org/web/20190717022159/https://
+    ec.europa.eu/commission/sites/beta-political/files/political-
+    guidelines-next-commission_en.pdf> 17 July 2019 at the Wayback
+    Machine <https://en.wikipedia.org/wiki/Wayback_Machine> (PDF).
+ 8. *^ <#cite_ref-8>* "Primacy of EU law" <https://eur-lex.europa.eu/EN/
+    legal-content/glossary/primacy-of-eu-law.html>. /EUR-Lex <https://
+    en.wikipedia.org/wiki/EUR-Lex>/. Archived <https://web.archive.org/
+    web/20220410112839/https://eur-lex.europa.eu/EN/legal-content/
+    glossary/primacy-of-eu-law.html> from the original on 10 April 2022.
+    Retrieved 10 April 2022.
+ 9. ^ Jump up to: ^/*a*/ <#cite_ref-EDRi_9-0> ^/*b*/ <#cite_ref-
+    EDRi_9-1> "The EU's attempt to regulate Big Tech: What it brings and
+    what is missing" <https://edri.org/our-work/eu-attempt-to-regulate-
+    big-tech/>. European Digital Rights <https://en.wikipedia.org/wiki/
+    European_Digital_Rights> (EDRi). 18 December 2020. Archived
+    <https://archive.today/20210416193315/https://edri.org/our-work/eu-
+    attempt-to-regulate-big-tech/> from the original on 16 April 2021.
+    Retrieved 29 December 2020.
+10. *^ <#cite_ref-10>* Wilman, Folkert (19 November 2020). /The
+    Responsibility of Online Intermediaries for Illegal User Content in
+    the EU and the US/ <https://www.elgaronline.com/
+    view/9781839104824.xml>. Edward Elgar. ISBN <https://
+    en.wikipedia.org/wiki/ISBN_(identifier)> 978-1-83910-483-1 <https://
+    en.wikipedia.org/wiki/Special:BookSources/978-1-83910-483-1>.
+11. *^ <#cite_ref-11>* Johnson, Ashley; Castro, Daniel (22 February
+    2021). "How Other Countries Have Dealt With Intermediary Liability"
+    <https://itif.org/publications/2021/02/22/how-other-countries-have-
+    dealt-intermediary-liability>. /Information Technology and
+    Innovation Foundation/. Archived <https://web.archive.org/
+    web/20220410170711/https://itif.org/publications/2021/02/22/how-
+    other-countries-have-dealt-intermediary-liability> from the original
+    on 10 April 2022. Retrieved 10 April 2022.
+12. *^ <#cite_ref-12>* "Questions and answers on the Digital Services
+    Act*" <https://ec.europa.eu/commission/presscorner/detail/en/
+    QANDA_20_2348>. /European Commission/. Retrieved 5 September 2024.
+13. *^ <#cite_ref-13>* Bertuzzi, Luca (19 April 2023). "EU launches
+    research centre on algorithmic transparency" <https://
+    www.euractiv.com/section/platforms/news/eu-launches-research-centre-
+    on-algorithmic-transparency/>. /www.euractiv.com/. Archived
+    <https://web.archive.org/web/20230420011931/https://
+    www.euractiv.com/section/platforms/news/eu-launches-research-centre-
+    on-algorithmic-transparency/> from the original on 20 April 2023.
+    Retrieved 20 April 2023.
+14. *^ <#cite_ref-Perrigo_20201215_14-0>* Perrigo, Billy (15 December
+    2020). "How the E.U's Sweeping New Regulations Against Big Tech
+    Could Have an Impact Beyond Europe" <https://time.com/5921760/
+    europe-digital-services-act-big-tech/>. /Time <https://
+    en.wikipedia.org/wiki/Time_(magazine)>/. Archived <https://
+    web.archive.org/web/20211030131912/https://time.com/5921760/europe-
+    digital-services-act-big-tech/> from the original on 30 October
+    2021. Retrieved 29 December 2020.
+15. *^ <#cite_ref-15>* "The Digital Services Act: risk-based regulation
+    of online platforms" <https://policyreview.info/articles/news/
+    digital-services-act-risk-based-regulation-online-platforms/1606>. /
+    Internet Policy Review/. 16 November 2021. Archived <https://
+    web.archive.org/web/20220323132731/https://policyreview.info/
+    articles/news/digital-services-act-risk-based-regulation-online-
+    platforms/1606> from the original on 23 March 2022. Retrieved 10
+    April 2022.
+16. ^ Jump up to: ^/*a*/ <#cite_ref-digital-strategy.ec.europa.eu_16-0>
+    ^/*b*/ <#cite_ref-digital-strategy.ec.europa.eu_16-1> "The
+    enforcement framework under the Digital Services Act | Shaping
+    Europe's digital future" <https://digital-strategy.ec.europa.eu/en/
+    policies/dsa-enforcement>. /digital-strategy.ec.europa.eu/.
+    Retrieved 19 December 2023.
+17. *^ <#cite_ref-17>* Brodkin, Jon (25 April 2023). "EU names 19 large
+    tech platforms that must follow Europe's new Internet rules"
+    <https://arstechnica.com/tech-policy/2023/04/google-runs-5-of-
+    the-19-platforms-that-must-follow-eus-new-internet-rules/>. /Ars
+    Technica/. Archived <https://web.archive.org/web/20230425185149/
+    https://arstechnica.com/tech-policy/2023/04/google-runs-5-of-the-19-
+    platforms-that-must-follow-eus-new-internet-rules/> from the
+    original on 25 April 2023. Retrieved 25 April 2023.
+18. *^ <#cite_ref-18>* "DSA: Very Large Online Platforms and Search
+    Engines" <https://ec.europa.eu/commission/presscorner/detail/en/
+    ip_23_2413/smo>. /European Commission - European Commission/.
+    Archived <https://web.archive.org/web/20230425144524/https://
+    ec.europa.eu/commission/presscorner/detail/en/ip_23_2413/smo> from
+    the original on 25 April 2023. Retrieved 26 April 2023.
+19. *^ <#cite_ref-19>* Tar, Julia (11 July 2023). "Amazon joins Zalando
+    in challenging very large online platform designation" <https://
+    www.euractiv.com/section/platforms/news/amazon-joins-zalando-in-
+    challenging-very-large-online-platform-designation/>. /Euractiv
+    <https://en.wikipedia.org/wiki/Euractiv>/. Retrieved 26 August 2023.
+20. *^ <#cite_ref-20>* Rauer, Nils (13 July 2023). "Unpacking Amazon's
+    legal challenge to its Digital Services Act designation" <https://
+    www.pinsentmasons.com/de-de/out-law/analyse/unpacking-amazon-s-
+    legal-challenge-to-its-digital-services-act-designation>. Pinsent
+    Masons <https://en.wikipedia.org/wiki/Pinsent_Masons>. Retrieved 26
+    August 2023.
+21. *^ <#cite_ref-21>* "Press corner" <https://ec.europa.eu/commission/
+    presscorner/home/en>. /European Commission - European Commission/.
+    Retrieved 19 December 2023.
+22. *^ <#cite_ref-22>* "Commission designates second set of Very Large
+    Online Platforms under the Digital Services Act" <https://digital-
+    strategy.ec.europa.eu/en/news/commission-designates-second-set-very-
+    large-online-platforms-under-digital-services-act>. /digital-
+    strategy.ec.europa.eu/. Retrieved 29 December 2023.
+23. *^ <#cite_ref-auto1_23-0>* Espinoza, Javier; Hindley, Scott (16
+    December 2019). "Brussels' plans to tackle digital 'gatekeepers'
+    spark fevered debate" <https://app.ft.com/content/22bda533-
+    db74-4a3d-917b-75ac23c0f27f>. Financial Times <https://
+    en.wikipedia.org/wiki/Financial_Times>. Archived <https://
+    web.archive.org/web/20211030131914/https://app.ft.com/
+    content/22bda533-db74-4a3d-917b-75ac23c0f27f> from the original on
+    30 October 2021. Retrieved 29 December 2020.
+24. *^ <#cite_ref-24>* "EU Digital Services Act set to bring in new
+    rules for tech giants" <https://www.bbc.com/news/
+    technology-55307115>. /BBC News/. 15 December 2020. Archived
+    <https://web.archive.org/web/20211030133415/https://www.bbc.com/
+    news/technology-55307115> from the original on 30 October 2021.
+    Retrieved 24 January 2021.
+25. *^ <#cite_ref-25>* "Commission Recommendation (EU) 2018/334 of 1
+    March 2018 on measures to effectively tackle illegal content online"
+    <http://data.europa.eu/eli/reco/2018/334/oj/eng>. /EUR-Lex <https://
+    en.wikipedia.org/wiki/EUR-Lex>/. 6 March 2018.
+26. *^ <#cite_ref-26>* "Press corner" <https://ec.europa.eu/commission/
+    presscorner/home/en>. /European Commission - European Commission/.
+    Archived <https://web.archive.org/web/20201227193856/https://
+    ec.europa.eu/commission/presscorner/home/en> from the original on 27
+    December 2020. Retrieved 2 September 2020.
+27. *^ <#cite_ref-27>* "Europe asks for views on platform governance and
+    competition tools" <https://techcrunch.com/2020/06/02/europe-asks-
+    for-views-on-platform-governance-and-competition-tools/>. /
+    TechCrunch/. 2 June 2020. Retrieved 2 September 2020.
+28. *^ <#cite_ref-28>* "Impact assessment of the Digital Services Act |
+    Shaping Europe's digital future" <https://digital-
+    strategy.ec.europa.eu/en/library/impact-assessment-digital-services-
+    act>. /digital-strategy.ec.europa.eu/. 15 December 2020. Archived
+    <https://web.archive.org/web/20220402150705/https://digital-
+    strategy.ec.europa.eu/en/library/impact-assessment-digital-services-
+    act> from the original on 2 April 2022. Retrieved 10 April 2022.
+29. *^ <#cite_ref-29>* "Digital Services Act: regulating platforms for a
+    safer online space for users | News | European Parliament" <https://
+    www.europarl.europa.eu/news/en/press-room/20220114IPR21017/digital-
+    services-act-regulating-platforms-for-a-safer-online-space-for-
+    users>. /www.europarl.europa.eu/. 20 January 2022. Archived
+    <https://web.archive.org/web/20220408083655/https://
+    www.europarl.europa.eu/news/en/press-room/20220114IPR21017/digital-
+    services-act-regulating-platforms-for-a-safer-online-space-for-
+    users> from the original on 8 April 2022. Retrieved 10 April 2022.
+30. *^ <#cite_ref-30>* "Frances Haugen to MEPs: EU digital rules can be
+    a game changer for the world | News | European Parliament" <https://
+    www.europarl.europa.eu/news/en/press-room/20211107IPR16801/frances-
+    haugen-to-meps-eu-digital-rules-can-be-a-game-changer-for-the-
+    world>. /www.europarl.europa.eu/. 11 August 2021. Archived <https://
+    web.archive.org/web/20220329203431/https://www.europarl.europa.eu/
+    news/en/press-room/20211107IPR16801/frances-haugen-to-meps-eu-
+    digital-rules-can-be-a-game-changer-for-the-world> from the original
+    on 29 March 2022. Retrieved 10 April 2022.
+31. *^ <#cite_ref-31>* "Facebook whistleblower Frances Haugen speaks to
+    EU parliament" <https://techcrunch.com/2021/11/08/facebook-
+    whistleblower-frances-haugen-european-parliament/>. /TechCrunch/. 9
+    November 2021. Retrieved 10 April 2022.
+32. *^ <#cite_ref-32>* "What is illegal offline should be illegal
+    online: Council agrees position on the Digital Services Act"
+    <https://www.consilium.europa.eu/en/press/press-releases/2021/11/25/
+    what-is-illegal-offline-should-be-illegal-online-council-agrees-on-
+    position-on-the-digital-services-act/>. /www.consilium.europa.eu/.
+    Archived <https://web.archive.org/web/20220410112839/https://
+    www.consilium.europa.eu/en/press/press-releases/2021/11/25/what-is-
+    illegal-offline-should-be-illegal-online-council-agrees-on-position-
+    on-the-digital-services-act/> from the original on 10 April 2022.
+    Retrieved 10 April 2022.
+33. *^ <#cite_ref-33>* "Ireland's privacy watchdog sued over Google
+    adtech inaction" <https://techcrunch.com/2022/03/14/dpc-sued-google-
+    rtb-complaint/>. /TechCrunch/. 15 March 2022. Retrieved 10 April 2022.
+34. ^ Jump up to: ^/*a*/ <#cite_ref-EP_20220406_34-0> ^/*b*/ <#cite_ref-
+    EP_20220406_34-1> "Data governance: Parliament approves new rules
+    boosting intra-EU data sharing | News | European Parliament"
+    <https://www.europarl.europa.eu/news/en/press-room/20220401IPR26534/
+    data-governance-parliament-approves-new-rules-boosting-intra-eu-
+    data-sharing>. 6 April 2022. Archived <https://web.archive.org/
+    web/20220429044246/https://www.europarl.europa.eu/news/en/press-
+    room/20220401IPR26534/data-governance-parliament-approves-new-rules-
+    boosting-intra-eu-data-sharing> from the original on 29 April 2022.
+    Retrieved 29 April 2022.
+35. *^ <#cite_ref-Daly_20220427_35-0>* Daly, Sidley Austin LLP-Ken;
+    Zdzieborska, Monika; Shajko, Fiona (27 April 2022). "EU Data
+    Governance Act - Edging Closer to a European Single Market for Data"
+    <https://www.lexology.com/library/detail.aspx?
+    g=fbdf102f-9450-4614-9baf-1406b13917cd>. /Lexology/. Archived
+    <https://web.archive.org/web/20220608105944/https://
+    www.lexology.com/library/detail.aspx?
+    g=fbdf102f-9450-4614-9baf-1406b13917cd> from the original on 8 June
+    2022. Retrieved 29 April 2022.
+36. ^ Jump up to: ^/*a*/ <#cite_ref-Zakrzewski_20220422_36-0> ^/*b*/
+    <#cite_ref-Zakrzewski_20220422_36-1> Zakrzewski, Cat (22 April
+    2022). "Europe to slap new regulations on Big Tech, beating U.S. to
+    the punch" <https://www.washingtonpost.com/technology/2022/04/22/
+    european-lawmakers-digital-services/>. /The Washington Post/. ISSN
+    <https://en.wikipedia.org/wiki/ISSN_(identifier)> 0190-8286
+    <https://search.worldcat.org/issn/0190-8286>. Archived <https://
+    web.archive.org/web/20220423021358/https://www.washingtonpost.com//
+    technology/2022/04/22/european-lawmakers-digital-services/> from the
+    original on 23 April 2022. Retrieved 29 April 2022.
+37. *^ <#cite_ref-Satariano_20220422_37-0>* Satariano, Adam (22 April
+    2022). "E.U. Takes Aim at Social Media's Harms With Landmark New
+    Law" <https://www.nytimes.com/2022/04/22/technology/european-union-
+    social-media-law.html>. /The New York Times/. ISSN <https://
+    en.wikipedia.org/wiki/ISSN_(identifier)> 0362-4331 <https://
+    search.worldcat.org/issn/0362-4331>. Archived <https://
+    web.archive.org/web/20221023023315/https://
+    www.nytimes.com/2022/04/22/technology/european-union-social-media-
+    law.html> from the original on 23 October 2022. Retrieved 29 April 2022.
+38. *^ <#cite_ref-EU_PR_20220423_38-0>* "Digital Services Act:
+    Commission welcomes political agreement on rules ensuring a safe and
+    accountable online environment" <https://ec.europa.eu/commission/
+    presscorner/detail/en/ip_22_2545> (Press release). Brussels:
+    European Commission <https://en.wikipedia.org/wiki/
+    European_Commission>. 23 April 2022. Archived <https://
+    web.archive.org/web/20220423010501/https://ec.europa.eu/commission/
+    presscorner/detail/en/ip_22_2545> from the original on 23 April
+    2022. Retrieved 23 April 2022.
+39. *^ <#cite_ref-39>* Foo Yun Chee (22 April 2022). "EU sets new online
+    rules for Google, Meta to curb illegal content" <https://
+    www.reuters.com/technology/eu-countries-lawmakers-clinch-deal-new-
+    online-content-rules-2022-04-23/>. /Reuters <https://
+    en.wikipedia.org/wiki/Reuters>/. Archived <https://web.archive.org/
+    web/20220423004235/https://www.reuters.com/technology/eu-countries-
+    lawmakers-clinch-deal-new-online-content-rules-2022-04-23/> from the
+    original on 23 April 2022. Retrieved 23 April 2022.
+40. ^ Jump up to: ^/*a*/ <#cite_ref-parl072022_40-0> ^/*b*/ <#cite_ref-
+    parl072022_40-1> "Digital Services: landmark rules adopted for a
+    safer, open online environment" <https://www.europarl.europa.eu/
+    news/en/press-room/20220701IPR34364/digital-services-landmark-rules-
+    adopted-for-a-safer-open-online-environment>. 5 July 2022. Archived
+    <https://web.archive.org/web/20221016171724/https://
+    www.europarl.europa.eu/news/en/press-room/20220701IPR34364/digital-
+    services-landmark-rules-adopted-for-a-safer-open-online-environment>
+    from the original on 16 October 2022. Retrieved 5 July 2022.
+41. *^ <#cite_ref-41>* "The EU Digital Services Act - Europe's New
+    Regime for Content Moderation" <https://www.lexology.com/library/
+    detail.aspx?g=297caa4e-686c-452c-a527-c56fb3fba7ee>. 4 October 2022.
+    Archived <https://web.archive.org/web/20221010095752/https://
+    www.lexology.com/library/detail.aspx?g=297caa4e-686c-452c-a527-
+    c56fb3fba7ee> from the original on 10 October 2022. Retrieved 10
+    October 2022.
+42. *^ <#cite_ref-42>* O'Donnell, Meghan (5 February 2024). "When Does
+    the Digital Services Act (DSA) Come Into Effect?" <https://
+    trolley.com/learning-center/dsa-timeline/>. /Trolley/. Retrieved 1
+    August 2024.
+43. *^ <#cite_ref-43>* "Digital Services Act starts applying to all
+    online platforms in the EU" <https://ec.europa.eu/commission/
+    presscorner/detail/en/ip_24_881>. /European Commission/. 16 February
+    2024. Retrieved 1 August 2024.
+44. *^ <#cite_ref-44>* Heldt, Amélie P. (2022), "EU Digital Services
+    Act: The White Hope of Intermediary Regulation" <https://
+    dx.doi.org/10.1007/978-3-030-95220-4_4>, /Digital Platform
+    Regulation/, Palgrave Global Media Policy and Business, Cham:
+    Springer International Publishing, pp. 69–84, doi <https://
+    en.wikipedia.org/wiki/Doi_(identifier)>:10.1007/978-3-030-95220-4_4
+    <https://doi.org/10.1007%2F978-3-030-95220-4_4>, ISBN <https://
+    en.wikipedia.org/wiki/ISBN_(identifier)> 978-3-030-95219-8 <https://
+    en.wikipedia.org/wiki/Special:BookSources/978-3-030-95219-8>,
+    retrieved 16 May 2024
+45. *^ <#cite_ref-45>* "Freedom of Expression" <https://
+    dx.doi.org/10.1017/9781139547246.007>, /Law, Democracy and the
+    European Court of Human Rights/, Cambridge University Press, pp. 84–
+    119, 2 November 2020, doi <https://en.wikipedia.org/wiki/
+    Doi_(identifier)>:10.1017/9781139547246.007 <https://
+    doi.org/10.1017%2F9781139547246.007>, ISBN <https://
+    en.wikipedia.org/wiki/ISBN_(identifier)> 978-1-139-54724-6 <https://
+    en.wikipedia.org/wiki/Special:BookSources/978-1-139-54724-6>,
+    retrieved 16 May 2024
+46. *^ <#cite_ref-46>* Ombelet, Pieter-Jan; Kuczerawy, Aleksandra (20
+    February 2016). "Delfi revisited: the MTE & Index.hu v. Hungary
+    case" <https://www.law.kuleuven.be/citip/blog/delfi-revisited-the-
+    mte-index-hu-v-hungary-case/>. /CiTiP blog/. Retrieved 16 May 2024.
+47. ^ Jump up to: ^/*a*/ <#cite_ref-:0_47-0> ^/*b*/ <#cite_ref-:0_47-1>
+    "Delfi AS v. Estonia" <https://
+    globalfreedomofexpression.columbia.edu/cases/delfi-as-v-estonia/>. /
+    Global Freedom of Expression/. Retrieved 16 May 2024.
+48. *^ <#cite_ref-48>* Susi, Mart (April 2014). "Delfi AS v. Estonia"
+    <https://dx.doi.org/10.5305/amerjintelaw.108.2.0295>. /American
+    Journal of International Law/. *108* (2): 295–302. doi <https://
+    en.wikipedia.org/wiki/Doi_(identifier)>:10.5305/
+    amerjintelaw.108.2.0295 <https://
+    doi.org/10.5305%2Famerjintelaw.108.2.0295>. ISSN <https://
+    en.wikipedia.org/wiki/ISSN_(identifier)> 0002-9300 <https://
+    search.worldcat.org/issn/0002-9300>.
+49. ^ Jump up to: ^/*a*/ <#cite_ref-:1_49-0> ^/*b*/ <#cite_ref-:1_49-1>
+    "Magyar Tartalomszolgáltatók Egyesülete and Index.hu Zrt v. Hungary"
+    <https://globalfreedomofexpression.columbia.edu/cases/magyar-
+    tartalomszolgaltatok-egyesulete-index-hu-zrt-v-hungary/>. /Global
+    Freedom of Expression/. Retrieved 16 May 2024.
+50. *^ <#cite_ref-50>* "Magyar Tartalomszolgáltatók Egyesülete and
+    Index.hu Zrt v. Hungary (2016)" <https://hudoc.echr.coe.int/
+    eng#%7B%22itemid%22:%5B%22002-10868%22%5D%7D>. /hudoc.echr.coe.int/.
+    Retrieved 16 May 2024.
+51. *^ <#cite_ref-51>* "The Digital Services Act and the EU as the
+    Global Regulator of the Internet | Chicago Journal of International
+    Law" <https://cjil.uchicago.edu/print-archive/digital-services-act-
+    and-eu-global-regulator-internet#heading-2>. /cjil.uchicago.edu/.
+    Retrieved 16 May 2024.
+52. *^ <#cite_ref-52>* "The U.S. could learn from Europe's online speech
+    rules" <https://www.washingtonpost.com/opinions/2022/01/29/us-could-
+    learn-europes-online-speech-rules/>. /The Washington Post/. ISSN
+    <https://en.wikipedia.org/wiki/ISSN_(identifier)> 0190-8286
+    <https://search.worldcat.org/issn/0190-8286>. Archived <https://
+    web.archive.org/web/20220131101731/https://www.washingtonpost.com/
+    opinions/2022/01/29/us-could-learn-europes-online-speech-rules/>
+    from the original on 31 January 2022. Retrieved 10 April 2022.
+53. *^ <#cite_ref-53>* "EU could set 'gold standard' on big tech -
+    Haugen" <https://www.rte.ie/news/business/2021/1108/1258662-
+    facebook-haugen-eu/>. RTÉ.ie <https://en.wikipedia.org/wiki/
+    RT%C3%89.ie>. 8 November 2021. Archived <https://web.archive.org/
+    web/20220410123156/https://www.rte.ie/news/
+    business/2021/1108/1258662-facebook-haugen-eu/> from the original on
+    10 April 2022. Retrieved 10 April 2022.
+54. *^ <#cite_ref-54>* "European values are starting to define U.S. tech
+    privacy, says journalist" <https://
+    www.npr.org/2021/12/04/1061539843/european-values-are-starting-to-
+    define-u-s-tech-privacy-says-journalist?t=1649590691926>. /NPR.org/.
+    Archived <https://web.archive.org/web/20220410123156/https://
+    www.npr.org/2021/12/04/1061539843/european-values-are-starting-to-
+    define-u-s-tech-privacy-says-journalist?t=1649590691926> from the
+    original on 10 April 2022. Retrieved 10 April 2022.
+55. *^ <#cite_ref-55>* Masnick, Mike (28 January 2022). "EU Parliament's
+    'More Thoughtful' Approach To Regulating The Internet Still A
+    Complete Disaster" <https://www.techdirt.com/2022/01/28/eu-
+    parliaments-more-thoughtful-approach-to-regulating-internet-still-
+    complete-disaster/>. /Techdirt/. Retrieved 12 October 2023.
+56. *^ <#cite_ref-56>* "DSA Observatory – a hub of expertise on the DSA
+    package" <https://dsa-observatory.eu/>. Archived <https://
+    web.archive.org/web/20220403122504/https://dsa-observatory.eu/> from
+    the original on 3 April 2022. Retrieved 10 April 2022.
+57. *^ <#cite_ref-57>* "DSA in Perspective Seminar Series" <https://
+    brusselsprivacyhub.eu/events/dsa-in-perspective-seminar-series>. /
+    Brussels Privacy Hub/. Archived <https://web.archive.org/
+    web/20220516175544/https://brusselsprivacyhub.eu/events/dsa-in-
+    perspective-seminar-series> from the original on 16 May 2022.
+    Retrieved 10 April 2022.
+58. *^ <#cite_ref-58>* Keller, Daphne (2022). "The DSA's Industrial
+    Model for Content Moderation" <https://verfassungsblog.de/dsa-
+    industrial-model/>. /Verfassungsblog: On Matters Constitutional/ (in
+    German). doi <https://en.wikipedia.org/wiki/
+    Doi_(identifier)>:10.17176/20220224-121133-0 <https://
+    doi.org/10.17176%2F20220224-121133-0>. Archived <https://
+    web.archive.org/web/20220309093255/https://verfassungsblog.de/dsa-
+    industrial-model/> from the original on 9 March 2022. Retrieved 10
+    April 2022.
+59. *^ <#cite_ref-59>* Douek, Evelyn (10 January 2022). "Content
+    Moderation as Systems Thinking" <https://papers.ssrn.com/
+    abstract=4005326>. /Harvard Law Review <https://en.wikipedia.org/
+    wiki/Harvard_Law_Review>/. *136* (4). doi <https://en.wikipedia.org/
+    wiki/Doi_(identifier)>:10.2139/ssrn.4005326 <https://
+    doi.org/10.2139%2Fssrn.4005326>. SSRN <https://en.wikipedia.org/
+    wiki/SSRN_(identifier)> 4005326 <https://papers.ssrn.com/sol3/
+    papers.cfm?abstract_id=4005326>.
+60. *^ <#cite_ref-60>* Schmon, Christoph (20 January 2022). "DSA: EU
+    Parliament Vote Ensures a Free Internet, But a Final Regulation Must
+    Add Stronger Privacy Protections" <https://www.eff.org/
+    deeplinks/2022/01/dsa-eu-parliaments-position-ensures-free-internet-
+    human-rights-safeguards-need-be>. /Electronic Frontier Foundation/.
+    Archived <https://web.archive.org/web/20220408170931/https://
+    www.eff.org/deeplinks/2022/01/dsa-eu-parliaments-position-ensures-
+    free-internet-human-rights-safeguards-need-be> from the original on
+    8 April 2022. Retrieved 10 April 2022.
+61. *^ <#cite_ref-61>* "EU: Put Fundamental Rights at Top of Digital
+    Regulation" <https://www.hrw.org/news/2022/01/07/eu-put-fundamental-
+    rights-top-digital-regulation>. /Human Rights Watch/. 7 January
+    2022. Archived <https://web.archive.org/web/20220410123156/https://
+    www.hrw.org/news/2022/01/07/eu-put-fundamental-rights-top-digital-
+    regulation> from the original on 10 April 2022. Retrieved 10 April 2022.
+62. *^ <#cite_ref-62>* "Amnesty International Position on the Proposals
+    for a Digital Services Act and a Digital Markets Act" <https://
+    www.amnesty.eu/news/amnesty-international-position-on-the-proposals-
+    for-a-digital-services-act-and-a-digital-markets-act/>. /European
+    Institutions Office/. 30 March 2021. Archived <https://
+    web.archive.org/web/20220204110110/https://www.amnesty.eu/news/
+    amnesty-international-position-on-the-proposals-for-a-digital-
+    services-act-and-a-digital-markets-act/> from the original on 4
+    February 2022. Retrieved 10 April 2022.
+63. *^ <#cite_ref-63>* Nicotra, Luca (24 February 2022). "Could the EU
+    be on the cusp of a Paris Agreement For The Internet?" <https://
+    www.euractiv.com/section/digital/opinion/could-the-eu-be-on-the-
+    cusp-of-a-paris-agreement-for-the-internet/>. /www.euractiv.com/.
+    Archived <https://web.archive.org/web/20220410123156/https://
+    www.euractiv.com/section/digital/opinion/could-the-eu-be-on-the-
+    cusp-of-a-paris-agreement-for-the-internet/> from the original on 10
+    April 2022. Retrieved 10 April 2022.
+64. *^ <#cite_ref-64>* Smalley, Suzanne (27 October 2023). "European
+    Commission misfires in initial DSA enforcement, experts say"
+    <https://therecord.media/european-commission-digital-services-act-
+    enforcement-breton>. /The Record/. Recorded Future <https://
+    en.wikipedia.org/wiki/Recorded_Future>. Retrieved 24 March 2024.
+65. *^ <#cite_ref-65>* "Documents" <https://doteurope.eu/library/>.
+    Archived <https://web.archive.org/web/20220519125241/https://
+    doteurope.eu/library/> from the original on 19 May 2022. Retrieved
+    10 April 2022.
+66. *^ <#cite_ref-66>* "How corporate lobbying undermined the EU's push
+    to ban surveillance ads | Corporate Europe Observatory" <https://
+    corporateeurope.org/en/2022/01/how-corporate-lobbying-undermined-
+    eus-push-ban-surveillance-ads>. /corporateeurope.org/. Archived
+    <https://web.archive.org/web/20220304100141/https://
+    corporateeurope.org/en/2022/01/how-corporate-lobbying-undermined-
+    eus-push-ban-surveillance-ads> from the original on 4 March 2022.
+    Retrieved 10 April 2022.
+67. *^ <#cite_ref-67>* Espinoza, Javier (13 November 2020). "Google
+    apologises to Thierry Breton over plan to target EU commissioner"
+    <https://www.ft.com/content/5528eab4-ac19-40c0-893a-9b86ccd091f6>. /
+    Financial Times/. Archived <https://web.archive.org/
+    web/20220410123156/https://www.ft.com/content/5528eab4-
+    ac19-40c0-893a-9b86ccd091f6> from the original on 10 April 2022.
+    Retrieved 10 April 2022.
+68. *^ <#cite_ref-68>* "Finance Committee Leaders Wyden and Crapo: Biden
+    Administration Must Fight Back Against Discriminatory Digital Trade
+    Policies | The United States Senate Committee on Finance" <https://
+    www.finance.senate.gov/chairmans-news/finance-committee-leaders-
+    wyden-and-crapo-biden-administration-must-fight-back-against-
+    discriminatory-digital-trade-policies>. /www.finance.senate.gov/.
+    Archived <https://web.archive.org/web/20220423140842/https://
+    www.finance.senate.gov/chairmans-news/finance-committee-leaders-
+    wyden-and-crapo-biden-administration-must-fight-back-against-
+    discriminatory-digital-trade-policies> from the original on 23 April
+    2022. Retrieved 10 April 2022.
+69. *^ <#cite_ref-69>* "Lawmakers Argue Pending European Tech Laws
+    Disadvantage American Firms" <https://www.nextgov.com/
+    policy/2022/02/lawmakers-argue-pending-european-tech-laws-
+    disadvantage-american-firms/361480/>. /Nextgov.com/. 2 February
+    2022. Archived <https://web.archive.org/web/20220307091623/https://
+    www.nextgov.com/policy/2022/02/lawmakers-argue-pending-european-
+    tech-laws-disadvantage-american-firms/361480/> from the original on
+    7 March 2022. Retrieved 10 April 2022.
+70. *^ <#cite_ref-70>* Bertuzzi, Luca (25 June 2021). "Digital Brief:
+    Calls for biometrical ban, online marketplaces' threat, Germany's
+    antitrust crusade" <https://www.euractiv.com/section/digital/news/
+    digital-brief-calls-for-biometrical-ban-online-marketplaces-threat-
+    germanys-antitrust-crusade/>. /www.euractiv.com/. Archived <https://
+    web.archive.org/web/20210627032437/https://www.euractiv.com/section/
+    digital/news/digital-brief-calls-for-biometrical-ban-online-
+    marketplaces-threat-germanys-antitrust-crusade/> from the original
+    on 27 June 2021. Retrieved 29 June 2021.
+71. *^ <#cite_ref-71>* Killeen, Molly (25 June 2021). "Media sector eyes
+    opportunity to rebalance relations with online platforms" <https://
+    www.euractiv.com/section/digital/news/media-sector-eyes-opportunity-
+    to-rebalance-relations-with-online-platforms/>. /Euractiv/. Archived
+    <https://web.archive.org/web/20210626085820/https://
+    www.euractiv.com/section/digital/news/media-sector-eyes-opportunity-
+    to-rebalance-relations-with-online-platforms> from the original on
+    26 June 2021. Retrieved 29 June 2021.
+72. *^ <#cite_ref-72>* Allen, Asha (29 April 2022). "The EU's Opaque
+    Policy-Making Has Never Been Clearer" <https://www.wired.com/story/
+    eu-opaque-policy-making-dsa/>. /WIRED/. Archived <https://
+    web.archive.org/web/20220430043904/https://www.wired.com/story/eu-
+    opaque-policy-making-dsa/> from the original on 30 April 2022.
+    Retrieved 3 May 2022.
+73. *^ <#cite_ref-73>* Skiera, Bernd; Miller, Klaus; Jin, Yuxi; Kraft,
+    Lennart; Laub, René; Schmitt, Julia (2022). Skiera, Bernd (ed.). /
+    The impact of the GDPR on the online advertising market/. Frankfurt
+    am Main: Skiera, Bernd. ISBN <https://en.wikipedia.org/wiki/
+    ISBN_(identifier)> 978-3-9824173-0-1 <https://en.wikipedia.org/wiki/
+    Special:BookSources/978-3-9824173-0-1>. OCLC <https://
+    en.wikipedia.org/wiki/OCLC_(identifier)> 1303894344 <https://
+    search.worldcat.org/oclc/1303894344>.
+74. *^ <#cite_ref-74>* Stegrud, Jessica (25 April 2022). "The EU's
+    Digital Services Act is undermining free speech, Brussels Report"
+    <https://www.brusselsreport.eu/2022/04/25/the-eus-digital-services-
+    act-is-undermining-free-speech/>. /Brussels Report/. Archived
+    <https://web.archive.org/web/20221011060254/https://
+    www.brusselsreport.eu/2022/04/25/the-eus-digital-services-act-is-
+    undermining-free-speech/> from the original on 11 October 2022.
+    Retrieved 11 October 2022.
+75. *^ <#cite_ref-75>* "TikTok made changes ahead of Romanian election
+    re-run, says Virkkunen" <https://www.euronews.com/next/2025/04/08/
+    tiktok-made-changes-ahead-of-re-run-of-romanian-election-says-eu-
+    tech-chief>. /euronews/. 8 April 2025. Retrieved 31 May 2025.
+76. *^ <#cite_ref-g958_76-0>* The Associated Press (5 August 2024).
+    "TikTok agrees to withdraw rewards feature after EU raised concerns
+    about potential online addiction" <https://apnews.com/article/
+    tiktok-digital-services-act-screen-time-
+    f3c635bd7d46e37c12f6411f8e641ade>. /AP News/. Retrieved 30 March 2025.
+77. *^ <#cite_ref-o819_77-0>* Kroet, Cynthia (5 August 2024). "TikTok
+    commits to withdraw TikTok Lite from EU" <https://www.euronews.com/
+    next/2024/08/05/tiktok-commits-to-withdraw-tiktok-lite-from-eu>. /
+    euronews/. Retrieved 30 March 2025.
+78. *^ <#cite_ref-x614_78-0>* "Preventing "Torrents of Hate" or Stifling
+    Free Expression Online?" <https://futurefreespeech.org/preventing-
+    torrents-of-hate-or-stifling-free-expression-online/>. /The Future
+    of Free Speech/. 28 May 2024. Retrieved 12 March 2025.
+79. *^ <#cite_ref-g454_79-0>* Velazco, Chris (30 August 2023). "What the
+    E.U.'s sweeping rules for Big Tech mean for your life online"
+    <https://www.washingtonpost.com/technology/2023/08/30/eu-digital-
+    services-act-faq/>. /The Washington Post/. Retrieved 30 March 2025.
+80. *^ <#cite_ref-h670_80-0>* "How Europe's new digital law will change
+    the internet" <https://www.economist.com/the-economist-
+    explains/2023/08/24/how-europes-new-digital-law-will-change-the-
+    internet>. /The Economist/. 24 August 2023. Retrieved 30 March 2025.
+81. *^ <#cite_ref-r313_81-0>* Nunziato, Dawn Carla (22 August 2022).
+    "The Digital Services Act and the Brussels Effect on Platform
+    Content Moderation" <https://cjil.uchicago.edu/print-archive/
+    digital-services-act-and-brussels-effect-platform-content-
+    moderation>. /Chicago Journal of International Law/. Retrieved 30
+    March 2025.
+82. *^ <#cite_ref-p803_82-0>* Freedman, Robert (23 August 2023).
+    "Sweeping EU digital misinformation law takes effect" <https://
+    www.legaldive.com/news/digital-services-act-dsa-eu-misinformation-
+    law-propaganda-compliance-facebook-gdpr/691657/>. /Legal Dive/.
+    Retrieved 30 March 2025.
+83. *^ <#cite_ref-d321_83-0>* Husovec, Martin; Urban, Jennifer (21
+    February 2024), /Will the DSA have the Brussels Effect?/,
+    Verfassungsblog, doi <https://en.wikipedia.org/wiki/
+    Doi_(identifier)>:10.59704/79d561104269780d <https://
+    doi.org/10.59704%2F79d561104269780d>
+84. *^ <#cite_ref-c058_84-0>* Boadle, Anthony (2 May 2023). "Brazil
+    pushes back on big tech firms' campaign against 'fake news law'"
+    <https://www.reuters.com/world/americas/brazil-lawmakers-vote-
+    controversial-bill-clean-up-social-media-2023-05-02/>. /Reuters/.
+    Retrieved 30 March 2025. "The Brazilian proposal is shaping up to be
+    one of the world's strongest legislations on social media,
+    comparable to the European Union's Digital Services Act enacted last
+    year."
+85. *^ <#cite_ref-m580_85-0>* Bueno, Thales Martini; Canaan, Renan
+    Gadoni (2024). "The Brussels Effect in Brazil: Analysing the impact
+    of the EU digital services act on the discussion surrounding the
+    fake news bill" <https://doi.org/10.1016%2Fj.telpol.2024.102757>. /
+    Telecommunications Policy/. *48* (5): 102757. doi <https://
+    en.wikipedia.org/wiki/Doi_(identifier)>:10.1016/j.telpol.2024.102757
+    <https://doi.org/10.1016%2Fj.telpol.2024.102757>.
+
+
+External links
+
+[edit <https://en.wikipedia.org/w/index.php?
+title=Digital_Services_Act&action=edit&section=13>]
+
+  * "The Digital Services Act" <https://ec.europa.eu/info/digital-
+    services-act-ensuring-safe-and-accountable-online-environment_en>. /
+    European Commission/. 27 October 2022.
+  * "Infographics — Digital Services Act" <https://
+    www.consilium.europa.eu/en/infographics/digital-services-act/>. 30
+    September 2022. Retrieved 12 January 2025.
+  * Regulation (EU) 2022/2065 of the European Parliament and of the
+    Council of 19 October 2022 on a Single Market For Digital Services
+    and amending Directive 2000/31/EC (Digital Services Act) <https://
+    eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32022R2065>
+  * COM (2020) 825: Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT
+    AND OF THE COUNCIL on a Single Market For Digital Services (Digital
+    Services Act) and amending Directive 2000/31/EC <https://eur-
+    lex.europa.eu/legal-content/EN/HIS/?uri=CELEX:32022R2065>
+  * "Procedure 2020/0361(COD)" <https://oeil.secure.europarl.europa.eu/
+    oeil/popups/ficheprocedure.do?reference=2020/0361(COD)&l=en>. /ŒIL
+    <https://www.wikidata.org/wiki/Q386647>/.
+
+
+show
+
+Authority control databases <https://en.wikipedia.org/wiki/
+Help:Authority_control> Edit this at Wikidata <https://www.wikidata.org/
+wiki/Q100691575#identifiers>
+International	
+
+  * VIAF <https://viaf.org/viaf/444161881977634100002>
+
+National	
+
+  * Germany <https://d-nb.info/gnd/1231486538>
+
+show
+
+  * v <https://en.wikipedia.org/wiki/
+    Template:Legislation_of_the_European_Union>
+  * t <https://en.wikipedia.org/wiki/
+    Template_talk:Legislation_of_the_European_Union>
+  * e <https://en.wikipedia.org/wiki/Special:EditPage/
+    Template:Legislation_of_the_European_Union>
+
+European Union <https://en.wikipedia.org/wiki/European_Union> Judiciary
+and law of the European Union <https://en.wikipedia.org/wiki/
+European_Union_law>
+Judiciary	
+
+  * Court of Justice of the European Union <https://en.wikipedia.org/
+    wiki/Court_of_Justice_of_the_European_Union>
+  * European Court of Justice <https://en.wikipedia.org/wiki/
+    European_Court_of_Justice>
+      o members <https://en.wikipedia.org/wiki/
+        List_of_members_of_the_European_Court_of_Justice>
+      o Advocates General <https://en.wikipedia.org/wiki/
+        Advocate_general_(European_Union)>
+  * General Court <https://en.wikipedia.org/wiki/
+    General_Court_(European_Union)>
+  * Civil Service Tribunal <https://en.wikipedia.org/wiki/
+    European_Union_Civil_Service_Tribunal>
+  * European lawyer <https://en.wikipedia.org/wiki/European_lawyer>
+  * Relationship with ECHR <https://en.wikipedia.org/wiki/
+    European_Union_and_the_European_Convention_on_Human_Rights>
+  * Public Prosecutor <https://en.wikipedia.org/wiki/
+    European_Public_Prosecutor%27s_Office>
+  * European civil code <https://en.wikipedia.org/wiki/European_civil_code>
+
+Treaties <https://en.wikipedia.org/wiki/Treaties_of_the_European_Union>	
+
+  * Rome Treaty <https://en.wikipedia.org/wiki/Treaty_of_Rome>
+  * Merger Treaty <https://en.wikipedia.org/wiki/Merger_Treaty>
+  * Single European Act <https://en.wikipedia.org/wiki/Single_European_Act>
+  * Maastricht Treaty <https://en.wikipedia.org/wiki/Maastricht_Treaty>
+  * Amsterdam Treaty <https://en.wikipedia.org/wiki/Treaty_of_Amsterdam>
+  * Nice Treaty <https://en.wikipedia.org/wiki/Treaty_of_Nice>
+  * Lisbon Treaty <https://en.wikipedia.org/wiki/Treaty_of_Lisbon>
+  * Charter of Fundamental Rights <https://en.wikipedia.org/wiki/
+    Charter_of_Fundamental_Rights_of_the_European_Union>
+  * Opt-outs <https://en.wikipedia.org/wiki/Opt-outs_in_the_European_Union>
+
+Acts <https://en.wikipedia.org/wiki/Legal_Act_of_the_European_Union>	
+
+  * Acquis <https://en.wikipedia.org/wiki/Acquis_communautaire>:
+    Regulation <https://en.wikipedia.org/wiki/Regulation_(European_Union)>
+  * Directive <https://en.wikipedia.org/wiki/Directive_(European_Union)>
+      o Framework Directive <https://en.wikipedia.org/wiki/
+        Framework_Directive_(disambiguation)>
+  * Decision <https://en.wikipedia.org/wiki/Decision_(European_Union)>
+  * Recommendation <https://en.wikipedia.org/wiki/
+    Recommendation_(European_Union)>
+  * Digital Services Act
+
+Procedures	
+
+  * Ordinary legislative procedure <https://en.wikipedia.org/wiki/
+    European_Union_legislative_procedure#Ordinary_legislative_procedure>
+  * Consultation procedure <https://en.wikipedia.org/wiki/
+    Consultation_procedure>
+  * Consent procedure <https://en.wikipedia.org/wiki/Consent_procedure>
+  * Commission and Council acting alone <https://en.wikipedia.org/wiki/
+    European_Union_legislative_procedure#Commission_and_Council_acting_alone>
+  * Commission acting alone <https://en.wikipedia.org/wiki/
+    European_Union_legislative_procedure#Commission_acting_alone>
+
+Principles <https://en.wikipedia.org/wiki/
+General_principles_of_European_Union_law>
+and terms
+	
+
+  * Acquis communautaire <https://en.wikipedia.org/wiki/
+    Acquis_communautaire>
+      o EUR-Lex <https://en.wikipedia.org/wiki/EUR-Lex>
+  * Direct applicability <https://en.wikipedia.org/wiki/
+    Direct_applicability>
+  * Direct effect <https://en.wikipedia.org/wiki/
+    Direct_effect_of_European_Union_law>
+  * European labour law <https://en.wikipedia.org/wiki/European_labour_law>
+  * European Enforcement Order <https://en.wikipedia.org/wiki/
+    European_Enforcement_Order>
+  * Gold-plating <https://en.wikipedia.org/wiki/Gold-
+    plating_(European_Union_law)>
+  * Four freedoms <https://en.wikipedia.org/wiki/European_Single_Market>
+  * Home state regulation <https://en.wikipedia.org/wiki/
+    Home_state_regulation>
+  * Indirect effect <https://en.wikipedia.org/wiki/Indirect_effect>
+  * Incidental effect <https://en.wikipedia.org/wiki/Incidental_effect>
+  * Minimum harmonisation <https://en.wikipedia.org/wiki/
+    Minimum_harmonisation>
+  * Maximum harmonisation <https://en.wikipedia.org/wiki/
+    Maximum_harmonisation>
+  * Preliminary ruling <https://en.wikipedia.org/wiki/Preliminary_ruling>
+  * Precautionary principle <https://en.wikipedia.org/wiki/
+    Precautionary_principle>
+  * Principle of legal certainty <https://en.wikipedia.org/wiki/
+    Legal_certainty>
+  * Recasting <https://en.wikipedia.org/wiki/Recasting_(EU_Law)>
+  * Principle of conferral <https://en.wikipedia.org/wiki/
+    Principle_of_conferral>
+  * Proportionality <https://en.wikipedia.org/wiki/Proportionality_(law)>
+  * /Staatenverbund <https://en.wikipedia.org/wiki/Staatenverbund>/
+  * State liability <https://en.wikipedia.org/wiki/State_liability>
+  * Subsidiarity <https://en.wikipedia.org/wiki/Subsidiarity>
+  * Supremacy <https://en.wikipedia.org/wiki/Primacy_of_European_Union_law>
+
+Regulations	
+
+  * Council Regulation (EC) No. 1206/2001 <https://en.wikipedia.org/
+    wiki/Evidence_Regulation>
+  * Council Regulation (EC) No. 1348/2000 <https://en.wikipedia.org/
+    wiki/Service_Regulation>
+  * Customs Regulation 1383/2003 <https://en.wikipedia.org/wiki/
+    Customs_Regulation_1383/2003>
+  * Regulation (EC) No 261/2004 <https://en.wikipedia.org/wiki/
+    Flight_Compensation_Regulation>
+  * EU-Eco-regulation <https://en.wikipedia.org/wiki/EU-Eco-regulation>
+  * Commission Regulation (EC) No. 2257/94 <https://en.wikipedia.org/
+    wiki/Commission_Regulation_(EC)_No._2257/94>
+  * Commission Regulation (EU) No. 1170/2011 <https://en.wikipedia.org/
+    wiki/Commission_Regulation_(EU)_No._1170/2011>
+  * Customs Regulation 3295/94 <https://en.wikipedia.org/wiki/
+    Customs_Regulation_3295/94>
+  * Regulation on roaming charges <https://en.wikipedia.org/wiki/
+    European_Union_roaming_regulations>
+  * Brussels Regime <https://en.wikipedia.org/wiki/Brussels_Regime>
+  * CLP Regulation <https://en.wikipedia.org/wiki/CLP_Regulation>
+  * Regulation on Community designs <https://en.wikipedia.org/wiki/
+    Regulation_on_Community_designs>
+  * /Societas Europaea <https://en.wikipedia.org/wiki/Societas_Europaea>/
+  * European Union System for the Evaluation of Substances <https://
+    en.wikipedia.org/wiki/
+    European_Union_System_for_the_Evaluation_of_Substances>
+  * Commission Regulation (EC) No 474/2006 <https://en.wikipedia.org/
+    wiki/List_of_air_carriers_banned_in_the_European_Union>
+  * REACH <https://en.wikipedia.org/wiki/
+    Registration,_Evaluation,_Authorisation_and_Restriction_of_Chemicals>
+  * Rome II Regulation <https://en.wikipedia.org/wiki/Rome_II_Regulation>
+  * Rule of Law Conditionality Regulation <https://en.wikipedia.org/
+    wiki/Rule_of_Law_Conditionality_Regulation>
+
+Directives <https://en.wikipedia.org/wiki/
+List_of_European_Union_directives>	
+
+  * Good Clinical Practice Directive <https://en.wikipedia.org/wiki/
+    Good_Clinical_Practice_Directive>
+  * Data Protection Directive <https://en.wikipedia.org/wiki/
+    Data_Protection_Directive>
+  * ATEX directive <https://en.wikipedia.org/wiki/ATEX_directive>
+  * Battery Directive <https://en.wikipedia.org/wiki/Battery_Directive>
+  * Best available technology <https://en.wikipedia.org/wiki/
+    Best_available_technology>
+  * Biocidal Products Directive <https://en.wikipedia.org/wiki/
+    Biocidal_Products_Directive>
+  * Birds Directive <https://en.wikipedia.org/wiki/Birds_Directive>
+  * Capital Requirements Directives <https://en.wikipedia.org/wiki/
+    Capital_Requirements_Directives>
+  * Clinical Trials Directive <https://en.wikipedia.org/wiki/
+    Clinical_Trials_Directive>
+  * Computer Programs Directive <https://en.wikipedia.org/wiki/
+    Computer_Programs_Directive>
+  * Conditional Access Directive <https://en.wikipedia.org/wiki/
+    Conditional_Access_Directive>
+  * Copyright Duration Directive (93/98/EEC) <https://en.wikipedia.org/
+    wiki/Copyright_Duration_Directive>
+  * Copyright Term Directive (2006/116/EC) <https://en.wikipedia.org/
+    wiki/Copyright_Term_Directive>
+  * Cosmetics Directive <https://en.wikipedia.org/wiki/Cosmetics_Directive>
+  * Dangerous Substances Directive (67/548/EEC) <https://
+    en.wikipedia.org/wiki/Directive_67/548/EEC>
+  * Dangerous Preparations Directive <https://en.wikipedia.org/wiki/
+    Dangerous_Preparations_Directive>
+  * Data Retention Directive <https://en.wikipedia.org/wiki/
+    Data_Retention_Directive>
+  * Database Directive <https://en.wikipedia.org/wiki/Database_Directive>
+  * Database right <https://en.wikipedia.org/wiki/
+    Sui_generis_database_right>
+  * Directive 2000/43/EC on Anti-discrimination <https://
+    en.wikipedia.org/wiki/Race_Equality_Directive_2000>
+  * Directive establishing a general framework for equal treatment in
+    employment and occupation <https://en.wikipedia.org/wiki/
+    Equality_Framework_Directive_2000>
+  * Information Society Directive <https://en.wikipedia.org/wiki/
+    Information_Society_Directive> (first Copyright directive)
+  * Directive on Privacy and Electronic Communications <https://
+    en.wikipedia.org/wiki/
+    Privacy_and_Electronic_Communications_Directive_2002>
+  * Directive on the Promotion of the use of biofuels and other
+    renewable fuels for transport <https://en.wikipedia.org/wiki/
+    Directive_on_the_Promotion_of_the_use_of_biofuels_and_other_renewable_fuels_for_transport>
+  * Directive on the re-use of public sector information <https://
+    en.wikipedia.org/wiki/Directive_on_the_re-
+    use_of_public_sector_information>
+  * Directive on Electricity Production from Renewable Energy Sources
+    <https://en.wikipedia.org/wiki/
+    EU_Directive_on_Electricity_Production_from_Renewable_Energy_Sources_2001/77/EC>
+  * End of Life Vehicles Directive <https://en.wikipedia.org/wiki/
+    End_of_Life_Vehicles_Directive>
+  * CHP Directive <https://en.wikipedia.org/wiki/CHP_Directive>
+  * Directive on the energy performance of buildings <https://
+    en.wikipedia.org/wiki/Directive_on_the_energy_performance_of_buildings>
+  * Directive on the enforcement of intellectual property rights
+    <https://en.wikipedia.org/wiki/Enforcement_Directive>
+  * Directive 2004/38/EC on the right to move and reside freely
+    <https://en.wikipedia.org/wiki/Citizens%E2%80%99_Rights_Directive>
+  * Environmental liability directive <https://en.wikipedia.org/wiki/
+    Environmental_Liability_Directive_2004>
+  * European SEA Directive 2001/42/EC <https://en.wikipedia.org/wiki/
+    European_SEA_Directive_2001/42/EC>
+  * European units of measurement directives <https://en.wikipedia.org/
+    wiki/European_units_of_measurement_directives>
+  * Habitats Directive <https://en.wikipedia.org/wiki/Habitats_Directive>
+  * Integrated Pollution Prevention and Control <https://
+    en.wikipedia.org/wiki/Integrated_Pollution_Prevention_and_Control>
+  * Internal Market in Electricity Directive <https://en.wikipedia.org/
+    wiki/Internal_Market_in_Electricity_Directive>
+  * Landfill Directive <https://en.wikipedia.org/wiki/Landfill_Directive>
+  * Directive on the legal protection of biotechnological inventions
+    <https://en.wikipedia.org/wiki/
+    Directive_on_the_legal_protection_of_biotechnological_inventions>
+  * Directive on the legal protection of designs <https://
+    en.wikipedia.org/wiki/Directive_on_the_legal_protection_of_designs>
+  * Markets in Financial Instruments Directive <https://
+    en.wikipedia.org/wiki/Directive_2014/65/EU>
+  * Measuring Instruments Directive <https://en.wikipedia.org/wiki/
+    Measuring_Instruments_Directive>
+  * Medical Devices Directive <https://en.wikipedia.org/wiki/
+    Medical_Devices_Directive>
+  * Posted Workers Directive <https://en.wikipedia.org/wiki/
+    Posted_Workers_Directive_1996>
+  * Pressure Equipment Directive <https://en.wikipedia.org/wiki/
+    Pressure_Equipment_Directive_(EU)>
+  * Rental Directive <https://en.wikipedia.org/wiki/Rental_Directive>
+  * Resale Rights Directive <https://en.wikipedia.org/wiki/
+    Resale_Rights_Directive>
+  * Restriction of Hazardous Substances Directive <https://
+    en.wikipedia.org/wiki/Restriction_of_Hazardous_Substances_Directive>
+  * Satellite and Cable Directive <https://en.wikipedia.org/wiki/
+    Satellite_and_Cable_Directive>
+  * Directive on services in the internal market <https://
+    en.wikipedia.org/wiki/Services_in_the_Internal_Market_Directive_2006>
+  * Temporary and Agency Work Directive <https://en.wikipedia.org/wiki/
+    Temporary_Agency_Work_Directive_2008>
+  * Trade Marks Directive <https://en.wikipedia.org/wiki/
+    Trade_Marks_Directive>
+  * European Directive on Traditional Herbal Medicinal Products
+    <https://en.wikipedia.org/wiki/
+    European_Directive_on_Traditional_Herbal_Medicinal_Products>
+  * Unfair Commercial Practices Directive <https://en.wikipedia.org/
+    wiki/Unfair_Commercial_Practices_Directive_2005>
+  * Universal Service Directive <https://en.wikipedia.org/wiki/
+    Universal_Service_Directive_2002>
+  * Urban Waste Water Treatment Directive <https://en.wikipedia.org/
+    wiki/Urban_Waste_Water_Treatment_Directive>
+  * Waste Electrical and Electronic Equipment Directive <https://
+    en.wikipedia.org/wiki/
+    Waste_Electrical_and_Electronic_Equipment_Directive>
+  * Waste Incineration Directive <https://en.wikipedia.org/wiki/
+    Waste_Incineration_Directive>
+  * Waste framework directive <https://en.wikipedia.org/wiki/
+    Waste_framework_directive>
+  * Water Framework Directive <https://en.wikipedia.org/wiki/
+    Water_Framework_Directive>
+  * Working Time Directive <https://en.wikipedia.org/wiki/
+    Working_Time_Directive_2003>
+
+Cases	
+
+  * ECJ Rulings <https://en.wikipedia.org/wiki/
+    List_of_European_Court_of_Justice_rulings> (Caselex <https://
+    en.wikipedia.org/wiki/Caselex>): Allonby v Accrington and Rossendale
+    College <https://en.wikipedia.org/wiki/
+    Allonby_v_Accrington_and_Rossendale_College>
+  * Apostolides v Orams <https://en.wikipedia.org/wiki/Apostolides_v_Orams>
+  * Bosman <https://en.wikipedia.org/wiki/Bosman_ruling>
+  * Cassis de Dijon <https://en.wikipedia.org/wiki/Rewe-
+    Zentral_AG_v_Bundesmonopolverwaltung_f%C3%BCr_Branntwein>
+  * Chacón Navas v Eurest Colectividades SA <https://en.wikipedia.org/
+    wiki/Chac%C3%B3n_Navas_v_Eurest_Colectividades_SA>
+  * Chen <https://en.wikipedia.org/wiki/Chen_v_Home_Secretary>
+  * Ciarán Tobin <https://en.wikipedia.org/wiki/
+    Ciar%C3%A1n_Tobin_extradition_case>
+  * Coleman v Attridge Law <https://en.wikipedia.org/wiki/
+    Coleman_v_Attridge_Law>
+  * Costa v ENEL <https://en.wikipedia.org/wiki/Costa_v_ENEL>
+  * Factortame <https://en.wikipedia.org/wiki/
+    R_(Factortame_Ltd)_v_Secretary_of_State_for_Transport>
+  * Francovich <https://en.wikipedia.org/wiki/Francovich_v_Italy>
+  * Kamer van Koophandel en Fabrieken voor Amsterdam v Inspire Art Ltd
+    <https://en.wikipedia.org/wiki/
+    Kamer_van_Koophandel_en_Fabrieken_voor_Amsterdam_v_Inspire_Art_Ltd>
+  * Kolpak <https://en.wikipedia.org/wiki/Kolpak_ruling>
+  * Microsoft Corp. v. Commission <https://en.wikipedia.org/wiki/
+    Microsoft_Corp._v._Commission>
+  * Marleasing SA v La Comercial Internacional de Alimentacion SA
+    <https://en.wikipedia.org/wiki/
+    Marleasing_SA_v_La_Comercial_Internacional_de_Alimentacion_SA>
+  * Metock <https://en.wikipedia.org/wiki/
+    Metock_v_Minister_for_Justice,_Equality_and_Law_Reform>
+  * Nordsee <https://en.wikipedia.org/wiki/Nordsee_case>
+  * Palacios de la Villa v Cortefiel Servicios SA <https://
+    en.wikipedia.org/wiki/Palacios_de_la_Villa_v_Cortefiel_Servicios_SA>
+  * Peter Paul and Others v Bundesrepublik Deutschland <https://
+    en.wikipedia.org/wiki/
+    Peter_Paul_and_Others_v_Bundesrepublik_Deutschland>
+  * Procureur du Roi v Dassonville <https://en.wikipedia.org/wiki/
+    Procureur_du_Roi_v_Beno%C3%AEt_and_Gustave_Dassonville>
+  * Ralf Sieckmann v Deutsches Patent und Markenamt <https://
+    en.wikipedia.org/wiki/Ralf_Sieckmann_v_Deutsches_Patent_und_Markenamt>
+  * Tanja Kreil <https://en.wikipedia.org/wiki/Tanja_Kreil>
+  * Van Duyn v Home Office <https://en.wikipedia.org/wiki/
+    Van_Duyn_v_Home_Office>
+  * Van Gend en Loos <https://en.wikipedia.org/wiki/
+    Van_Gend_en_Loos_v_Nederlandse_Administratie_der_Belastingen>
+
+Fraud	
+
+  * Court of Auditors <https://en.wikipedia.org/wiki/
+    European_Court_of_Auditors>
+  * European Anti-Fraud Office <https://en.wikipedia.org/wiki/
+    European_Anti-Fraud_Office>
+  * Accountability in the European Union <https://en.wikipedia.org/wiki/
+    Accountability_in_the_European_Union>
+
+  * European Union portal <https://en.wikipedia.org/wiki/
+    Portal:European_Union>
+  * Law portal <https://en.wikipedia.org/wiki/Portal:Law>
+
+Retrieved from "https://en.wikipedia.org/w/index.php?
+title=Digital_Services_Act&oldid=1307569000 <https://en.wikipedia.org/w/
+index.php?title=Digital_Services_Act&oldid=1307569000>"
+Categories <https://en.wikipedia.org/wiki/Help:Category>:
+
+  * 2020 in law <https://en.wikipedia.org/wiki/Category:2020_in_law>
+  * 2020 in the European Union <https://en.wikipedia.org/wiki/
+    Category:2020_in_the_European_Union>
+  * E-commerce in the European Union <https://en.wikipedia.org/wiki/
+    Category:E-commerce_in_the_European_Union>
+  * European Digital Strategy <https://en.wikipedia.org/wiki/
+    Category:European_Digital_Strategy>
+  * Policies of the European Union <https://en.wikipedia.org/wiki/
+    Category:Policies_of_the_European_Union>
+  * European Union regulations <https://en.wikipedia.org/wiki/
+    Category:European_Union_regulations>
+  * Internet censorship in Europe <https://en.wikipedia.org/wiki/
+    Category:Internet_censorship_in_Europe>
+  * Data laws of Europe <https://en.wikipedia.org/wiki/
+    Category:Data_laws_of_Europe>
+
+Hidden categories:
+
+  * Webarchive template wayback links <https://en.wikipedia.org/wiki/
+    Category:Webarchive_template_wayback_links>
+  * CS1 German-language sources (de) <https://en.wikipedia.org/wiki/
+    Category:CS1_German-language_sources_(de)>
+  * Articles with short description <https://en.wikipedia.org/wiki/
+    Category:Articles_with_short_description>
+  * Short description is different from Wikidata <https://
+    en.wikipedia.org/wiki/
+    Category:Short_description_is_different_from_Wikidata>
+  * Use dmy dates from August 2023 <https://en.wikipedia.org/wiki/
+    Category:Use_dmy_dates_from_August_2023>
+  * Wikipedia articles in need of updating from January 2023 <https://
+    en.wikipedia.org/wiki/
+    Category:Wikipedia_articles_in_need_of_updating_from_January_2023>
+  * All Wikipedia articles in need of updating <https://
+    en.wikipedia.org/wiki/
+    Category:All_Wikipedia_articles_in_need_of_updating>
+
+  * This page was last edited on 24 August 2025, at 11:35 (UTC).
+  * Text is available under the Creative Commons Attribution-ShareAlike
+    4.0 License <https://en.wikipedia.org/wiki/
+    Wikipedia:Text_of_the_Creative_Commons_Attribution-
+    ShareAlike_4.0_International_License>; additional terms may apply.
+    By using this site, you agree to the Terms of Use <https://
+    foundation.wikimedia.org/wiki/Special:MyLanguage/
+    Policy:Terms_of_Use> and Privacy Policy <https://
+    foundation.wikimedia.org/wiki/Special:MyLanguage/
+    Policy:Privacy_policy>. Wikipedia® is a registered trademark of the
+    Wikimedia Foundation, Inc. <https://wikimediafoundation.org/>, a
+    non-profit organization.
+
+  * Privacy policy <https://foundation.wikimedia.org/wiki/
+    Special:MyLanguage/Policy:Privacy_policy>
+  * About Wikipedia <https://en.wikipedia.org/wiki/Wikipedia:About>
+  * Disclaimers <https://en.wikipedia.org/wiki/Wikipedia:General_disclaimer>
+  * Contact Wikipedia <https://en.wikipedia.org/wiki/Wikipedia:Contact_us>
+  * Code of Conduct <https://foundation.wikimedia.org/wiki/
+    Special:MyLanguage/Policy:Universal_Code_of_Conduct>
+  * Developers <https://developer.wikimedia.org/>
+  * Statistics <https://stats.wikimedia.org/#/en.wikipedia.org>
+  * Cookie statement <https://foundation.wikimedia.org/wiki/
+    Special:MyLanguage/Policy:Cookie_statement>
+  * Mobile view <https://en.m.wikipedia.org/w/index.php?
+    title=Digital_Services_Act&mobileaction=toggle_view_mobile>
+  * Edit preview settings <#>
+
+  *
+    Wikimedia Foundation
+
+    <https://www.wikimedia.org/>
+  *
+    Powered by MediaWiki
+
+    <https://www.mediawiki.org/>
+
+Search
+Search
+
+Toggle the table of contents
+Digital Services Act
+<#> <#> <#> <#> <#> <#> <#>
+20 languages
+
+Add topic <#>
+
+<https://en.wikipedia.org/wiki/Digital_Services_Act?action=edit>
