@@ -7,16 +7,6 @@ export type FeatureRequest = {
   regions?: Region[];
 };
 
-export type ProcessFeatureResponse = {
-  status: string;
-  uuid: string;
-  report: {
-    feature: string;
-    description: string;
-    regions_flagged: Array<Region & { available: boolean; reasoning: string }>;
-  };
-};
-
 type HumanFeedbackPayload = { uuid: string; region: string; feedback: string };
 
 export function Labeled({

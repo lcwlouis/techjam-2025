@@ -2,6 +2,7 @@ from fastapi import FastAPI
 from typing import List, Optional
 from pydantic import BaseModel
 from fastapi import Body
+from fastapi.middleware.cors import CORSMiddleware
 import uvicorn
 import logging
 from rags.light_rag.ingest import ingest
@@ -11,6 +12,18 @@ from agents.tools.ingest_utils import ingest_files_to_region
 
 
 app = FastAPI()
+
+ALLOWED_ORIGINS = [
+    "http://localhost:3000"  # React dev server
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=ALLOWED_ORIGINS,
+    allow_credentials=True,      # if you use cookies/auth
+    allow_methods=["*"],         # or ["GET","POST","OPTIONS"]
+    allow_headers=["*"],         # or ["Content-Type","Authorization"]
+)
 
 # Simple logger so we can see a startup message in stdout
 logging.basicConfig(level=logging.INFO)
@@ -129,6 +142,63 @@ async def process_feature(payload: FeatureRequest = Body(...)):
       "feature": feature,
       "description": feature_description,
       "regions_flagged": regions_checked,
+    },
+  }
+
+@app.post("/process_feature_demo")
+async def process_feature(payload: FeatureRequest = Body(...)):
+  """
+  Process a feature with an optional list of regions to check.
+
+  Example body:
+  {
+    "feature": "f1",
+    "feature_description": "desc",
+    "regions": [{"country": "US", "state": "CA"}, {"country": "CA"}] # optional if not provided will search all regions
+  }
+  """
+  feature = payload.feature
+  feature_description = payload.feature_description
+  regions = payload.regions
+
+  if not regions:
+    regions = LIST_OF_AVAILABLE_REGIONS
+
+  regions_checked = []
+  for r in (regions or []):
+    # r may be a dict (from LIST_OF_AVAILABLE_REGIONS or raw JSON) or a Pydantic Region model.
+    # Only call .dict() on Pydantic models; copy dicts so we don't mutate the originals.
+    if isinstance(r, dict):
+      rd = r.copy()
+    else:
+      rd = r.dict()
+    country = rd.get("country")
+    state = rd.get("state") or ""  # normalize None -> ""
+    # verify if region is within available list (compare normalized country/state)
+    is_available = any(
+      (item.get("country") == country and (item.get("state") or "") == state)
+      for item in LIST_OF_AVAILABLE_REGIONS
+    )
+    if is_available:
+      rd["available"] = True
+      rd["reasoning"] = (
+        f"Stand-in reasoning for feature '{feature}' in {country}"
+        + (f"/{state}" if state else "")
+      )
+    else:
+      rd["available"] = False
+      rd["reasoning"] = (
+        f"Region {country}" + (f"/{state}" if state else "") + " is not available"
+      )
+    regions_checked.append(rd)
+
+  return {
+    "status": "feature processed",
+    "uuid": "some-unique-identifier",
+    "report": {
+      "feature": "test feature from demo",
+      "description": "test description from demo",
+      "regions_flagged": "regions_checked",
     },
   }
 

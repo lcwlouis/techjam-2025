@@ -17,17 +17,18 @@ type ProcessFeatureResponse = {
 export default function SubmitArea({
   feature,
   setFeature,
-  description,
-  setDescription,
+  featureDescription,
+  setFeatureDescription,
   regionsParsed,
   isSubmitting,
   setIsSubmitting,
+  onSubmit,
 }: {
   apiBase: string;
   feature: string;
   setFeature: (v: string) => void;
-  description: string;
-  setDescription: (v: string) => void;
+  featureDescription: string;
+  setFeatureDescription: (v: string) => void;
   regionsText: string;
   setRegionsText: (v: string) => void;
   regionsParsed: Region[] | null;
@@ -35,6 +36,7 @@ export default function SubmitArea({
   setError: (v: string | null) => void;
   isSubmitting: boolean;
   setIsSubmitting: (v: boolean) => void;
+  onSubmit: () => Promise<void>;
 }) {
   const [regions, setRegions] = React.useState<
     { country: string; state?: string }[]
@@ -53,8 +55,8 @@ export default function SubmitArea({
       </Labeled>
       <Labeled label="Feature Description">
         <textarea
-          value={description}
-          onChange={(e) => setDescription(e.target.value)}
+          value={featureDescription}
+          onChange={(e) => setFeatureDescription(e.target.value)}
           rows={6}
           className="w-full px-3 py-2 rounded-xl bg-neutral-800 border border-neutral-700 outline-none"
           placeholder="Feature description goes here..."
@@ -77,7 +79,7 @@ export default function SubmitArea({
       <div>
         <button
           onClick={() => {
-            setIsSubmitting(true); /* TODO: handle submission */
+            onSubmit().finally(() => setIsSubmitting(false));
           }}
           disabled={isSubmitting}
           className="px-4 py-2 rounded-xl bg-indigo-500/90 hover:bg-indigo-500 transition disabled:opacity-50"
