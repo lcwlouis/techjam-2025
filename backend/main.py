@@ -9,6 +9,8 @@ from rags.light_rag.ingest import ingest
 from rags.light_rag.retrieve import lightrag_retrieve
 from rags.light_rag.utils import build_region_code
 from agents.tools.ingest_utils import ingest_files_to_region
+from rags.naive_rag.ingest import ingest_file_into_naiverag
+from rags.naive_rag.retrieve import naiverag_retrieve_sync
 
 
 app = FastAPI()
@@ -257,6 +259,20 @@ async def demo_lightrag_test():
         "retrieval_result": resp
     }
 
+@app.get("/demo_naiverag_ingest")
+async def inject_naiverag(): 
+  file_name = "USCA_SB976.txt"   
+  ingest_file_into_naiverag(file_name, region="USCA")
+
+@app.get("/demo_naiverag_retrieve")
+async def retrieve_naiverag(): 
+    query = "parental consent"
+    region = "USCA"  
+    k = 3 
+    serialized = naiverag_retrieve_sync({"query": query, "region": region, "k": k})
+    return {
+        "content": serialized
+    }
 
 # Starting the server
 if __name__ == "__main__":
