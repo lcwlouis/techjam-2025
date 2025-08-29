@@ -259,10 +259,44 @@ async def demo_lightrag_test():
         "retrieval_result": resp
     }
 
-@app.get("/demo_naiverag_ingest")
+@app.get("/demo_naiverag_ingest_EU")
+async def inject_naiverag(): 
+  file_name = "digital_services_act_wiki.txt"   
+  ingest_file_into_naiverag(file_name, region="EU")
+
+@app.get("/demo_naiverag_ingest_USCA")
 async def inject_naiverag(): 
   file_name = "USCA_SB976.txt"   
   ingest_file_into_naiverag(file_name, region="USCA")
+
+@app.get("/demo_naiverag_ingest_USFL")
+async def inject_naiverag(): 
+  file_name = "florida_state_law.txt"   
+  ingest_file_into_naiverag(file_name, region="USFL")
+
+@app.get("/demo_naiverag_ingest_USUT")
+async def inject_naiverag(): 
+  file_name = "Utah Social Media Regulation Act - Wikipedia.html"   
+  ingest_file_into_naiverag(file_name, region="USUT")
+
+@app.get("/demo_naiverag_ingest_US")
+async def inject_naiverag(): 
+  file_name = "US law on reporting child sexual abuse content to NCMEC.txt"   
+  ingest_file_into_naiverag(file_name, region="US")
+
+@app.get("/demo_naiverag_ingest_all")
+async def injest_naiverag_all():
+  file_name = "digital_services_act_wiki.txt"   
+  ingest_file_into_naiverag(file_name, region="EU")
+  file_name = "USCA_SB976.txt"   
+  ingest_file_into_naiverag(file_name, region="USCA")
+  file_name = "florida_state_law.txt"   
+  ingest_file_into_naiverag(file_name, region="USFL")
+  file_name = "Utah Social Media Regulation Act - Wikipedia.html"   
+  ingest_file_into_naiverag(file_name, region="USUT")
+  file_name = "US law on reporting child sexual abuse content to NCMEC.txt"   
+  ingest_file_into_naiverag(file_name, region="US")
+
 
 @app.get("/demo_naiverag_retrieve")
 async def retrieve_naiverag(): 
@@ -273,6 +307,7 @@ async def retrieve_naiverag():
     return {
         "content": serialized
     }
+
 
 # ------------------------------ TERMINOLOGY EXPANSION --------------------------------
 from helper_functions import populate
@@ -319,7 +354,8 @@ async def run_jury_pipeline(payload: dict = Body(...)):
     
     region = payload["region"]
 
-    naiverag_context = naiverag_retrieve_sync({ "query":description, "region":region, "k":5})
+    naiverag_context = naiverag_retrieve_sync({ "query":description, "region":"US/UT", "k":5})
+    print(naiverag_context)
     session_id = str(uuid.uuid4())
     user_id = "demo-user"
     app_name = "jury-demo"
@@ -412,13 +448,21 @@ import json
 from sse_starlette.sse import EventSourceResponse
 import json
 
+from rags.light_rag.utils import build_region_code  # you already import this above
+
 @app.post("/demo_agent_stream")
 async def run_jury_pipeline_stream(payload: dict = Body(...)):
     feature = expand(payload["feature_name"])
     description = expand(payload["feature_description"])
-    region = payload["region"]
-    country = region.get("country")
-    state = region.get("state", None)
+
+    # region in payload is a dict like {"country": "US", "state": "CA"}
+    region = payload.get("region") or {}
+    country = (region.get("country") or "").strip()
+    state = (region.get("state") or "").strip()  # normalize None -> ""
+
+    # 👉 Build the region code string required by NaiveRAG (e.g., "USCA" or "US")
+    region_code = build_region_code(country, state) if country else None
+    # e.g., build_region_code("US","CA") -> "USCA"; build_region_code("EU","") -> "EU"
 
     session_id = str(uuid.uuid4())
     user_id = "demo-user"
@@ -431,46 +475,63 @@ async def run_jury_pipeline_stream(payload: dict = Body(...)):
         state={},
     )
 
+    # 👉 Safely call NaiveRAG only when we have a region_code string
+    naive_ctx = ""
+    if region_code:
+        naive_ctx = naiverag_retrieve_sync({
+            "query": description,
+            "region": region_code,   # MUST be a string
+            "k": 5
+        }) or ""
+
     user_query = types.Content(
         role="user",
         parts=[types.Part(
-            text=f"Feature: {feature}\nDescription: {description}\nTarget country: {country}\nTarget state: {state or 'N/A'}"
+            text=(
+                f"Feature: {feature}\n"
+                f"Description: {description}\n"
+                f"Target country: {country or 'N/A'}\n"
+                f"Target state: {state or 'N/A'}\n"
+                f"{'Relevant legislation:\n' +  naive_ctx}"
+            )
         )],
     )
 
     runner = Runner(agent=root_agent, session_service=session_service, app_name=app_name)
 
     async def event_generator():
+        # Show a retrieval line in the chat so judges see RAG happening
+        if region_code:
+            yield {"event": "message", "data": json.dumps({
+                "author": "Context Retriever",
+                "final": False,
+                "text": f"Retrieved {len(naive_ctx)} law snippets for {region_code}."
+            })}
+
         last_text = None
         async for event in runner.run_async(
             user_id=user_id,
             session_id=session_id,
             new_message=user_query,
         ):
-        # safe extraction
             text = ""
             if event.content and event.content.parts:
                 part = event.content.parts[0]
                 if hasattr(part, "text") and part.text is not None:
                     text = str(part.text)
 
-        # skip blanks
             if not text or not text.strip():
                 continue
-
-        # skip duplicates
             if text == last_text:
                 continue
             last_text = text
 
-            msg = {
+            yield {"event": "message", "data": json.dumps({
                 "author": event.author,
                 "final": event.is_final_response(),
                 "text": text,
-            }
-            yield {"event": "message", "data": json.dumps(msg)}
+            })}
 
-        # after loop ends → send final report
         session = await session_service.get_session(
             app_name=app_name,
             user_id=user_id,
@@ -484,10 +545,12 @@ async def run_jury_pipeline_stream(payload: dict = Body(...)):
                 "JuryAgent4": session.state.get("jury_report_4"),
             },
             "final_report": session.state.get("final_report"),
+            "rag": {"region_code": region_code, "naive_count": len(naive_ctx)},
         }
         yield {"event": "done", "data": json.dumps(final_output)}
 
     return EventSourceResponse(event_generator())
+
 
 # Starting the server
 if __name__ == "__main__":

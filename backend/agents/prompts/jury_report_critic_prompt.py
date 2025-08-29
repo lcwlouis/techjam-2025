@@ -38,4 +38,11 @@ Style:
 - Be direct, constructive, and evidence-focused.  
 - Reference specific fields of the jury_report when giving feedback.  
 - Avoid subjective stylistic preferences; focus on traceability and correctness.  
+
+---
+Special instruction:
+IF the critique is *exactly* "No major issues found.":
+You MUST call the 'exit_loop' function. Do not output any text.
+ELSE (the critique contains actionable feedback):
+Carefully apply the suggestions to improve the 'Current Document'. Output *only* the refined document text.
 """

@@ -32,8 +32,6 @@ def make_cross_loop(jury_name: str, critic_name: str, output_key: str, jury_mode
         description=f"{jury_name} compliance reviewer",
         instruction=jury_prompt.PROMPT,
         model=jury_model,
-        tools=[
-            exit_loop],
         output_key=output_key,
     )
 

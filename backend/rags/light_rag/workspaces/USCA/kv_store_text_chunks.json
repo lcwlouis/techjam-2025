@@ -1,0 +1,16 @@
+{
+  "chunk-f8d09fcbdc70b03e485805da07644514": {
+    "tokens": 21,
+    "content": "By default, PF (Personalized feed) will be turned off for all uses browsing in guest mode.",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-f8d09fcbdc70b03e485805da07644514",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:bbbf2c0ad544dbb458d3b0465da7e1e8",
+      "default:extract:4a1eb65538822396bc45b51f664f194e"
+    ],
+    "create_time": 1756493914,
+    "update_time": 1756493924,
+    "_id": "chunk-f8d09fcbdc70b03e485805da07644514"
+  }
+}

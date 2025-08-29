@@ -4,19 +4,22 @@ import React, { useState, useEffect, useRef } from "react";
 import Pipeline from "./components/pipeline-instructions/pipeline-instructions";
 import SettingsPanel from "./components/settings-panel/settings-panel";
 import SubmitArea from "./components/submission-area/submission-area";
-import {
-  Row,
-} from "./components/card-components/card-components";
+import { Row } from "./components/card-components/card-components";
 
 import { fetchEventSource } from "@microsoft/fetch-event-source"; // npm i @microsoft/fetch-event-source
 
 export default function TechJamPage() {
+  const abortRef = useRef<AbortController | null>(null);
+  const inFlightRef = useRef(false);
   const [apiBase, setApiBase] = useState(
     process.env.NEXT_PUBLIC_API_BASE || "http://localhost"
   );
   const [feature_name, setFeatureName] = useState("");
   const [feature_description, setFeatureDescription] = useState("");
-  const [region, setRegion] = useState<{ country: string; state?: string } | null>(null);
+  const [region, setRegion] = useState<{
+    country: string;
+    state?: string;
+  } | null>(null);
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -31,51 +34,158 @@ export default function TechJamPage() {
   // auto-scroll to bottom when new messages arrive
   useEffect(() => {
     if (chatContainerRef.current) {
-      chatContainerRef.current.scrollTop = chatContainerRef.current.scrollHeight;
+      chatContainerRef.current.scrollTop =
+        chatContainerRef.current.scrollHeight;
     }
   }, [chatLog]);
 
-  // --- Streaming version of processFeature ---
-  async function streamProcessFeature() {
-    if (isSubmitting) return;
+  function colorFromString(s: string) {
+    let hash = 0;
+    for (let i = 0; i < s.length; i++)
+      hash = s.charCodeAt(i) + ((hash << 5) - hash);
+    const hue = Math.abs(hash) % 360;
+    return {
+      text: `hsl(${hue} 80% 60%)`,
+      border: `hsl(${hue} 80% 50%)`,
+      bg: `hsl(${hue} 80% 50% / 0.10)`,
+      dot: `hsl(${hue} 80% 50%)`,
+    };
+  }
+
+  // // --- Streaming version of processFeature ---
+  // async function streamProcessFeature() {
+  //   if (isSubmitting) return;
+  //   setIsSubmitting(true);
+  //   setError(null);
+  //   setChatLog([]);
+  //   setFinalOutput(null);
+
+  //   try {
+  //     console.log(feature_name);
+  //     console.log(feature_description);
+  //     console.log(region);
+  //     await fetchEventSource(`${apiBase}/demo_agent_stream`, {
+  //       method: "POST",
+  //       headers: {
+  //         "Content-Type": "application/json",
+  //       },
+  //       body: JSON.stringify({
+  //         feature_name,
+  //         feature_description,
+  //         region: region ?? {},
+  //       }),
+  //       async onmessage(ev) {
+  //         if (ev.event === "message") {
+  //           const msg = JSON.parse(ev.data);
+  //           setChatLog((prev) => [...prev, msg]);
+  //         }
+  //         if (ev.event === "done") {
+  //           const final = JSON.parse(ev.data);
+  //           setFinalOutput(final);
+  //           console.log(final);
+  //         }
+  //       },
+  //       onerror(err) {
+  //         console.error("SSE error", err);
+  //         setError("Streaming connection failed");
+  //         throw err;
+  //       },
+  //     });
+  //   } catch (e: any) {
+  //     setError(e.message || "Unknown error");
+  //   } finally {
+  //     setIsSubmitting(false);
+  //   }
+  // }
+
+  async function streamProcessFeature(e?: React.SyntheticEvent) {
+    e?.preventDefault?.();
+
+    if (inFlightRef.current || isSubmitting) return; // hard guard
+    inFlightRef.current = true;
     setIsSubmitting(true);
     setError(null);
     setChatLog([]);
     setFinalOutput(null);
 
+    // ensure any previous stream is closed
+    abortRef.current?.abort();
+    abortRef.current = new AbortController();
+
     try {
       await fetchEventSource(`${apiBase}/demo_agent_stream`, {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
+        headers: { "Content-Type": "application/json" },
+        // Optional: add a run_id to correlate one stream instance
         body: JSON.stringify({
           feature_name,
           feature_description,
           region: region ?? {},
+          run_id: crypto.randomUUID(),
         }),
+        signal: abortRef.current.signal,
+
+        // (optional but nice) block opening if tab is hidden to avoid weird replays
+        openWhenHidden: false,
+
+        onopen(resp) {
+          if (
+            !resp.ok ||
+            !resp.headers.get("content-type")?.includes("text/event-stream")
+          ) {
+            throw new Error(`SSE failed: ${resp.status} ${resp.statusText}`);
+          }
+        },
+
         async onmessage(ev) {
           if (ev.event === "message") {
             const msg = JSON.parse(ev.data);
             setChatLog((prev) => [...prev, msg]);
+            return;
           }
           if (ev.event === "done") {
             const final = JSON.parse(ev.data);
             setFinalOutput(final);
+
+            // ✅ proactively terminate the stream on client side
+            abortRef.current?.abort();
+            return;
           }
         },
+
+        onclose() {
+          // Normal close by server: we just fall through to finally{}
+        },
+
         onerror(err) {
-          console.error("SSE error", err);
-          setError("Streaming connection failed");
+          // Library will retry by default on network errors — but we don't want retries after "done"
+          // Throwing here keeps the catch/finally flow consistent when there is a true error.
           throw err;
         },
       });
     } catch (e: any) {
-      setError(e.message || "Unknown error");
+      // Only show an error if we didn't abort intentionally after 'done'
+      if (!abortRef.current || !abortRef.current.signal.aborted) {
+        setError(e?.message || "Streaming connection failed");
+      }
     } finally {
+      inFlightRef.current = false;
       setIsSubmitting(false);
+      // If this stream instance is over, clear the controller
+      abortRef.current = null;
     }
   }
+
+  // Abort if component unmounts or before page unload/reload
+  useEffect(() => {
+    return () => abortRef.current?.abort();
+  }, []);
+
+  useEffect(() => {
+    const beforeUnload = () => abortRef.current?.abort();
+    window.addEventListener("beforeunload", beforeUnload);
+    return () => window.removeEventListener("beforeunload", beforeUnload);
+  }, []);
 
   return (
     <div className="min-h-screen bg-geo-gavel-grid text-slate-100 p-6">
@@ -96,11 +206,11 @@ export default function TechJamPage() {
           setFeatureDescription={setFeatureDescription}
           region={region}
           setRegion={setRegion}
-          setResp={() => {}}   // not used in streaming version
+          setResp={() => {}} // not used in streaming version
           setError={setError}
           isSubmitting={isSubmitting}
           setIsSubmitting={setIsSubmitting}
-          onSubmit={streamProcessFeature}  // 👈 swap in streaming
+          onSubmit={streamProcessFeature} // 👈 swap in streaming
         />
 
         {/* Chat log */}
@@ -113,7 +223,9 @@ export default function TechJamPage() {
             >
               {chatLog.map((msg, idx) => (
                 <div key={idx} className="p-2 rounded bg-neutral-900">
-                  <span className="text-indigo-400 font-semibold">{msg.author}:</span>{" "}
+                  <span className="text-indigo-400 font-semibold">
+                    {msg.author} {idx}:
+                  </span>
                   <span>{msg.text}</span>
                 </div>
               ))}
@@ -127,13 +239,45 @@ export default function TechJamPage() {
             <h2 className="text-xl font-medium">Final Report</h2>
             <div className="grid gap-1">
               <Row label="Final Report" value={finalOutput.final_report} />
+              <Row label="Feature" value={finalOutput.final_report.feature} />
+              <Row
+                label="Feature Description"
+                value={finalOutput.final_report.description}
+              />
             </div>
             <div className="grid gap-3">
               <h3 className="font-medium">Jurors</h3>
               <div className="grid gap-3">
-                {Object.entries(finalOutput.jurors).map(([juror, value], idx) => (
-                  <Row key={idx} label={juror} value={value ? String(value) : "N/A"} />
-                ))}
+                <h3 className="font-medium">Jurors</h3>
+                <div className="grid gap-3">
+                  {Object.entries(finalOutput.jurors).map(([juror, value]) => {
+                    const c = colorFromString(juror);
+                    return (
+                      <div
+                        key={juror}
+                        className="rounded-xl p-3 border"
+                        style={{ borderColor: c.border, backgroundColor: c.bg }}
+                      >
+                        <div className="flex items-center gap-2">
+                          <span
+                            aria-hidden
+                            className="inline-block w-2.5 h-2.5 rounded-full"
+                            style={{ backgroundColor: c.dot }}
+                          />
+                          <span
+                            className="font-medium"
+                            style={{ color: c.text }}
+                          >
+                            {juror}
+                          </span>
+                        </div>
+                        <div className="mt-1 text-sm text-neutral-200">
+                          {value ? String(value) : "N/A"}
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
               </div>
             </div>
           </section>
