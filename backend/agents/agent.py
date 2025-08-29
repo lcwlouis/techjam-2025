@@ -15,8 +15,7 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 deepseek_model  = LiteLlm(model="deepseek/deepseek-chat", api_key=os.getenv("DEEPSEEK_API_KEY"))
-openai_model = LiteLlm(model="gpt-5-mini", api_key=os.getenv("OPENAI_API_KEY"),
-)
+openai_model = LiteLlm(model="gpt-5-mini", api_key=os.getenv("OPENAI_API_KEY"),)
 
 lightrag_retrieve_tool = LangchainTool(lightrag_retrieve_sync)
 naiverag_retrieve_tool = LangchainTool(naiverag_retrieve_sync)

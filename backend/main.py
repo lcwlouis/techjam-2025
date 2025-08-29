@@ -293,6 +293,68 @@ async def update_terminology_table(new_terms: dict = Body(...)):
     """
     populate.add_new_terms(new_terms)
     return {"status": "terminology table updated", "updated_terms": new_terms}
+  
+import uuid
+from google.adk.runners import Runner
+from google.adk.sessions import InMemorySessionService
+from agents.agent import root_agent
+from google.genai import types
+from helper_functions.populate import expand
+session_service = InMemorySessionService()
+
+
+# ------------------------------ AGENT.PY TESTER --------------------------------
+@app.post("/demo_agent")
+async def run_jury_pipeline(payload: dict = Body(...)):
+    """
+    a JSON body
+    {
+      "feature_name": "Content visibility lock with NSP for EU DSA",
+      "feature_description": "To meet the transparency expectations of the EU Digital Services Act",
+      "region": "EU"
+    }
+    """
+    feature = expand(payload["feature_name"])
+    description = expand(payload["feature_description"])
+    region = payload["region"]
+
+    session_id = str(uuid.uuid4())
+    user_id = "demo-user"
+    app_name = "jury-demo"
+
+    
+    await session_service.create_session(
+        app_name=app_name,
+        user_id=user_id,
+        session_id=session_id,
+        state={},  # optional initial state
+    )
+
+    user_query = types.Content(
+        role="user",
+        parts=[
+            types.Part(
+                text=f"Feature: {feature}\nDescription: {description}\nTarget Region: {region}"
+            )
+        ],
+    )
+
+    runner = Runner(agent=root_agent, session_service=session_service, app_name=app_name)
+
+    final_output = {"jurors": {}, "final_report": {}}
+    async for event in runner.run_async(
+        user_id=user_id,
+        session_id=session_id,
+        new_message=user_query,
+    ):
+        if event.is_final_response():
+            final_output["final_report"] = event.content.model_dump()
+        else:
+            final_output["jurors"][event.author] = event.content.model_dump()
+                
+    final_output["jurors"] = list(final_output["jurors"].values())
+
+    return final_output
 
 # Starting the server
 if __name__ == "__main__":
