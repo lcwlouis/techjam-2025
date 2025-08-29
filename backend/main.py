@@ -15,7 +15,8 @@ from rags.naive_rag.retrieve import naiverag_retrieve_sync
 app = FastAPI()
 
 ALLOWED_ORIGINS = [
-    "http://localhost:3000"  # React dev server
+    "http://localhost:3000",  # React dev server
+    "http://localhost"       # backend base
 ]
 
 app.add_middleware(
@@ -36,7 +37,7 @@ logger = logging.getLogger("techjam")
 # logger.info("Ingestion complete.")
 
 # Static Data to be moved elsewhere
-PORT = 8000
+PORT = 80
 class Region(BaseModel):
   country: str
   state: Optional[str] = None
@@ -310,14 +311,15 @@ async def run_jury_pipeline(payload: dict = Body(...)):
     {
       "feature_name": "Content visibility lock with NSP for EU DSA",
       "feature_description": "To meet the transparency expectations of the EU Digital Services Act",
-      "region": "EU"
+      "region": { "country": "US", "state": "CA" }
     }
     """
     feature = expand(payload["feature_name"])
     description = expand(payload["feature_description"])
+    
     region = payload["region"]
+
     naiverag_context = naiverag_retrieve_sync({ "query":description, "region":region, "k":5})
-    print(naiverag_context)
     session_id = str(uuid.uuid4())
     user_id = "demo-user"
     app_name = "jury-demo"
@@ -349,13 +351,143 @@ async def run_jury_pipeline(payload: dict = Body(...)):
         new_message=user_query,
     ):
         if event.is_final_response():
-            final_output["final_report"] = event.content.model_dump()
+            logger.info(f"**Hi I am in IF {event.author}")
         else:
-            final_output["jurors"][event.author] = event.content.model_dump()
+            logger.info(f"##Hi I am in else {event.author}")
+            
+    session = await session_service.get_session(
+        app_name=app_name,
+        user_id=user_id,
+        session_id=session_id,
+    )
                 
-    final_output["jurors"] = list(final_output["jurors"].values())
+    final_output = {
+        "jurors": {
+            "JuryAgent1": session.state.get("jury_report_1"),
+            "JuryAgent2": session.state.get("jury_report_2"),
+            "JuryAgent3": session.state.get("jury_report_3"),
+            "JuryAgent4": session.state.get("jury_report_4"),
+        },
+        "final_report": session.state.get("final_report"),
+    }
 
     return final_output
+  
+# ------------------------------ FRONT-END TESTER --------------------------------
+@app.post("/demo_front")
+async def run_jury_pipeline(payload: dict = Body(...)):
+    """
+    a JSON body
+    {
+      "feature_name": "Content visibility lock with NSP for EU DSA",
+      "feature_description": "To meet the transparency expectations of the EU Digital Services Act",
+      "region": { "country": "US", "state": "CA" }
+    }
+    """
+    feature = expand(payload["feature_name"])
+    description = expand(payload["feature_description"])
+    
+    region = payload["region"]
+    country = region.get("country")
+    state = region.get("state", None)
+    
+                
+    final_output = {
+        "jurors": {
+            "JuryAgent1": str(description),
+            "JuryAgent2": str(country),
+            "JuryAgent3": "good",
+            "JuryAgent4": str(state),
+        },
+        "final_report": str(feature),
+    }
+
+    return final_output
+  
+# ------------------------------ CHAT TESTER --------------------------------
+from sse_starlette.sse import EventSourceResponse
+import json
+
+# ------------------------------ CHAT TESTER --------------------------------
+from sse_starlette.sse import EventSourceResponse
+import json
+
+@app.post("/demo_agent_stream")
+async def run_jury_pipeline_stream(payload: dict = Body(...)):
+    feature = expand(payload["feature_name"])
+    description = expand(payload["feature_description"])
+    region = payload["region"]
+    country = region.get("country")
+    state = region.get("state", None)
+
+    session_id = str(uuid.uuid4())
+    user_id = "demo-user"
+    app_name = "jury-demo"
+
+    await session_service.create_session(
+        app_name=app_name,
+        user_id=user_id,
+        session_id=session_id,
+        state={},
+    )
+
+    user_query = types.Content(
+        role="user",
+        parts=[types.Part(
+            text=f"Feature: {feature}\nDescription: {description}\nTarget country: {country}\nTarget state: {state or 'N/A'}"
+        )],
+    )
+
+    runner = Runner(agent=root_agent, session_service=session_service, app_name=app_name)
+
+    async def event_generator():
+        last_text = None
+        async for event in runner.run_async(
+            user_id=user_id,
+            session_id=session_id,
+            new_message=user_query,
+        ):
+        # safe extraction
+            text = ""
+            if event.content and event.content.parts:
+                part = event.content.parts[0]
+                if hasattr(part, "text") and part.text is not None:
+                    text = str(part.text)
+
+        # skip blanks
+            if not text or not text.strip():
+                continue
+
+        # skip duplicates
+            if text == last_text:
+                continue
+            last_text = text
+
+            msg = {
+                "author": event.author,
+                "final": event.is_final_response(),
+                "text": text,
+            }
+            yield {"event": "message", "data": json.dumps(msg)}
+
+        # after loop ends → send final report
+        session = await session_service.get_session(
+            app_name=app_name,
+            user_id=user_id,
+            session_id=session_id,
+        )
+        final_output = {
+            "jurors": {
+                "JuryAgent1": session.state.get("jury_report_1"),
+                "JuryAgent2": session.state.get("jury_report_2"),
+                "JuryAgent3": session.state.get("jury_report_3"),
+                "JuryAgent4": session.state.get("jury_report_4"),
+            },
+            "final_report": session.state.get("final_report"),
+        }
+        yield {"event": "done", "data": json.dumps(final_output)}
+
+    return EventSourceResponse(event_generator())
 
 # Starting the server
 if __name__ == "__main__":

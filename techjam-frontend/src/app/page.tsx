@@ -1,82 +1,80 @@
 "use client";
 
-import React, { useMemo, useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Pipeline from "./components/pipeline-instructions/pipeline-instructions";
 import SettingsPanel from "./components/settings-panel/settings-panel";
 import SubmitArea from "./components/submission-area/submission-area";
 import {
-  Region,
   Row,
-  RegionCard,
 } from "./components/card-components/card-components";
+
+import { fetchEventSource } from "@microsoft/fetch-event-source"; // npm i @microsoft/fetch-event-source
 
 export default function TechJamPage() {
   const [apiBase, setApiBase] = useState(
-    process.env.NEXT_PUBLIC_API_BASE || "http://localhost:8000"
+    process.env.NEXT_PUBLIC_API_BASE || "http://localhost"
   );
-  const [feature, setFeature] = useState("");
-  const [featureDescription, setFeatureDescription] = useState("");
-  const [regionsText, setRegionsText] = useState(
-    '[{"country":"US","state":"CA"},{"country":"EU"}]'
-  );
-  const regionsParsed: Region[] | null = useMemo(() => {
-    try {
-      const p = JSON.parse(regionsText);
-      return Array.isArray(p) ? p : null;
-    } catch {
-      return null;
-    }
-  }, [regionsText]);
+  const [feature_name, setFeatureName] = useState("");
+  const [feature_description, setFeatureDescription] = useState("");
+  const [region, setRegion] = useState<{ country: string; state?: string } | null>(null);
 
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [resp, setResp] = useState<any>(null);
   const [error, setError] = useState<string | null>(null);
 
-  async function processFeature() {
+  // new states for streaming
+  const [chatLog, setChatLog] = useState<any[]>([]);
+  const [finalOutput, setFinalOutput] = useState<any | null>(null);
+
+  // ref for auto-scroll
+  const chatContainerRef = useRef<HTMLDivElement>(null);
+
+  // auto-scroll to bottom when new messages arrive
+  useEffect(() => {
+    if (chatContainerRef.current) {
+      chatContainerRef.current.scrollTop = chatContainerRef.current.scrollHeight;
+    }
+  }, [chatLog]);
+
+  // --- Streaming version of processFeature ---
+  async function streamProcessFeature() {
     if (isSubmitting) return;
     setIsSubmitting(true);
     setError(null);
-    setResp(null);
+    setChatLog([]);
+    setFinalOutput(null);
+
     try {
-      console.log(`Trying submit to ${apiBase}/process_feature`, {
-        feature,
-        featureDescription,
-        regions: regionsParsed,
-      });
-      const res = await fetch(`${apiBase}/process_feature`, {
+      await fetchEventSource(`${apiBase}/demo_agent_stream`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          feature: feature,
-          feature_description: featureDescription,
-          regions: regionsParsed ?? undefined,
+          feature_name,
+          feature_description,
+          region: region ?? {},
         }),
+        async onmessage(ev) {
+          if (ev.event === "message") {
+            const msg = JSON.parse(ev.data);
+            setChatLog((prev) => [...prev, msg]);
+          }
+          if (ev.event === "done") {
+            const final = JSON.parse(ev.data);
+            setFinalOutput(final);
+          }
+        },
+        onerror(err) {
+          console.error("SSE error", err);
+          setError("Streaming connection failed");
+          throw err;
+        },
       });
-      const data = await res.json();
-      setResp(data);
-      console.log("Response:", data);
-      if (!res.ok) {
-        const errMsg = data?.error || "Unknown error";
-        setError(errMsg);
-        setResp(null);
-      }
-      console.log(data);
     } catch (e: any) {
       setError(e.message || "Unknown error");
     } finally {
       setIsSubmitting(false);
     }
-  }
-
-  async function sendFeedback(regionStr: string, feedback: string) {
-    if (!resp) return;
-    await fetch(`${apiBase}/human_feedback`, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ uuid: resp.uuid, region: regionStr, feedback }),
-    });
   }
 
   return (
@@ -92,46 +90,49 @@ export default function TechJamPage() {
 
         <SubmitArea
           apiBase={apiBase}
-          feature={feature}
-          setFeature={setFeature}
-          featureDescription={featureDescription}
+          feature={feature_name}
+          setFeature={setFeatureName}
+          featureDescription={feature_description}
           setFeatureDescription={setFeatureDescription}
-          regionsText={regionsText}
-          setRegionsText={setRegionsText}
-          regionsParsed={regionsParsed}
-          setResp={setResp}
+          region={region}
+          setRegion={setRegion}
+          setResp={() => {}}   // not used in streaming version
           setError={setError}
           isSubmitting={isSubmitting}
           setIsSubmitting={setIsSubmitting}
-          onSubmit={processFeature}
+          onSubmit={streamProcessFeature}  // 👈 swap in streaming
         />
 
-        {resp && (
+        {/* Chat log */}
+        {chatLog.length > 0 && (
           <section className="grid gap-4 bg-neutral-800/60 rounded-2xl p-4">
-            <div className="flex items-center justify-between">
-              <h2 className="text-xl font-medium">Consolidated Report</h2>
-              <span className="text-xs text-neutral-400">
-                UUID: {resp.uuid}
-              </span>
+            <h2 className="text-xl font-medium">Pipeline Chat</h2>
+            <div
+              ref={chatContainerRef}
+              className="space-y-2 max-h-96 overflow-y-auto pr-2"
+            >
+              {chatLog.map((msg, idx) => (
+                <div key={idx} className="p-2 rounded bg-neutral-900">
+                  <span className="text-indigo-400 font-semibold">{msg.author}:</span>{" "}
+                  <span>{msg.text}</span>
+                </div>
+              ))}
             </div>
+          </section>
+        )}
+
+        {/* Final Output */}
+        {finalOutput && (
+          <section className="grid gap-4 bg-neutral-800/60 rounded-2xl p-4">
+            <h2 className="text-xl font-medium">Final Report</h2>
             <div className="grid gap-1">
-              <Row label="Feature" value={resp.report.feature} />
-              <Row label="Description" value={resp.report.description} />
+              <Row label="Final Report" value={finalOutput.final_report} />
             </div>
             <div className="grid gap-3">
-              <h3 className="font-medium">Regions</h3>
+              <h3 className="font-medium">Jurors</h3>
               <div className="grid gap-3">
-                {resp.report.regions_flagged.map((r: any, idx: number) => (
-                  <RegionCard
-                    key={`${r.country}-${r.state}-${idx}`}
-                    region={r}
-                    onFeedback={(text: string) => {
-                      const tag = r.state
-                        ? `${r.country}/${r.state}`
-                        : r.country;
-                      return sendFeedback(tag, text);
-                    }}
-                  />
+                {Object.entries(finalOutput.jurors).map(([juror, value], idx) => (
+                  <Row key={idx} label={juror} value={value ? String(value) : "N/A"} />
                 ))}
               </div>
             </div>
