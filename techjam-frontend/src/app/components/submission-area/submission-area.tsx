@@ -19,7 +19,8 @@ export default function SubmitArea({
   setFeature,
   featureDescription,
   setFeatureDescription,
-  regionsParsed,
+  region,
+  setRegion,
   isSubmitting,
   setIsSubmitting,
   onSubmit,
@@ -29,18 +30,16 @@ export default function SubmitArea({
   setFeature: (v: string) => void;
   featureDescription: string;
   setFeatureDescription: (v: string) => void;
-  regionsText: string;
-  setRegionsText: (v: string) => void;
-  regionsParsed: Region[] | null;
+  region: { country: string; state?: string } | null;
+  setRegion: React.Dispatch<
+    React.SetStateAction<{ country: string; state?: string } | null>
+  >;
   setResp: (v: ProcessFeatureResponse | null) => void;
   setError: (v: string | null) => void;
   isSubmitting: boolean;
   setIsSubmitting: (v: boolean) => void;
   onSubmit: () => Promise<void>;
 }) {
-  const [regions, setRegions] = React.useState<
-    { country: string; state?: string }[]
-  >([]);
 
   return (
     <section className="grid gap-3 bg-neutral-800/60 rounded-2xl p-4">
@@ -62,16 +61,12 @@ export default function SubmitArea({
           placeholder="Feature description goes here..."
         />
         <p className="text-xs text-neutral-400 mt-1">
-          Parsed:
-          {regionsParsed
-            ? `${regionsParsed.length} region(s)`
-            : "Invalid / not provided (backend will infer)"}
+          Selected: {region ? 1 : 0} region
         </p>
       </Labeled>
       <RegionSelector
-        selected={regions}
-        onChange={setRegions}
-        selectMultiple={false}
+        selected={region}
+        onChange={setRegion}
         // Single select for now; can be multi-select later, just change to true
       />
       <div className="w-full h-px bg-white my-2" />

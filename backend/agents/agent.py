@@ -41,6 +41,7 @@ def make_cross_loop(jury_name: str, critic_name: str, output_key: str, jury_mode
         name=critic_name,
         description=f"{critic_name} reviewing {jury_name}'s report",
         instruction=jury_report_critic_prompt.PROMPT,
+        tools=[exit_loop],
         model=critic_model,
     )
 
@@ -48,7 +49,7 @@ def make_cross_loop(jury_name: str, critic_name: str, output_key: str, jury_mode
         name=f"{jury_name}Loop",
         description=f"{jury_name} (with {critic_name} cross-review)",
         sub_agents=[jury, critic],
-        max_iterations=3,
+        max_iterations=1,
     )
 
 # ---------------- BUILD 4 JURORS ----------------
