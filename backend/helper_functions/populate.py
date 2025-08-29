@@ -21,6 +21,11 @@ TERMINOLOGY_TABLE = {
     "IMT": "Internal monitoring trigger",
 }
 
+def add_new_terms(new_terms: dict):
+    # if key already exists, overwrite it
+    global TERMINOLOGY_TABLE
+    TERMINOLOGY_TABLE = dict(new_terms["terms"])
+
 def expand(text: str) -> str:
     for k, v in TERMINOLOGY_TABLE.items():
         text = text.replace(k, f"{k} ({v})")

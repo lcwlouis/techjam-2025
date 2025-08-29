@@ -274,6 +274,26 @@ async def retrieve_naiverag():
         "content": serialized
     }
 
+# ------------------------------ TERMINOLOGY EXPANSION --------------------------------
+from helper_functions import populate
+@app.get("/terminology_table")
+async def get_terminology_table():
+    return populate.TERMINOLOGY_TABLE
+
+@app.post("/update_terminology_table")
+async def update_terminology_table(new_terms: dict = Body(...)):
+    """
+    Update the terminology table with new terms.
+
+    Example body:
+    {
+      "NEW_TERM": "Definition of the new term",
+      "ANOTHER_TERM": "Another definition"
+    }
+    """
+    populate.add_new_terms(new_terms)
+    return {"status": "terminology table updated", "updated_terms": new_terms}
+
 # Starting the server
 if __name__ == "__main__":
   logger.info(f"Starting server on port {PORT}")
