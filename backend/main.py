@@ -318,9 +318,9 @@ async def run_jury_pipeline(payload: dict = Body(...)):
     description = expand(payload["feature_description"])
     
     region = payload["region"]
-    country = region.get("country")
-    state = region.get("state", None)
 
+    naiverag_context = naiverag_retrieve_sync({ "query":description, "region":region, "k":5})
+    print(naiverag_context)
     session_id = str(uuid.uuid4())
     user_id = "demo-user"
     app_name = "jury-demo"
@@ -332,12 +332,13 @@ async def run_jury_pipeline(payload: dict = Body(...)):
         session_id=session_id,
         state={},  # optional initial state
     )
+    
 
     user_query = types.Content(
         role="user",
         parts=[
             types.Part(
-                text=f"Feature: {feature}\nDescription: {description}\nTarget country: {country}\nTarget state: {state or 'N/A'}"
+                text=f"Feature: {feature}\nDescription: {description}\nTarget Region: {region}, Relevant legislation: {naiverag_context}"
             )
         ],
     )

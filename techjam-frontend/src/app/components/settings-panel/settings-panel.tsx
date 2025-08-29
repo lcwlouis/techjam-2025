@@ -46,6 +46,25 @@ export default function SettingsPanel({
     load();
   }, [open, apiBase]);
 
+  async function fetchTerminology() {
+    setLoading(true);
+    const r = await fetch(`${apiBase}/terminology_table`, {
+      method: "GET",
+      cache: "no-store",
+      headers: {
+        "Content-Type": "application/json",
+        "Cache-Control": "no-cache",
+      },
+    });
+    if (!r.ok) throw new Error(`GET /terminology_table -> ${r.status}`);
+    const data: Terminology = await r.json();
+    const text = Object.entries(data)
+      .map(([k, v]) => `${k} = ${v}`)
+      .join("\n");
+    console.log("Loaded terminology:", data);
+    setKvText(text);
+  }
+
   function parseKv(text: string): Terminology {
     const out: Terminology = {};
     const lines = text.split(/\r?\n/);
@@ -58,6 +77,18 @@ export default function SettingsPanel({
       const key = m[1].trim();
       const val = m[2].trim();
       if (!key) throw new Error(`Line ${i + 1}: empty key`);
+
+      if (key in out) {
+        const overwrite = window.confirm(
+          `Duplicate definition for key "${key}".\n` +
+            `Existing value: "${out[key]}"\n` +
+            `New value: "${val}"\n\n` +
+            `Do you want to overwrite it?`
+        );
+        if (!overwrite) {
+          continue;
+        }
+      }
       out[key] = val;
     }
     return out;
@@ -76,22 +107,9 @@ export default function SettingsPanel({
       if (!r.ok)
         throw new Error(`POST /update_terminology_table -> ${r.status}`);
       setMsg("Saved terminology ✅");
+      fetchTerminology(); // refresh
     } catch (e: any) {
       setMsg(e.message || "Failed to save terminology");
-    } finally {
-      setLoading(false);
-    }
-  }
-
-  async function handleTest() {
-    try {
-      setMsg(null);
-      setLoading(true);
-      const r = await fetch(`${apiBase}/health`, { method: "GET" });
-      if (!r.ok) throw new Error(`Health check failed (${r.status})`);
-      setMsg("API reachable ✅");
-    } catch (e: any) {
-      setMsg(e.message || "Failed to reach API");
     } finally {
       setLoading(false);
     }
@@ -111,23 +129,6 @@ export default function SettingsPanel({
 
       {open && (
         <div className="grid gap-4">
-          {/* API base + test */}
-          <div className="grid md:grid-cols-[1fr_auto] gap-3 items-center">
-            <input
-              className="px-3 py-2 rounded-xl bg-neutral-800 border border-neutral-700 outline-none"
-              value={apiBase}
-              onChange={(e) => setApiBase(e.target.value)}
-              placeholder="http://localhost:8000"
-            />
-            <button
-              onClick={handleTest}
-              className="px-4 py-2 rounded-xl bg-white/10 hover:bg-white/20 transition"
-              disabled={loading || !apiBase}
-            >
-              {loading ? "Testing..." : "Test Connection"}
-            </button>
-          </div>
-
           {/* Terminology KV Textbox */}
           <div className="grid gap-2">
             <div className="flex items-center justify-between">
@@ -135,7 +136,7 @@ export default function SettingsPanel({
               <div className="flex gap-2">
                 <button
                   onClick={handleSave}
-                  className="px-3 py-2 rounded-xl bg-white/10 hover:bg-white/20 transition"
+                  className="px-4 py-2 rounded-xl bg-indigo-500/90 hover:bg-indigo-500 transition disabled:opacity-50"
                   disabled={loading || !apiBase}
                 >
                   {loading ? "Saving..." : "Save"}
