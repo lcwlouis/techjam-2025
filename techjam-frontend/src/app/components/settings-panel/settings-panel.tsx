@@ -115,20 +115,6 @@ export default function SettingsPanel({
     }
   }
 
-  async function handleTest() {
-    try {
-      setMsg(null);
-      setLoading(true);
-      const r = await fetch(`${apiBase}/health`, { method: "GET" });
-      if (!r.ok) throw new Error(`Health check failed (${r.status})`);
-      setMsg("API reachable ✅");
-    } catch (e: any) {
-      setMsg(e.message || "Failed to reach API");
-    } finally {
-      setLoading(false);
-    }
-  }
-
   return (
     <section className="grid gap-3 bg-neutral-800/60 rounded-2xl p-4">
       <div className="flex items-center justify-between gap-3">
@@ -143,23 +129,6 @@ export default function SettingsPanel({
 
       {open && (
         <div className="grid gap-4">
-          {/* API base + test */}
-          <div className="grid md:grid-cols-[1fr_auto] gap-3 items-center">
-            <input
-              className="px-3 py-2 rounded-xl bg-neutral-800 border border-neutral-700 outline-none"
-              value={apiBase}
-              onChange={(e) => setApiBase(e.target.value)}
-              placeholder="http://localhost:8000"
-            />
-            <button
-              onClick={handleTest}
-              className="px-4 py-2 rounded-xl bg-indigo-500/90 hover:bg-indigo-500 transition disabled:opacity-50"
-              disabled={loading || !apiBase}
-            >
-              {loading ? "Testing..." : "Test Connection"}
-            </button>
-          </div>
-
           {/* Terminology KV Textbox */}
           <div className="grid gap-2">
             <div className="flex items-center justify-between">
