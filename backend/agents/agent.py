@@ -4,8 +4,6 @@ from google.adk.tools.tool_context import ToolContext
 from google.adk.models.lite_llm import LiteLlm
 from google.adk.tools.langchain_tool import LangchainTool
 from google.genai import types
-from agents.tools.lightrag_tools import lightrag_retrieve_sync
-from agents.tools.naiverag_tools import naiverag_retrieve_sync
 from agents.prompts import jury_prompt, jury_report_critic_prompt, jury_final_response_prompt
 
 import logging
@@ -17,8 +15,8 @@ logger = logging.getLogger(__name__)
 deepseek_model  = LiteLlm(model="deepseek/deepseek-chat", api_key=os.getenv("DEEPSEEK_API_KEY"))
 openai_model = LiteLlm(model="gpt-5-mini", api_key=os.getenv("OPENAI_API_KEY"),)
 
-lightrag_retrieve_tool = LangchainTool(lightrag_retrieve_sync)
-naiverag_retrieve_tool = LangchainTool(naiverag_retrieve_sync)
+# lightrag_retrieve_tool = LangchainTool(lightrag_retrieve_sync)
+# naiverag_retrieve_tool = LangchainTool(naiverag_retrieve_sync)
 
 def exit_loop(tool_context: ToolContext):
     """Call this function ONLY when the critique indicates no further changes are needed, signaling the iterative process should end."""
@@ -35,7 +33,6 @@ def make_cross_loop(jury_name: str, critic_name: str, output_key: str, jury_mode
         instruction=jury_prompt.PROMPT,
         model=jury_model,
         tools=[
-            naiverag_retrieve_tool, 
             exit_loop],
         output_key=output_key,
     )

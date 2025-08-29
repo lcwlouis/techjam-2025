@@ -8,7 +8,6 @@ import logging
 from rags.light_rag.ingest import ingest
 from rags.light_rag.retrieve import lightrag_retrieve
 from rags.light_rag.utils import build_region_code
-from agents.tools.ingest_utils import ingest_files_to_region
 from rags.naive_rag.ingest import ingest_file_into_naiverag
 from rags.naive_rag.retrieve import naiverag_retrieve_sync
 
@@ -31,10 +30,10 @@ app.add_middleware(
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("techjam")
 
-logger.info("Starting TechJam backend...")
-logger.info("Ingesting sample files into NaiveRAG...")
-ingest_files_to_region(ingest_directory="/Users/louisliu/Projects/Personal/techjam-2025/backend/input_files", country="US")
-logger.info("Ingestion complete.")
+# logger.info("Starting TechJam backend...")
+# logger.info("Ingesting sample files into NaiveRAG...")
+# ingest_files_to_region(ingest_directory="/Users/louisliu/Projects/Personal/techjam-2025/backend/input_files", country="US")
+# logger.info("Ingestion complete.")
 
 # Static Data to be moved elsewhere
 PORT = 8000
@@ -322,7 +321,7 @@ async def run_jury_pipeline(payload: dict = Body(...)):
     user_id = "demo-user"
     app_name = "jury-demo"
 
-    
+    print("happening")
     await session_service.create_session(
         app_name=app_name,
         user_id=user_id,
