@@ -41,7 +41,7 @@ Style:
 
 ---
 Special instruction:
-IF the critique is *exactly* "No major issues found.":
+IF the critique *contains* "No major issues found.":
 You MUST call the 'exit_loop' function. Do not output any text.
 ELSE (the critique contains actionable feedback):
 Carefully apply the suggestions to improve the 'Current Document'. Output *only* the refined document text.

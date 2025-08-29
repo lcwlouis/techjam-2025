@@ -116,7 +116,6 @@ export default function TechJamPage() {
       await fetchEventSource(`${apiBase}/demo_agent_stream`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        // Optional: add a run_id to correlate one stream instance
         body: JSON.stringify({
           feature_name,
           feature_description,
@@ -124,9 +123,7 @@ export default function TechJamPage() {
           run_id: crypto.randomUUID(),
         }),
         signal: abortRef.current.signal,
-
-        // (optional but nice) block opening if tab is hidden to avoid weird replays
-        openWhenHidden: false,
+        openWhenHidden: true,
 
         onopen(resp) {
           if (
@@ -146,20 +143,23 @@ export default function TechJamPage() {
           if (ev.event === "done") {
             const final = JSON.parse(ev.data);
             setFinalOutput(final);
-
-            // ✅ proactively terminate the stream on client side
+            // stop stream intentionally
             abortRef.current?.abort();
             return;
           }
         },
 
         onclose() {
-          // Normal close by server: we just fall through to finally{}
+          // If we didn't intentionally abort, treat as an error to prevent retry
+          if (!abortRef.current?.signal.aborted) {
+            throw new Error(
+              "SSE closed by server before 'done'; stopping retries."
+            );
+          }
         },
 
         onerror(err) {
-          // Library will retry by default on network errors — but we don't want retries after "done"
-          // Throwing here keeps the catch/finally flow consistent when there is a true error.
+          // Throwing here also stops retries
           throw err;
         },
       });
@@ -209,7 +209,6 @@ export default function TechJamPage() {
           setResp={() => {}} // not used in streaming version
           setError={setError}
           isSubmitting={isSubmitting}
-          setIsSubmitting={setIsSubmitting}
           onSubmit={streamProcessFeature} // 👈 swap in streaming
         />
 

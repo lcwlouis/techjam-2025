@@ -22,7 +22,6 @@ export default function SubmitArea({
   region,
   setRegion,
   isSubmitting,
-  setIsSubmitting,
   onSubmit,
 }: {
   apiBase: string;
@@ -37,10 +36,8 @@ export default function SubmitArea({
   setResp: (v: ProcessFeatureResponse | null) => void;
   setError: (v: string | null) => void;
   isSubmitting: boolean;
-  setIsSubmitting: (v: boolean) => void;
   onSubmit: () => Promise<void>;
 }) {
-
   return (
     <section className="grid gap-3 bg-neutral-800/60 rounded-2xl p-4">
       <h2 className="text-xl font-medium">Submit Feature Scenario</h2>
@@ -73,9 +70,8 @@ export default function SubmitArea({
 
       <div>
         <button
-          onClick={() => {
-            onSubmit().finally(() => setIsSubmitting(false));
-          }}
+          type="button" // prevent implicit form submit
+          onClick={() => onSubmit()}
           disabled={isSubmitting}
           className="px-4 py-2 rounded-xl bg-indigo-500/90 hover:bg-indigo-500 transition disabled:opacity-50"
         >

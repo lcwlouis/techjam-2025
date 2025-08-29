@@ -505,7 +505,7 @@ async def run_jury_pipeline_stream(payload: dict = Body(...)):
             yield {"event": "message", "data": json.dumps({
                 "author": "Context Retriever",
                 "final": False,
-                "text": f"Retrieved {len(naive_ctx)} law snippets for {region_code}."
+                "text": f"Retrieved {len(naive_ctx)} characters for {region_code}."
             })}
 
         last_text = None
