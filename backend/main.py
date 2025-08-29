@@ -320,7 +320,6 @@ async def run_jury_pipeline(payload: dict = Body(...)):
     region = payload["region"]
 
     naiverag_context = naiverag_retrieve_sync({ "query":description, "region":region, "k":5})
-    print(naiverag_context)
     session_id = str(uuid.uuid4())
     user_id = "demo-user"
     app_name = "jury-demo"
