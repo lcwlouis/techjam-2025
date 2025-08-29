@@ -309,9 +309,9 @@ async def run_jury_pipeline(payload: dict = Body(...)):
     """
     a JSON body
     {
-      "feature_name": "Content visibility lock with NSP for EU DSA",
-      "feature_description": "To meet the transparency expectations of the EU Digital Services Act",
-      "region": { "country": "US", "state": "CA" }
+      "feature_name": "Chat UI Overhaul",
+      "feature_description": "A new chat layout will be tested in the following regions: CA, US, BR, ID. GH will ensure location targeting and ShadowMode will collect usage metrics without user impact.",
+      "region": "USCA"
     }
     """
     feature = expand(payload["feature_name"])
