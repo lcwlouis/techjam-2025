@@ -45,6 +45,19 @@ function isFinalReportObj(x: any): x is FinalReport {
   return x && typeof x === "object" && "feature" in x && "confidence" in x;
 }
 
+function tryParseFinalReport(x: Json): FinalReport | null {
+  if (isFinalReportObj(x)) return x;
+  if (typeof x === "string") {
+    try {
+      const parsed = JSON.parse(x);
+      return isFinalReportObj(parsed) ? parsed : null;
+    } catch {
+      return null;
+    }
+  }
+  return null;
+}
+
 function Kbd({ children }: { children: React.ReactNode }) {
   return (
     <span className="px-2 py-0.5 rounded bg-neutral-900/80 border border-neutral-700 text-neutral-200 text-xs">
@@ -100,6 +113,143 @@ function CodeSmall({ children }: { children: React.ReactNode }) {
   );
 }
 
+type RegionBlock = {
+  region?: string;
+  requirement_summary?: string;
+  regulations?: Array<{
+    name?: string;
+    citation?: string;
+    snippet?: string;
+    source_id?: string;
+  }>;
+};
+
+function normaliseRegions(val: unknown): RegionBlock[] {
+  if (!val) return [];
+  if (Array.isArray(val)) return val as RegionBlock[];
+
+  // JSON string?
+  if (typeof val === "string") {
+    try {
+      return normaliseRegions(JSON.parse(val));
+    } catch {
+      return [];
+    }
+  }
+
+  // Object
+  if (typeof val === "object") {
+    const obj = val as Record<string, any>;
+    // Case 1: looks like a single RegionBlock
+    if (
+      "region" in obj ||
+      "requirement_summary" in obj ||
+      "regulations" in obj
+    ) {
+      return [obj as RegionBlock];
+    }
+    // Case 2: map keyed by region name -> values
+    return Object.entries(obj).map(([region, v]) => ({
+      region,
+      ...(v as any),
+    }));
+  }
+
+  return [];
+}
+
+/** Reusable body for a FinalReport (used for the main report and each juror). */
+function ReportBody({ fr }: { fr: FinalReport }) {
+  const regions_normalised = normaliseRegions(fr.regions_affected);
+  return (
+    <div className="grid gap-5">
+      {/* Confidence meter */}
+      <div className="grid gap-2">
+        <Subtle>Confidence</Subtle>
+        <Meter value={fr.confidence} />
+      </div>
+
+      {/* Feature summary */}
+      <div className="grid gap-2">
+        <SectionTitle>{"Feature"}</SectionTitle>
+        <Subtle>{fr.feature}</Subtle>
+      </div>
+      <div className="grid gap-2">
+        <SectionTitle>{"Feature Description"}</SectionTitle>
+        <Subtle>{fr.feature_description}</Subtle>
+      </div>
+
+      {/* Regions & Regulations */}
+      <div className="grid gap-1">
+        <SectionTitle>{"Affected Regions"}</SectionTitle>
+      </div>
+      {(Array.isArray(regions_normalised)
+        ? regions_normalised
+        : Object.entries(regions_normalised || {}).map(([region, val]) => ({
+            region,
+            ...(val as any),
+          }))
+      ).map((r, i) => (
+        <div
+          key={`${r.region}-${i}`}
+          className="rounded-xl border border-neutral-700/60 p-3 bg-neutral-900/40"
+        >
+          <div className="flex items-center justify-between">
+            <div className="text-slate-100 font-medium">{r.region}</div>
+            <Badge>
+              <Kbd>summary</Kbd>
+            </Badge>
+          </div>
+          <p className="text-sm text-neutral-300 mt-1">
+            {r.requirement_summary}
+          </p>
+
+          {Array.isArray(r.regulations) &&
+            r.regulations.map((g, j) => (
+              <div
+                key={`${g.citation}-${j}`}
+                className="rounded-lg border border-neutral-700/60 p-2 bg-neutral-950/40"
+              >
+                <div className="flex flex-wrap items-center gap-2">
+                  <span className="font-medium text-slate-100">{g.name}</span>
+                  <CodeSmall>{g.citation}</CodeSmall>
+                  <span className="text-xs text-neutral-400">source:</span>
+                  <CodeSmall>{g.source_id}</CodeSmall>
+                </div>
+                <p className="text-sm text-neutral-300 mt-1">{g.snippet}</p>
+              </div>
+            ))}
+        </div>
+      ))}
+
+      {/* Past Cases */}
+      {fr.past_case_references?.length ? (
+        <div className="grid gap-2">
+          <SectionTitle>Past Case References</SectionTitle>
+          <div className="grid gap-2">
+            {fr.past_case_references.map((c, i) => (
+              <div
+                key={`${c.case_id}-${i}`}
+                className="rounded-lg border border-neutral-700/60 p-2 bg-neutral-900/40"
+              >
+                <div className="flex flex-wrap items-center gap-2">
+                  <span className="font-medium text-slate-100">
+                    {c.case_id}
+                  </span>
+                  <CodeSmall>{c.source_id}</CodeSmall>
+                </div>
+                <p className="text-sm text-neutral-300 mt-1">
+                  {c.similarity_reason}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      ) : null}
+    </div>
+  );
+}
+
 export default function FinalReportSection({
   data,
   colorFromString,
@@ -127,153 +277,94 @@ export default function FinalReportSection({
           <div className="flex items-center gap-2">
             <Badge tone={fr.needs_geo_specific_logic ? "emerald" : "rose"}>
               {fr.needs_geo_specific_logic
-                ? "Geo-specific logic: Yes"
-                : "Geo-specific logic: No"}
+                ? "Geo-specific logic required?: Yes"
+                : "Geo-specific logic required?: No"}
             </Badge>
             <Badge tone="amber">Confidence: {formatPct(fr.confidence)}</Badge>
           </div>
         )}
       </div>
 
-      {/* Confidence meter */}
-      {fr && (
-        <div className="grid gap-2">
-          <Subtle>Confidence</Subtle>
-          <Meter value={fr.confidence} />
-        </div>
-      )}
-
-      {/* Feature summary */}
+      {/* Main final report body OR fallback */}
       {fr ? (
-        <div className="grid gap-2">
-          <SectionTitle>{fr.feature}</SectionTitle>
-          <Subtle>{fr.feature_description}</Subtle>
-        </div>
+        <ReportBody fr={fr} />
       ) : (
-        <div className="text-sm text-neutral-300">
-          <em>
-            Final report content is not an object (raw JSON/string). See Raw
-            Payload below.
-          </em>
-        </div>
+        <>
+          <div className="text-sm text-neutral-300">
+            <em>
+              Final report content is not an object (raw JSON/string). See Raw
+              Payload below.
+            </em>
+          </div>
+          <div className="grid gap-2">
+            <SectionTitle>Raw Payload</SectionTitle>
+            <pre className="text-xs leading-relaxed bg-neutral-950/60 border border-neutral-700/60 rounded-lg p-3 overflow-x-auto">
+              {JSON.stringify(data.final_report, null, 2)}
+            </pre>
+          </div>
+        </>
       )}
 
-      {/* Regions & Regulations */}
-      {fr?.regions_affected?.length ? (
-        <div className="grid gap-3">
-          <SectionTitle>Regions & Regulations</SectionTitle>
-          <div className="grid gap-3">
-            {fr.regions_affected.map((r, i) => (
-              <div
-                key={`${r.region}-${i}`}
-                className="rounded-xl border border-neutral-700/60 p-3 bg-neutral-900/40"
-              >
-                <div className="flex items-center justify-between">
-                  <div className="text-slate-100 font-medium">{r.region}</div>
-                  <Badge>
-                    <Kbd>summary</Kbd>
-                  </Badge>
-                </div>
-                <p className="text-sm text-neutral-300 mt-1">
-                  {r.requirement_summary}
-                </p>
-                {r.regulations?.length ? (
-                  <div className="mt-3 grid gap-2">
-                    {r.regulations.map((g, j) => (
-                      <div
-                        key={`${g.citation}-${j}`}
-                        className="rounded-lg border border-neutral-700/60 p-2 bg-neutral-950/40"
-                      >
-                        <div className="flex flex-wrap items-center gap-2">
-                          <span className="font-medium text-slate-100">
-                            {g.name}
-                          </span>
-                          <CodeSmall>{g.citation}</CodeSmall>
-                          <span className="text-xs text-neutral-400">
-                            source:
-                          </span>
-                          <CodeSmall>{g.source_id}</CodeSmall>
-                        </div>
-                        <p className="text-sm text-neutral-300 mt-1">
-                          {g.snippet}
-                        </p>
-                      </div>
-                    ))}
-                  </div>
-                ) : null}
-              </div>
-            ))}
-          </div>
-        </div>
-      ) : null}
-
-      {/* Past Cases */}
-      {fr?.past_case_references?.length ? (
-        <div className="grid gap-2">
-          <SectionTitle>Past Case References</SectionTitle>
-          <div className="grid gap-2">
-            {fr.past_case_references.map((c, i) => (
-              <div
-                key={`${c.case_id}-${i}`}
-                className="rounded-lg border border-neutral-700/60 p-2 bg-neutral-900/40"
-              >
-                <div className="flex flex-wrap items-center gap-2">
-                  <span className="font-medium text-slate-100">
-                    {c.case_id}
-                  </span>
-                  <CodeSmall>{c.source_id}</CodeSmall>
-                </div>
-                <p className="text-sm text-neutral-300 mt-1">
-                  {c.similarity_reason}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      ) : null}
-
-      {/* Jurors */}
+      {/* Jurors — each juror value is a FinalReport-like body */}
       {data.jurors && Object.keys(data.jurors).length > 0 && (
         <div className="grid gap-3">
-          <SectionTitle>Jurors</SectionTitle>
-          <div className="grid sm:grid-cols-1 lg:grid-cols-3 gap-3">
+          <SectionTitle>Jurors Individual Reports</SectionTitle>
+          <div className="grid sm:grid-cols-1 lg:grid-cols-1 gap-3">
             {Object.entries(data.jurors).map(([juror, value]) => {
               const c = colorFromString(juror);
+              const jr = tryParseFinalReport(value);
+
               return (
                 <div
                   key={juror}
-                  className="rounded-xl p-3 border"
+                  className="rounded-xl p-4 border"
                   style={{ borderColor: c.border, backgroundColor: c.bg }}
                 >
-                  <div className="flex items-center gap-2">
-                    <span
-                      aria-hidden
-                      className="inline-block w-2.5 h-2.5 rounded-full"
-                      style={{ backgroundColor: c.dot }}
-                    />
-                    <span className="font-medium" style={{ color: c.text }}>
-                      {juror}
-                    </span>
+                  <div className="flex items-center justify-between gap-2">
+                    <div className="flex items-center gap-2">
+                      <span
+                        aria-hidden
+                        className="inline-block w-2.5 h-2.5 rounded-full"
+                        style={{ backgroundColor: c.dot }}
+                      />
+                      <span className="font-medium" style={{ color: c.text }}>
+                        {juror}
+                      </span>
+                    </div>
+
+                    {jr && (
+                      <div className="flex items-center gap-2">
+                        <Badge
+                          tone={
+                            jr.needs_geo_specific_logic ? "emerald" : "rose"
+                          }
+                        >
+                          {jr.needs_geo_specific_logic
+                            ? "Geo?: Yes"
+                            : "Geo?: No"}
+                        </Badge>
+                        <Badge tone="amber">
+                          Conf: {formatPct(jr.confidence)}
+                        </Badge>
+                      </div>
+                    )}
                   </div>
-                  <div className="mt-1 text-sm text-neutral-200 whitespace-pre-wrap break-words">
-                    {typeof value === "string"
-                      ? value
-                      : JSON.stringify(value, null, 2)}
+
+                  <div className="mt-3">
+                    {jr ? (
+                      <ReportBody fr={jr} />
+                    ) : (
+                      <div className="mt-1 text-sm text-neutral-200 whitespace-pre-wrap break-words">
+                        {typeof value === "string"
+                          ? value
+                          : JSON.stringify(value, null, 2)}
+                      </div>
+                    )}
                   </div>
                 </div>
               );
             })}
           </div>
-        </div>
-      )}
-
-      {/* Raw payload (debug) */}
-      {!fr && (
-        <div className="grid gap-2">
-          <SectionTitle>Raw Payload</SectionTitle>
-          <pre className="text-xs leading-relaxed bg-neutral-950/60 border border-neutral-700/60 rounded-lg p-3 overflow-x-auto">
-            {JSON.stringify(data.final_report, null, 2)}
-          </pre>
         </div>
       )}
     </section>

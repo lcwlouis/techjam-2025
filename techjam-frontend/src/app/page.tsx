@@ -239,7 +239,7 @@ export default function TechJamPage() {
               {chatLog.map((msg, idx) => (
                 <div key={idx} className="p-2 rounded bg-neutral-900">
                   <span className="text-indigo-400 font-semibold">
-                    {msg.author} {idx}:
+                    {msg.author}:{" "}
                   </span>
                   <span>{msg.text}</span>
                 </div>
