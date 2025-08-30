@@ -54,5 +54,65 @@
     "create_time": 1756568588,
     "update_time": 1756568588,
     "_id": "doc-bddbca1d37abd901742b0ca6610124c1"
+  },
+  "doc-8723929ab8fd185bc96c06c9ed40cac3": {
+    "relation_pairs": [
+      [
+        "Federal Law Enforcement",
+        "NCMEC"
+      ],
+      [
+        "NCMEC",
+        "US Law on Reporting Child Sexual Abuse Content to NCMEC"
+      ],
+      [
+        "NSP",
+        "US law on reporting child sexual abuse content to NCMEC"
+      ],
+      [
+        "NCMEC",
+        "United States"
+      ],
+      [
+        "Child Sexual Abuse Material",
+        "US Legislation Excerpts"
+      ],
+      [
+        "US law on reporting child sexual abuse content to NCMEC",
+        "United States"
+      ],
+      [
+        "Federal Law Enforcement",
+        "US Legislation Excerpts"
+      ],
+      [
+        "Federal Law Enforcement Agency",
+        "NCMEC"
+      ],
+      [
+        "Law Enforcement Agencies",
+        "NCMEC"
+      ],
+      [
+        "Child Sexual Abuse Content",
+        "NCMEC"
+      ],
+      [
+        "18 U.S.C. §2258A",
+        "US Law on Reporting Child Sexual Abuse Content to NCMEC"
+      ],
+      [
+        "Penalties for Failure to Report",
+        "US Law on Reporting Child Sexual Abuse Content to NCMEC"
+      ],
+      [
+        "NCMEC",
+        "NSP"
+      ]
+    ],
+    "count": 13,
+    "create_time": 1756577158,
+    "update_time": 1756577158,
+    "_id": "doc-8723929ab8fd185bc96c06c9ed40cac3"
   }
 }

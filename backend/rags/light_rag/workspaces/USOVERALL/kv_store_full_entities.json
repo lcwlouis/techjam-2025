@@ -18,5 +18,26 @@
     "create_time": 1756568588,
     "update_time": 1756568588,
     "_id": "doc-bddbca1d37abd901742b0ca6610124c1"
+  },
+  "doc-8723929ab8fd185bc96c06c9ed40cac3": {
+    "entity_names": [
+      "US Legislation Excerpts",
+      "18 U.S.C. §2258A",
+      "NCMEC",
+      "United States",
+      "Child Sexual Abuse Material",
+      "US Law on Reporting Child Sexual Abuse Content to NCMEC",
+      "Federal Law Enforcement Agency",
+      "Penalties for Failure to Report",
+      "NSP",
+      "Child Sexual Abuse Content",
+      "US law on reporting child sexual abuse content to NCMEC",
+      "Law Enforcement Agencies",
+      "Federal Law Enforcement"
+    ],
+    "count": 13,
+    "create_time": 1756577158,
+    "update_time": 1756577158,
+    "_id": "doc-8723929ab8fd185bc96c06c9ed40cac3"
   }
 }
