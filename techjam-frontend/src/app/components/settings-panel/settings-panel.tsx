@@ -1,5 +1,6 @@
 // FILE: components/SettingsPanel.tsx
 import React, { useEffect, useState } from "react";
+import { SectionTitle, Labeled } from "../card-components/card-components";
 
 type Terminology = Record<string, string>;
 
@@ -117,7 +118,7 @@ export default function SettingsPanel({
   return (
     <section className="grid gap-3 bg-neutral-800/60 rounded-2xl p-4">
       <div className="flex items-center justify-between gap-3">
-        <h2 className="text-xl font-medium">Settings</h2>
+        <SectionTitle>Settings</SectionTitle>
         <button
           onClick={() => setOpen(!open)}
           className="px-3 py-2 rounded-xl bg-white/10 hover:bg-white/20 transition"
@@ -130,26 +131,29 @@ export default function SettingsPanel({
         <div className="grid gap-4">
           {/* Terminology KV Textbox */}
           <div className="grid gap-2">
-            <div className="flex items-center justify-between">
-              <h3 className="text-lg font-medium">Terminology (Key = Value)</h3>
-              <div className="flex gap-2">
-                <button
-                  onClick={handleSave}
-                  className="px-4 py-2 rounded-xl bg-indigo-500/90 hover:bg-indigo-500 transition disabled:opacity-50"
-                  disabled={loading || !apiBase}
-                >
-                  {loading ? "Saving..." : "Save"}
-                </button>
-              </div>
+            <div className="flex items-center justify-between"></div>{" "}
+            <Labeled label="Feature Description">
+              <textarea
+                className="min-h-[180px] w-full px-3 py-2 rounded-xl bg-neutral-800 border border-neutral-700 outline-none font-mono text-sm"
+                placeholder={`NR = Not recommended\nPF = Personalized feed\nGH = Geo-handler; module routing by region\n...`}
+                value={kvText}
+                onChange={(e) => setKvText(e.target.value)}
+              />{" "}
+              <p className="text-xs text-neutral-400">
+                Tip: one entry per line. Supports <code>KEY = Value</code> or{" "}
+                <code>KEY: Value</code>. Existing terms load automatically when
+                you open this panel.
+              </p>
+            </Labeled>
+            <div className="flex gap-2">
+              <button
+                onClick={handleSave}
+                className="px-4 py-2 rounded-xl bg-indigo-500/90 hover:bg-indigo-500 transition disabled:opacity-50"
+                disabled={loading || !apiBase}
+              >
+                {loading ? "Saving..." : "Save"}
+              </button>
             </div>
-
-            <textarea
-              className="min-h-[180px] w-full px-3 py-2 rounded-xl bg-neutral-800 border border-neutral-700 outline-none font-mono text-sm"
-              placeholder={`NR = Not recommended\nPF = Personalized feed\nGH = Geo-handler; module routing by region\n...`}
-              value={kvText}
-              onChange={(e) => setKvText(e.target.value)}
-            />
-
             {msg && (
               <div
                 className={`text-sm ${
@@ -159,12 +163,6 @@ export default function SettingsPanel({
                 {msg}
               </div>
             )}
-
-            <p className="text-xs text-neutral-400">
-              Tip: one entry per line. Supports <code>KEY = Value</code> or{" "}
-              <code>KEY: Value</code>. Existing terms load automatically when
-              you open this panel.
-            </p>
           </div>
         </div>
       )}

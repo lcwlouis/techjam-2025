@@ -2,6 +2,7 @@
 import React from "react";
 
 import RegionSelector from "../region-select/region-select";
+import { SectionTitle } from "../card-components/card-components";
 import { Labeled, Region } from "../card-components/card-components";
 
 type ProcessFeatureResponse = {
@@ -64,7 +65,7 @@ export default function SubmitArea({
 
   return (
     <section className="grid gap-3 bg-neutral-800/60 rounded-2xl p-4">
-      <h2 className="text-xl font-medium">Submit Feature Scenario</h2>
+      <SectionTitle>Submit Feature</SectionTitle>
       <Labeled label="Feature Title">
         <input
           value={feature}
@@ -113,7 +114,6 @@ export default function SubmitArea({
             placeholder="e.g. 5"
           />
         </Labeled>
-
       </div>
 
       <div>
