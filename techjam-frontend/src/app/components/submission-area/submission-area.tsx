@@ -38,6 +38,14 @@ export default function SubmitArea({
   isSubmitting: boolean;
   onSubmit: () => Promise<void>;
 }) {
+  function handleSubmit() {
+    if (!feature.trim() || !featureDescription.trim()) {
+      alert("Please fill in both Feature Title and Feature Description.");
+      return;
+    }
+    onSubmit();
+  }
+
   return (
     <section className="grid gap-3 bg-neutral-800/60 rounded-2xl p-4">
       <h2 className="text-xl font-medium">Submit Feature Scenario</h2>
@@ -71,7 +79,7 @@ export default function SubmitArea({
       <div>
         <button
           type="button" // prevent implicit form submit
-          onClick={() => onSubmit()}
+          onClick={handleSubmit}
           disabled={isSubmitting}
           className="px-4 py-2 rounded-xl bg-indigo-500/90 hover:bg-indigo-500 transition disabled:opacity-50"
         >
