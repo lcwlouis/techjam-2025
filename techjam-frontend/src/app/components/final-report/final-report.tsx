@@ -1,5 +1,6 @@
 "use client";
 
+import { ReactElement, JSXElementConstructor, ReactNode, ReactPortal } from "react";
 import {
   Badge,
   Meter,
@@ -161,7 +162,7 @@ function ReportBody({ fr }: { fr: FinalReport }) {
           </p>
 
           {Array.isArray(r.regulations) &&
-            r.regulations.map((g, j) => (
+            r.regulations.map((g: { citation: string | number | bigint | boolean | ReactElement<unknown, string | JSXElementConstructor<any>> | Iterable<ReactNode> | ReactPortal | Promise<string | number | bigint | boolean | ReactPortal | ReactElement<unknown, string | JSXElementConstructor<any>> | Iterable<ReactNode> | null | undefined> | null | undefined; name: string | number | bigint | boolean | ReactElement<unknown, string | JSXElementConstructor<any>> | Iterable<ReactNode> | ReactPortal | Promise<string | number | bigint | boolean | ReactPortal | ReactElement<unknown, string | JSXElementConstructor<any>> | Iterable<ReactNode> | null | undefined> | null | undefined; source_id: string | number | bigint | boolean | ReactElement<unknown, string | JSXElementConstructor<any>> | Iterable<ReactNode> | ReactPortal | Promise<string | number | bigint | boolean | ReactPortal | ReactElement<unknown, string | JSXElementConstructor<any>> | Iterable<ReactNode> | null | undefined> | null | undefined; snippet: string | number | bigint | boolean | ReactElement<unknown, string | JSXElementConstructor<any>> | Iterable<ReactNode> | ReactPortal | Promise<string | number | bigint | boolean | ReactPortal | ReactElement<unknown, string | JSXElementConstructor<any>> | Iterable<ReactNode> | null | undefined> | null | undefined; }, j: any) => (
               <div
                 key={`${g.citation}-${j}`}
                 className="rounded-lg border border-neutral-700/60 p-2 bg-neutral-950/40"
