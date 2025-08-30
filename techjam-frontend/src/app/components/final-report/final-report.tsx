@@ -1,5 +1,13 @@
 "use client";
 
+import {
+  Badge,
+  Meter,
+  SectionTitle,
+  Subtle,
+  CodeSmall,
+} from "../card-components/card-components";
+
 type Json = string | number | boolean | null | Json[] | { [k: string]: Json };
 
 interface FinalReport {
@@ -36,11 +44,6 @@ function formatPct(x: number | undefined) {
   return `${pct.toFixed(0)}%`;
 }
 
-function clamp01(x: number | undefined) {
-  if (typeof x !== "number" || isNaN(x)) return 0;
-  return Math.max(0, Math.min(1, x));
-}
-
 function isFinalReportObj(x: any): x is FinalReport {
   return x && typeof x === "object" && "feature" in x && "confidence" in x;
 }
@@ -63,53 +66,6 @@ function Kbd({ children }: { children: React.ReactNode }) {
     <span className="px-2 py-0.5 rounded bg-neutral-900/80 border border-neutral-700 text-neutral-200 text-xs">
       {children}
     </span>
-  );
-}
-
-function Badge({
-  children,
-  tone = "indigo",
-}: {
-  children: React.ReactNode;
-  tone?: "indigo" | "emerald" | "rose" | "amber";
-}) {
-  const map: Record<string, string> = {
-    indigo: "bg-indigo-500/15 text-indigo-300 border-indigo-400/40",
-    emerald: "bg-emerald-500/15 text-emerald-300 border-emerald-400/40",
-    rose: "bg-rose-500/15 text-rose-300 border-rose-400/40",
-    amber: "bg-amber-500/15 text-amber-300 border-amber-400/40",
-  };
-  return (
-    <span
-      className={`inline-flex items-center gap-1 rounded-full border px-2 py-0.5 text-xs ${map[tone]}`}
-    >
-      {children}
-    </span>
-  );
-}
-
-function Meter({ value }: { value: number }) {
-  const w = `${(clamp01(value) * 100).toFixed(0)}%`;
-  return (
-    <div className="w-full h-2 rounded-full bg-neutral-700/60 overflow-hidden">
-      <div className="h-full rounded-full bg-indigo-400" style={{ width: w }} />
-    </div>
-  );
-}
-
-function SectionTitle({ children }: { children: React.ReactNode }) {
-  return <h3 className="text-lg font-semibold text-slate-100">{children}</h3>;
-}
-
-function Subtle({ children }: { children: React.ReactNode }) {
-  return <div className="text-sm text-neutral-300">{children}</div>;
-}
-
-function CodeSmall({ children }: { children: React.ReactNode }) {
-  return (
-    <code className="text-xs bg-neutral-900/70 border border-neutral-700 px-2 py-1 rounded">
-      {children}
-    </code>
   );
 }
 
@@ -340,11 +296,11 @@ export default function FinalReportSection({
                           }
                         >
                           {jr.needs_geo_specific_logic
-                            ? "Geo?: Yes"
-                            : "Geo?: No"}
+                            ? "Geo-specific logic required?: Yes"
+                            : "Geo-specific logic required?: No"}
                         </Badge>
                         <Badge tone="amber">
-                          Conf: {formatPct(jr.confidence)}
+                          Confidence: {formatPct(jr.confidence)}
                         </Badge>
                       </div>
                     )}

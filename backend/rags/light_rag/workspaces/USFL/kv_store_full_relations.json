@@ -1,0 +1,66 @@
+{
+  "doc-b863a770e3e09f63a61ec948466e1eee": {
+    "relation_pairs": [
+      [
+        "Florida Social Media Use for Minors - Platform Characteristics",
+        "Jellybean"
+      ],
+      [
+        "Florida Age Verification for Material Harmful to Minors",
+        "Jellybean"
+      ],
+      [
+        "Geo-Flags",
+        "Glow"
+      ],
+      [
+        "Compliance Detection System (CDS)",
+        "Geo-Flags"
+      ],
+      [
+        "Florida, US",
+        "Section 501.1737"
+      ],
+      [
+        "Baseline Behavior (BB)",
+        "Behavioral Anomaly Detection"
+      ],
+      [
+        "Florida Social Media Use for Minors - Platform Characteristics",
+        "Section 501.1736"
+      ],
+      [
+        "Behavioral Anomaly Detection",
+        "Jellybean"
+      ],
+      [
+        "Florida, US",
+        "Jellybean"
+      ],
+      [
+        "Behavioral Anomaly Detection",
+        "Internal Monitoring Trigger (IMT)"
+      ],
+      [
+        "Compliance Detection System (CDS)",
+        "ShadowMode"
+      ],
+      [
+        "Florida, US",
+        "Section 501.1736"
+      ],
+      [
+        "Florida Age Verification for Material Harmful to Minors",
+        "Section 501.1737"
+      ],
+      [
+        "Section 501.1737",
+        "Section 501.1738"
+      ]
+    ],
+    "count": 14,
+    "create_time": 1756570057,
+    "update_time": 1756570057,
+    "_id": "doc-b863a770e3e09f63a61ec948466e1eee"
+  }
+}

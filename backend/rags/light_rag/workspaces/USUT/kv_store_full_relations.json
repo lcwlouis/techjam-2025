@@ -1,0 +1,38 @@
+{
+  "doc-4e05ea4b7c6bb34fd07263536616b826": {
+    "relation_pairs": [
+      [
+        "Curfew Login Blocker",
+        "Utah"
+      ],
+      [
+        "NetChoice v. Utah",
+        "Preliminary Injunction"
+      ],
+      [
+        "Curfew Login Blocker",
+        "Geo-handler (GH)"
+      ],
+      [
+        "Curfew Login Blocker",
+        "Utah Social Media Regulation Act"
+      ],
+      [
+        "Appellate Review",
+        "Utah Social Media Regulation Act"
+      ],
+      [
+        "Preliminary Injunction",
+        "Utah Social Media Regulation Act"
+      ],
+      [
+        "Age Verification Requirement",
+        "Utah Social Media Regulation Act (S.B. 152 and H.B. 311)"
+      ]
+    ],
+    "count": 7,
+    "create_time": 1756567758,
+    "update_time": 1756567758,
+    "_id": "doc-4e05ea4b7c6bb34fd07263536616b826"
+  }
+}

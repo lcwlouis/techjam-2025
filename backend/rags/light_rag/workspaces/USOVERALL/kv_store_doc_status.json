@@ -1,0 +1,19 @@
+{
+  "doc-bddbca1d37abd901742b0ca6610124c1": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-bddbca1d37abd901742b0ca6610124c1"
+    ],
+    "content_summary": "{\"feature\": \"Chat UI overhaul\", \"feature_description\": \"A new chat layout will be tested in the following regions: CA, US, BR, ID. GH (Geo-handler; a module responsible for routing features based on user region) (Geo-handler; a module responsible for...",
+    "content_length": 4885,
+    "created_at": "2025-08-30T15:42:42.659609+00:00",
+    "updated_at": "2025-08-30T15:43:08.036381+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20250830_234242_9f822c12",
+    "metadata": {
+      "processing_start_time": 1756568562,
+      "processing_end_time": 1756568588
+    }
+  }
+}

@@ -259,35 +259,37 @@ async def demo_lightrag_test():
         "retrieval_result": resp
     }
 
-@app.get("/demo_naiverag_ingest_EU")
+# ------------------------------ INGESTION / RETRIEVAL --------------------------------
+
+@app.get("/naiverag_ingest_EU")
 async def inject_naiverag(): 
   file_name = "digital_services_act_wiki.txt"   
-  ingest_file_into_naiverag(file_name, region="EU")
+  ingest_file_into_naiverag(file_name, region="EUOVERALL")
 
-@app.get("/demo_naiverag_ingest_USCA")
+@app.get("/naiverag_ingest_USCA")
 async def inject_naiverag(): 
   file_name = "USCA_SB976.txt"   
   ingest_file_into_naiverag(file_name, region="USCA")
 
-@app.get("/demo_naiverag_ingest_USFL")
+@app.get("/naiverag_ingest_USFL")
 async def inject_naiverag(): 
   file_name = "florida_state_law.txt"   
   ingest_file_into_naiverag(file_name, region="USFL")
 
-@app.get("/demo_naiverag_ingest_USUT")
+@app.get("/naiverag_ingest_USUT")
 async def inject_naiverag(): 
   file_name = "Utah Social Media Regulation Act - Wikipedia.html"   
   ingest_file_into_naiverag(file_name, region="USUT")
 
-@app.get("/demo_naiverag_ingest_US")
+@app.get("/naiverag_ingest_US")
 async def inject_naiverag(): 
   file_name = "US law on reporting child sexual abuse content to NCMEC.txt"   
-  ingest_file_into_naiverag(file_name, region="US")
+  ingest_file_into_naiverag(file_name, region="USOVERALL")
 
-@app.get("/demo_naiverag_ingest_all")
+@app.get("/naiverag_ingest_all")
 async def injest_naiverag_all():
   file_name = "digital_services_act_wiki.txt"   
-  ingest_file_into_naiverag(file_name, region="EU")
+  ingest_file_into_naiverag(file_name, region="EUOVERALL")
   file_name = "USCA_SB976.txt"   
   ingest_file_into_naiverag(file_name, region="USCA")
   file_name = "florida_state_law.txt"   
@@ -295,10 +297,10 @@ async def injest_naiverag_all():
   file_name = "Utah Social Media Regulation Act - Wikipedia.html"   
   ingest_file_into_naiverag(file_name, region="USUT")
   file_name = "US law on reporting child sexual abuse content to NCMEC.txt"   
-  ingest_file_into_naiverag(file_name, region="US")
+  ingest_file_into_naiverag(file_name, region="USOVERALL")
 
 
-@app.get("/demo_naiverag_retrieve")
+@app.get("/naiverag_retrieve")
 async def retrieve_naiverag(): 
     query = "parental consent"
     region = "USCA"  
@@ -308,6 +310,30 @@ async def retrieve_naiverag():
         "content": serialized
     }
 
+from fastapi import Body, HTTPException
+import json
+
+@app.post("/lightrag_ingestion")
+async def lightrag_ingestion(payload: dict = Body(...)):
+    final_report = payload.get("final_report")
+    region_code = (payload.get("region_code") or "").strip()
+    if not region_code:
+        raise HTTPException(status_code=400, detail="region_code is required")
+    if final_report is None:
+        raise HTTPException(status_code=400, detail="final_report is required")
+
+    # ensure text string
+    if isinstance(final_report, (dict, list)):
+        text = json.dumps(final_report, ensure_ascii=False)
+    else:
+        text = str(final_report)
+
+    try:
+        await ingest(text, region_code)  # <-- must await
+        return {"status": "ok", "ingested_into": region_code}
+    except Exception as e:
+        # surface a clean 500 instead of crashing the server
+        raise HTTPException(status_code=500, detail=f"Ingest failed: {e}")
 
 # ------------------------------ TERMINOLOGY EXPANSION --------------------------------
 from helper_functions import populate

@@ -1,0 +1,161 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d11" for="edge" attr.name="created_at" attr.type="long" />
+  <key id="d10" for="edge" attr.name="file_path" attr.type="string" />
+  <key id="d9" for="edge" attr.name="source_id" attr.type="string" />
+  <key id="d8" for="edge" attr.name="keywords" attr.type="string" />
+  <key id="d7" for="edge" attr.name="description" attr.type="string" />
+  <key id="d6" for="edge" attr.name="weight" attr.type="double" />
+  <key id="d5" for="node" attr.name="created_at" attr.type="long" />
+  <key id="d4" for="node" attr.name="file_path" attr.type="string" />
+  <key id="d3" for="node" attr.name="source_id" attr.type="string" />
+  <key id="d2" for="node" attr.name="description" attr.type="string" />
+  <key id="d1" for="node" attr.name="entity_type" attr.type="string" />
+  <key id="d0" for="node" attr.name="entity_id" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="Curfew Login Blocker">
+      <data key="d0">Curfew Login Blocker</data>
+      <data key="d1">category</data>
+      <data key="d2">The Curfew Login Blocker is a feature that restricts login access for minors under 18 in Utah, implementing age-sensitive logic and geo-routing to enforce compliance with local regulations.</data>
+      <data key="d3">chunk-4e05ea4b7c6bb34fd07263536616b826</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756567753</data>
+    </node>
+    <node id="Age-sensitive Logic (ASL)">
+      <data key="d0">Age-sensitive Logic (ASL)</data>
+      <data key="d1">category</data>
+      <data key="d2">Age-sensitive logic (ASL) is a method used to detect minor accounts by verifying user ages through specific criteria.</data>
+      <data key="d3">chunk-4e05ea4b7c6bb34fd07263536616b826</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756567753</data>
+    </node>
+    <node id="Geo-handler (GH)">
+      <data key="d0">Geo-handler (GH)</data>
+      <data key="d1">category</data>
+      <data key="d2">Geo-handler (GH) is a module responsible for routing features based on the user's geographical location, ensuring features are applied according to local regulations.</data>
+      <data key="d3">chunk-4e05ea4b7c6bb34fd07263536616b826</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756567753</data>
+    </node>
+    <node id="Utah">
+      <data key="d0">Utah</data>
+      <data key="d1">geo</data>
+      <data key="d2">Utah is a state in the United States where the Curfew Login Blocker is implemented specifically for users under 18, as per local regulations.</data>
+      <data key="d3">chunk-4e05ea4b7c6bb34fd07263536616b826</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756567753</data>
+    </node>
+    <node id="Utah Social Media Regulation Act">
+      <data key="d0">Utah Social Media Regulation Act</data>
+      <data key="d1">organization</data>
+      <data key="d2">The Utah Social Media Regulation Act (S.B. 152 and H.B. 311) imposes requirements on social networks in Utah, including age verification and parental consent for minor accounts.</data>
+      <data key="d3">chunk-4e05ea4b7c6bb34fd07263536616b826</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756567753</data>
+    </node>
+    <node id="Preliminary Injunction">
+      <data key="d0">Preliminary Injunction</data>
+      <data key="d1">event</data>
+      <data key="d2">The Preliminary Injunction issued on September 10, 2024, currently prevents enforcement of the Utah Social Media Regulation Act pending litigation.</data>
+      <data key="d3">chunk-4e05ea4b7c6bb34fd07263536616b826</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756567753</data>
+    </node>
+    <node id="NetChoice v. Utah">
+      <data key="d0">NetChoice v. Utah</data>
+      <data key="d1">event</data>
+      <data key="d2">NetChoice v. Utah refers to the legal case involving a challenge to the enforceability of the Utah Social Media Regulation Act, with ongoing litigation affecting the law's implementation.</data>
+      <data key="d3">chunk-4e05ea4b7c6bb34fd07263536616b826</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756567753</data>
+    </node>
+    <node id="10th Circuit">
+      <data key="d0">10th Circuit</data>
+      <data key="d1">organization</data>
+      <data key="d2">The 10th Circuit is the court to which the appeal of the Utah Social Media Regulation Act was filed, impacting the future of the law's enforcement.</data>
+      <data key="d3">chunk-4e05ea4b7c6bb34fd07263536616b826</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756567753</data>
+    </node>
+    <node id="Utah Social Media Regulation Act (S.B. 152 and H.B. 311)">
+      <data key="d0">Utah Social Media Regulation Act (S.B. 152 and H.B. 311)</data>
+      <data key="d1">organization</data>
+      <data key="d2">The Utah Social Media Regulation Act (S.B. 152 and H.B. 311) establishes obligations for social networks operating in Utah, including age verification, parental consent, and access requirements for minor accounts.</data>
+      <data key="d3">chunk-4e05ea4b7c6bb34fd07263536616b826</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756567753</data>
+    </node>
+    <node id="Appellate Review">
+      <data key="d0">Appellate Review</data>
+      <data key="d1">event</data>
+      <data key="d2">Appellate Review refers to the ongoing review process related to the appeal made to the 10th Circuit concerning the Utah Social Media Regulation Act.</data>
+      <data key="d3">chunk-4e05ea4b7c6bb34fd07263536616b826</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756567753</data>
+    </node>
+    <node id="Age Verification Requirement">
+      <data key="d0">Age Verification Requirement</data>
+      <data key="d1">category</data>
+      <data key="d2">Age Verification Requirement specifies that social networks must verify the age of all users in Utah to maintain compliance with the local social media regulation.</data>
+      <data key="d3">chunk-4e05ea4b7c6bb34fd07263536616b826</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756567753</data>
+    </node>
+    <edge source="Curfew Login Blocker" target="Utah Social Media Regulation Act">
+      <data key="d6">8.0</data>
+      <data key="d7">The Curfew Login Blocker is designed to comply with the requirements set forth by the Utah Social Media Regulation Act, targeting accounts of minors.</data>
+      <data key="d8">feature implementation,regulatory compliance</data>
+      <data key="d9">chunk-4e05ea4b7c6bb34fd07263536616b826</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756567755</data>
+    </edge>
+    <edge source="Curfew Login Blocker" target="Utah">
+      <data key="d6">9.0</data>
+      <data key="d7">The Curfew Login Blocker is specifically enforced within Utah for users under the age of 18.</data>
+      <data key="d8">geographical application,user restriction</data>
+      <data key="d9">chunk-4e05ea4b7c6bb34fd07263536616b826</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756567755</data>
+    </edge>
+    <edge source="Curfew Login Blocker" target="Geo-handler (GH)">
+      <data key="d6">8.0</data>
+      <data key="d7">The Geo-handler (GH) is integral to the implementation of the Curfew Login Blocker by ensuring compliance with location-based regulations.</data>
+      <data key="d8">feature support,technical routing</data>
+      <data key="d9">chunk-4e05ea4b7c6bb34fd07263536616b826</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756567756</data>
+    </edge>
+    <edge source="Utah Social Media Regulation Act" target="Preliminary Injunction">
+      <data key="d6">10.0</data>
+      <data key="d7">The Preliminary Injunction affects the enforcement of the Utah Social Media Regulation Act, preventing its implementation until legal proceedings are resolved.</data>
+      <data key="d8">enforcement delay,legal obstacle</data>
+      <data key="d9">chunk-4e05ea4b7c6bb34fd07263536616b826</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756567755</data>
+    </edge>
+    <edge source="Utah Social Media Regulation Act" target="Appellate Review">
+      <data key="d6">8.0</data>
+      <data key="d7">The Utah Social Media Regulation Act is currently under Appellate Review, impacting its enforceability based on judicial decisions.</data>
+      <data key="d8">legal process,regulatory oversight</data>
+      <data key="d9">chunk-4e05ea4b7c6bb34fd07263536616b826</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756567756</data>
+    </edge>
+    <edge source="Preliminary Injunction" target="NetChoice v. Utah">
+      <data key="d6">9.0</data>
+      <data key="d7">The case of NetChoice v. Utah is directly related to the Preliminary Injunction, which halts the enforcement of the Utah Social Media law during litigation.</data>
+      <data key="d8">judicial order,litigation impact</data>
+      <data key="d9">chunk-4e05ea4b7c6bb34fd07263536616b826</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756567756</data>
+    </edge>
+    <edge source="Utah Social Media Regulation Act (S.B. 152 and H.B. 311)" target="Age Verification Requirement">
+      <data key="d6">9.0</data>
+      <data key="d7">The Utah Social Media Regulation Act includes an Age Verification Requirement for social networks to operate in the state.</data>
+      <data key="d8">age verification,regulatory compliance</data>
+      <data key="d9">chunk-4e05ea4b7c6bb34fd07263536616b826</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756567755</data>
+    </edge>
+  </graph>
+</graphml>

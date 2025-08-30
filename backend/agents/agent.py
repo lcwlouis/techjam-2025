@@ -15,7 +15,7 @@ logger = logging.getLogger(__name__)
 deepseek_model  = LiteLlm(model="deepseek/deepseek-chat", api_key=os.getenv("DEEPSEEK_API_KEY"))
 openai_model = LiteLlm(model="gpt-5-mini", api_key=os.getenv("OPENAI_API_KEY"),)
 
-# lightrag_retrieve_tool = LangchainTool(lightrag_retrieve_sync)
+# lightrag_retrieve_tool = LangchainTool(lightrag_retrieve)
 # naiverag_retrieve_tool = LangchainTool(naiverag_retrieve_sync)
 
 def exit_loop(tool_context: ToolContext):
@@ -47,7 +47,7 @@ def make_cross_loop(jury_name: str, critic_name: str, output_key: str, jury_mode
         name=f"{jury_name}Loop",
         description=f"{jury_name} (with {critic_name} cross-review)",
         sub_agents=[jury, critic],
-        max_iterations=1,
+        max_iterations=3,
     )
 
 # ---------------- BUILD 4 JURORS ----------------

@@ -39,8 +39,16 @@ export default function SubmitArea({
   onSubmit: () => Promise<void>;
 }) {
   function handleSubmit() {
-    if (!feature.trim() || !featureDescription.trim()) {
-      alert("Please fill in both Feature Title and Feature Description.");
+    if (!feature.trim()) {
+      alert("Please fill in Feature Title.");
+      return;
+    }
+    if (!featureDescription.trim()) {
+      alert("Please fill in Feature Description.");
+      return;
+    }
+    if (!region?.country.trim()) {
+      alert("Please select a Country / Region.");
       return;
     }
     onSubmit();
