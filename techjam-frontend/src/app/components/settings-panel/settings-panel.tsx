@@ -26,7 +26,7 @@ export default function SettingsPanel({
           method: "GET",
           cache: "no-store",
           headers: {
-            "Content-Type": "application/json",
+            
             "Cache-Control": "no-cache",
           },
         });
@@ -52,7 +52,6 @@ export default function SettingsPanel({
       method: "GET",
       cache: "no-store",
       headers: {
-        "Content-Type": "application/json",
         "Cache-Control": "no-cache",
       },
     });
