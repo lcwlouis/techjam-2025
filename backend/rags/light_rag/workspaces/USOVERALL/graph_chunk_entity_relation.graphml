@@ -40,18 +40,18 @@
     <node id="NCMEC">
       <data key="d0">NCMEC</data>
       <data key="d1">organization</data>
-      <data key="d2">The National Center for Missing &amp; Exploited Children (NCMEC) is responsible for receiving reports of child sexual abuse content as mandated by law.</data>
-      <data key="d3">chunk-bddbca1d37abd901742b0ca6610124c1</data>
+      <data key="d2">NCMEC is a private, nonprofit organization that plays a vital role in the clearinghouse for reports of child sexual exploitation, tasked with forwarding these reports to law enforcement agencies.&lt;SEP&gt;The National Center for Missing &amp; Exploited Children (NCMEC) acts as a clearinghouse for reports related to child sexual abuse material and may forward such reports to federal law enforcement.&lt;SEP&gt;The National Center for Missing &amp; Exploited Children (NCMEC) is responsible for receiving reports of child sexual abuse content as mandated by law.</data>
+      <data key="d3">chunk-bddbca1d37abd901742b0ca6610124c1&lt;SEP&gt;chunk-03af3b99beed5a891fbf02b542aed03e&lt;SEP&gt;chunk-ecd054a4b792109f9e8db4282abab32f</data>
       <data key="d4">unknown_source</data>
-      <data key="d5">1756568582</data>
+      <data key="d5">1756577150</data>
     </node>
     <node id="18 U.S.C. §2258A">
       <data key="d0">18 U.S.C. §2258A</data>
-      <data key="d1">regulation</data>
-      <data key="d2">18 U.S.C. §2258A is a US legislation imposing mandatory reporting obligations for child sexual abuse content.</data>
-      <data key="d3">chunk-bddbca1d37abd901742b0ca6610124c1</data>
+      <data key="d1">category</data>
+      <data key="d2">18 U.S.C. §2258A is a US legislation imposing mandatory reporting obligations for child sexual abuse content.&lt;SEP&gt;18 U.S.C. §2258A is a section of U.S. law that mandates the forwarding of reports of apparent child pornography and related information to NCMEC.</data>
+      <data key="d3">chunk-03af3b99beed5a891fbf02b542aed03e&lt;SEP&gt;chunk-bddbca1d37abd901742b0ca6610124c1</data>
       <data key="d4">unknown_source</data>
-      <data key="d5">1756568582</data>
+      <data key="d5">1756577151</data>
     </node>
     <node id="US">
       <data key="d0">US</data>
@@ -88,10 +88,10 @@
     <node id="Child Sexual Abuse Content">
       <data key="d0">Child Sexual Abuse Content</data>
       <data key="d1">category</data>
-      <data key="d2">Child Sexual Abuse Content refers to illegal materials that exploit or abuse minors, which providers are mandated to report under US law.</data>
-      <data key="d3">chunk-bddbca1d37abd901742b0ca6610124c1</data>
+      <data key="d2">Child Sexual Abuse Content refers to any material that depicts or suggests sexual exploitation of minors, and is subject to mandatory reporting laws.&lt;SEP&gt;Child Sexual Abuse Content refers to illegal materials that exploit or abuse minors, which providers are mandated to report under US law.</data>
+      <data key="d3">chunk-03af3b99beed5a891fbf02b542aed03e&lt;SEP&gt;chunk-bddbca1d37abd901742b0ca6610124c1</data>
       <data key="d4">unknown_source</data>
-      <data key="d5">1756568582</data>
+      <data key="d5">1756577151</data>
     </node>
     <node id="Provider">
       <data key="d0">Provider</data>
@@ -108,6 +108,86 @@
       <data key="d3">chunk-bddbca1d37abd901742b0ca6610124c1</data>
       <data key="d4">unknown_source</data>
       <data key="d5">1756568582</data>
+    </node>
+    <node id="NSP">
+      <data key="d0">NSP</data>
+      <data key="d1">category</data>
+      <data key="d2">NSP (Non-shareable policy) is a policy designed to automatically detect and tag content that violates sharing restrictions related to sensitive information.</data>
+      <data key="d3">chunk-ecd054a4b792109f9e8db4282abab32f</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756577150</data>
+    </node>
+    <node id="United States">
+      <data key="d0">United States</data>
+      <data key="d1">geo</data>
+      <data key="d2">The United States is the region affected by the NSP regulations, particularly concerning the reporting of apparent child sexual abuse material.</data>
+      <data key="d3">chunk-ecd054a4b792109f9e8db4282abab32f</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756577150</data>
+    </node>
+    <node id="US law on reporting child sexual abuse content to NCMEC">
+      <data key="d0">US law on reporting child sexual abuse content to NCMEC</data>
+      <data key="d1">regulation</data>
+      <data key="d2">US law establishes requirements for providers to report apparent child sexual abuse material to NCMEC, including specific data elements that must be included in such reports.</data>
+      <data key="d3">chunk-ecd054a4b792109f9e8db4282abab32f</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756577150</data>
+    </node>
+    <node id="Child Sexual Abuse Material">
+      <data key="d0">Child Sexual Abuse Material</data>
+      <data key="d1">category</data>
+      <data key="d2">Child Sexual Abuse Material (CSAM) refers to visual depictions and content that portray child exploitation and abuse.</data>
+      <data key="d3">chunk-ecd054a4b792109f9e8db4282abab32f</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756577150</data>
+    </node>
+    <node id="US Legislation Excerpts">
+      <data key="d0">US Legislation Excerpts</data>
+      <data key="d1">event</data>
+      <data key="d2">US Legislation Excerpts are the legislative texts referenced that establish reporting obligations concerning child sexual abuse material.</data>
+      <data key="d3">chunk-ecd054a4b792109f9e8db4282abab32f</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756577150</data>
+    </node>
+    <node id="Federal Law Enforcement">
+      <data key="d0">Federal Law Enforcement</data>
+      <data key="d1">organization</data>
+      <data key="d2">Federal Law Enforcement agencies are responsible for investigating crimes, including those related to child sexual abuse material, and may receive reports forwarded by NCMEC.</data>
+      <data key="d3">chunk-ecd054a4b792109f9e8db4282abab32f</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756577150</data>
+    </node>
+    <node id="US Law on Reporting Child Sexual Abuse Content to NCMEC">
+      <data key="d0">US Law on Reporting Child Sexual Abuse Content to NCMEC</data>
+      <data key="d1">event</data>
+      <data key="d2">US Law on Reporting Child Sexual Abuse Content to NCMEC outlines the legal requirements and penalties associated with reporting child sexual abuse content.</data>
+      <data key="d3">chunk-03af3b99beed5a891fbf02b542aed03e</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756577150</data>
+    </node>
+    <node id="Federal Law Enforcement Agency">
+      <data key="d0">Federal Law Enforcement Agency</data>
+      <data key="d1">organization</data>
+      <data key="d2">Federal law enforcement agencies are involved in the investigation of child sexual exploitation, kidnapping, or enticement crimes, and receive reports from NCMEC.</data>
+      <data key="d3">chunk-03af3b99beed5a891fbf02b542aed03e</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756577150</data>
+    </node>
+    <node id="Law Enforcement Agencies">
+      <data key="d0">Law Enforcement Agencies</data>
+      <data key="d1">organization</data>
+      <data key="d2">Law Enforcement Agencies refer to the various government bodies responsible for enforcing laws, involved specifically in the investigation of child sexual exploitation and related crimes.</data>
+      <data key="d3">chunk-03af3b99beed5a891fbf02b542aed03e</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756577151</data>
+    </node>
+    <node id="Penalties for Failure to Report">
+      <data key="d0">Penalties for Failure to Report</data>
+      <data key="d1">category</data>
+      <data key="d2">Penalties for Failure to Report highlights the legal consequences for providers that do not report incidents of child sexual abuse content as required by law.</data>
+      <data key="d3">chunk-03af3b99beed5a891fbf02b542aed03e</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756577151</data>
     </node>
     <edge source="Chat UI Overhaul" target="Geo-handler (GH)">
       <data key="d6">7.0</data>
@@ -189,6 +269,62 @@
       <data key="d10">unknown_source</data>
       <data key="d11">1756568586</data>
     </edge>
+    <edge source="NCMEC" target="United States">
+      <data key="d6">9.0</data>
+      <data key="d7">NCMEC operates within the jurisdiction of the United States, handling reports related to child sexual abuse material according to US law.</data>
+      <data key="d8">operational jurisdiction,regulatory compliance</data>
+      <data key="d9">chunk-ecd054a4b792109f9e8db4282abab32f</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756577152</data>
+    </edge>
+    <edge source="NCMEC" target="NSP">
+      <data key="d6">10.0</data>
+      <data key="d7">The NSP auto-flagging system is designed to ensure compliance with the reporting requirements to NCMEC regarding child sexual abuse material.</data>
+      <data key="d8">compliance mechanism,reporting requirement</data>
+      <data key="d9">chunk-ecd054a4b792109f9e8db4282abab32f</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756577154</data>
+    </edge>
+    <edge source="NCMEC" target="Federal Law Enforcement">
+      <data key="d6">9.0</data>
+      <data key="d7">NCMEC forwards reports of child sexual abuse material to Federal Law Enforcement for investigation and action.</data>
+      <data key="d8">law enforcement,reporting</data>
+      <data key="d9">chunk-ecd054a4b792109f9e8db4282abab32f</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756577155</data>
+    </edge>
+    <edge source="NCMEC" target="US Law on Reporting Child Sexual Abuse Content to NCMEC">
+      <data key="d6">9.0</data>
+      <data key="d7">"NCMEC operates under the framework established by US law regarding the reporting of child sexual abuse content.")</data>
+      <data key="d8">legal compliance,organizational role</data>
+      <data key="d9">chunk-03af3b99beed5a891fbf02b542aed03e</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756577155</data>
+    </edge>
+    <edge source="NCMEC" target="Federal Law Enforcement Agency">
+      <data key="d6">8.0</data>
+      <data key="d7">"NCMEC forwards reports to federal law enforcement agencies involved in child exploitation investigations.")</data>
+      <data key="d8">law enforcement collaboration,reporting process</data>
+      <data key="d9">chunk-03af3b99beed5a891fbf02b542aed03e</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756577156</data>
+    </edge>
+    <edge source="NCMEC" target="Child Sexual Abuse Content">
+      <data key="d6">9.0</data>
+      <data key="d7">"NCMEC is responsible for managing reports related to Child Sexual Abuse Content, indicating a direct connection between the organization and the category of content.")</data>
+      <data key="d8">child protection,reporting responsibility</data>
+      <data key="d9">chunk-03af3b99beed5a891fbf02b542aed03e</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756577157</data>
+    </edge>
+    <edge source="NCMEC" target="Law Enforcement Agencies">
+      <data key="d6">8.0</data>
+      <data key="d7">"Law Enforcement Agencies receive reports from NCMEC that relate to child sexual abuse content, illustrating their collaborative role in addressing such cases.")</data>
+      <data key="d8">collaboration,investigation</data>
+      <data key="d9">chunk-03af3b99beed5a891fbf02b542aed03e</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756577158</data>
+    </edge>
     <edge source="18 U.S.C. §2258A" target="Child Sexual Abuse Content">
       <data key="d6">9.0</data>
       <data key="d7">The category of Child Sexual Abuse Content is defined and governed by the obligations laid out in 18 U.S.C. §2258A.</data>
@@ -197,6 +333,14 @@
       <data key="d10">unknown_source</data>
       <data key="d11">1756568585</data>
     </edge>
+    <edge source="18 U.S.C. §2258A" target="US Law on Reporting Child Sexual Abuse Content to NCMEC">
+      <data key="d6">9.0</data>
+      <data key="d7">"The law specifies the obligations for reporting child sexual abuse content, as detailed in 18 U.S.C. §2258A.")</data>
+      <data key="d8">legal framework,reporting obligations</data>
+      <data key="d9">chunk-03af3b99beed5a891fbf02b542aed03e</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756577153</data>
+    </edge>
     <edge source="Provider" target="CyberTipline">
       <data key="d6">10.0</data>
       <data key="d7">Providers are responsible for submitting reports to the CyberTipline when they obtain actual knowledge of Child Sexual Abuse Content.</data>
@@ -204,6 +348,46 @@
       <data key="d9">chunk-bddbca1d37abd901742b0ca6610124c1</data>
       <data key="d10">unknown_source</data>
       <data key="d11">1756568585</data>
+    </edge>
+    <edge source="NSP" target="US law on reporting child sexual abuse content to NCMEC">
+      <data key="d6">9.0</data>
+      <data key="d7">The NSP policy must align with US law on reporting child sexual abuse content when implemented in the United States.</data>
+      <data key="d8">legal compliance,regulatory alignment</data>
+      <data key="d9">chunk-ecd054a4b792109f9e8db4282abab32f</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756577153</data>
+    </edge>
+    <edge source="United States" target="US law on reporting child sexual abuse content to NCMEC">
+      <data key="d6">8.0</data>
+      <data key="d7">The US law provides the framework for reporting obligations that are applicable within the United States regarding child sexual abuse material.</data>
+      <data key="d8">legal framework,reporting obligation</data>
+      <data key="d9">chunk-ecd054a4b792109f9e8db4282abab32f</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756577153</data>
+    </edge>
+    <edge source="Child Sexual Abuse Material" target="US Legislation Excerpts">
+      <data key="d6">8.0</data>
+      <data key="d7">The US Legislation Excerpts outline the legal context and required actions concerning the reporting of child sexual abuse material.</data>
+      <data key="d8">legal obligation,reporting standards</data>
+      <data key="d9">chunk-ecd054a4b792109f9e8db4282abab32f</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756577152</data>
+    </edge>
+    <edge source="US Legislation Excerpts" target="Federal Law Enforcement">
+      <data key="d6">7.0</data>
+      <data key="d7">Federal Law Enforcement acts based on the guidelines established by the US Legislation Excerpts concerning responsibilities related to child sexual abuse material.</data>
+      <data key="d8">investigative authority,legislative guidelines</data>
+      <data key="d9">chunk-ecd054a4b792109f9e8db4282abab32f</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756577155</data>
+    </edge>
+    <edge source="US Law on Reporting Child Sexual Abuse Content to NCMEC" target="Penalties for Failure to Report">
+      <data key="d6">8.0</data>
+      <data key="d7">"The US Law includes specific penalties that apply to cases of failure to report child sexual abuse content, emphasizing the legal repercussions for non-compliance.")</data>
+      <data key="d8">compliance,legal enforcement</data>
+      <data key="d9">chunk-03af3b99beed5a891fbf02b542aed03e</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756577154</data>
     </edge>
   </graph>
 </graphml>

@@ -15,5 +15,23 @@
       "processing_start_time": 1756568562,
       "processing_end_time": 1756568588
     }
+  },
+  "doc-8723929ab8fd185bc96c06c9ed40cac3": {
+    "status": "processed",
+    "chunks_count": 2,
+    "chunks_list": [
+      "chunk-ecd054a4b792109f9e8db4282abab32f",
+      "chunk-03af3b99beed5a891fbf02b542aed03e"
+    ],
+    "content_summary": "{\"feature\": \"NSP (Non-shareable policy (content should not be shared externally)) (Non-shareable policy) auto-flagging\", \"feature_description\": \"Automatically detect and tag content that violates NSP (Non-shareable policy (content should not be share...",
+    "content_length": 8192,
+    "created_at": "2025-08-30T18:05:35.578815+00:00",
+    "updated_at": "2025-08-30T18:05:58.795639+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20250831_020535_be3e18b3",
+    "metadata": {
+      "processing_start_time": 1756577135,
+      "processing_end_time": 1756577158
+    }
   }
 }
