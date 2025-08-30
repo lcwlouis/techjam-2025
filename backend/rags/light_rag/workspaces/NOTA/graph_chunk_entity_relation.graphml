@@ -1,0 +1,273 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d11" for="edge" attr.name="created_at" attr.type="long" />
+  <key id="d10" for="edge" attr.name="file_path" attr.type="string" />
+  <key id="d9" for="edge" attr.name="source_id" attr.type="string" />
+  <key id="d8" for="edge" attr.name="keywords" attr.type="string" />
+  <key id="d7" for="edge" attr.name="description" attr.type="string" />
+  <key id="d6" for="edge" attr.name="weight" attr.type="double" />
+  <key id="d5" for="node" attr.name="created_at" attr.type="long" />
+  <key id="d4" for="node" attr.name="file_path" attr.type="string" />
+  <key id="d3" for="node" attr.name="source_id" attr.type="string" />
+  <key id="d2" for="node" attr.name="description" attr.type="string" />
+  <key id="d1" for="node" attr.name="entity_type" attr.type="string" />
+  <key id="d0" for="node" attr.name="entity_id" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="Canada">
+      <data key="d0">Canada</data>
+      <data key="d1">geo</data>
+      <data key="d2">Canada is a country in North America, referenced in the context of implementing geo-specific controls for personalized feeds for users.</data>
+      <data key="d3">chunk-cd45156cc7af622ebe92aaa37014e4a4</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756585157</data>
+    </node>
+    <node id="Personal Information Protection and Electronic Documents Act (PIPEDA)">
+      <data key="d0">Personal Information Protection and Electronic Documents Act (PIPEDA)</data>
+      <data key="d1">regulation</data>
+      <data key="d2">PIPEDA is a Canadian federal law that governs the collection, use, and disclosure of personal information, emphasizing the requirement for organizations to obtain consent.</data>
+      <data key="d3">chunk-cd45156cc7af622ebe92aaa37014e4a4</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756585157</data>
+    </node>
+    <node id="Office of the Privacy Commissioner (OPC)">
+      <data key="d0">Office of the Privacy Commissioner (OPC)</data>
+      <data key="d1">organization</data>
+      <data key="d2">The OPC is responsible for overseeing compliance with privacy laws in Canada, including providing guidance on obtaining meaningful consent under PIPEDA.</data>
+      <data key="d3">chunk-cd45156cc7af622ebe92aaa37014e4a4</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756585157</data>
+    </node>
+    <node id="Quebec Law 25">
+      <data key="d0">Quebec Law 25</data>
+      <data key="d1">regulation</data>
+      <data key="d2">Quebec Law 25, formerly known as Bill 64, strengthens obligations for transparency and data protection in handling personal information of Quebec residents.</data>
+      <data key="d3">chunk-cd45156cc7af622ebe92aaa37014e4a4</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756585157</data>
+    </node>
+    <node id="Bill C-27/AIDA">
+      <data key="d0">Bill C-27/AIDA</data>
+      <data key="d1">regulation</data>
+      <data key="d2">Bill C-27/AIDA is a proposed federal legislation aimed at enhancing algorithmic transparency and governance for automated decision systems in Canada.</data>
+      <data key="d3">chunk-cd45156cc7af622ebe92aaa37014e4a4</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756585157</data>
+    </node>
+    <node id="Spanner">
+      <data key="d0">Spanner</data>
+      <data key="d1">technology</data>
+      <data key="d2">Spanner is a synthetic name for a rule engine designed to isolate affected cohorts during the testing of personalized feed variants.</data>
+      <data key="d3">chunk-cd45156cc7af622ebe92aaa37014e4a4</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756585157</data>
+    </node>
+    <node id="Glow">
+      <data key="d0">Glow</data>
+      <data key="d1">technology</data>
+      <data key="d2">Glow is a compliance-flagging status used internally to indicate geo-based alerts and to monitor feature health.</data>
+      <data key="d3">chunk-cd45156cc7af622ebe92aaa37014e4a4</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756585157</data>
+    </node>
+    <node id="jury reports">
+      <data key="d0">jury reports</data>
+      <data key="d1">category</data>
+      <data key="d2">Jury reports analyze and summarize the requirements for compliance with privacy laws specific to Canada, highlighting necessary controls for data management.</data>
+      <data key="d3">chunk-cd45156cc7af622ebe92aaa37014e4a4</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756585157</data>
+    </node>
+    <node id="federal privacy law (PIPEDA)">
+      <data key="d0">federal privacy law (PIPEDA)</data>
+      <data key="d1">category</data>
+      <data key="d2">Federal privacy law (PIPEDA) forms the foundation of privacy regulations in Canada, encompassing principles for obtaining consent and data protection.</data>
+      <data key="d3">chunk-cd45156cc7af622ebe92aaa37014e4a4</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756585157</data>
+    </node>
+    <node id="privacy/algorithmic impact assessments">
+      <data key="d0">privacy/algorithmic impact assessments</data>
+      <data key="d1">category</data>
+      <data key="d2">Privacy/algorithmic impact assessments are evaluations performed to ensure compliance with privacy laws and assess risks associated with data handling and algorithm use.</data>
+      <data key="d3">chunk-cd45156cc7af622ebe92aaa37014e4a4</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756585157</data>
+    </node>
+    <node id="Artificial Intelligence and Data Act">
+      <data key="d0">Artificial Intelligence and Data Act</data>
+      <data key="d1">event</data>
+      <data key="d2">The Artificial Intelligence and Data Act (AIDA) was proposed as part of Bill C-27, emphasizing algorithmic transparency and governance for automated decision systems.</data>
+      <data key="d3">chunk-9835eaaa6aa4f107cf76f092647f0fd5</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756585157</data>
+    </node>
+    <node id="Bill C-27">
+      <data key="d0">Bill C-27</data>
+      <data key="d1">event</data>
+      <data key="d2">Bill C-27 is the legislative proposal that includes the Artificial Intelligence and Data Act and outlines obligations for transparency, documentation, and risk management for certain AI systems.</data>
+      <data key="d3">chunk-9835eaaa6aa4f107cf76f092647f0fd5</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756585157</data>
+    </node>
+    <node id="ISED">
+      <data key="d0">ISED</data>
+      <data key="d1">organization</data>
+      <data key="d2">ISED (Innovation, Science and Economic Development Canada) produced a companion document on the AIDA, detailing obligations and updates related to the act.</data>
+      <data key="d3">chunk-9835eaaa6aa4f107cf76f092647f0fd5</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756585157</data>
+    </node>
+    <node id="consultation materials">
+      <data key="d0">consultation materials</data>
+      <data key="d1">category</data>
+      <data key="d2">Consultation materials refer to documents and information provided to stakeholders to guide discussions and considerations regarding the AIDA.</data>
+      <data key="d3">chunk-9835eaaa6aa4f107cf76f092647f0fd5</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756585157</data>
+    </node>
+    <node id="transparency requirements">
+      <data key="d0">transparency requirements</data>
+      <data key="d1">category</data>
+      <data key="d2">Transparency requirements are criteria outlined in the AIDA that dictate the necessary levels of openness and clarity regarding automated decision systems.</data>
+      <data key="d3">chunk-9835eaaa6aa4f107cf76f092647f0fd5</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756585158</data>
+    </node>
+    <node id="automated decision systems">
+      <data key="d0">automated decision systems</data>
+      <data key="d1">category</data>
+      <data key="d2">Automated decision systems are software systems that make decisions based on data inputs, and are subject to the governance and transparency obligations proposed in the AIDA.</data>
+      <data key="d3">chunk-9835eaaa6aa4f107cf76f092647f0fd5</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756585158</data>
+    </node>
+    <node id="risk management obligations">
+      <data key="d0">risk management obligations</data>
+      <data key="d1">category</data>
+      <data key="d2">Risk management obligations are the responsibilities assigned to ensure that AI systems are monitored and managed to mitigate risks associated with their deployment.</data>
+      <data key="d3">chunk-9835eaaa6aa4f107cf76f092647f0fd5</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756585158</data>
+    </node>
+    <node id="PIPEDA">
+      <data key="d0">PIPEDA</data>
+      <data key="d3">chunk-cd45156cc7af622ebe92aaa37014e4a4</data>
+      <data key="d2">Canada's regulations regarding privacy laws are primarily guided by PIPEDA, which emphasizes the need for consent and responsible data use.</data>
+      <data key="d1">UNKNOWN</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756585159</data>
+    </node>
+    <node id="Automated decision systems">
+      <data key="d0">Automated decision systems</data>
+      <data key="d3">chunk-9835eaaa6aa4f107cf76f092647f0fd5</data>
+      <data key="d2">Automated decision systems are subject to specific risk management obligations outlined in the AIDA to ensure safe and responsible usage.</data>
+      <data key="d1">UNKNOWN</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756585160</data>
+    </node>
+    <edge source="Canada" target="PIPEDA">
+      <data key="d6">9.0</data>
+      <data key="d7">Canada's regulations regarding privacy laws are primarily guided by PIPEDA, which emphasizes the need for consent and responsible data use.</data>
+      <data key="d8">national law,privacy compliance</data>
+      <data key="d9">chunk-cd45156cc7af622ebe92aaa37014e4a4</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756585159</data>
+    </edge>
+    <edge source="Canada" target="jury reports">
+      <data key="d6">8.0</data>
+      <data key="d7">Jury reports address Canada-specific controls needed for compliance, indicating the relationship between regulatory analysis and geographic jurisdiction.</data>
+      <data key="d8">geographic relevance,regulatory analysis</data>
+      <data key="d9">chunk-cd45156cc7af622ebe92aaa37014e4a4</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756585159</data>
+    </edge>
+    <edge source="Office of the Privacy Commissioner (OPC)" target="PIPEDA">
+      <data key="d6">8.0</data>
+      <data key="d7">The OPC provides guidance on the application of PIPEDA principles, including consent requirements and transparency obligations.</data>
+      <data key="d8">privacy oversight,regulatory guidance</data>
+      <data key="d9">chunk-cd45156cc7af622ebe92aaa37014e4a4</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756585159</data>
+    </edge>
+    <edge source="Quebec Law 25" target="PIPEDA">
+      <data key="d6">7.0</data>
+      <data key="d7">Quebec Law 25 enhances certain obligations already established by PIPEDA, focusing on data protection and consent in Quebec.</data>
+      <data key="d8">privacy compliance,regional law</data>
+      <data key="d9">chunk-cd45156cc7af622ebe92aaa37014e4a4</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756585160</data>
+    </edge>
+    <edge source="Bill C-27/AIDA" target="PIPEDA">
+      <data key="d6">7.0</data>
+      <data key="d7">Bill C-27/AIDA proposes further regulations concerning algorithmic transparency, which relates closely to the principles outlined in PIPEDA.</data>
+      <data key="d8">proposed legislation,regulatory impact</data>
+      <data key="d9">chunk-cd45156cc7af622ebe92aaa37014e4a4</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756585161</data>
+    </edge>
+    <edge source="Spanner" target="Glow">
+      <data key="d6">8.0</data>
+      <data key="d7">Both Spanner and Glow are technologies used in conjunction for managing geo-specific alerts and monitoring feature effectiveness in personalized feeds.</data>
+      <data key="d8">real-time monitoring,technology integration</data>
+      <data key="d9">chunk-cd45156cc7af622ebe92aaa37014e4a4</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756585159</data>
+    </edge>
+    <edge source="federal privacy law (PIPEDA)" target="PIPEDA">
+      <data key="d6">9.0</data>
+      <data key="d7">Federal privacy law (PIPEDA) serves as the primary legislative framework guiding organizations in their handling of personal information in Canada.</data>
+      <data key="d8">compliance standard,legal framework</data>
+      <data key="d9">chunk-cd45156cc7af622ebe92aaa37014e4a4</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756585162</data>
+    </edge>
+    <edge source="privacy/algorithmic impact assessments" target="PIPEDA">
+      <data key="d6">8.0</data>
+      <data key="d7">Privacy/algorithmic impact assessments are an essential component of fulfilling obligations under PIPEDA for organizations handling personal information.</data>
+      <data key="d8">compliance evaluation,regulatory requirement</data>
+      <data key="d9">chunk-cd45156cc7af622ebe92aaa37014e4a4</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756585163</data>
+    </edge>
+    <edge source="Artificial Intelligence and Data Act" target="Bill C-27">
+      <data key="d6">9.0</data>
+      <data key="d7">The Artificial Intelligence and Data Act was introduced as part of Bill C-27, making it a key component of this legislative proposal.</data>
+      <data key="d8">governance,legislation</data>
+      <data key="d9">chunk-9835eaaa6aa4f107cf76f092647f0fd5</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756585159</data>
+    </edge>
+    <edge source="Artificial Intelligence and Data Act" target="ISED">
+      <data key="d6">8.0</data>
+      <data key="d7">ISED provides a companion document that explains the provisions and obligations of the Artificial Intelligence and Data Act.</data>
+      <data key="d8">government agency,regulatory guidance</data>
+      <data key="d9">chunk-9835eaaa6aa4f107cf76f092647f0fd5</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756585160</data>
+    </edge>
+    <edge source="Artificial Intelligence and Data Act" target="transparency requirements">
+      <data key="d6">9.0</data>
+      <data key="d7">The Artificial Intelligence and Data Act includes provisions that set transparency requirements for automated decision systems.</data>
+      <data key="d8">regulatory framework,transparency obligations</data>
+      <data key="d9">chunk-9835eaaa6aa4f107cf76f092647f0fd5</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756585161</data>
+    </edge>
+    <edge source="Artificial Intelligence and Data Act" target="consultation materials">
+      <data key="d6">8.0</data>
+      <data key="d7">The Artificial Intelligence and Data Act references consultation materials to inform transparency requirements for automated decision systems.</data>
+      <data key="d8">legislative framework,stakeholder engagement</data>
+      <data key="d9">chunk-9835eaaa6aa4f107cf76f092647f0fd5</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756585162</data>
+    </edge>
+    <edge source="risk management obligations" target="Automated decision systems">
+      <data key="d6">7.0</data>
+      <data key="d7">Automated decision systems are subject to specific risk management obligations outlined in the AIDA to ensure safe and responsible usage.</data>
+      <data key="d8">safety,system governance</data>
+      <data key="d9">chunk-9835eaaa6aa4f107cf76f092647f0fd5</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756585160</data>
+    </edge>
+  </graph>
+</graphml>

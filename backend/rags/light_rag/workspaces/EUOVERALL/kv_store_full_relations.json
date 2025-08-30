@@ -1,0 +1,186 @@
+{
+  "doc-568be3f381f63ce6af340efc5aa8c5bb": {
+    "relation_pairs": [
+      [
+        "GDPR",
+        "Video Reply Functionality"
+      ],
+      [
+        "Articles 33–37",
+        "Digital Services Act"
+      ],
+      [
+        "Art. 5(1)(c)",
+        "GDPR"
+      ],
+      [
+        "Digital Services Act (Regulation (EU) 2022/2065)",
+        "Video Reply Functionality"
+      ],
+      [
+        "Articles 14–16",
+        "Digital Services Act"
+      ],
+      [
+        "DSA",
+        "Standard Contractual Clauses"
+      ],
+      [
+        "Geo-handler (GH)",
+        "Video Reply Functionality"
+      ],
+      [
+        "Consent",
+        "Personal Data"
+      ],
+      [
+        "Baseline Behavior (BB)",
+        "Video Reply Functionality"
+      ],
+      [
+        "EEA",
+        "Video Reply Functionality"
+      ],
+      [
+        "Art. 8",
+        "GDPR"
+      ],
+      [
+        "DSA",
+        "DSA Enforcement Activity"
+      ],
+      [
+        "Article 27",
+        "Digital Services Act"
+      ],
+      [
+        "Art. 5(1)(e)",
+        "GDPR"
+      ],
+      [
+        "DSA",
+        "GDPR"
+      ],
+      [
+        "Commission Recommendation",
+        "DSA"
+      ],
+      [
+        "GDPR",
+        "SCCs"
+      ],
+      [
+        "Article 15 / Article 24",
+        "Digital Services Act"
+      ],
+      [
+        "DSA",
+        "Dec 2023"
+      ],
+      [
+        "Article 20",
+        "Digital Services Act"
+      ],
+      [
+        "Art. 6(1)(a)",
+        "GDPR"
+      ],
+      [
+        "Art. 6(1)(f)",
+        "GDPR"
+      ]
+    ],
+    "count": 22,
+    "create_time": 1756582256,
+    "update_time": 1756582256,
+    "_id": "doc-568be3f381f63ce6af340efc5aa8c5bb"
+  },
+  "doc-a118e1022441be66aca33cadb2730800": {
+    "relation_pairs": [
+      [
+        "Art.35",
+        "Data Protection Impact Assessment"
+      ],
+      [
+        "EEA",
+        "Trial Run of Video Replies in EU"
+      ],
+      [
+        "Article 27",
+        "Digital Services Act"
+      ],
+      [
+        "Data Minimisation",
+        "GDPR"
+      ],
+      [
+        "Commission Recommendation / DSA preparatory materials",
+        "DSA VLOP Enforcement Dec2023"
+      ],
+      [
+        "Art.8",
+        "GDPR"
+      ],
+      [
+        "Article 20",
+        "Digital Services Act"
+      ],
+      [
+        "Digital Services Act",
+        "Trial Run of Video Replies in EU"
+      ],
+      [
+        "Data Protection Impact Assessment",
+        "High-risk Processing"
+      ],
+      [
+        "Data Protection Impact Assessment",
+        "International Data Transfers"
+      ],
+      [
+        "Article 15 / Article 24",
+        "Digital Services Act"
+      ],
+      [
+        "Articles 33–37",
+        "Digital Services Act"
+      ],
+      [
+        "Articles 14–16",
+        "Digital Services Act"
+      ],
+      [
+        "Child-consent Rules",
+        "GDPR"
+      ],
+      [
+        "Data Protection Impact Assessment",
+        "GDPR"
+      ],
+      [
+        "General Data Protection Regulation (GDPR)",
+        "Trial Run of Video Replies in EU"
+      ],
+      [
+        "Art.5(1)(c)",
+        "GDPR"
+      ],
+      [
+        "DSA VLOP Enforcement Dec2023",
+        "GDPR"
+      ],
+      [
+        "Geo-handler",
+        "Trial Run of Video Replies in EU"
+      ],
+      [
+        "Baseline Behavior",
+        "Trial Run of Video Replies in EU"
+      ]
+    ],
+    "count": 20,
+    "create_time": 1756582608,
+    "update_time": 1756582608,
+    "_id": "doc-a118e1022441be66aca33cadb2730800"
+  }
+}

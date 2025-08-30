@@ -25,27 +25,5 @@
     "create_time": 1756585163,
     "update_time": 1756585163,
     "_id": "doc-428d7f13fa6a31f5535a70103fd3d0fc"
-  },
-  "doc-f475a6ff1408c3a8296f4185ed52e177": {
-    "entity_names": [
-      "California",
-      "Age-Appropriate Design Code Act",
-      "Compliance Detection System (CDS)",
-      "State of California",
-      "SB 976",
-      "parental consent regulations",
-      "California Age-Appropriate Design Code Act (DPIA and child-protection duties)",
-      "EchoTrace",
-      "California Attorney General",
-      "addictive internet-based services or applications",
-      "data protection impact assessment",
-      "California Age-Appropriate Design Code Act",
-      "DPIA",
-      "Attorney General"
-    ],
-    "count": 14,
-    "create_time": 1756585568,
-    "update_time": 1756585568,
-    "_id": "doc-f475a6ff1408c3a8296f4185ed52e177"
   }
 }

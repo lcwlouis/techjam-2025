@@ -10,6 +10,7 @@ from rags.light_rag.retrieve import lightrag_retrieve
 from rags.light_rag.utils import build_region_code
 from rags.naive_rag.ingest import ingest_file_into_naiverag
 from rags.naive_rag.retrieve import naiverag_retrieve_sync
+from rags.light_rag.retrieve import lightrag_retrieve
 from agents.agent import make_jury_pipeline 
 
 app = FastAPI()
@@ -481,6 +482,54 @@ import json
 
 from rags.light_rag.utils import build_region_code  # you already import this above
 
+def output_cleaner(output: str) -> str:
+  """
+  Clean output to extract JSON-like payloads.
+
+  - If fenced code block present (``` or ```json), return inner content (strip optional language tag).
+  - Otherwise, find first '{' or '[' and return substring up to last '}' or ']' (attempt JSON validation).
+  - Fall back to returning the original stripped string.
+  """
+  try:
+    s = "" if output is None else str(output)
+    s = s.strip()
+    # 1) Prefer fenced code blocks
+    if "```" in s:
+      parts = s.split("```")
+      # parts[1] should contain the fenced content (may start with a language token)
+      if len(parts) >= 2:
+        content = parts[1]
+        # If there is a language token like "json\n", drop it
+        if "\n" in content:
+          first_line, rest = content.split("\n", 1)
+          if first_line.isalpha():  # simple language token check
+            content = rest
+        return content.strip()
+    # 2) No fences: find first JSON opener
+    first_idx = None
+    for opener in ("{", "["):
+      idx = s.find(opener)
+      if idx != -1 and (first_idx is None or idx < first_idx):
+        first_idx = idx
+    if first_idx is None:
+      return s
+    # find last possible closer
+    last_curly = s.rfind("}")
+    last_square = s.rfind("]")
+    last_idx = max(last_curly, last_square)
+    if last_idx != -1 and last_idx >= first_idx:
+      candidate = s[first_idx : last_idx + 1].strip()
+      # try to validate JSON; if valid, return it, otherwise still return candidate
+      try:
+        json.loads(candidate)
+        return candidate
+      except Exception:
+        return candidate
+    # fallback: return from first opener to end
+    return s[first_idx:].strip()
+  except Exception:
+    return str(output) if output is not None else ""
+
 @app.post("/demo_agent_stream")
 async def run_jury_pipeline_stream(payload: dict = Body(...)):
     feature = expand(payload["feature_name"])
@@ -509,29 +558,50 @@ async def run_jury_pipeline_stream(payload: dict = Body(...)):
         state={},
     )
 
-    # Retrieve context from NaiveRAG if region_code is valid
-    naive_ctx = ""
-    if region_code:
-        naive_ctx = naiverag_retrieve_sync({
-            "query": description,
-            "region": region_code,
-            "k": k,   # ✅ dynamic k now
-        }) or ""
+    # # Retrieve context from NaiveRAG if region_code is valid
+    # naive_ctx = ""
+    # if region_code:
+    #     naive_ctx = naiverag_retrieve_sync({
+    #         "query": description,
+    #         "region": region_code,
+    #         "k": k,   # ✅ dynamic k now
+    #     }) or ""
 
-    naive_ctx = expand(naive_ctx)
+    # naive_ctx = expand(naive_ctx)
+    
+    # Retrieve potential historical context in region
+    lightrag_ctx = await lightrag_retrieve(
+      query=f"The user is enquiring about the feature {feature} with description {description}. Search for the most closely related cases.",
+      region=region_code
+      ) + """
+Above is Knowledge Graph and Document Chunks related to the most closely related cases. 
+**For handling Citations / References from the Knowledge Graph and Document Chunks:**
+- Use the following formats for citations:
+- For a Knowledge Graph Entity: `[KG] <entity_name>`
+- For a Knowledge Graph Relationship: `[KG] <entity1_name> - <entity2_name>`
+- For a Document Chunk: `[DC] <file_path_or_document_name>`""" or ""
 
     # Build user query content
+    
+    input_text = f"""
+Feature: {feature}
+Description: {description}
+Target country: {country if country and country != "NO" else 'N/A'}
+Target state: {state if state and state != "TA" else 'N/A'}
+Region Code for tool call use: {region_code if region_code and region_code != 'NOTA' else 'N/A'}
+k value for search tool call: {k or '3'}
+Relevant historical Jury Verdicts:
+{lightrag_ctx}
+<End of Input>
+    """
+    
     user_query = types.Content(
-        role="user",
-        parts=[types.Part(
-            text=(
-                f"Feature: {feature}\n"
-                f"Description: {description}\n"
-                f"Target country: {country or 'N/A'}\n"
-                f"Target state: {state or 'N/A'}\n"
-                f"{'Relevant legislation:\n' + naive_ctx if naive_ctx else ''}"
-            )
-        )],
+      role="user",
+      parts=[types.Part(
+        text=(
+          input_text.strip()
+        )
+      )],
     )
 
     # ✅ build pipeline with user-chosen iterations
@@ -542,12 +612,22 @@ async def run_jury_pipeline_stream(payload: dict = Body(...)):
     )
 
     async def event_generator():
+        # Yield initial user query
+        yield {
+          "event": "message",
+          "data": json.dumps({
+            "author": "Prompt sent to the juries",
+            "final": False,
+            "text": input_text.strip(),
+          })
+        }
+
         # Yield retrieval message
         if region_code:
             yield {"event": "message", "data": json.dumps({
-                "author": "Context Retriever",
+                "author": "History Context Retriever",
                 "final": False,
-                "text": f"Retrieved {len(naive_ctx)} characters for {region_code} (k={k})."
+                "text": f"Retrieved {len(lightrag_ctx)} characters for {region_code}."
             })}
 
         last_text = None
@@ -582,13 +662,14 @@ async def run_jury_pipeline_stream(payload: dict = Body(...)):
         )
         final_output = {
             "jurors": {
-                "JuryAgent1": session.state.get("jury_report_1"),
-                "JuryAgent2": session.state.get("jury_report_2"),
-                "JuryAgent3": session.state.get("jury_report_3"),
-                "JuryAgent4": session.state.get("jury_report_4"),
+                "JuryAgent1": output_cleaner(session.state.get("jury_report_1")),
+                "JuryAgent2": output_cleaner(session.state.get("jury_report_2")),
+                "JuryAgent3": output_cleaner(session.state.get("jury_report_3")),
+                "JuryAgent4": output_cleaner(session.state.get("jury_report_4")),
+                "JuryAgent5": output_cleaner(session.state.get("jury_report_5")),
             },
-            "final_report": session.state.get("final_report"),
-            "rag": {"region_code": region_code, "naive_count": len(naive_ctx), "k": k},
+            "final_report": output_cleaner(session.state.get("final_report")),
+            "rag": {"region_code": region_code, "lightrag_retrieved": len(lightrag_ctx), "k": k},
         }
         yield {"event": "done", "data": json.dumps(final_output)}
 

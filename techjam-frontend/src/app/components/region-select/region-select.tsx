@@ -5,6 +5,7 @@ const REGION_OPTIONS = [
   { country: "US", state: "FL" },
   { country: "US", state: "UT" },
   { country: "US", state: "" },
+  { country: "NO", state: "TA" }
 ];
 
 export default function RegionSelector({
@@ -28,6 +29,9 @@ export default function RegionSelector({
   }
 
   function label(r: { country: string; state?: string }) {
+    if (r.country === "NO" && r.state === "TA") {
+      return "No Specific Region";
+    }
     return r.state ? `${r.country}/${r.state}` : r.country;
   }
 

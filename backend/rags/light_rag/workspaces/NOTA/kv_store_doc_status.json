@@ -33,23 +33,5 @@
       "processing_start_time": 1756585140,
       "processing_end_time": 1756585163
     }
-  },
-  "doc-f475a6ff1408c3a8296f4185ed52e177": {
-    "status": "processed",
-    "chunks_count": 2,
-    "chunks_list": [
-      "chunk-e3b409b80dd09c5f0ebdc50d6251e645",
-      "chunk-10b61ca39028423e6fd0ac51d67bda87"
-    ],
-    "content_summary": "{\"feature\": \"Age-specific notification controls with ASL (Age-sensitive logic) (Age-sensitive logic)\", \"feature_description\": \"Notifications will be tailored by age using ASL (Age-sensitive logic) (Age-sensitive logic), allowing us to throttle or sup...",
-    "content_length": 6762,
-    "created_at": "2025-08-30T20:25:45.997006+00:00",
-    "updated_at": "2025-08-30T20:26:08.904568+00:00",
-    "file_path": "unknown_source",
-    "track_id": "insert_20250831_042545_209511d4",
-    "metadata": {
-      "processing_start_time": 1756585546,
-      "processing_end_time": 1756585568
-    }
   }
 }

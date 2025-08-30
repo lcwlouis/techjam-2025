@@ -114,5 +114,225 @@
     "create_time": 1756577158,
     "update_time": 1756577158,
     "_id": "doc-8723929ab8fd185bc96c06c9ed40cac3"
+  },
+  "doc-0269dac08aa0d77a003eacc3c9780aae": {
+    "relation_pairs": [
+      [
+        "CyberTipline",
+        "NCMEC"
+      ],
+      [
+        "18 U.S.C. §2258A",
+        "18 U.S.C. §2258A(a)(5)"
+      ],
+      [
+        "NSP (Non-shareable policy)",
+        "Redline Alert"
+      ],
+      [
+        "Geographic Location Information",
+        "U.S. Federal Law 18 U.S.C. §2258A"
+      ],
+      [
+        "18 U.S.C. §2258A",
+        "NCMEC"
+      ],
+      [
+        "Geo-specific Logic",
+        "U.S. Users"
+      ],
+      [
+        "NCMEC",
+        "U.S. Federal Law 18 U.S.C. §2258A"
+      ],
+      [
+        "Civil Penalties",
+        "U.S. Federal Law 18 U.S.C. §2258A"
+      ],
+      [
+        "18 U.S.C. §2258A",
+        "18 U.S.C. §2258A(g)"
+      ],
+      [
+        "18 U.S.C. §2258A",
+        "18 U.S.C. §2258A(a)(3)"
+      ],
+      [
+        "18 U.S.C. §2258A",
+        "18 U.S.C. §2258A(a)(1)(B)(ii)"
+      ],
+      [
+        "NSP (Non-shareable policy)",
+        "Softblock"
+      ],
+      [
+        "Historical Reference",
+        "U.S. Federal Law 18 U.S.C. §2258A"
+      ],
+      [
+        "18 U.S.C. §2258A",
+        "18 U.S.C. §2258A(b)(2)"
+      ],
+      [
+        "18 U.S.C. §2258A",
+        "18 U.S.C. §2258A(c)"
+      ],
+      [
+        "Geo-specific Logic",
+        "NCMEC"
+      ],
+      [
+        "18 U.S.C. §2258A",
+        "CyberTipline"
+      ],
+      [
+        "18 U.S.C. §2258A",
+        "18 U.S.C. §2258A(f)"
+      ],
+      [
+        "Transmission Metadata",
+        "U.S. Federal Law 18 U.S.C. §2258A"
+      ],
+      [
+        "18 U.S.C. §2258A",
+        "18 U.S.C. §2258A(a)(4)"
+      ],
+      [
+        "18 U.S.C. §2258A",
+        "18 U.S.C. §2258A(a)(2)"
+      ]
+    ],
+    "count": 21,
+    "create_time": 1756580379,
+    "update_time": 1756580379,
+    "_id": "doc-0269dac08aa0d77a003eacc3c9780aae"
+  },
+  "doc-b4b7b9e519532ee83b341a9b05f2b21d": {
+    "relation_pairs": [
+      [
+        "18 U.S.C. §2258A",
+        "Federal law enforcement agencies"
+      ],
+      [
+        "18 U.S.C. §2258A",
+        "18 U.S.C. §2258A(a)(4)"
+      ],
+      [
+        "18 U.S.C. §2258A",
+        "NCMEC"
+      ],
+      [
+        "Redline",
+        "Softblock"
+      ],
+      [
+        "18 U.S.C. §2258A",
+        "18 U.S.C. §2258A(a)(5)"
+      ],
+      [
+        "CyberTipline",
+        "U.S. federal law 18 U.S.C. §2258A"
+      ],
+      [
+        "Federal law enforcement agencies",
+        "NCMEC"
+      ],
+      [
+        "18 U.S.C. §2258A",
+        "18 U.S.C. §2258A(a)(3)"
+      ],
+      [
+        "18 U.S.C. §2258A(c)",
+        "NCMEC"
+      ],
+      [
+        "Geo-handler",
+        "United States"
+      ],
+      [
+        "Child Sexual Abuse Material (CSAM)",
+        "U.S. federal law 18 U.S.C. §2258A"
+      ],
+      [
+        "Regulatory Uncertainty",
+        "U.S. federal law 18 U.S.C. §2258A"
+      ],
+      [
+        "NCMEC (National Center for Missing & Exploited Children)",
+        "NSP (Non-shareable policy)"
+      ],
+      [
+        "18 U.S.C. §2258A(g)",
+        "Federal law enforcement agencies"
+      ],
+      [
+        "U.S. federal law 18 U.S.C. §2258A",
+        "United States"
+      ],
+      [
+        "Child Sexual Abuse Material (CSAM)",
+        "Softblock"
+      ]
+    ],
+    "count": 16,
+    "create_time": 1756580863,
+    "update_time": 1756580863,
+    "_id": "doc-b4b7b9e519532ee83b341a9b05f2b21d"
+  },
+  "doc-c3b138308185c5236cc5736bbfd7143e": {
+    "relation_pairs": [
+      [
+        "Canada-first PF",
+        "Glow"
+      ],
+      [
+        "Providers",
+        "U.S. law 18 U.S.C. §2258A"
+      ],
+      [
+        "18 U.S.C. §2258A",
+        "Communications Decency Act - Section 230"
+      ],
+      [
+        "18 U.S.C. §2258A",
+        "US law on reporting child sexual abuse content to NCMEC"
+      ],
+      [
+        "Compliance Workflows",
+        "U.S. law 18 U.S.C. §2258A"
+      ],
+      [
+        "18 U.S.C. §2258A",
+        "NCMEC"
+      ],
+      [
+        "Providers",
+        "Softblock"
+      ],
+      [
+        "Jurors",
+        "U.S. law 18 U.S.C. §2258A"
+      ],
+      [
+        "Canada-first PF",
+        "U.S. law 18 U.S.C. §2258A"
+      ],
+      [
+        "NCMEC's CyberTipline",
+        "U.S. law 18 U.S.C. §2258A"
+      ],
+      [
+        "Federal Law Enforcement Agencies",
+        "NCMEC"
+      ],
+      [
+        "Geo-handler routing",
+        "U.S. law 18 U.S.C. §2258A"
+      ]
+    ],
+    "count": 12,
+    "create_time": 1756583454,
+    "update_time": 1756583454,
+    "_id": "doc-c3b138308185c5236cc5736bbfd7143e"
   }
 }

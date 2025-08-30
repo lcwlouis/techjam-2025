@@ -5,6 +5,9 @@ from google.adk.models.lite_llm import LiteLlm
 from google.adk.tools.langchain_tool import LangchainTool
 from google.genai import types
 from agents.prompts import jury_prompt, jury_report_critic_prompt, jury_final_response_prompt
+from rags.naive_rag.retrieve import naiverag_retrieve_sync
+from langchain_community.tools import SearxSearchResults
+from langchain_community.utilities.searx_search import SearxSearchWrapper
 
 import logging
 import os
@@ -15,12 +18,22 @@ logger = logging.getLogger(__name__)
 deepseek_v31_model  = LiteLlm(model="deepseek/deepseek-chat", api_key=os.getenv("DEEPSEEK_API_KEY"))
 openai_gpt5_mini_model = LiteLlm(model="gpt-5-mini", api_key=os.getenv("OPENAI_API_KEY"),)
 qwen_3_235b_model = LiteLlm(model="openrouter/qwen/qwen3-235b-a22b-2507", api_key=os.getenv("OPENROUTER_API_KEY"))
-meta_4_maverick_model = LiteLlm(model="openrouter/meta-llama/llama-4-maverick", api_key=os.getenv("OPENROUTER_API_KEY"))
 moonshot_kimi_k2_model = LiteLlm(model="openrouter/moonshotai/kimi-k2", api_key=os.getenv("OPENROUTER_API_KEY"))
 gemini_25_flash_model = "gemini-2.5-flash"
 
-# lightrag_retrieve_tool = LangchainTool(lightrag_retrieve)
-# naiverag_retrieve_tool = LangchainTool(naiverag_retrieve_sync)
+searxng_tool_instance = SearxSearchResults(
+    wrapper=SearxSearchWrapper(
+        searx_host=(
+            os.getenv("SEARXNG_HOST")
+            or os.getenv("SEARXNG_API_URL")
+        ),
+    ),
+    num_results=5,
+    description="A tool that uses the SearxNG metasearch engine to find high-quality, relevant, and authoritative information to support deep learning and research objectives."
+)
+
+naiverag_retrieve_tool = LangchainTool(naiverag_retrieve_sync)
+searxng_tool = LangchainTool(searxng_tool_instance)
 
 def exit_loop(tool_context: ToolContext):
     """Call this function ONLY when the critique indicates no further changes are needed, signaling the iterative process should end."""
@@ -36,7 +49,11 @@ def make_cross_loop(jury_name: str, critic_name: str, output_key: str, jury_mode
         description=f"{jury_name} compliance reviewer",
         instruction=jury_prompt.PROMPT,
         model=jury_model,
-        tools=[exit_loop],
+        tools=[
+            naiverag_retrieve_tool,
+            searxng_tool,
+            exit_loop
+        ],
         output_key=output_key,
     )
 
@@ -59,7 +76,7 @@ def make_cross_loop(jury_name: str, critic_name: str, output_key: str, jury_mode
 def make_jury_pipeline(iterations: int = 1):
     loop_jury1 = make_cross_loop("JuryAgent1", "Critic1", "jury_report_1", deepseek_v31_model, openai_gpt5_mini_model, iterations)
     loop_jury2 = make_cross_loop("JuryAgent2", "Critic2", "jury_report_2", qwen_3_235b_model, openai_gpt5_mini_model, iterations)
-    loop_jury3 = make_cross_loop("JuryAgent3", "Critic3", "jury_report_3", meta_4_maverick_model, deepseek_v31_model, iterations)
+    loop_jury3 = make_cross_loop("JuryAgent3", "Critic3", "jury_report_3", gemini_25_flash_model, deepseek_v31_model, iterations)
     loop_jury4 = make_cross_loop("JuryAgent4", "Critic4", "jury_report_4", moonshot_kimi_k2_model, gemini_25_flash_model, iterations)
     loop_jury5 = make_cross_loop("JuryAgent5", "Critic5", "jury_report_5", openai_gpt5_mini_model, deepseek_v31_model, iterations)
 

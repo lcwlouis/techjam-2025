@@ -1,0 +1,38 @@
+{
+  "doc-568be3f381f63ce6af340efc5aa8c5bb": {
+    "status": "processed",
+    "chunks_count": 2,
+    "chunks_list": [
+      "chunk-c16922036754e01bfff65655734f9cfc",
+      "chunk-affbd5dbcf34ebe169fa07a29874fc52"
+    ],
+    "content_summary": "{\"feature\": \"Trial run of video replies in EU/EEA\", \"feature_description\": \"Roll out video reply functionality to users in EEA only. GH (Geo-handler; a module responsible for routing features based on user region) (Geo-handler) will gate exposure by ...",
+    "content_length": 6349,
+    "created_at": "2025-08-30T19:30:25.858932+00:00",
+    "updated_at": "2025-08-30T19:30:56.745314+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20250831_033025_00c9dbb7",
+    "metadata": {
+      "processing_start_time": 1756582225,
+      "processing_end_time": 1756582256
+    }
+  },
+  "doc-a118e1022441be66aca33cadb2730800": {
+    "status": "processed",
+    "chunks_count": 2,
+    "chunks_list": [
+      "chunk-a7af9efd9e1ca7900a1c92ce052255e7",
+      "chunk-056ac303c97fb8156cbad15ed2fbe410"
+    ],
+    "content_summary": "{\"feature\": \"Trial run of video replies in EU\", \"feature_description\": \"Roll out video reply functionality to users in the EEA only. GH (Geo-handler; a module responsible for routing features based on user region) (Geo-handler) will gate exposure by ...",
+    "content_length": 6881,
+    "created_at": "2025-08-30T19:36:14.990081+00:00",
+    "updated_at": "2025-08-30T19:36:48.418454+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20250831_033614_00589eb2",
+    "metadata": {
+      "processing_start_time": 1756582575,
+      "processing_end_time": 1756582608
+    }
+  }
+}
