@@ -484,6 +484,8 @@ async def run_jury_pipeline_stream(payload: dict = Body(...)):
             "k": 5
         }) or ""
 
+    naive_ctx = expand(naive_ctx)
+
     user_query = types.Content(
         role="user",
         parts=[types.Part(

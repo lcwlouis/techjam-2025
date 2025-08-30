@@ -4,7 +4,7 @@ import React, { useState, useEffect, useRef } from "react";
 import Pipeline from "./components/pipeline-instructions/pipeline-instructions";
 import SettingsPanel from "./components/settings-panel/settings-panel";
 import SubmitArea from "./components/submission-area/submission-area";
-import { Row } from "./components/card-components/card-components";
+import FinalReportSection from "./components/final-report/final-report";
 
 import { fetchEventSource } from "@microsoft/fetch-event-source"; // npm i @microsoft/fetch-event-source
 
@@ -98,6 +98,15 @@ export default function TechJamPage() {
   //   }
   // }
 
+  function safeParse<T = any>(input: unknown): T | unknown {
+    if (typeof input !== "string") return input;
+    try {
+      return JSON.parse(input) as T;
+    } catch {
+      return input; // fallback to raw string if it wasn't JSON
+    }
+  }
+
   async function streamProcessFeature(e?: React.SyntheticEvent) {
     e?.preventDefault?.();
 
@@ -142,6 +151,13 @@ export default function TechJamPage() {
           }
           if (ev.event === "done") {
             const final = JSON.parse(ev.data);
+            final.final_report = safeParse(final.final_report);
+            if (final.jurors && typeof final.jurors === "object") {
+              final.jurors = Object.fromEntries(
+                Object.entries(final.jurors).map(([k, v]) => [k, safeParse(v)])
+              );
+            }
+            console.log(final);
             setFinalOutput(final);
             // stop stream intentionally
             abortRef.current?.abort();
@@ -234,53 +250,74 @@ export default function TechJamPage() {
 
         {/* Final Output */}
         {finalOutput && (
-          <section className="grid gap-4 bg-neutral-800/60 rounded-2xl p-4">
-            <h2 className="text-xl font-medium">Final Report</h2>
-            <div className="grid gap-1">
-              <Row label="Final Report" value={finalOutput.final_report} />
-              <Row label="Feature" value={finalOutput.final_report.feature} />
-              <Row
-                label="Feature Description"
-                value={finalOutput.final_report.description}
-              />
-            </div>
-            <div className="grid gap-3">
-              <h3 className="font-medium">Jurors</h3>
+          <FinalReportSection
+            data={finalOutput}
+            colorFromString={colorFromString}
+          />
+        )}
+        {/* {finalOutput && (
+          <>
+            <section className="grid gap-4 bg-neutral-800/60 rounded-2xl p-4">
+              <h2 className="text-xl font-medium">Final Report</h2>
+              <div className="grid gap-1">
+                <Row label="Feature" value={finalOutput.final_report.feature} />
+                <Row
+                  label="Feature Description"
+                  value={finalOutput.final_report.feature_description}
+                />
+                <Row
+                  label="Requires Geo-specific Logic / Confidence"
+                  value={`${
+                    finalOutput.final_report.needs_geo_specific_logic
+                      ? "Yes"
+                      : "No"
+                  } (${finalOutput.final_report.confidence * 100}%)`}
+                />
+              </div>
+            </section>
+            <section className="grid gap-4 bg-neutral-800/60 rounded-2xl p-4">
               <div className="grid gap-3">
-                <h3 className="font-medium">Jurors</h3>
+                <h3 className="font-medium">Juror Breakdown</h3>
                 <div className="grid gap-3">
-                  {Object.entries(finalOutput.jurors).map(([juror, value]) => {
-                    const c = colorFromString(juror);
-                    return (
-                      <div
-                        key={juror}
-                        className="rounded-xl p-3 border"
-                        style={{ borderColor: c.border, backgroundColor: c.bg }}
-                      >
-                        <div className="flex items-center gap-2">
-                          <span
-                            aria-hidden
-                            className="inline-block w-2.5 h-2.5 rounded-full"
-                            style={{ backgroundColor: c.dot }}
-                          />
-                          <span
-                            className="font-medium"
-                            style={{ color: c.text }}
+                  <div className="grid gap-3">
+                    {Object.entries(finalOutput.jurors).map(
+                      ([juror, value]) => {
+                        const c = colorFromString(juror);
+                        return (
+                          <div
+                            key={juror}
+                            className="rounded-xl p-3 border"
+                            style={{
+                              borderColor: c.border,
+                              backgroundColor: c.bg,
+                            }}
                           >
-                            {juror}
-                          </span>
-                        </div>
-                        <div className="mt-1 text-sm text-neutral-200">
-                          {value ? String(value) : "N/A"}
-                        </div>
-                      </div>
-                    );
-                  })}
+                            <div className="flex items-center gap-2">
+                              <span
+                                aria-hidden
+                                className="inline-block w-2.5 h-2.5 rounded-full"
+                                style={{ backgroundColor: c.dot }}
+                              />
+                              <span
+                                className="font-medium"
+                                style={{ color: c.text }}
+                              >
+                                {juror}
+                              </span>
+                            </div>
+                            <div className="mt-1 text-sm text-neutral-200">
+                              {value ? String(value) : "N/A"}
+                            </div>
+                          </div>
+                        );
+                      }
+                    )}
+                  </div>
                 </div>
               </div>
-            </div>
-          </section>
-        )}
+            </section>
+          </>
+        )} */}
 
         <SettingsPanel apiBase={apiBase} setApiBase={setApiBase} />
       </div>

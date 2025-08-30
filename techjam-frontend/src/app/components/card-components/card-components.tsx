@@ -24,7 +24,7 @@ export function Labeled({
 export function Row({ label, value }: { label: string; value: string }) {
   return (
     <div className="grid md:grid-cols-[160px_1fr] gap-2 items-start">
-      <div className="text-neutral-400 text-sm">{label}</div>
+      <div className="text-neutral-400">{label}</div>
       <div className="text-neutral-100">{value}</div>
     </div>
   );
