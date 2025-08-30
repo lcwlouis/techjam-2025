@@ -1,5 +1,5 @@
 ## Endpoints
-Base URL: http://localhost:5000 (default when running locally)
+Base URL: http://localhost:3000 (default when running locally)
 
 ### **POST** `/demo_agent_stream`
 Main Judge & Jury pipeline (streaming).
