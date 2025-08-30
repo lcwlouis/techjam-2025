@@ -44,6 +44,7 @@ Respond with **only valid JSON** in the schema below:
   ],
   "confidence": number,
 }
+Do not include any commentary or text outside of the JSON.
 
 # Style
 - Be concise, product-facing, and evidence-backed.  
