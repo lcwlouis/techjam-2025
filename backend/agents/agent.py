@@ -12,8 +12,12 @@ import os
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-deepseek_model  = LiteLlm(model="deepseek/deepseek-chat", api_key=os.getenv("DEEPSEEK_API_KEY"))
-openai_model = LiteLlm(model="gpt-5-mini", api_key=os.getenv("OPENAI_API_KEY"),)
+deepseek_v31_model  = LiteLlm(model="deepseek/deepseek-chat", api_key=os.getenv("DEEPSEEK_API_KEY"))
+openai_gpt5_mini_model = LiteLlm(model="gpt-5-mini", api_key=os.getenv("OPENAI_API_KEY"),)
+qwen_3_235b_model = LiteLlm(model="openrouter/qwen/qwen3-235b-a22b-2507", api_key=os.getenv("OPENROUTER_API_KEY"))
+meta_4_maverick_model = LiteLlm(model="openrouter/meta-llama/llama-4-maverick", api_key=os.getenv("OPENROUTER_API_KEY"))
+moonshot_kimi_k2_model = LiteLlm(model="openrouter/moonshotai/kimi-k2", api_key=os.getenv("OPENROUTER_API_KEY"))
+gemini_25_flash_model = "gemini-2.5-flash"
 
 # lightrag_retrieve_tool = LangchainTool(lightrag_retrieve)
 # naiverag_retrieve_tool = LangchainTool(naiverag_retrieve_sync)
@@ -53,22 +57,23 @@ def make_cross_loop(jury_name: str, critic_name: str, output_key: str, jury_mode
 # ---------------- FACTORY ----------------
 
 def make_jury_pipeline(iterations: int = 1):
-    loop_jury1 = make_cross_loop("JuryAgent1", "Critic1", "jury_report_1", openai_model, deepseek_model, iterations)
-    loop_jury2 = make_cross_loop("JuryAgent2", "Critic2", "jury_report_2", openai_model, deepseek_model, iterations)
-    loop_jury3 = make_cross_loop("JuryAgent3", "Critic3", "jury_report_3", deepseek_model, openai_model, iterations)
-    loop_jury4 = make_cross_loop("JuryAgent4", "Critic4", "jury_report_4", deepseek_model, openai_model, iterations)
+    loop_jury1 = make_cross_loop("JuryAgent1", "Critic1", "jury_report_1", deepseek_v31_model, openai_gpt5_mini_model, iterations)
+    loop_jury2 = make_cross_loop("JuryAgent2", "Critic2", "jury_report_2", qwen_3_235b_model, openai_gpt5_mini_model, iterations)
+    loop_jury3 = make_cross_loop("JuryAgent3", "Critic3", "jury_report_3", meta_4_maverick_model, deepseek_v31_model, iterations)
+    loop_jury4 = make_cross_loop("JuryAgent4", "Critic4", "jury_report_4", moonshot_kimi_k2_model, gemini_25_flash_model, iterations)
+    loop_jury5 = make_cross_loop("JuryAgent5", "Critic5", "jury_report_5", openai_gpt5_mini_model, deepseek_v31_model, iterations)
 
     parallel_jury_agent = ParallelAgent(
         name="ParallelJuryAgent",
-        description="Runs 4 jurors (DeepSeek + OpenAI) with cross-model critics in parallel",
-        sub_agents=[loop_jury1, loop_jury2, loop_jury3, loop_jury4],
+        description="Runs 5 jurors with cross-model critics in parallel",
+        sub_agents=[loop_jury1, loop_jury2, loop_jury3, loop_jury4, loop_jury5],
     )
 
     final_response_agent = LlmAgent(
         name="FinalResponseAgent",
         description="Judge merges jury outputs into one final compliance report",
         instruction=jury_final_response_prompt.PROMPT,
-        model=deepseek_model,
+        model=openai_gpt5_mini_model,
         output_key="final_report",
     )
 

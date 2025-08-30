@@ -16,7 +16,9 @@ app = FastAPI()
 
 ALLOWED_ORIGINS = [
     "http://localhost:3000",  # React dev server
-    "http://localhost"       # backend base
+    "http://localhost",        # backend base
+    "https://techjam-2025-techpb.onrender.com",
+    "https://techjam-2025-ckm34yt24-lcwlouis-projects.vercel.app"
 ]
 
 app.add_middleware(
