@@ -10,7 +10,7 @@ from rags.light_rag.retrieve import lightrag_retrieve
 from rags.light_rag.utils import build_region_code
 from rags.naive_rag.ingest import ingest_file_into_naiverag
 from rags.naive_rag.retrieve import naiverag_retrieve_sync
-
+from agents.agent import make_jury_pipeline 
 
 app = FastAPI()
 
@@ -358,82 +358,83 @@ async def update_terminology_table(new_terms: dict = Body(...)):
 import uuid
 from google.adk.runners import Runner
 from google.adk.sessions import InMemorySessionService
-from agents.agent import root_agent
+# from agents.agent import root_agent
 from google.genai import types
 from helper_functions.populate import expand
 session_service = InMemorySessionService()
 
 
 # ------------------------------ AGENT.PY TESTER --------------------------------
-@app.post("/demo_agent")
-async def run_jury_pipeline(payload: dict = Body(...)):
-    """
-    a JSON body
-    {
-      "feature_name": "Chat UI Overhaul",
-      "feature_description": "A new chat layout will be tested in the following regions: CA, US, BR, ID. GH will ensure location targeting and ShadowMode will collect usage metrics without user impact.",
-      "region": "USCA"
-    }
-    """
-    feature = expand(payload["feature_name"])
-    description = expand(payload["feature_description"])
+# @app.post("/demo_agent")
+# async def run_jury_pipeline(payload: dict = Body(...)):
+#     """
+#     a JSON body
+#     {
+#       "feature_name": "Chat UI Overhaul",
+#       "feature_description": "A new chat layout will be tested in the following regions: CA, US, BR, ID. GH will ensure location targeting and ShadowMode will collect usage metrics without user impact.",
+#       "region": "USCA"
+#     }
+#     """
+#     feature = expand(payload["feature_name"])
+#     description = expand(payload["feature_description"])
     
-    region = payload["region"]
+#     region = payload["region"]
 
-    naiverag_context = naiverag_retrieve_sync({ "query":description, "region":"US/UT", "k":5})
-    print(naiverag_context)
-    session_id = str(uuid.uuid4())
-    user_id = "demo-user"
-    app_name = "jury-demo"
+#     naiverag_context = naiverag_retrieve_sync({ "query":description, "region":"US/UT", "k":5})
+#     print(naiverag_context)
+#     session_id = str(uuid.uuid4())
+#     user_id = "demo-user"
+#     app_name = "jury-demo"
 
-    print("happening")
-    await session_service.create_session(
-        app_name=app_name,
-        user_id=user_id,
-        session_id=session_id,
-        state={},  # optional initial state
-    )
+#     print("happening")
+#     await session_service.create_session(
+#         app_name=app_name,
+#         user_id=user_id,
+#         session_id=session_id,
+#         state={},  # optional initial state
+#     )
     
 
-    user_query = types.Content(
-        role="user",
-        parts=[
-            types.Part(
-                text=f"Feature: {feature}\nDescription: {description}\nTarget Region: {region}, Relevant legislation: {naiverag_context}"
-            )
-        ],
-    )
+#     user_query = types.Content(
+#         role="user",
+#         parts=[
+#             types.Part(
+#                 text=f"Feature: {feature}\nDescription: {description}\nTarget Region: {region}, Relevant legislation: {naiverag_context}"
+#             )
+#         ],
+#     )
 
-    runner = Runner(agent=root_agent, session_service=session_service, app_name=app_name)
+#     # 
+#     # runner = Runner(agent=root_agent, session_service=session_service, app_name=app_name)
 
-    final_output = {"jurors": {}, "final_report": {}}
-    async for event in runner.run_async(
-        user_id=user_id,
-        session_id=session_id,
-        new_message=user_query,
-    ):
-        if event.is_final_response():
-            logger.info(f"**Hi I am in IF {event.author}")
-        else:
-            logger.info(f"##Hi I am in else {event.author}")
+#     final_output = {"jurors": {}, "final_report": {}}
+#     # async for event in runner.run_async(
+#     #     user_id=user_id,
+#     #     session_id=session_id,
+#     #     new_message=user_query,
+#     # ):
+#         if event.is_final_response():
+#             logger.info(f"**Hi I am in IF {event.author}")
+#         else:
+#             logger.info(f"##Hi I am in else {event.author}")
             
-    session = await session_service.get_session(
-        app_name=app_name,
-        user_id=user_id,
-        session_id=session_id,
-    )
+#     session = await session_service.get_session(
+#         app_name=app_name,
+#         user_id=user_id,
+#         session_id=session_id,
+#     )
                 
-    final_output = {
-        "jurors": {
-            "JuryAgent1": session.state.get("jury_report_1"),
-            "JuryAgent2": session.state.get("jury_report_2"),
-            "JuryAgent3": session.state.get("jury_report_3"),
-            "JuryAgent4": session.state.get("jury_report_4"),
-        },
-        "final_report": session.state.get("final_report"),
-    }
+#     final_output = {
+#         "jurors": {
+#             "JuryAgent1": session.state.get("jury_report_1"),
+#             "JuryAgent2": session.state.get("jury_report_2"),
+#             "JuryAgent3": session.state.get("jury_report_3"),
+#             "JuryAgent4": session.state.get("jury_report_4"),
+#         },
+#         "final_report": session.state.get("final_report"),
+#     }
 
-    return final_output
+#     return final_output
   
 # ------------------------------ FRONT-END TESTER --------------------------------
 @app.post("/demo_front")
@@ -486,9 +487,12 @@ async def run_jury_pipeline_stream(payload: dict = Body(...)):
     country = (region.get("country") or "").strip()
     state = (region.get("state") or "").strip()  # normalize None -> ""
 
-    # 👉 Build the region code string required by NaiveRAG (e.g., "USCA" or "US")
+    # Build region code (e.g. "USCA", "EU")
     region_code = build_region_code(country, state) if country else None
-    # e.g., build_region_code("US","CA") -> "USCA"; build_region_code("EU","") -> "EU"
+
+    # NEW: get iterations and k from payload (with defaults)
+    iterations = int(payload.get("iterations", 3))
+    k = int(payload.get("k", 5))
 
     session_id = str(uuid.uuid4())
     user_id = "demo-user"
@@ -501,17 +505,18 @@ async def run_jury_pipeline_stream(payload: dict = Body(...)):
         state={},
     )
 
-    # 👉 Safely call NaiveRAG only when we have a region_code string
+    # Retrieve context from NaiveRAG if region_code is valid
     naive_ctx = ""
     if region_code:
         naive_ctx = naiverag_retrieve_sync({
             "query": description,
-            "region": region_code,   # MUST be a string
-            "k": 5
+            "region": region_code,
+            "k": k,   # ✅ dynamic k now
         }) or ""
 
     naive_ctx = expand(naive_ctx)
 
+    # Build user query content
     user_query = types.Content(
         role="user",
         parts=[types.Part(
@@ -520,20 +525,25 @@ async def run_jury_pipeline_stream(payload: dict = Body(...)):
                 f"Description: {description}\n"
                 f"Target country: {country or 'N/A'}\n"
                 f"Target state: {state or 'N/A'}\n"
-                f"{'Relevant legislation:\n' +  naive_ctx}"
+                f"{'Relevant legislation:\n' + naive_ctx if naive_ctx else ''}"
             )
         )],
     )
 
-    runner = Runner(agent=root_agent, session_service=session_service, app_name=app_name)
+    # ✅ build pipeline with user-chosen iterations
+    runner = Runner(
+        agent=make_jury_pipeline(iterations),
+        session_service=session_service,
+        app_name=app_name,
+    )
 
     async def event_generator():
-        # Show a retrieval line in the chat so judges see RAG happening
+        # Yield retrieval message
         if region_code:
             yield {"event": "message", "data": json.dumps({
                 "author": "Context Retriever",
                 "final": False,
-                "text": f"Retrieved {len(naive_ctx)} characters for {region_code}."
+                "text": f"Retrieved {len(naive_ctx)} characters for {region_code} (k={k})."
             })}
 
         last_text = None
@@ -560,6 +570,7 @@ async def run_jury_pipeline_stream(payload: dict = Body(...)):
                 "text": text,
             })}
 
+        # After loop, gather final state
         session = await session_service.get_session(
             app_name=app_name,
             user_id=user_id,
@@ -573,7 +584,7 @@ async def run_jury_pipeline_stream(payload: dict = Body(...)):
                 "JuryAgent4": session.state.get("jury_report_4"),
             },
             "final_report": session.state.get("final_report"),
-            "rag": {"region_code": region_code, "naive_count": len(naive_ctx)},
+            "rag": {"region_code": region_code, "naive_count": len(naive_ctx), "k": k},
         }
         yield {"event": "done", "data": json.dumps(final_output)}
 

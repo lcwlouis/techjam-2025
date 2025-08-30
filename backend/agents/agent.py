@@ -26,12 +26,13 @@ def exit_loop(tool_context: ToolContext):
     return {}
 
 # ---------------- FACTORY: Jury+Critic Loop ----------------
-def make_cross_loop(jury_name: str, critic_name: str, output_key: str, jury_model, critic_model):
+def make_cross_loop(jury_name: str, critic_name: str, output_key: str, jury_model, critic_model, iterations: int):
     jury = LlmAgent(
         name=jury_name,
         description=f"{jury_name} compliance reviewer",
         instruction=jury_prompt.PROMPT,
         model=jury_model,
+        tools=[exit_loop],
         output_key=output_key,
     )
 
@@ -39,7 +40,6 @@ def make_cross_loop(jury_name: str, critic_name: str, output_key: str, jury_mode
         name=critic_name,
         description=f"{critic_name} reviewing {jury_name}'s report",
         instruction=jury_report_critic_prompt.PROMPT,
-        tools=[exit_loop],
         model=critic_model,
     )
 
@@ -47,45 +47,75 @@ def make_cross_loop(jury_name: str, critic_name: str, output_key: str, jury_mode
         name=f"{jury_name}Loop",
         description=f"{jury_name} (with {critic_name} cross-review)",
         sub_agents=[jury, critic],
-        max_iterations=3,
+        max_iterations=iterations,   
     )
+
+# ---------------- FACTORY ----------------
+
+def make_jury_pipeline(iterations: int = 1):
+    loop_jury1 = make_cross_loop("JuryAgent1", "Critic1", "jury_report_1", openai_model, deepseek_model, iterations)
+    loop_jury2 = make_cross_loop("JuryAgent2", "Critic2", "jury_report_2", openai_model, deepseek_model, iterations)
+    loop_jury3 = make_cross_loop("JuryAgent3", "Critic3", "jury_report_3", deepseek_model, openai_model, iterations)
+    loop_jury4 = make_cross_loop("JuryAgent4", "Critic4", "jury_report_4", deepseek_model, openai_model, iterations)
+
+    parallel_jury_agent = ParallelAgent(
+        name="ParallelJuryAgent",
+        description="Runs 4 jurors (DeepSeek + OpenAI) with cross-model critics in parallel",
+        sub_agents=[loop_jury1, loop_jury2, loop_jury3, loop_jury4],
+    )
+
+    final_response_agent = LlmAgent(
+        name="FinalResponseAgent",
+        description="Judge merges jury outputs into one final compliance report",
+        instruction=jury_final_response_prompt.PROMPT,
+        model=deepseek_model,
+        output_key="final_report",
+    )
+
+    return SequentialAgent(
+        name="JuryPipeline",
+        description="Judge orchestrates → Parallel Jury Loops → Judge final report",
+        sub_agents=[
+            parallel_jury_agent,
+            final_response_agent,
+        ],
+    )
+
 
 # ---------------- BUILD 4 JURORS ----------------
 # DeepSeek jurors with OpenAI critics
-loop_jury1 = make_cross_loop("JuryAgent1", "Critic1", "jury_report_1", deepseek_model, openai_model)
-loop_jury2 = make_cross_loop("JuryAgent2", "Critic2", "jury_report_2", deepseek_model, openai_model)
+# loop_jury1 = make_cross_loop("JuryAgent1", "Critic1", "jury_report_1", deepseek_model, openai_model)
+# loop_jury2 = make_cross_loop("JuryAgent2", "Critic2", "jury_report_2", deepseek_model, openai_model)
 
-# OpenAI jurors with DeepSeek critics
-loop_jury3 = make_cross_loop("JuryAgent3", "Critic3", "jury_report_3", openai_model, deepseek_model)
-loop_jury4 = make_cross_loop("JuryAgent4", "Critic4", "jury_report_4", openai_model, deepseek_model)
+# # OpenAI jurors with DeepSeek critics
+# loop_jury3 = make_cross_loop("JuryAgent3", "Critic3", "jury_report_3", openai_model, deepseek_model)
+# loop_jury4 = make_cross_loop("JuryAgent4", "Critic4", "jury_report_4", openai_model, deepseek_model)
 
-# ---------------- PARALLEL JURY ----------------
-parallel_jury_agent = ParallelAgent(
-    name="ParallelJuryAgent",
-    description="Runs 4 jurors (DeepSeek + OpenAI) with cross-model critics in parallel",
-    sub_agents=[loop_jury1, loop_jury2, loop_jury3, loop_jury4],
-)
+# # ---------------- PARALLEL JURY ----------------
+# parallel_jury_agent = ParallelAgent(
+#     name="ParallelJuryAgent",
+#     description="Runs 4 jurors (DeepSeek + OpenAI) with cross-model critics in parallel",
+#     sub_agents=[loop_jury1, loop_jury2, loop_jury3, loop_jury4],
+# )
 
-# ---------------- JUDGE (FINAL RESPONSE) ----------------
-final_response_agent = LlmAgent(
-    name="FinalResponseAgent",
-    description="Judge merges jury outputs into one final compliance report",
-    instruction=jury_final_response_prompt.PROMPT,
-    model=deepseek_model,   
-    output_key="final_report",
-)
+# # ---------------- JUDGE (FINAL RESPONSE) ----------------
+# final_response_agent = LlmAgent(
+#     name="FinalResponseAgent",
+#     description="Judge merges jury outputs into one final compliance report",
+#     instruction=jury_final_response_prompt.PROMPT,
+#     model=deepseek_model,   
+#     output_key="final_report",
+# )
 
-# ---------------- ROOT PIPELINE ----------------
-jury_pipeline = SequentialAgent(
-    name="JuryPipeline",
-    description="Judge orchestrates → Parallel Jury Loops → Judge final report",
-    sub_agents=[
-        parallel_jury_agent,    # run jurors in parallel
-        final_response_agent,   # judge merges into final report
-    ],
-)
-
-root_agent = jury_pipeline
+# # ---------------- ROOT PIPELINE ----------------
+# jury_pipeline = SequentialAgent(
+#     name="JuryPipeline",
+#     description="Judge orchestrates → Parallel Jury Loops → Judge final report",
+#     sub_agents=[
+#         parallel_jury_agent,    # run jurors in parallel
+#         final_response_agent,   # judge merges into final report
+#     ],
+# )
 
 # jury_agent = LlmAgent(
 #     name="JuryAgent",

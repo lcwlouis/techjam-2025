@@ -20,6 +20,8 @@ export default function TechJamPage() {
     country: string;
     state?: string;
   } | null>(null);
+  const [iterations, setIterations] = useState("1");
+  const [k, setK] = useState("5");
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -157,8 +159,9 @@ export default function TechJamPage() {
     // ensure any previous stream is closed
     abortRef.current?.abort();
     abortRef.current = new AbortController();
-
-    try {
+      const safeIterations = parseInt(iterations || "1", 10);
+      const safeK = parseInt(k || "5", 10);
+      try {
       await fetchEventSource(`${apiBase}/demo_agent_stream`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -166,12 +169,14 @@ export default function TechJamPage() {
           feature_name,
           feature_description,
           region: region ?? {},
+          iterations: safeIterations,
+          k: safeK,
           run_id: crypto.randomUUID(),
         }),
         signal: abortRef.current.signal,
         openWhenHidden: true,
 
-        onopen(resp) {
+        onopen: async (resp) => {
           if (
             !resp.ok ||
             !resp.headers.get("content-type")?.includes("text/event-stream")
@@ -252,19 +257,23 @@ export default function TechJamPage() {
 
         <Pipeline />
 
-        <SubmitArea
-          apiBase={apiBase}
-          feature={feature_name}
-          setFeature={setFeatureName}
-          featureDescription={feature_description}
-          setFeatureDescription={setFeatureDescription}
-          region={region}
-          setRegion={setRegion}
-          setResp={() => {}} // not used in streaming version
-          setError={setError}
-          isSubmitting={isSubmitting}
-          onSubmit={streamProcessFeature} // 👈 swap in streaming
-        />
+      <SubmitArea
+        apiBase={apiBase}
+        feature={feature_name}
+        setFeature={setFeatureName}
+        featureDescription={feature_description}
+        setFeatureDescription={setFeatureDescription}
+        region={region}
+        setRegion={setRegion}
+        k={k}
+        setK={setK}
+        iterations={iterations}
+        setIterations={setIterations}
+        setResp={() => {}} 
+        setError={setError}
+        isSubmitting={isSubmitting}
+        onSubmit={streamProcessFeature}
+      />
 
         {/* Chat log */}
         {chatLog.length > 0 && (
