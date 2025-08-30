@@ -77,4 +77,45 @@ Each subfolder has its own README with setup instructions.
 
 ---
 
-**JurAI turns compliance from a bottleneck into a traceable, auditable, and scalable part of the dev cycle.**
+
+## ⚡ Setup Instructions
+
+### Backend
+```bash
+cd backend
+
+# create and activate venv
+python3 -m venv .venv
+source .venv/bin/activate
+
+# install dependencies
+pip install -r requirements.txt
+
+# run server
+uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+```
+
+
+---
+
+### Frontend
+```bash
+cd frontend
+
+# install dependencies
+npm install
+
+# run dev server
+npm run dev
+```
+---
+
+### Environment Variables
+Create a `.env.local` file inside `frontend/`:
+
+```env
+NEXT_PUBLIC_API_BASE=http://localhost:8000
+```
+
+This tells the frontend where to find the backend API.
+
