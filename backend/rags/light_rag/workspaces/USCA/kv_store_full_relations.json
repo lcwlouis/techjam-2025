@@ -1,14 +1,118 @@
 {
-  "doc-f8d09fcbdc70b03e485805da07644514": {
+  "doc-428d7f13fa6a31f5535a70103fd3d0fc": {
     "relation_pairs": [
       [
-        "Guest Mode",
-        "PF"
+        "Glow",
+        "Spanner"
+      ],
+      [
+        "Canada",
+        "jury reports"
+      ],
+      [
+        "Artificial Intelligence and Data Act",
+        "Bill C-27"
+      ],
+      [
+        "Artificial Intelligence and Data Act",
+        "transparency requirements"
+      ],
+      [
+        "Artificial Intelligence and Data Act",
+        "consultation materials"
+      ],
+      [
+        "Canada",
+        "PIPEDA"
+      ],
+      [
+        "Automated decision systems",
+        "risk management obligations"
+      ],
+      [
+        "PIPEDA",
+        "Quebec Law 25"
+      ],
+      [
+        "PIPEDA",
+        "federal privacy law (PIPEDA)"
+      ],
+      [
+        "Bill C-27/AIDA",
+        "PIPEDA"
+      ],
+      [
+        "Office of the Privacy Commissioner (OPC)",
+        "PIPEDA"
+      ],
+      [
+        "PIPEDA",
+        "privacy/algorithmic impact assessments"
+      ],
+      [
+        "Artificial Intelligence and Data Act",
+        "ISED"
       ]
     ],
-    "count": 1,
-    "create_time": 1756493926,
-    "update_time": 1756493926,
-    "_id": "doc-f8d09fcbdc70b03e485805da07644514"
+    "count": 13,
+    "create_time": 1756585163,
+    "update_time": 1756585163,
+    "_id": "doc-428d7f13fa6a31f5535a70103fd3d0fc"
+  },
+  "doc-f475a6ff1408c3a8296f4185ed52e177": {
+    "relation_pairs": [
+      [
+        "California",
+        "SB 976"
+      ],
+      [
+        "Age-Appropriate Design Code Act",
+        "SB 976"
+      ],
+      [
+        "DPIA",
+        "EchoTrace"
+      ],
+      [
+        "California Age-Appropriate Design Code Act",
+        "SB 976"
+      ],
+      [
+        "California Attorney General",
+        "SB 976"
+      ],
+      [
+        "California",
+        "California Age-Appropriate Design Code Act"
+      ],
+      [
+        "California Age-Appropriate Design Code Act",
+        "data protection impact assessment"
+      ],
+      [
+        "California Age-Appropriate Design Code Act",
+        "parental consent regulations"
+      ],
+      [
+        "Compliance Detection System (CDS)",
+        "DPIA"
+      ],
+      [
+        "Attorney General",
+        "California Age-Appropriate Design Code Act"
+      ],
+      [
+        "Attorney General",
+        "State of California"
+      ],
+      [
+        "Compliance Detection System (CDS)",
+        "EchoTrace"
+      ]
+    ],
+    "count": 12,
+    "create_time": 1756585568,
+    "update_time": 1756585568,
+    "_id": "doc-f475a6ff1408c3a8296f4185ed52e177"
   }
 }

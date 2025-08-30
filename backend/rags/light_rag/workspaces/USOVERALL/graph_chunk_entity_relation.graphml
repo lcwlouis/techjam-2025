@@ -40,18 +40,18 @@
     <node id="NCMEC">
       <data key="d0">NCMEC</data>
       <data key="d1">organization</data>
-      <data key="d2">NCMEC is a private, nonprofit organization that plays a vital role in the clearinghouse for reports of child sexual exploitation, tasked with forwarding these reports to law enforcement agencies.&lt;SEP&gt;The National Center for Missing &amp; Exploited Children (NCMEC) acts as a clearinghouse for reports related to child sexual abuse material and may forward such reports to federal law enforcement.&lt;SEP&gt;The National Center for Missing &amp; Exploited Children (NCMEC) is responsible for receiving reports of child sexual abuse content as mandated by law.</data>
-      <data key="d3">chunk-bddbca1d37abd901742b0ca6610124c1&lt;SEP&gt;chunk-03af3b99beed5a891fbf02b542aed03e&lt;SEP&gt;chunk-ecd054a4b792109f9e8db4282abab32f</data>
+      <data key="d2">The National Center for Missing &amp; Exploited Children (NCMEC) is a private, nonprofit organization that serves as a vital clearinghouse for reports concerning child sexual abuse and exploitation. NCMEC plays a crucial role in receiving and processing reports of child sexual abuse material, which it may forward to law enforcement agencies, including federal law enforcement, as mandated by law. Additionally, NCMEC operates the CyberTipline, a dedicated platform for reporting instances of child sexual abuse content in the United States. Through these functions, NCMEC contributes significantly to the protection of children and the prevention of sexual exploitation.&lt;SEP&gt;The National Center for Missing and Exploited Children (NCMEC) serves as a clearinghouse for reports made under 18 U.S.C. §2258A, providing assistance to law enforcement agencies regarding child exploitation issues.&lt;SEP&gt;The National Center for Missing &amp; Exploited Children (NCMEC) plays a role in handling reports of child sexual abuse content under various legal frameworks including 18 U.S.C. §2258A.</data>
+      <data key="d3">chunk-03af3b99beed5a891fbf02b542aed03e&lt;SEP&gt;chunk-bddbca1d37abd901742b0ca6610124c1&lt;SEP&gt;chunk-ecd054a4b792109f9e8db4282abab32f&lt;SEP&gt;chunk-fcd865f79dca1f36757088e23e100d2d&lt;SEP&gt;chunk-4e37f622860a245462f05965e7b17dd1&lt;SEP&gt;chunk-0fb9a7654b3f51aa37fcdfbd958625cb&lt;SEP&gt;chunk-e0da0c71de54e74c0ac0187f2a193d2a</data>
       <data key="d4">unknown_source</data>
-      <data key="d5">1756577150</data>
+      <data key="d5">1756583448</data>
     </node>
     <node id="18 U.S.C. §2258A">
       <data key="d0">18 U.S.C. §2258A</data>
-      <data key="d1">category</data>
-      <data key="d2">18 U.S.C. §2258A is a US legislation imposing mandatory reporting obligations for child sexual abuse content.&lt;SEP&gt;18 U.S.C. §2258A is a section of U.S. law that mandates the forwarding of reports of apparent child pornography and related information to NCMEC.</data>
-      <data key="d3">chunk-03af3b99beed5a891fbf02b542aed03e&lt;SEP&gt;chunk-bddbca1d37abd901742b0ca6610124c1</data>
+      <data key="d1">legal_statute</data>
+      <data key="d2">18 U.S.C. §2258A is a section of U.S. legislation that imposes mandatory reporting obligations regarding child sexual abuse content. It dictates the legal requirements for service providers to report instances of apparent child pornography and related information. This law specifically mandates that such reports be forwarded to the National Center for Missing and Exploited Children (NCMEC). Additionally, 18 U.S.C. §2258A outlines the penalties for non-compliance, emphasizing the importance of timely and accurate reporting in combating child exploitation.&lt;SEP&gt;18 U.S.C. §2258A outlines the reporting and preservation requirements for visual depictions of apparent child pornography and related data by service providers.</data>
+      <data key="d3">chunk-03af3b99beed5a891fbf02b542aed03e&lt;SEP&gt;chunk-bddbca1d37abd901742b0ca6610124c1&lt;SEP&gt;chunk-fcd865f79dca1f36757088e23e100d2d&lt;SEP&gt;chunk-4e37f622860a245462f05965e7b17dd1&lt;SEP&gt;chunk-0fb9a7654b3f51aa37fcdfbd958625cb</data>
       <data key="d4">unknown_source</data>
-      <data key="d5">1756577151</data>
+      <data key="d5">1756583448</data>
     </node>
     <node id="US">
       <data key="d0">US</data>
@@ -104,10 +104,10 @@
     <node id="CyberTipline">
       <data key="d0">CyberTipline</data>
       <data key="d1">organization</data>
-      <data key="d2">CyberTipline is a reporting service operated by NCMEC for receiving reports related to child sexual abuse content.</data>
-      <data key="d3">chunk-bddbca1d37abd901742b0ca6610124c1</data>
+      <data key="d2">CyberTipline is a reporting service operated by NCMEC for receiving reports related to child sexual abuse content.&lt;SEP&gt;The CyberTipline is a service operated by NCMEC that facilitates reporting incidents of child sexual abuse content.&lt;SEP&gt;CyberTipline is an online reporting tool managed by NCMEC for the submission of suspected child sexual abuse material reports.</data>
+      <data key="d3">chunk-473f2bf06d33f171c87a07ffb004e486&lt;SEP&gt;chunk-0fb9a7654b3f51aa37fcdfbd958625cb&lt;SEP&gt;chunk-bddbca1d37abd901742b0ca6610124c1</data>
       <data key="d4">unknown_source</data>
-      <data key="d5">1756568582</data>
+      <data key="d5">1756580854</data>
     </node>
     <node id="NSP">
       <data key="d0">NSP</data>
@@ -120,18 +120,18 @@
     <node id="United States">
       <data key="d0">United States</data>
       <data key="d1">geo</data>
-      <data key="d2">The United States is the region affected by the NSP regulations, particularly concerning the reporting of apparent child sexual abuse material.</data>
-      <data key="d3">chunk-ecd054a4b792109f9e8db4282abab32f</data>
+      <data key="d2">The United States is the region affected by the NSP policy and is subject to specific reporting requirements under 18 U.S.C. §2258A.&lt;SEP&gt;The United States is the region affected by the NSP regulations, particularly concerning the reporting of apparent child sexual abuse material.</data>
+      <data key="d3">chunk-ecd054a4b792109f9e8db4282abab32f&lt;SEP&gt;chunk-473f2bf06d33f171c87a07ffb004e486</data>
       <data key="d4">unknown_source</data>
-      <data key="d5">1756577150</data>
+      <data key="d5">1756580854</data>
     </node>
     <node id="US law on reporting child sexual abuse content to NCMEC">
       <data key="d0">US law on reporting child sexual abuse content to NCMEC</data>
-      <data key="d1">regulation</data>
-      <data key="d2">US law establishes requirements for providers to report apparent child sexual abuse material to NCMEC, including specific data elements that must be included in such reports.</data>
-      <data key="d3">chunk-ecd054a4b792109f9e8db4282abab32f</data>
+      <data key="d1">legal_statute</data>
+      <data key="d2">The US law involves regulations regarding the reporting of child sexual abuse content to the National Center for Missing &amp; Exploited Children (NCMEC).&lt;SEP&gt;US law establishes requirements for providers to report apparent child sexual abuse material to NCMEC, including specific data elements that must be included in such reports.</data>
+      <data key="d3">chunk-ecd054a4b792109f9e8db4282abab32f&lt;SEP&gt;chunk-fcd865f79dca1f36757088e23e100d2d</data>
       <data key="d4">unknown_source</data>
-      <data key="d5">1756577150</data>
+      <data key="d5">1756583448</data>
     </node>
     <node id="Child Sexual Abuse Material">
       <data key="d0">Child Sexual Abuse Material</data>
@@ -188,6 +188,294 @@
       <data key="d3">chunk-03af3b99beed5a891fbf02b542aed03e</data>
       <data key="d4">unknown_source</data>
       <data key="d5">1756577151</data>
+    </node>
+    <node id="NSP (Non-shareable policy)">
+      <data key="d0">NSP (Non-shareable policy)</data>
+      <data key="d1">category</data>
+      <data key="d2">NSP is a categorization policy that involves auto-flagging content which should not be shared externally due to its sensitive nature.&lt;SEP&gt;NSP is a policy that prohibits the sharing of certain content externally, which triggers automated detection and tagging for violations.</data>
+      <data key="d3">chunk-473f2bf06d33f171c87a07ffb004e486&lt;SEP&gt;chunk-e0da0c71de54e74c0ac0187f2a193d2a</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756580854</data>
+    </node>
+    <node id="U.S. Federal Law 18 U.S.C. §2258A">
+      <data key="d0">U.S. Federal Law 18 U.S.C. §2258A</data>
+      <data key="d1">regulation</data>
+      <data key="d2">18 U.S.C. §2258A creates obligations for service providers to report child sexual abuse materials upon obtaining actual knowledge, detailing specific requirements for such reports.</data>
+      <data key="d3">chunk-e0da0c71de54e74c0ac0187f2a193d2a</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756580364</data>
+    </node>
+    <node id="Softblock">
+      <data key="d0">Softblock</data>
+      <data key="d1">technology</data>
+      <data key="d2">Softblock is a user-level limitation that can be applied silently without notifications, impacting user access to certain content.&lt;SEP&gt;Softblock refers to a user-level limitation applied silently without notifications to restrict access or action on flagged content.&lt;SEP&gt;Softblock refers to a user-level limitation that is applied silently without notifying users when a violation is detected.</data>
+      <data key="d3">chunk-473f2bf06d33f171c87a07ffb004e486&lt;SEP&gt;chunk-da7a22b7b9a22123db9e68fe5baf8f52&lt;SEP&gt;chunk-e0da0c71de54e74c0ac0187f2a193d2a</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756583447</data>
+    </node>
+    <node id="Redline Alert">
+      <data key="d0">Redline Alert</data>
+      <data key="d1">category</data>
+      <data key="d2">Redline alerts are flags generated for legal review when sharing is attempted after content has been detected to possibly violate NSP policies.</data>
+      <data key="d3">chunk-e0da0c71de54e74c0ac0187f2a193d2a</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756580364</data>
+    </node>
+    <node id="Geo-specific Logic">
+      <data key="d0">Geo-specific Logic</data>
+      <data key="d1">category</data>
+      <data key="d2">Geo-specific logic pertains to the requirement of applying localized operational protocols for U.S. users regarding content detection and reporting obligations.</data>
+      <data key="d3">chunk-e0da0c71de54e74c0ac0187f2a193d2a</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756580364</data>
+    </node>
+    <node id="U.S. Users">
+      <data key="d0">U.S. Users</data>
+      <data key="d1">geo</data>
+      <data key="d2">U.S. Users refers to individuals located in the United States who are subject to geo-specific logic as per legal requirements for content moderation and reporting.</data>
+      <data key="d3">chunk-e0da0c71de54e74c0ac0187f2a193d2a</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756580364</data>
+    </node>
+    <node id="Historical Reference">
+      <data key="d0">Historical Reference</data>
+      <data key="d1">category</data>
+      <data key="d2">Historical Reference includes timestamps and provenance that are required to be provided when reporting child sexual abuse materials as mandated by U.S. federal law.</data>
+      <data key="d3">chunk-e0da0c71de54e74c0ac0187f2a193d2a</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756580364</data>
+    </node>
+    <node id="Geographic Location Information">
+      <data key="d0">Geographic Location Information</data>
+      <data key="d1">category</data>
+      <data key="d2">Geographic Location Information consists of data elements such as IP address or verified address that must be included in reports of child sexual abuse material under U.S. law.</data>
+      <data key="d3">chunk-e0da0c71de54e74c0ac0187f2a193d2a</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756580365</data>
+    </node>
+    <node id="Civil Penalties">
+      <data key="d0">Civil Penalties</data>
+      <data key="d1">category</data>
+      <data key="d2">Civil Penalties are the consequences imposed for knowing and willful failures to report child sexual abuse materials as stipulated by 18 U.S.C. §2258A.</data>
+      <data key="d3">chunk-e0da0c71de54e74c0ac0187f2a193d2a</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756580365</data>
+    </node>
+    <node id="Transmission Metadata">
+      <data key="d0">Transmission Metadata</data>
+      <data key="d1">category</data>
+      <data key="d2">Transmission Metadata refers to the comprehensive information regarding the communication process, which must be included in reports on child sexual abuse materials.</data>
+      <data key="d3">chunk-e0da0c71de54e74c0ac0187f2a193d2a</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756580365</data>
+    </node>
+    <node id="18 U.S.C. §2258A(a)(1)(B)(ii)">
+      <data key="d0">18 U.S.C. §2258A(a)(1)(B)(ii)</data>
+      <data key="d1">event</data>
+      <data key="d2">This clause of 18 U.S.C. §2258A details the requirement to report facts or circumstances related to child sexual abuse content to the CyberTipline.</data>
+      <data key="d3">chunk-0fb9a7654b3f51aa37fcdfbd958625cb</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756580365</data>
+    </node>
+    <node id="18 U.S.C. §2258A(a)(2)">
+      <data key="d0">18 U.S.C. §2258A(a)(2)</data>
+      <data key="d1">event</data>
+      <data key="d2">This clause of 18 U.S.C. §2258A provides guidelines on the necessary information regarding uploads or transmissions related to reported child sexual abuse content.</data>
+      <data key="d3">chunk-0fb9a7654b3f51aa37fcdfbd958625cb</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756580365</data>
+    </node>
+    <node id="18 U.S.C. §2258A(a)(3)">
+      <data key="d0">18 U.S.C. §2258A(a)(3)</data>
+      <data key="d1">category</data>
+      <data key="d2">This clause describes the geographic location information that should be provided in reports of child sexual abuse content.&lt;SEP&gt;This refers to a specific subsection of 18 U.S.C. §2258A that describes the requirement for geographic information related to the individual or website involved in child sexual abuse content cases.</data>
+      <data key="d3">chunk-4e37f622860a245462f05965e7b17dd1&lt;SEP&gt;chunk-0fb9a7654b3f51aa37fcdfbd958625cb</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756580855</data>
+    </node>
+    <node id="18 U.S.C. §2258A(a)(4)">
+      <data key="d0">18 U.S.C. §2258A(a)(4)</data>
+      <data key="d1">category</data>
+      <data key="d2">This clause specifies that reports must include any visual depictions of apparent child pornography or related content.&lt;SEP&gt;This subsection of 18 U.S.C. §2258A mandates the inclusion of any visual depiction of apparent child pornography in reports.</data>
+      <data key="d3">chunk-4e37f622860a245462f05965e7b17dd1&lt;SEP&gt;chunk-0fb9a7654b3f51aa37fcdfbd958625cb</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756580855</data>
+    </node>
+    <node id="18 U.S.C. §2258A(a)(5)">
+      <data key="d0">18 U.S.C. §2258A(a)(5)</data>
+      <data key="d1">category</data>
+      <data key="d2">This clause mandates the inclusion of complete communications containing visual depictions related to reports of child sexual abuse.&lt;SEP&gt;This describes the requirement for complete communication details, including visual depictions and attached files related to child sexual abuse content.</data>
+      <data key="d3">chunk-4e37f622860a245462f05965e7b17dd1&lt;SEP&gt;chunk-0fb9a7654b3f51aa37fcdfbd958625cb</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756580855</data>
+    </node>
+    <node id="18 U.S.C. §2258A(c)">
+      <data key="d0">18 U.S.C. §2258A(c)</data>
+      <data key="d1">category</data>
+      <data key="d2">This clause establishes that NCMEC must make available reports made under subsection (a)(1) to federal law enforcement agencies.&lt;SEP&gt;This subsection discusses NCMEC's role in making reports available to federal law enforcement agencies following the reporting of child sexual abuse content.</data>
+      <data key="d3">chunk-4e37f622860a245462f05965e7b17dd1&lt;SEP&gt;chunk-0fb9a7654b3f51aa37fcdfbd958625cb</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756580856</data>
+    </node>
+    <node id="18 U.S.C. §2258A(f)">
+      <data key="d0">18 U.S.C. §2258A(f)</data>
+      <data key="d1">event</data>
+      <data key="d2">This clause clarifies the limits of requirements on providers to monitor or search for child sexual abuse content.</data>
+      <data key="d3">chunk-0fb9a7654b3f51aa37fcdfbd958625cb</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756580366</data>
+    </node>
+    <node id="18 U.S.C. §2258A(b)(2)">
+      <data key="d0">18 U.S.C. §2258A(b)(2)</data>
+      <data key="d1">category</data>
+      <data key="d2">This clause specifies penalties for knowing and willful failure to make a report regarding child sexual abuse content.&lt;SEP&gt;This provision specifies penalties for providers who fail to make required reports under the law.</data>
+      <data key="d3">chunk-4e37f622860a245462f05965e7b17dd1&lt;SEP&gt;chunk-0fb9a7654b3f51aa37fcdfbd958625cb</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756580856</data>
+    </node>
+    <node id="18 U.S.C. §2258A(g)">
+      <data key="d0">18 U.S.C. §2258A(g)</data>
+      <data key="d1">category</data>
+      <data key="d2">This clause notes that law enforcement agencies must maintain confidentiality regarding reports received.&lt;SEP&gt;This subsection emphasizes the confidentiality of the reports received by law enforcement agencies and prohibits disclosure of information contained within those reports.</data>
+      <data key="d3">chunk-4e37f622860a245462f05965e7b17dd1&lt;SEP&gt;chunk-0fb9a7654b3f51aa37fcdfbd958625cb</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756580856</data>
+    </node>
+    <node id="NCMEC (National Center for Missing &amp; Exploited Children)">
+      <data key="d0">NCMEC (National Center for Missing &amp; Exploited Children)</data>
+      <data key="d1">organization</data>
+      <data key="d2">NCMEC is an organization that handles reports of suspected child sexual abuse material and coordinates with federal and law enforcement agencies for such cases.</data>
+      <data key="d3">chunk-473f2bf06d33f171c87a07ffb004e486</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756580854</data>
+    </node>
+    <node id="U.S. federal law 18 U.S.C. §2258A">
+      <data key="d0">U.S. federal law 18 U.S.C. §2258A</data>
+      <data key="d1">regulation</data>
+      <data key="d2">18 U.S.C. §2258A is a U.S. federal law that mandates reporting duties for providers upon obtaining actual knowledge of child sexual abuse material.</data>
+      <data key="d3">chunk-473f2bf06d33f171c87a07ffb004e486</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756580854</data>
+    </node>
+    <node id="Geo-handler">
+      <data key="d0">Geo-handler</data>
+      <data key="d1">organization</data>
+      <data key="d2">Geo-handler is an operational entity that routes detections for U.S. users through U.S.-specific reporting workflows as per legal requirements.</data>
+      <data key="d3">chunk-473f2bf06d33f171c87a07ffb004e486</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756580854</data>
+    </node>
+    <node id="Redline">
+      <data key="d0">Redline</data>
+      <data key="d1">category</data>
+      <data key="d2">Redline is a flag for legal review that indicates content which requires examination due to potential violations of non-shareable policies.</data>
+      <data key="d3">chunk-473f2bf06d33f171c87a07ffb004e486</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756580854</data>
+    </node>
+    <node id="Child Sexual Abuse Material (CSAM)">
+      <data key="d0">Child Sexual Abuse Material (CSAM)</data>
+      <data key="d1">category</data>
+      <data key="d2">CSAM refers to content that depicts child sexual abuse and is subject to mandatory reporting under U.S. federal law 18 U.S.C. §2258A.</data>
+      <data key="d3">chunk-473f2bf06d33f171c87a07ffb004e486</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756580855</data>
+    </node>
+    <node id="Regulatory Uncertainty">
+      <data key="d0">Regulatory Uncertainty</data>
+      <data key="d1">category</data>
+      <data key="d2">Regulatory uncertainty refers to the lack of clarity or predictability regarding the application of laws and regulations in content moderation contexts.</data>
+      <data key="d3">chunk-473f2bf06d33f171c87a07ffb004e486</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756580855</data>
+    </node>
+    <node id="Federal law enforcement agencies">
+      <data key="d0">Federal law enforcement agencies</data>
+      <data key="d1">organization</data>
+      <data key="d2">Federal law enforcement agencies are tasked with receiving reports made under 18 U.S.C. §2258A from NCMEC and are bound by confidentiality rules.</data>
+      <data key="d3">chunk-4e37f622860a245462f05965e7b17dd1</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756580855</data>
+    </node>
+    <node id="Canada-first PF">
+      <data key="d0">Canada-first PF</data>
+      <data key="d1">event</data>
+      <data key="d2">Canada-first PF is a variant test related to the launch of a Personalized feed in Canada as part of early experimentation.</data>
+      <data key="d3">chunk-da7a22b7b9a22123db9e68fe5baf8f52</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756583447</data>
+    </node>
+    <node id="U.S. law 18 U.S.C. §2258A">
+      <data key="d0">U.S. law 18 U.S.C. §2258A</data>
+      <data key="d1">regulation</data>
+      <data key="d2">18 U.S.C. §2258A outlines the legal obligations for providers when they obtain actual knowledge of child sexual abuse material.</data>
+      <data key="d3">chunk-da7a22b7b9a22123db9e68fe5baf8f52</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756583447</data>
+    </node>
+    <node id="NCMEC's CyberTipline">
+      <data key="d0">NCMEC's CyberTipline</data>
+      <data key="d1">organization</data>
+      <data key="d2">The National Center for Missing and Exploited Children (NCMEC) CyberTipline is designed for reporting suspected child sexual abuse material.</data>
+      <data key="d3">chunk-da7a22b7b9a22123db9e68fe5baf8f52</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756583447</data>
+    </node>
+    <node id="Geo-handler routing">
+      <data key="d0">Geo-handler routing</data>
+      <data key="d1">technology</data>
+      <data key="d2">Geo-handler routing is a mechanism used to reliably attribute sessions and users to specific geographic regions for compliance workflows.</data>
+      <data key="d3">chunk-da7a22b7b9a22123db9e68fe5baf8f52</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756583447</data>
+    </node>
+    <node id="Glow">
+      <data key="d0">Glow</data>
+      <data key="d1">technology</data>
+      <data key="d2">Glow is a compliance-flagging status used internally to indicate geo-based alerts regarding content.</data>
+      <data key="d3">chunk-da7a22b7b9a22123db9e68fe5baf8f52</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756583447</data>
+    </node>
+    <node id="Providers">
+      <data key="d0">Providers</data>
+      <data key="d1">organization</data>
+      <data key="d2">Providers refer to entities that offer online services or platforms, which have obligations under U.S. law 18 U.S.C. §2258A when they obtain actual knowledge of apparent child sexual abuse material.</data>
+      <data key="d3">chunk-da7a22b7b9a22123db9e68fe5baf8f52</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756583447</data>
+    </node>
+    <node id="Jurors">
+      <data key="d0">Jurors</data>
+      <data key="d1">person</data>
+      <data key="d2">Jurors are participants involved in the compliance assessment process, concluding that U.S. law creates specific reporting duties related to child sexual abuse material.</data>
+      <data key="d3">chunk-da7a22b7b9a22123db9e68fe5baf8f52</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756583447</data>
+    </node>
+    <node id="Compliance Workflows">
+      <data key="d0">Compliance Workflows</data>
+      <data key="d1">category</data>
+      <data key="d2">Compliance workflows refer to the processes established to manage legal reporting and handling of detected child sexual abuse material as per regulations.</data>
+      <data key="d3">chunk-da7a22b7b9a22123db9e68fe5baf8f52</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756583448</data>
+    </node>
+    <node id="Communications Decency Act - Section 230">
+      <data key="d0">Communications Decency Act - Section 230</data>
+      <data key="d1">legal_statute</data>
+      <data key="d2">The Communications Decency Act - Section 230 addresses the limits of immunity for online platforms regarding user-generated content and includes provisions on algorithmic recommendation systems.</data>
+      <data key="d3">chunk-fcd865f79dca1f36757088e23e100d2d</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756583448</data>
+    </node>
+    <node id="Federal Law Enforcement Agencies">
+      <data key="d0">Federal Law Enforcement Agencies</data>
+      <data key="d1">organization</data>
+      <data key="d2">Federal law enforcement agencies are responsible for investigating and addressing reports made under the US law involving child sexual abuse content.</data>
+      <data key="d3">chunk-fcd865f79dca1f36757088e23e100d2d</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756583448</data>
     </node>
     <edge source="Chat UI Overhaul" target="Geo-handler (GH)">
       <data key="d6">7.0</data>
@@ -246,12 +534,12 @@
       <data key="d11">1756568585</data>
     </edge>
     <edge source="NCMEC" target="18 U.S.C. §2258A">
-      <data key="d6">10.0</data>
-      <data key="d7">NCMEC operates under the obligations set by 18 U.S.C. §2258A to report child sexual abuse content.</data>
-      <data key="d8">child safety,regulatory compliance</data>
-      <data key="d9">chunk-bddbca1d37abd901742b0ca6610124c1</data>
+      <data key="d6">35.0</data>
+      <data key="d7">The National Center for Missing and Exploited Children (NCMEC) is tasked with processing reports made under 18 U.S.C. §2258A, which pertains to child sexual abuse content. As part of its mandate, NCMEC operates under the obligations set by this statute to handle such reports effectively. Additionally, NCMEC has a responsibility to make these reports available to law enforcement agencies, ensuring compliance with the requirements of 18 U.S.C. §2258A as it works to combat child exploitation.</data>
+      <data key="d8">child protection,child safety,law enforcement collaboration,legal compliance,regulatory compliance,reporting agency,reporting framework,statutory obligation</data>
+      <data key="d9">chunk-bddbca1d37abd901742b0ca6610124c1&lt;SEP&gt;chunk-4e37f622860a245462f05965e7b17dd1&lt;SEP&gt;chunk-0fb9a7654b3f51aa37fcdfbd958625cb&lt;SEP&gt;chunk-fcd865f79dca1f36757088e23e100d2d</data>
       <data key="d10">unknown_source</data>
-      <data key="d11">1756568584</data>
+      <data key="d11">1756583452</data>
     </edge>
     <edge source="NCMEC" target="Provider">
       <data key="d6">10.0</data>
@@ -262,12 +550,12 @@
       <data key="d11">1756568585</data>
     </edge>
     <edge source="NCMEC" target="CyberTipline">
-      <data key="d6">9.0</data>
-      <data key="d7">The CyberTipline serves as a tool for NCMEC to handle reports related to child sexual abuse content.</data>
-      <data key="d8">child protection,reporting mechanism</data>
-      <data key="d9">chunk-bddbca1d37abd901742b0ca6610124c1</data>
+      <data key="d6">18.0</data>
+      <data key="d7">NCMEC operates the CyberTipline to receive reports of child sexual abuse content, fulfilling its mission to protect children.&lt;SEP&gt;The CyberTipline serves as a tool for NCMEC to handle reports related to child sexual abuse content.</data>
+      <data key="d8">child protection,reporting,reporting mechanism</data>
+      <data key="d9">chunk-bddbca1d37abd901742b0ca6610124c1&lt;SEP&gt;chunk-0fb9a7654b3f51aa37fcdfbd958625cb</data>
       <data key="d10">unknown_source</data>
-      <data key="d11">1756568586</data>
+      <data key="d11">1756580369</data>
     </edge>
     <edge source="NCMEC" target="United States">
       <data key="d6">9.0</data>
@@ -325,6 +613,46 @@
       <data key="d10">unknown_source</data>
       <data key="d11">1756577158</data>
     </edge>
+    <edge source="NCMEC" target="U.S. Federal Law 18 U.S.C. §2258A">
+      <data key="d6">10.0</data>
+      <data key="d7">NCMEC operates under the guidelines set forth by U.S. Federal Law 18 U.S.C. §2258A, which mandates reporting obligations for child sexual abuse material.</data>
+      <data key="d8">legal obligation,reporting duties</data>
+      <data key="d9">chunk-e0da0c71de54e74c0ac0187f2a193d2a</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756580367</data>
+    </edge>
+    <edge source="NCMEC" target="Geo-specific Logic">
+      <data key="d6">8.0</data>
+      <data key="d7">Geo-specific logic is needed to ensure that all U.S. detections of violations are routed through NCMEC for appropriate reporting and compliance.</data>
+      <data key="d8">compliance,operational protocol</data>
+      <data key="d9">chunk-e0da0c71de54e74c0ac0187f2a193d2a</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756580368</data>
+    </edge>
+    <edge source="NCMEC" target="Federal law enforcement agencies">
+      <data key="d6">8.0</data>
+      <data key="d7">Federal law enforcement agencies receive reports from NCMEC and are involved in the legal handling of child abuse cases as outlined by 18 U.S.C. §2258A.</data>
+      <data key="d8">collaboration,law enforcement</data>
+      <data key="d9">chunk-4e37f622860a245462f05965e7b17dd1</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756580859</data>
+    </edge>
+    <edge source="NCMEC" target="18 U.S.C. §2258A(c)">
+      <data key="d6">9.0</data>
+      <data key="d7">NCMEC is responsible for adhering to the mandates of 18 U.S.C. §2258A(c), which involves sharing reports with federal law enforcement.</data>
+      <data key="d8">law enforcement collaboration,reporting protocol</data>
+      <data key="d9">chunk-4e37f622860a245462f05965e7b17dd1</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756580859</data>
+    </edge>
+    <edge source="NCMEC" target="Federal Law Enforcement Agencies">
+      <data key="d6">8.0</data>
+      <data key="d7">NCMEC forwards reports made under the law to federal law enforcement agencies for further investigation and action.</data>
+      <data key="d8">law enforcement collaboration,reporting</data>
+      <data key="d9">chunk-fcd865f79dca1f36757088e23e100d2d</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756583453</data>
+    </edge>
     <edge source="18 U.S.C. §2258A" target="Child Sexual Abuse Content">
       <data key="d6">9.0</data>
       <data key="d7">The category of Child Sexual Abuse Content is defined and governed by the obligations laid out in 18 U.S.C. §2258A.</data>
@@ -341,6 +669,110 @@
       <data key="d10">unknown_source</data>
       <data key="d11">1756577153</data>
     </edge>
+    <edge source="18 U.S.C. §2258A" target="CyberTipline">
+      <data key="d6">8.0</data>
+      <data key="d7">The CyberTipline's operations are governed by the legal framework established in 18 U.S.C. §2258A for reporting abuse.</data>
+      <data key="d8">legal framework,reporting requirements</data>
+      <data key="d9">chunk-0fb9a7654b3f51aa37fcdfbd958625cb</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756580370</data>
+    </edge>
+    <edge source="18 U.S.C. §2258A" target="18 U.S.C. §2258A(a)(1)(B)(ii)">
+      <data key="d6">8.0</data>
+      <data key="d7">This clause is part of 18 U.S.C. §2258A, indicating it is a specific legal requirement regarding reporting child sexual abuse content.</data>
+      <data key="d8">legal clause,reporting requirement</data>
+      <data key="d9">chunk-0fb9a7654b3f51aa37fcdfbd958625cb</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756580372</data>
+    </edge>
+    <edge source="18 U.S.C. §2258A" target="18 U.S.C. §2258A(a)(2)">
+      <data key="d6">8.0</data>
+      <data key="d7">This clause is a subsection of 18 U.S.C. §2258A that outlines specific reporting guidelines for providers.</data>
+      <data key="d8">legal clause,reporting guideline</data>
+      <data key="d9">chunk-0fb9a7654b3f51aa37fcdfbd958625cb</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756580372</data>
+    </edge>
+    <edge source="18 U.S.C. §2258A" target="18 U.S.C. §2258A(a)(3)">
+      <data key="d6">15.0</data>
+      <data key="d7">This clause is part of 18 U.S.C. §2258A and pertains to necessary geographic location information for reports.&lt;SEP&gt;This subsection provides specific requirements related to geographic information for reports, clarifying the obligations outlined in 18 U.S.C. §2258A.</data>
+      <data key="d8">geographic identification,geographic requirement,legal clause,legal requirement</data>
+      <data key="d9">chunk-4e37f622860a245462f05965e7b17dd1&lt;SEP&gt;chunk-0fb9a7654b3f51aa37fcdfbd958625cb</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756580860</data>
+    </edge>
+    <edge source="18 U.S.C. §2258A" target="18 U.S.C. §2258A(a)(4)">
+      <data key="d6">16.0</data>
+      <data key="d7">This clause details the content requirements for reports of child sexual abuse, being a component of 18 U.S.C. §2258A.&lt;SEP&gt;This subsection stipulates the inclusion of visual depictions in reports, highlighting a key aspect of compliance under 18 U.S.C. §2258A.</data>
+      <data key="d8">content requirement,legal clause,reporting requirements,visual depictions</data>
+      <data key="d9">chunk-4e37f622860a245462f05965e7b17dd1&lt;SEP&gt;chunk-0fb9a7654b3f51aa37fcdfbd958625cb</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756580861</data>
+    </edge>
+    <edge source="18 U.S.C. §2258A" target="18 U.S.C. §2258A(a)(5)">
+      <data key="d6">16.0</data>
+      <data key="d7">This clause specifies additional information to be included in reports, forming part of the overall statute 18 U.S.C. §2258A.&lt;SEP&gt;This provision outlines the necessary details about communications that must be reported, which is part of the broader legal obligations of 18 U.S.C. §2258A.</data>
+      <data key="d8">complete communication,legal clause,reporting requirement,reporting requirements</data>
+      <data key="d9">chunk-4e37f622860a245462f05965e7b17dd1&lt;SEP&gt;chunk-0fb9a7654b3f51aa37fcdfbd958625cb</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756580862</data>
+    </edge>
+    <edge source="18 U.S.C. §2258A" target="18 U.S.C. §2258A(c)">
+      <data key="d6">8.0</data>
+      <data key="d7">This clause involves NCMEC's obligations under 18 U.S.C. §2258A regarding further distribution of reports to law enforcement.</data>
+      <data key="d8">legal obligation,sharing reports</data>
+      <data key="d9">chunk-0fb9a7654b3f51aa37fcdfbd958625cb</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756580376</data>
+    </edge>
+    <edge source="18 U.S.C. §2258A" target="18 U.S.C. §2258A(f)">
+      <data key="d6">7.0</data>
+      <data key="d7">This clause outlines limitations imposed on providers, further clarifying the responsibilities mandated in 18 U.S.C. §2258A.</data>
+      <data key="d8">legal limits,provider obligations</data>
+      <data key="d9">chunk-0fb9a7654b3f51aa37fcdfbd958625cb</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756580376</data>
+    </edge>
+    <edge source="18 U.S.C. §2258A" target="18 U.S.C. §2258A(b)(2)">
+      <data key="d6">7.0</data>
+      <data key="d7">This clause indicates the penalties associated with non-compliance, linking it directly to the fundamental provisions of 18 U.S.C. §2258A.</data>
+      <data key="d8">compliance requirement,penalties</data>
+      <data key="d9">chunk-0fb9a7654b3f51aa37fcdfbd958625cb</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756580377</data>
+    </edge>
+    <edge source="18 U.S.C. §2258A" target="18 U.S.C. §2258A(g)">
+      <data key="d6">8.0</data>
+      <data key="d7">This clause addresses the confidentiality of reports received by law enforcement, part of the stipulations established in 18 U.S.C. §2258A.</data>
+      <data key="d8">confidentiality,legal stipulation</data>
+      <data key="d9">chunk-0fb9a7654b3f51aa37fcdfbd958625cb</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756580378</data>
+    </edge>
+    <edge source="18 U.S.C. §2258A" target="Federal law enforcement agencies">
+      <data key="d6">8.0</data>
+      <data key="d7">Federal law enforcement agencies enforce the provisions outlined in 18 U.S.C. §2258A for reporting child sexual abuse content.</data>
+      <data key="d8">enforcement,legal compliance</data>
+      <data key="d9">chunk-4e37f622860a245462f05965e7b17dd1</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756580859</data>
+    </edge>
+    <edge source="18 U.S.C. §2258A" target="Communications Decency Act - Section 230">
+      <data key="d6">8.0</data>
+      <data key="d7">Both legal frameworks involve regulations that affect online platforms and service providers in their handling of user-generated content.".</data>
+      <data key="d8">content regulation,legal frameworks</data>
+      <data key="d9">chunk-fcd865f79dca1f36757088e23e100d2d</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756583453</data>
+    </edge>
+    <edge source="18 U.S.C. §2258A" target="US law on reporting child sexual abuse content to NCMEC">
+      <data key="d6">9.0</data>
+      <data key="d7">18 U.S.C. §2258A establishes the legal framework that underpins the US law mandating reporting procedures for child sexual abuse content.".</data>
+      <data key="d8">legal framework,reporting requirement</data>
+      <data key="d9">chunk-fcd865f79dca1f36757088e23e100d2d</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756583453</data>
+    </edge>
     <edge source="Provider" target="CyberTipline">
       <data key="d6">10.0</data>
       <data key="d7">Providers are responsible for submitting reports to the CyberTipline when they obtain actual knowledge of Child Sexual Abuse Content.</data>
@@ -348,6 +780,14 @@
       <data key="d9">chunk-bddbca1d37abd901742b0ca6610124c1</data>
       <data key="d10">unknown_source</data>
       <data key="d11">1756568585</data>
+    </edge>
+    <edge source="CyberTipline" target="U.S. federal law 18 U.S.C. §2258A">
+      <data key="d6">10.0</data>
+      <data key="d7">The federal law establishes the requirement for providers to report cases directly to the CyberTipline of NCMEC.</data>
+      <data key="d8">legal mandate,reporting obligations</data>
+      <data key="d9">chunk-473f2bf06d33f171c87a07ffb004e486</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756580858</data>
     </edge>
     <edge source="NSP" target="US law on reporting child sexual abuse content to NCMEC">
       <data key="d6">9.0</data>
@@ -364,6 +804,22 @@
       <data key="d9">chunk-ecd054a4b792109f9e8db4282abab32f</data>
       <data key="d10">unknown_source</data>
       <data key="d11">1756577153</data>
+    </edge>
+    <edge source="United States" target="Geo-handler">
+      <data key="d6">7.0</data>
+      <data key="d7">The Geo-handler is implemented to ensure compliance with U.S. regulations, specifically in relation to the NSP policy for users in the United States.</data>
+      <data key="d8">operational control,regulatory compliance</data>
+      <data key="d9">chunk-473f2bf06d33f171c87a07ffb004e486</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756580858</data>
+    </edge>
+    <edge source="United States" target="U.S. federal law 18 U.S.C. §2258A">
+      <data key="d6">8.0</data>
+      <data key="d7">The U.S. federal law applies specifically to circumstances occurring in the United States, making it geographically relevant to the law's enforcement.</data>
+      <data key="d8">jurisdiction,legal applicability</data>
+      <data key="d9">chunk-473f2bf06d33f171c87a07ffb004e486</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756580858</data>
     </edge>
     <edge source="Child Sexual Abuse Material" target="US Legislation Excerpts">
       <data key="d6">8.0</data>
@@ -388,6 +844,174 @@
       <data key="d9">chunk-03af3b99beed5a891fbf02b542aed03e</data>
       <data key="d10">unknown_source</data>
       <data key="d11">1756577154</data>
+    </edge>
+    <edge source="NSP (Non-shareable policy)" target="Softblock">
+      <data key="d6">9.0</data>
+      <data key="d7">NSP implementation requires the use of Softblock to manage content that violates sharing policies without informing users.</data>
+      <data key="d8">policy enforcement,user limitation</data>
+      <data key="d9">chunk-e0da0c71de54e74c0ac0187f2a193d2a</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756580367</data>
+    </edge>
+    <edge source="NSP (Non-shareable policy)" target="Redline Alert">
+      <data key="d6">9.0</data>
+      <data key="d7">The violations of NSP policies trigger a Redline alert for legal review to ensure compliance with reporting requirements.</data>
+      <data key="d8">legal compliance,violation management</data>
+      <data key="d9">chunk-e0da0c71de54e74c0ac0187f2a193d2a</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756580368</data>
+    </edge>
+    <edge source="NSP (Non-shareable policy)" target="NCMEC (National Center for Missing &amp; Exploited Children)">
+      <data key="d6">9.0</data>
+      <data key="d7">The NSP policy involves reporting to NCMEC when content is flagged, highlighting a direct relationship between the policy and the organization's role in reporting child sexual abuse material.</data>
+      <data key="d8">content reporting,legal compliance</data>
+      <data key="d9">chunk-473f2bf06d33f171c87a07ffb004e486</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756580858</data>
+    </edge>
+    <edge source="U.S. Federal Law 18 U.S.C. §2258A" target="Historical Reference">
+      <data key="d6">9.0</data>
+      <data key="d7">U.S. Federal Law 18 U.S.C. §2258A mandates the inclusion of Historical Reference when reporting child sexual abuse material.</data>
+      <data key="d8">legal compliance,reporting requirements</data>
+      <data key="d9">chunk-e0da0c71de54e74c0ac0187f2a193d2a</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756580368</data>
+    </edge>
+    <edge source="U.S. Federal Law 18 U.S.C. §2258A" target="Geographic Location Information">
+      <data key="d6">9.0</data>
+      <data key="d7">The legislation outlines that Geographic Location Information is necessary data for reports made under 18 U.S.C. §2258A.</data>
+      <data key="d8">data requirements,legal standards</data>
+      <data key="d9">chunk-e0da0c71de54e74c0ac0187f2a193d2a</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756580369</data>
+    </edge>
+    <edge source="U.S. Federal Law 18 U.S.C. §2258A" target="Transmission Metadata">
+      <data key="d6">8.0</data>
+      <data key="d7">U.S. Federal Law 18 U.S.C. §2258A requires Transmission Metadata to be included in reports to NCMEC.</data>
+      <data key="d8">compliance requirements,reporting standards</data>
+      <data key="d9">chunk-e0da0c71de54e74c0ac0187f2a193d2a</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756580370</data>
+    </edge>
+    <edge source="U.S. Federal Law 18 U.S.C. §2258A" target="Civil Penalties">
+      <data key="d6">9.0</data>
+      <data key="d7">U.S. Federal Law 18 U.S.C. §2258A outlines the Civil Penalties for providers who fail to report child sexual abuse materials as required.</data>
+      <data key="d8">legal consequences,provider obligations</data>
+      <data key="d9">chunk-e0da0c71de54e74c0ac0187f2a193d2a</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756580371</data>
+    </edge>
+    <edge source="Softblock" target="Redline">
+      <data key="d6">8.0</data>
+      <data key="d7">Softblock is a preliminary measure that occurs before content is flagged for a Redline, indicating a progression between the two actions.</data>
+      <data key="d8">content moderation,legal process</data>
+      <data key="d9">chunk-473f2bf06d33f171c87a07ffb004e486</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756580858</data>
+    </edge>
+    <edge source="Softblock" target="Child Sexual Abuse Material (CSAM)">
+      <data key="d6">9.0</data>
+      <data key="d7">Softblock actions may be applied when content is identified as potentially being CSAM, affecting how the content can be handled.</data>
+      <data key="d8">compliance,content moderation</data>
+      <data key="d9">chunk-473f2bf06d33f171c87a07ffb004e486</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756580860</data>
+    </edge>
+    <edge source="Softblock" target="Providers">
+      <data key="d6">8.0</data>
+      <data key="d7">Softblock may be used by providers as a method to limit access to certain content flagged for compliance reasons.</data>
+      <data key="d8">content management,user access control</data>
+      <data key="d9">chunk-da7a22b7b9a22123db9e68fe5baf8f52</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756583452</data>
+    </edge>
+    <edge source="Geo-specific Logic" target="U.S. Users">
+      <data key="d6">10.0</data>
+      <data key="d7">Geo-specific logic is a requirement specifically applied to U.S. Users for content detection and reporting obligations regarding child sexual abuse material.</data>
+      <data key="d8">geographic specificity,legal obligations</data>
+      <data key="d9">chunk-e0da0c71de54e74c0ac0187f2a193d2a</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756580369</data>
+    </edge>
+    <edge source="18 U.S.C. §2258A(g)" target="Federal law enforcement agencies">
+      <data key="d6">9.0</data>
+      <data key="d7">This subsection provides guidelines on confidentiality of the reports received by federal law enforcement agencies, which is essential to the enforcement of legal obligations under 18 U.S.C. §2258A.</data>
+      <data key="d8">confidentiality,legal compliance</data>
+      <data key="d9">chunk-4e37f622860a245462f05965e7b17dd1</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756580860</data>
+    </edge>
+    <edge source="U.S. federal law 18 U.S.C. §2258A" target="Child Sexual Abuse Material (CSAM)">
+      <data key="d6">10.0</data>
+      <data key="d7">The federal law mandates the reporting of CSAM once actual knowledge is obtained by the providers.</data>
+      <data key="d8">child protection,legal obligation</data>
+      <data key="d9">chunk-473f2bf06d33f171c87a07ffb004e486</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756580859</data>
+    </edge>
+    <edge source="U.S. federal law 18 U.S.C. §2258A" target="Regulatory Uncertainty">
+      <data key="d6">7.0</data>
+      <data key="d7">Regulatory uncertainty may impact the enforcement of 18 U.S.C. §2258A, as organizations navigate compliance under varying interpretations.</data>
+      <data key="d8">compliance issues,legal challenges</data>
+      <data key="d9">chunk-473f2bf06d33f171c87a07ffb004e486</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756580860</data>
+    </edge>
+    <edge source="Canada-first PF" target="U.S. law 18 U.S.C. §2258A">
+      <data key="d6">9.0</data>
+      <data key="d7">Canada-first PF testing must comply with U.S. regulations concerning the reporting of child sexual abuse material when U.S. users are involved.</data>
+      <data key="d8">regulatory compliance,testing protocol</data>
+      <data key="d9">chunk-da7a22b7b9a22123db9e68fe5baf8f52</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756583449</data>
+    </edge>
+    <edge source="Canada-first PF" target="Glow">
+      <data key="d6">7.0</data>
+      <data key="d7">Glow flags geo-based alerts in the context of the Canada-first PF feature launch, suggesting monitoring of feature health is necessary.</data>
+      <data key="d8">compliance alert,monitoring</data>
+      <data key="d9">chunk-da7a22b7b9a22123db9e68fe5baf8f52</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756583450</data>
+    </edge>
+    <edge source="U.S. law 18 U.S.C. §2258A" target="NCMEC's CyberTipline">
+      <data key="d6">10.0</data>
+      <data key="d7">U.S. law §2258A mandates that providers report to NCMEC's CyberTipline when they have actual knowledge of child sexual abuse material.</data>
+      <data key="d8">legal obligation,reporting mechanism</data>
+      <data key="d9">chunk-da7a22b7b9a22123db9e68fe5baf8f52</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756583450</data>
+    </edge>
+    <edge source="U.S. law 18 U.S.C. §2258A" target="Geo-handler routing">
+      <data key="d6">8.0</data>
+      <data key="d7">Geo-handler routing is necessary to comply with U.S. law §2258A by attributing users accurately for reporting purposes.</data>
+      <data key="d8">compliance mechanism,user attribution</data>
+      <data key="d9">chunk-da7a22b7b9a22123db9e68fe5baf8f52</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756583451</data>
+    </edge>
+    <edge source="U.S. law 18 U.S.C. §2258A" target="Providers">
+      <data key="d6">10.0</data>
+      <data key="d7">Providers are legally required by U.S. law to report known instances of apparent child sexual abuse material.</data>
+      <data key="d8">legal obligations,reporting requirements</data>
+      <data key="d9">chunk-da7a22b7b9a22123db9e68fe5baf8f52</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756583451</data>
+    </edge>
+    <edge source="U.S. law 18 U.S.C. §2258A" target="Jurors">
+      <data key="d6">9.0</data>
+      <data key="d7">Jurors emphasized that U.S. law 18 U.S.C. §2258A specifies reporting duties for providers regarding child sexual abuse material.</data>
+      <data key="d8">legal interpretation,regulatory guidance</data>
+      <data key="d9">chunk-da7a22b7b9a22123db9e68fe5baf8f52</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756583452</data>
+    </edge>
+    <edge source="U.S. law 18 U.S.C. §2258A" target="Compliance Workflows">
+      <data key="d6">9.0</data>
+      <data key="d7">Compliance workflows are essential for implementing the obligations set forth in U.S. law 18 U.S.C. §2258A regarding the reporting of child sexual abuse material.</data>
+      <data key="d8">compliance processes,legal adherence</data>
+      <data key="d9">chunk-da7a22b7b9a22123db9e68fe5baf8f52</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756583453</data>
     </edge>
   </graph>
 </graphml>

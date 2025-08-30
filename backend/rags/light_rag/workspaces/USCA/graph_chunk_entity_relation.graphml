@@ -29,6 +29,118 @@
       <data key="d4">unknown_source</data>
       <data key="d5">1756493924</data>
     </node>
+    <node id="California">
+      <data key="d0">California</data>
+      <data key="d1">geo</data>
+      <data key="d2">California is a U.S. state that has specific laws regarding age-sensitive notifications for minors, particularly under SB 976 and the Age-Appropriate Design Code Act.</data>
+      <data key="d3">chunk-e3b409b80dd09c5f0ebdc50d6251e645</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756585561</data>
+    </node>
+    <node id="SB 976">
+      <data key="d0">SB 976</data>
+      <data key="d1">regulation</data>
+      <data key="d2">SB 976 is a California law designed to protect minors from addictive internet-based services by setting notification restrictions and requiring parental consent.</data>
+      <data key="d3">chunk-e3b409b80dd09c5f0ebdc50d6251e645</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756585561</data>
+    </node>
+    <node id="Age-Appropriate Design Code Act">
+      <data key="d0">Age-Appropriate Design Code Act</data>
+      <data key="d1">regulation</data>
+      <data key="d2">The Age-Appropriate Design Code Act mandates that operators consider the impact of their services on children's use and protect their personal information.</data>
+      <data key="d3">chunk-e3b409b80dd09c5f0ebdc50d6251e645</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756585561</data>
+    </node>
+    <node id="California Attorney General">
+      <data key="d0">California Attorney General</data>
+      <data key="d1">person</data>
+      <data key="d2">The California Attorney General is responsible for enforcing SB 976 and developing regulations regarding age assurance and parental consent.</data>
+      <data key="d3">chunk-e3b409b80dd09c5f0ebdc50d6251e645</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756585561</data>
+    </node>
+    <node id="EchoTrace">
+      <data key="d0">EchoTrace</data>
+      <data key="d1">organization</data>
+      <data key="d2">EchoTrace is a log tracing mode used for verifying compliance routing in the context of age-sensitive notifications.</data>
+      <data key="d3">chunk-e3b409b80dd09c5f0ebdc50d6251e645</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756585561</data>
+    </node>
+    <node id="Compliance Detection System (CDS)">
+      <data key="d0">Compliance Detection System (CDS)</data>
+      <data key="d1">organization</data>
+      <data key="d2">The Compliance Detection System is used to verify enforcement of regulations concerning age-sensitive notifications.</data>
+      <data key="d3">chunk-e3b409b80dd09c5f0ebdc50d6251e645</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756585561</data>
+    </node>
+    <node id="addictive internet-based services or applications">
+      <data key="d0">addictive internet-based services or applications</data>
+      <data key="d1">category</data>
+      <data key="d2">Addictive internet-based services or applications refer to platforms that may contribute to addictive behaviors, particularly among minors, and are subject to California regulations.</data>
+      <data key="d3">chunk-e3b409b80dd09c5f0ebdc50d6251e645</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756585561</data>
+    </node>
+    <node id="California Age-Appropriate Design Code Act">
+      <data key="d0">California Age-Appropriate Design Code Act</data>
+      <data key="d1">regulation</data>
+      <data key="d2">The California Age-Appropriate Design Code Act establishes rules regarding the design and operation of online services to protect minors and ensure age-appropriate content and interactions.&lt;SEP&gt;The California Age-Appropriate Design Code Act mandates businesses to assess the impact of their design on children's safety and well-being.</data>
+      <data key="d3">chunk-10b61ca39028423e6fd0ac51d67bda87&lt;SEP&gt;chunk-e3b409b80dd09c5f0ebdc50d6251e645</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756585561</data>
+    </node>
+    <node id="DPIA">
+      <data key="d0">DPIA</data>
+      <data key="d1">category</data>
+      <data key="d2">DPIA (Data Protection Impact Assessment) relates to the requirement to assess how design features affect children's use of services and to document the analysis.</data>
+      <data key="d3">chunk-e3b409b80dd09c5f0ebdc50d6251e645</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756585562</data>
+    </node>
+    <node id="State of California">
+      <data key="d0">State of California</data>
+      <data key="d1">geo</data>
+      <data key="d2">The State of California is a U.S. state where the Attorney General enforces regulations concerning child protection and data privacy.</data>
+      <data key="d3">chunk-10b61ca39028423e6fd0ac51d67bda87</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756585562</data>
+    </node>
+    <node id="Attorney General">
+      <data key="d0">Attorney General</data>
+      <data key="d1">organization</data>
+      <data key="d2">The Attorney General is a legal office responsible for enforcing the regulations established by the California Age-Appropriate Design Code Act, focusing on child protection duties.</data>
+      <data key="d3">chunk-10b61ca39028423e6fd0ac51d67bda87</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756585562</data>
+    </node>
+    <node id="data protection impact assessment">
+      <data key="d0">data protection impact assessment</data>
+      <data key="d1">category</data>
+      <data key="d2">A data protection impact assessment evaluates how a business's design could potentially harm children and influences their online engagement.</data>
+      <data key="d3">chunk-10b61ca39028423e6fd0ac51d67bda87</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756585562</data>
+    </node>
+    <node id="California Age-Appropriate Design Code Act (DPIA and child-protection duties)">
+      <data key="d0">California Age-Appropriate Design Code Act (DPIA and child-protection duties)</data>
+      <data key="d1">event</data>
+      <data key="d2">The California Age-Appropriate Design Code Act encompasses duties related to data protection impact assessments and aims to ensure that design elements do not harm children.</data>
+      <data key="d3">chunk-10b61ca39028423e6fd0ac51d67bda87</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756585562</data>
+    </node>
+    <node id="parental consent regulations">
+      <data key="d0">parental consent regulations</data>
+      <data key="d1">category</data>
+      <data key="d2">Parental consent regulations are part of the measures included within the California Age-Appropriate Design Code Act, requiring safeguards to protect children online.</data>
+      <data key="d3">chunk-10b61ca39028423e6fd0ac51d67bda87</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756585562</data>
+    </node>
     <edge source="PF" target="Guest Mode">
       <data key="d6">5.0</data>
       <data key="d7">PF is related to guest mode as it specifies that the feature will be turned off during browsing in this mode.</data>
@@ -36,6 +148,102 @@
       <data key="d9">chunk-f8d09fcbdc70b03e485805da07644514</data>
       <data key="d10">unknown_source</data>
       <data key="d11">1756493926</data>
+    </edge>
+    <edge source="California" target="SB 976">
+      <data key="d6">9.0</data>
+      <data key="d7">California law (SB 976) imposes restrictions and obligations on operators of addictive internet-based services regarding notifications to minors.</data>
+      <data key="d8">legal framework,regulation</data>
+      <data key="d9">chunk-e3b409b80dd09c5f0ebdc50d6251e645</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756585563</data>
+    </edge>
+    <edge source="California" target="California Age-Appropriate Design Code Act">
+      <data key="d6">8.0</data>
+      <data key="d7">California law incorporates the California Age-Appropriate Design Code Act to ensure protections for minors in online services.</data>
+      <data key="d8">child protection,regulatory framework</data>
+      <data key="d9">chunk-e3b409b80dd09c5f0ebdc50d6251e645</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756585565</data>
+    </edge>
+    <edge source="SB 976" target="California Attorney General">
+      <data key="d6">8.0</data>
+      <data key="d7">The California Attorney General is tasked with enforcing SB 976, which includes establishing regulations regarding parental consent and age assurance.</data>
+      <data key="d8">enforcement,regulatory</data>
+      <data key="d9">chunk-e3b409b80dd09c5f0ebdc50d6251e645</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756585563</data>
+    </edge>
+    <edge source="SB 976" target="Age-Appropriate Design Code Act">
+      <data key="d6">7.0</data>
+      <data key="d7">SB 976 and the Age-Appropriate Design Code Act work together to ensure protections for minors using internet-based services.</data>
+      <data key="d8">combined regulations,legislative framework</data>
+      <data key="d9">chunk-e3b409b80dd09c5f0ebdc50d6251e645</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756585564</data>
+    </edge>
+    <edge source="SB 976" target="California Age-Appropriate Design Code Act">
+      <data key="d6">7.0</data>
+      <data key="d7">SB 976 and the California Age-Appropriate Design Code Act collectively set forth requirements for the operation of services directed at minors.</data>
+      <data key="d8">child protection,compliance</data>
+      <data key="d9">chunk-e3b409b80dd09c5f0ebdc50d6251e645</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756585565</data>
+    </edge>
+    <edge source="EchoTrace" target="Compliance Detection System (CDS)">
+      <data key="d6">8.0</data>
+      <data key="d7">EchoTrace and CDS are both tools used to ensure compliance with laws and regulations affecting minors and their internet usage.</data>
+      <data key="d8">compliance tools,regulatory monitoring</data>
+      <data key="d9">chunk-e3b409b80dd09c5f0ebdc50d6251e645</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756585563</data>
+    </edge>
+    <edge source="EchoTrace" target="DPIA">
+      <data key="d6">6.0</data>
+      <data key="d7">EchoTrace is used alongside DPIA to document compliance and ensure that notifications and other design considerations do not negatively impact children's usage.</data>
+      <data key="d8">compliance monitoring,impact assessment</data>
+      <data key="d9">chunk-e3b409b80dd09c5f0ebdc50d6251e645</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756585563</data>
+    </edge>
+    <edge source="Compliance Detection System (CDS)" target="DPIA">
+      <data key="d6">7.0</data>
+      <data key="d7">The Compliance Detection System (CDS) is used to validate compliance with design requirements established in the DPIA for services targeted at minors.</data>
+      <data key="d8">design assessment,regulatory compliance</data>
+      <data key="d9">chunk-e3b409b80dd09c5f0ebdc50d6251e645</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756585564</data>
+    </edge>
+    <edge source="California Age-Appropriate Design Code Act" target="Attorney General">
+      <data key="d6">8.0</data>
+      <data key="d7">The Attorney General is responsible for adopting regulations related to the California Age-Appropriate Design Code Act.".</data>
+      <data key="d8">child protection,regulatory authority</data>
+      <data key="d9">chunk-10b61ca39028423e6fd0ac51d67bda87</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756585566</data>
+    </edge>
+    <edge source="California Age-Appropriate Design Code Act" target="data protection impact assessment">
+      <data key="d6">10.0</data>
+      <data key="d7">The requirement for a data protection impact assessment is part of the stipulations laid out by the California Age-Appropriate Design Code Act.".</data>
+      <data key="d8">child safety,regulation</data>
+      <data key="d9">chunk-10b61ca39028423e6fd0ac51d67bda87</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756585567</data>
+    </edge>
+    <edge source="California Age-Appropriate Design Code Act" target="parental consent regulations">
+      <data key="d6">8.0</data>
+      <data key="d7">The California Age-Appropriate Design Code Act includes regulations regarding parental consent as a measure to protect children.".</data>
+      <data key="d8">child protection,regulatory framework</data>
+      <data key="d9">chunk-10b61ca39028423e6fd0ac51d67bda87</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756585568</data>
+    </edge>
+    <edge source="State of California" target="Attorney General">
+      <data key="d6">9.0</data>
+      <data key="d7">The Attorney General acts on behalf of the State of California to enforce laws and regulations, including those for child protection.".</data>
+      <data key="d8">governmental relationship,legal enforcement</data>
+      <data key="d9">chunk-10b61ca39028423e6fd0ac51d67bda87</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756585563</data>
     </edge>
   </graph>
 </graphml>

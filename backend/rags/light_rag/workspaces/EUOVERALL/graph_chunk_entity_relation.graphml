@@ -1,0 +1,713 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d11" for="edge" attr.name="created_at" attr.type="long" />
+  <key id="d10" for="edge" attr.name="file_path" attr.type="string" />
+  <key id="d9" for="edge" attr.name="source_id" attr.type="string" />
+  <key id="d8" for="edge" attr.name="keywords" attr.type="string" />
+  <key id="d7" for="edge" attr.name="description" attr.type="string" />
+  <key id="d6" for="edge" attr.name="weight" attr.type="double" />
+  <key id="d5" for="node" attr.name="created_at" attr.type="long" />
+  <key id="d4" for="node" attr.name="file_path" attr.type="string" />
+  <key id="d3" for="node" attr.name="source_id" attr.type="string" />
+  <key id="d2" for="node" attr.name="description" attr.type="string" />
+  <key id="d1" for="node" attr.name="entity_type" attr.type="string" />
+  <key id="d0" for="node" attr.name="entity_id" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="Video Reply Functionality">
+      <data key="d0">Video Reply Functionality</data>
+      <data key="d1">event</data>
+      <data key="d2">The video reply functionality is a feature being trialed specifically for users in the EEA, focusing on user-generated video content and analytics.</data>
+      <data key="d3">chunk-c16922036754e01bfff65655734f9cfc</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756582246</data>
+    </node>
+    <node id="EEA">
+      <data key="d0">EEA</data>
+      <data key="d1">geo</data>
+      <data key="d2">The EEA (European Economic Area) is the region where the video reply functionality will be rolled out, encompassing multiple European countries.&lt;SEP&gt;The European Economic Area (EEA) encompasses EU countries and allows for the implementation of region-specific functionalities and regulations.</data>
+      <data key="d3">chunk-c16922036754e01bfff65655734f9cfc&lt;SEP&gt;chunk-a7af9efd9e1ca7900a1c92ce052255e7</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756582597</data>
+    </node>
+    <node id="Digital Services Act (Regulation (EU) 2022/2065)">
+      <data key="d0">Digital Services Act (Regulation (EU) 2022/2065)</data>
+      <data key="d1">regulation</data>
+      <data key="d2">The Digital Services Act is a legislative framework that imposes obligations on hosting service providers operating within the EU/EEA, particularly regarding the management of user-generated content.</data>
+      <data key="d3">chunk-c16922036754e01bfff65655734f9cfc</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756582246</data>
+    </node>
+    <node id="General Data Protection Regulation (GDPR)">
+      <data key="d0">General Data Protection Regulation (GDPR)</data>
+      <data key="d1">regulation</data>
+      <data key="d2">The GDPR is a regulation governing data protection and privacy in the European Union and the European Economic Area, implementing strict rules on processing personal data.&lt;SEP&gt;The GDPR mandates principles governing data protection and privacy for individuals within the EU, applicable during the trial. </data>
+      <data key="d3">chunk-c16922036754e01bfff65655734f9cfc&lt;SEP&gt;chunk-a7af9efd9e1ca7900a1c92ce052255e7</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756582597</data>
+    </node>
+    <node id="Geo-handler (GH)">
+      <data key="d0">Geo-handler (GH)</data>
+      <data key="d1">organization</data>
+      <data key="d2">The Geo-handler is a module responsible for routing features based on user region, particularly in ensuring EEA-specific exposure allocation.</data>
+      <data key="d3">chunk-c16922036754e01bfff65655734f9cfc</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756582246</data>
+    </node>
+    <node id="Baseline Behavior (BB)">
+      <data key="d0">Baseline Behavior (BB)</data>
+      <data key="d1">organization</data>
+      <data key="d2">Baseline Behavior refers to the standard user behavior utilized for anomaly detection in relation to video replies.</data>
+      <data key="d3">chunk-c16922036754e01bfff65655734f9cfc</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756582246</data>
+    </node>
+    <node id="Digital Services Act">
+      <data key="d0">Digital Services Act</data>
+      <data key="d1">regulation</data>
+      <data key="d2">The Digital Services Act is a specific regulation within the EU that imposes obligations on hosting service providers, including rules related to transparency, user redress, and risk assessments.&lt;SEP&gt;The Digital Services Act outlines obligations for online platforms regarding content moderation, transparency, and user protection in the EU.</data>
+      <data key="d3">chunk-c16922036754e01bfff65655734f9cfc&lt;SEP&gt;chunk-a7af9efd9e1ca7900a1c92ce052255e7</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756582597</data>
+    </node>
+    <node id="Articles 14–16">
+      <data key="d0">Articles 14–16</data>
+      <data key="d1">regulation</data>
+      <data key="d2">Articles 14–16 of the Digital Services Act outline obligations for hosting service providers to manage illegal content and implement notice-and-action mechanisms.&lt;SEP&gt;Articles 14–16 of the Digital Services Act stipulate the obligations for hosting services regarding notice-and-action mechanisms for illegal content.</data>
+      <data key="d3">chunk-c16922036754e01bfff65655734f9cfc&lt;SEP&gt;chunk-a7af9efd9e1ca7900a1c92ce052255e7</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756582598</data>
+    </node>
+    <node id="Article 15 / Article 24">
+      <data key="d0">Article 15 / Article 24</data>
+      <data key="d1">regulation</data>
+      <data key="d2">Article 15 includes transparency reporting obligations for providers of intermediary services as stated in the Digital Services Act.&lt;SEP&gt;Article 15 outlines transparency reporting obligations, while Article 24 addresses related content moderation responsibilities under the Digital Services Act.</data>
+      <data key="d3">chunk-c16922036754e01bfff65655734f9cfc&lt;SEP&gt;chunk-a7af9efd9e1ca7900a1c92ce052255e7</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756582598</data>
+    </node>
+    <node id="Article 20">
+      <data key="d0">Article 20</data>
+      <data key="d1">regulation</data>
+      <data key="d2">Article 20 mandates the creation of an internal complaint-handling system for users to challenge content moderation decisions.&lt;SEP&gt;Article 20 of the Digital Services Act pertains to internal complaint-handling systems for users to challenge content moderation decisions.</data>
+      <data key="d3">chunk-c16922036754e01bfff65655734f9cfc&lt;SEP&gt;chunk-a7af9efd9e1ca7900a1c92ce052255e7</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756582598</data>
+    </node>
+    <node id="Article 27">
+      <data key="d0">Article 27</data>
+      <data key="d1">regulation</data>
+      <data key="d2">Article 27 addresses transparency obligations regarding recommender systems and the documentation needed for algorithmic decision-making.&lt;SEP&gt;Article 27 requires transparency concerning the parameters used in recommender systems to moderate content.</data>
+      <data key="d3">chunk-c16922036754e01bfff65655734f9cfc&lt;SEP&gt;chunk-a7af9efd9e1ca7900a1c92ce052255e7</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756582598</data>
+    </node>
+    <node id="Articles 33–37">
+      <data key="d0">Articles 33–37</data>
+      <data key="d1">regulation</data>
+      <data key="d2">Articles 33–37 establish the designation threshold and obligations for Very Large Online Platforms (VLOPs) under the Digital Services Act.&lt;SEP&gt;Articles 33–37 outline the obligations for very large online platforms, including risk assessments and audits.</data>
+      <data key="d3">chunk-c16922036754e01bfff65655734f9cfc&lt;SEP&gt;chunk-a7af9efd9e1ca7900a1c92ce052255e7</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756582598</data>
+    </node>
+    <node id="SCCs">
+      <data key="d0">SCCs</data>
+      <data key="d1">category</data>
+      <data key="d2">SCCs (Standard Contractual Clauses) are contractual provisions used to ensure compliance with data protection requirements for cross-border data transfers.</data>
+      <data key="d3">chunk-c16922036754e01bfff65655734f9cfc</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756582246</data>
+    </node>
+    <node id="GDPR">
+      <data key="d0">GDPR</data>
+      <data key="d1">organization</data>
+      <data key="d2">GDPR is a regulation in EU law on data protection and privacy, applicable to individuals within the European Union and the European Economic Area.&lt;SEP&gt;GDPR is a regulation that governs the protection of personal data and privacy in the European Union.</data>
+      <data key="d3">chunk-056ac303c97fb8156cbad15ed2fbe410&lt;SEP&gt;chunk-affbd5dbcf34ebe169fa07a29874fc52</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756582598</data>
+    </node>
+    <node id="DSA">
+      <data key="d0">DSA</data>
+      <data key="d1">organization</data>
+      <data key="d2">The Digital Services Act (DSA) builds on prior recommendations regarding illegal online content and includes frameworks for enforcement and compliance.</data>
+      <data key="d3">chunk-affbd5dbcf34ebe169fa07a29874fc52</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756582246</data>
+    </node>
+    <node id="Commission Recommendation">
+      <data key="d0">Commission Recommendation</data>
+      <data key="d1">organization</data>
+      <data key="d2">Commission Recommendation pertains to prior guidelines and frameworks regarding content regulation and impacts the DSA's implementation.</data>
+      <data key="d3">chunk-affbd5dbcf34ebe169fa07a29874fc52</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756582247</data>
+    </node>
+    <node id="Dec 2023">
+      <data key="d0">Dec 2023</data>
+      <data key="d1">event</data>
+      <data key="d2">Dec 2023 marks a significant period regarding DSA enforcement activities for platforms involved in video content hosting.</data>
+      <data key="d3">chunk-affbd5dbcf34ebe169fa07a29874fc52</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756582247</data>
+    </node>
+    <node id="Personal Data">
+      <data key="d0">Personal Data</data>
+      <data key="d1">category</data>
+      <data key="d2">Personal data refers to information that relates to an identified or identifiable individual, which must be collected and processed lawfully under regulations like GDPR.</data>
+      <data key="d3">chunk-affbd5dbcf34ebe169fa07a29874fc52</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756582247</data>
+    </node>
+    <node id="Consent">
+      <data key="d0">Consent</data>
+      <data key="d1">category</data>
+      <data key="d2">Consent is a lawful basis for processing personal data, where individuals must agree to the use of their data.</data>
+      <data key="d3">chunk-affbd5dbcf34ebe169fa07a29874fc52</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756582247</data>
+    </node>
+    <node id="Art. 46(2)(c)">
+      <data key="d0">Art. 46(2)(c)</data>
+      <data key="d1">category</data>
+      <data key="d2">Art. 46(2)(c) refers to a specific article in legal texts which discusses conditions related to data processing and transfer requirements under GDPR.</data>
+      <data key="d3">chunk-affbd5dbcf34ebe169fa07a29874fc52</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756582247</data>
+    </node>
+    <node id="Art. 4(5)">
+      <data key="d0">Art. 4(5)</data>
+      <data key="d1">category</data>
+      <data key="d2">Art. 4(5) defines 'Pseudonymisation' within the context of data protection regulations, clarifying strategies to protect personal data.</data>
+      <data key="d3">chunk-affbd5dbcf34ebe169fa07a29874fc52</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756582247</data>
+    </node>
+    <node id="Art. 5(1)(c)">
+      <data key="d0">Art. 5(1)(c)</data>
+      <data key="d1">category</data>
+      <data key="d2">Art. 5(1)(c) outlines the principle of data minimization, which mandates that personal data must be adequate, relevant, and limited to what is necessary.</data>
+      <data key="d3">chunk-affbd5dbcf34ebe169fa07a29874fc52</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756582247</data>
+    </node>
+    <node id="Art. 5(1)(e)">
+      <data key="d0">Art. 5(1)(e)</data>
+      <data key="d1">category</data>
+      <data key="d2">Art. 5(1)(e) states the principle of storage limitation, indicating that personal data must not be stored longer than necessary.</data>
+      <data key="d3">chunk-affbd5dbcf34ebe169fa07a29874fc52</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756582247</data>
+    </node>
+    <node id="Art. 6(1)(a)">
+      <data key="d0">Art. 6(1)(a)</data>
+      <data key="d1">category</data>
+      <data key="d2">Art. 6(1)(a) specifies that processing personal data is lawful if the subject has given consent.</data>
+      <data key="d3">chunk-affbd5dbcf34ebe169fa07a29874fc52</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756582247</data>
+    </node>
+    <node id="Art. 6(1)(f)">
+      <data key="d0">Art. 6(1)(f)</data>
+      <data key="d1">category</data>
+      <data key="d2">Art. 6(1)(f) allows for lawful processing on the basis of legitimate interests.</data>
+      <data key="d3">chunk-affbd5dbcf34ebe169fa07a29874fc52</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756582248</data>
+    </node>
+    <node id="Art. 8">
+      <data key="d0">Art. 8</data>
+      <data key="d1">category</data>
+      <data key="d2">Art. 8 sets special rules for obtaining consent from children regarding data processing.</data>
+      <data key="d3">chunk-affbd5dbcf34ebe169fa07a29874fc52</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756582248</data>
+    </node>
+    <node id="Standard Contractual Clauses">
+      <data key="d0">Standard Contractual Clauses</data>
+      <data key="d1">category</data>
+      <data key="d2">Standard Contractual Clauses refer to pre-approved contract terms used to ensure adequate protection in the transfer of personal data to third countries.</data>
+      <data key="d3">chunk-affbd5dbcf34ebe169fa07a29874fc52</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756582248</data>
+    </node>
+    <node id="Third Countries">
+      <data key="d0">Third Countries</data>
+      <data key="d1">category</data>
+      <data key="d2">Third Countries are nations outside the EU/EEA that may require specific safeguards for personal data transfers.</data>
+      <data key="d3">chunk-affbd5dbcf34ebe169fa07a29874fc52</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756582248</data>
+    </node>
+    <node id="DSA Enforcement Activity">
+      <data key="d0">DSA Enforcement Activity</data>
+      <data key="d1">event</data>
+      <data key="d2">DSA Enforcement Activity refers to the implementation and action taken regarding compliance and enforcement of Digital Services Act regulations.</data>
+      <data key="d3">chunk-affbd5dbcf34ebe169fa07a29874fc52</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756582248</data>
+    </node>
+    <node id="Trial Run of Video Replies in EU">
+      <data key="d0">Trial Run of Video Replies in EU</data>
+      <data key="d1">event</data>
+      <data key="d2">The trial run of video replies is a functionality being tested specifically for users in the European Economic Area (EEA).</data>
+      <data key="d3">chunk-a7af9efd9e1ca7900a1c92ce052255e7</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756582597</data>
+    </node>
+    <node id="Geo-handler">
+      <data key="d0">Geo-handler</data>
+      <data key="d1">organization</data>
+      <data key="d2">The Geo-handler is a module responsible for routing features based on user region, ensuring compliance with regional restrictions.</data>
+      <data key="d3">chunk-a7af9efd9e1ca7900a1c92ce052255e7</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756582597</data>
+    </node>
+    <node id="Baseline Behavior">
+      <data key="d0">Baseline Behavior</data>
+      <data key="d1">organization</data>
+      <data key="d2">Baseline Behavior is a standard used for anomaly detection, collecting telemetry and analytics during the trial run.</data>
+      <data key="d3">chunk-a7af9efd9e1ca7900a1c92ce052255e7</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756582597</data>
+    </node>
+    <node id="Regulations">
+      <data key="d0">Regulations</data>
+      <data key="d1">category</data>
+      <data key="d2">Regulations refer to legal directives that dictate the obligations of online platforms related to content moderation and data protection.</data>
+      <data key="d3">chunk-a7af9efd9e1ca7900a1c92ce052255e7</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756582597</data>
+    </node>
+    <node id="Obligations">
+      <data key="d0">Obligations</data>
+      <data key="d1">category</data>
+      <data key="d2">Obligations are the specific legal requirements that online service providers must fulfill under the Digital Services Act and GDPR.</data>
+      <data key="d3">chunk-a7af9efd9e1ca7900a1c92ce052255e7</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756582597</data>
+    </node>
+    <node id="Directive">
+      <data key="d0">Directive</data>
+      <data key="d1">category</data>
+      <data key="d2">Directive refers to a legal instrument used in the EU that requires member states to achieve a particular outcome while allowing them to devise their own laws.</data>
+      <data key="d3">chunk-a7af9efd9e1ca7900a1c92ce052255e7</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756582598</data>
+    </node>
+    <node id="Data Minimisation">
+      <data key="d0">Data Minimisation</data>
+      <data key="d1">category</data>
+      <data key="d2">Data minimisation is a principle under GDPR that requires personal data to be adequate, relevant, and limited to what is necessary for processing.</data>
+      <data key="d3">chunk-056ac303c97fb8156cbad15ed2fbe410</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756582598</data>
+    </node>
+    <node id="Commission Recommendation / DSA preparatory materials">
+      <data key="d0">Commission Recommendation / DSA preparatory materials</data>
+      <data key="d1">document</data>
+      <data key="d2">This document provides guidance and context for the Digital Services Act (DSA) obligations and enforcement.</data>
+      <data key="d3">chunk-056ac303c97fb8156cbad15ed2fbe410</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756582599</data>
+    </node>
+    <node id="Art.4(5)">
+      <data key="d0">Art.4(5)</data>
+      <data key="d1">category</data>
+      <data key="d2">Art.4(5) defines pseudonymisation in the context of personal data processing under GDPR.</data>
+      <data key="d3">chunk-056ac303c97fb8156cbad15ed2fbe410</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756582599</data>
+    </node>
+    <node id="Art.5(1)(c)">
+      <data key="d0">Art.5(1)(c)</data>
+      <data key="d1">category</data>
+      <data key="d2">Art.5(1)(c) outlines the principle of data minimisation, specifying limitations on the amount of personal data collected.</data>
+      <data key="d3">chunk-056ac303c97fb8156cbad15ed2fbe410</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756582599</data>
+    </node>
+    <node id="Art.5(1)(e)">
+      <data key="d0">Art.5(1)(e)</data>
+      <data key="d1">category</data>
+      <data key="d2">Art.5(1)(e) addresses storage limitation requirements for personal data under GDPR.</data>
+      <data key="d3">chunk-056ac303c97fb8156cbad15ed2fbe410</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756582599</data>
+    </node>
+    <node id="Art.6(1)(a)/(f)">
+      <data key="d0">Art.6(1)(a)/(f)</data>
+      <data key="d1">category</data>
+      <data key="d2">Art.6(1)(a)/(f) outlines lawful bases for processing personal data, including consent and legitimate interests.</data>
+      <data key="d3">chunk-056ac303c97fb8156cbad15ed2fbe410</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756582599</data>
+    </node>
+    <node id="Art.8">
+      <data key="d0">Art.8</data>
+      <data key="d1">category</data>
+      <data key="d2">Art.8 governs child-consent rules in data processing under GDPR.</data>
+      <data key="d3">chunk-056ac303c97fb8156cbad15ed2fbe410</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756582599</data>
+    </node>
+    <node id="Art.35">
+      <data key="d0">Art.35</data>
+      <data key="d1">category</data>
+      <data key="d2">Art.35 requires Data Protection Impact Assessments (DPIAs) for high-risk processing activities.</data>
+      <data key="d3">chunk-056ac303c97fb8156cbad15ed2fbe410</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756582599</data>
+    </node>
+    <node id="Art.46(2)(c)">
+      <data key="d0">Art.46(2)(c)</data>
+      <data key="d1">category</data>
+      <data key="d2">Art.46(2)(c) provides safeguards for international data transfers under the GDPR.</data>
+      <data key="d3">chunk-056ac303c97fb8156cbad15ed2fbe410</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756582599</data>
+    </node>
+    <node id="DSA VLOP Enforcement Dec2023">
+      <data key="d0">DSA VLOP Enforcement Dec2023</data>
+      <data key="d1">event</data>
+      <data key="d2">This event highlights the enforcement activities noted in December 2023 concerning platforms providing video content under DSA regulations.</data>
+      <data key="d3">chunk-056ac303c97fb8156cbad15ed2fbe410</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756582599</data>
+    </node>
+    <node id="no-context_verdict_1">
+      <data key="d0">no-context_verdict_1</data>
+      <data key="d1">event</data>
+      <data key="d2">This entry relates to an uninformative input string included for reference within a case analysis.</data>
+      <data key="d3">chunk-056ac303c97fb8156cbad15ed2fbe410</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756582599</data>
+    </node>
+    <node id="Data Protection Impact Assessment">
+      <data key="d0">Data Protection Impact Assessment</data>
+      <data key="d1">category</data>
+      <data key="d2">Data Protection Impact Assessment (DPIA) is a process required under Art.35 of GDPR for assessing the impact of high-risk data processing.</data>
+      <data key="d3">chunk-056ac303c97fb8156cbad15ed2fbe410</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756582599</data>
+    </node>
+    <node id="High-risk Processing">
+      <data key="d0">High-risk Processing</data>
+      <data key="d1">category</data>
+      <data key="d2">High-risk processing refers to data processing activities that pose significant risks to the rights and freedoms of individuals.</data>
+      <data key="d3">chunk-056ac303c97fb8156cbad15ed2fbe410</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756582599</data>
+    </node>
+    <node id="International Data Transfers">
+      <data key="d0">International Data Transfers</data>
+      <data key="d1">category</data>
+      <data key="d2">International Data Transfers involve moving personal data outside the European Economic Area, which is regulated under Art.46 of GDPR.</data>
+      <data key="d3">chunk-056ac303c97fb8156cbad15ed2fbe410</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756582599</data>
+    </node>
+    <node id="Child-consent Rules">
+      <data key="d0">Child-consent Rules</data>
+      <data key="d1">category</data>
+      <data key="d2">Child-consent Rules dictate how consent should be obtained for processing the personal data of minors as outlined in Art.8 of GDPR.</data>
+      <data key="d3">chunk-056ac303c97fb8156cbad15ed2fbe410</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756582599</data>
+    </node>
+    <edge source="Video Reply Functionality" target="EEA">
+      <data key="d6">8.0</data>
+      <data key="d7">The video reply functionality is specifically rolled out for users within the EEA, indicating a direct geographical targeting.</data>
+      <data key="d8">feature rollout,geographical targeting</data>
+      <data key="d9">chunk-c16922036754e01bfff65655734f9cfc</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756582249</data>
+    </edge>
+    <edge source="Video Reply Functionality" target="Digital Services Act (Regulation (EU) 2022/2065)">
+      <data key="d6">9.0</data>
+      <data key="d7">The rolling out of the video reply functionality involves adherence to the Digital Services Act, which governs user-generated content obligations in the EEA.</data>
+      <data key="d8">regulatory compliance,user content</data>
+      <data key="d9">chunk-c16922036754e01bfff65655734f9cfc</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756582250</data>
+    </edge>
+    <edge source="Video Reply Functionality" target="GDPR">
+      <data key="d6">9.0</data>
+      <data key="d7">The implementation of the video reply functionality must comply with GDPR regulations, particularly related to telemetry and personal data processing.</data>
+      <data key="d8">compliance,data protection</data>
+      <data key="d9">chunk-c16922036754e01bfff65655734f9cfc</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756582250</data>
+    </edge>
+    <edge source="Video Reply Functionality" target="Geo-handler (GH)">
+      <data key="d6">8.0</data>
+      <data key="d7">The Geo-handler ensures that the video reply feature is only exposed to users in the EEA, enforcing regional restrictions.</data>
+      <data key="d8">feature exposure,regional routing</data>
+      <data key="d9">chunk-c16922036754e01bfff65655734f9cfc</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756582251</data>
+    </edge>
+    <edge source="Video Reply Functionality" target="Baseline Behavior (BB)">
+      <data key="d6">7.0</data>
+      <data key="d7">Baseline Behavior collects analytics related to user interactions with video replies, which contributes to anomaly detection measures.</data>
+      <data key="d8">analytics,user behavior</data>
+      <data key="d9">chunk-c16922036754e01bfff65655734f9cfc</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756582252</data>
+    </edge>
+    <edge source="EEA" target="Trial Run of Video Replies in EU">
+      <data key="d6">9.0</data>
+      <data key="d7">The trial run is specifically tailored for users located in the EEA, indicating a direct connection to this geographical area.</data>
+      <data key="d8">region-specific functionality,trial context</data>
+      <data key="d9">chunk-a7af9efd9e1ca7900a1c92ce052255e7</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756582600</data>
+    </edge>
+    <edge source="General Data Protection Regulation (GDPR)" target="Trial Run of Video Replies in EU">
+      <data key="d6">10.0</data>
+      <data key="d7">The GDPR implications are critical to the telemetry process during the trial run, ensuring user data rights are maintained.</data>
+      <data key="d8">data protection,user privacy</data>
+      <data key="d9">chunk-a7af9efd9e1ca7900a1c92ce052255e7</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756582603</data>
+    </edge>
+    <edge source="Digital Services Act" target="Articles 14–16">
+      <data key="d6">18.0</data>
+      <data key="d7">Articles 14–16 of the Digital Services Act specify the obligations that hosting services must implement regarding content moderation mechanisms.&lt;SEP&gt;The Digital Services Act includes Articles 14–16 that define obligations for hosting service providers regarding illegal content handling.</data>
+      <data key="d8">content management,content moderation,legal obligations,regulatory framework</data>
+      <data key="d9">chunk-c16922036754e01bfff65655734f9cfc&lt;SEP&gt;chunk-a7af9efd9e1ca7900a1c92ce052255e7</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756582603</data>
+    </edge>
+    <edge source="Digital Services Act" target="Article 15 / Article 24">
+      <data key="d6">16.0</data>
+      <data key="d7">Article 15 and Article 24 are parts of the Digital Services Act that detail transparency reporting and content moderation requirements.&lt;SEP&gt;The Digital Services Act mandates transparency reporting obligations as specified in Article 15 / Article 24.</data>
+      <data key="d8">regulation,regulatory compliance,transparency,transparency requirements</data>
+      <data key="d9">chunk-c16922036754e01bfff65655734f9cfc&lt;SEP&gt;chunk-a7af9efd9e1ca7900a1c92ce052255e7</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756582604</data>
+    </edge>
+    <edge source="Digital Services Act" target="Article 20">
+      <data key="d6">16.0</data>
+      <data key="d7">Article 20 is a provision within the Digital Services Act focusing on internal complaint-handling for users.&lt;SEP&gt;The Digital Services Act necessitates the establishment of an internal complaint-handling system as detailed in Article 20.</data>
+      <data key="d8">compliance,user rights</data>
+      <data key="d9">chunk-c16922036754e01bfff65655734f9cfc&lt;SEP&gt;chunk-a7af9efd9e1ca7900a1c92ce052255e7</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756582604</data>
+    </edge>
+    <edge source="Digital Services Act" target="Article 27">
+      <data key="d6">17.0</data>
+      <data key="d7">Article 27 outlines requirements for transparency in recommender systems, linked directly to the aims of the Digital Services Act.&lt;SEP&gt;The Digital Services Act contains provisions in Article 27 that govern transparency obligations for recommender systems.</data>
+      <data key="d8">algorithm policies,regulatory compliance,transparency</data>
+      <data key="d9">chunk-c16922036754e01bfff65655734f9cfc&lt;SEP&gt;chunk-a7af9efd9e1ca7900a1c92ce052255e7</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756582605</data>
+    </edge>
+    <edge source="Digital Services Act" target="Articles 33–37">
+      <data key="d6">16.0</data>
+      <data key="d7">Articles 33–37 detail the obligations specific to very large online platforms, highlighting a segment within the Digital Services Act.&lt;SEP&gt;The Digital Services Act outlines the responsibilities and thresholds for VLOPs in Articles 33–37.</data>
+      <data key="d8">VLOP obligations,large platform requirements,regulatory compliance,regulatory oversight</data>
+      <data key="d9">chunk-c16922036754e01bfff65655734f9cfc&lt;SEP&gt;chunk-a7af9efd9e1ca7900a1c92ce052255e7</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756582605</data>
+    </edge>
+    <edge source="Digital Services Act" target="Trial Run of Video Replies in EU">
+      <data key="d6">10.0</data>
+      <data key="d7">The trial run must adhere to the stipulations outlined in the Digital Services Act, relating to user-generated content and moderation.</data>
+      <data key="d8">regulatory compliance,user protection</data>
+      <data key="d9">chunk-a7af9efd9e1ca7900a1c92ce052255e7</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756582602</data>
+    </edge>
+    <edge source="SCCs" target="GDPR">
+      <data key="d6">8.0</data>
+      <data key="d7">The GDPR regulations outline the need for SCCs to ensure compliance with data protection during cross-border data transfers.</data>
+      <data key="d8">compliance,data protection</data>
+      <data key="d9">chunk-c16922036754e01bfff65655734f9cfc</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756582251</data>
+    </edge>
+    <edge source="GDPR" target="DSA">
+      <data key="d6">9.0</data>
+      <data key="d7">The Digital Services Act (DSA) builds on the principles established in the GDPR, addressing content regulation and data protection.".</data>
+      <data key="d8">data protection,legal framework</data>
+      <data key="d9">chunk-affbd5dbcf34ebe169fa07a29874fc52</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756582252</data>
+    </edge>
+    <edge source="GDPR" target="Art. 5(1)(c)">
+      <data key="d6">8.0</data>
+      <data key="d7">Art. 5(1)(c) is a guiding principle under GDPR that emphasizes the importance of data minimization in regards to personal data.".</data>
+      <data key="d8">GDPR,data protection principle</data>
+      <data key="d9">chunk-affbd5dbcf34ebe169fa07a29874fc52</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756582252</data>
+    </edge>
+    <edge source="GDPR" target="Art. 5(1)(e)">
+      <data key="d6">8.0</data>
+      <data key="d7">Art. 5(1)(e) is another guiding principle under GDPR, focusing on the importance of limiting storage duration for personal data.".</data>
+      <data key="d8">GDPR,data retention policy</data>
+      <data key="d9">chunk-affbd5dbcf34ebe169fa07a29874fc52</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756582253</data>
+    </edge>
+    <edge source="GDPR" target="Art. 6(1)(a)">
+      <data key="d6">9.0</data>
+      <data key="d7">Art. 6(1)(a) is related to GDPR as it affirms the necessity of obtaining consent for lawful data processing.".</data>
+      <data key="d8">consent,lawful processing</data>
+      <data key="d9">chunk-affbd5dbcf34ebe169fa07a29874fc52</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756582254</data>
+    </edge>
+    <edge source="GDPR" target="Art. 6(1)(f)">
+      <data key="d6">8.0</data>
+      <data key="d7">Art. 6(1)(f) provides an alternative basis for lawful data processing, indicating the role of legitimate interests under GDPR.".</data>
+      <data key="d8">lawful processing,legitimate interests</data>
+      <data key="d9">chunk-affbd5dbcf34ebe169fa07a29874fc52</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756582255</data>
+    </edge>
+    <edge source="GDPR" target="Art. 8">
+      <data key="d6">9.0</data>
+      <data key="d7">Art. 8 outlines special conditions regarding consent for children, establishing its significance for GDPR protections.".</data>
+      <data key="d8">children's data protection,consent</data>
+      <data key="d9">chunk-affbd5dbcf34ebe169fa07a29874fc52</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756582256</data>
+    </edge>
+    <edge source="GDPR" target="Data Minimisation">
+      <data key="d6">9.0</data>
+      <data key="d7">GDPR establishes the principle of data minimisation as a core requirement for personal data processing.</data>
+      <data key="d8">data protection,regulatory principle</data>
+      <data key="d9">chunk-056ac303c97fb8156cbad15ed2fbe410</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756582602</data>
+    </edge>
+    <edge source="GDPR" target="Art.5(1)(c)">
+      <data key="d6">10.0</data>
+      <data key="d7">Art.5(1)(c) is a specific provision within GDPR that mandates the principle of data minimisation.</data>
+      <data key="d8">legal provision,regulation</data>
+      <data key="d9">chunk-056ac303c97fb8156cbad15ed2fbe410</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756582603</data>
+    </edge>
+    <edge source="GDPR" target="Art.8">
+      <data key="d6">8.0</data>
+      <data key="d7">GDPR includes regulations regarding child-consent rules as stipulated in Art.8.</data>
+      <data key="d8">children's data,regulatory framework</data>
+      <data key="d9">chunk-056ac303c97fb8156cbad15ed2fbe410</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756582604</data>
+    </edge>
+    <edge source="GDPR" target="DSA VLOP Enforcement Dec2023">
+      <data key="d6">8.0</data>
+      <data key="d7">The enforcement activity noted in Dec 2023 involves scrutiny of platforms which is aligned with GDPR data protection requirements.</data>
+      <data key="d8">data protection,regulatory scrutiny</data>
+      <data key="d9">chunk-056ac303c97fb8156cbad15ed2fbe410</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756582605</data>
+    </edge>
+    <edge source="GDPR" target="Data Protection Impact Assessment">
+      <data key="d6">8.0</data>
+      <data key="d7">GDPR requires the completion of Data Protection Impact Assessments for certain high-risk processing activities.</data>
+      <data key="d8">regulatory requirement,risk assessment</data>
+      <data key="d9">chunk-056ac303c97fb8156cbad15ed2fbe410</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756582605</data>
+    </edge>
+    <edge source="GDPR" target="Child-consent Rules">
+      <data key="d6">9.0</data>
+      <data key="d7">GDPR's Art.8 specifically outlines the rules regarding consent from children in data processing activities.</data>
+      <data key="d8">legal framework,youth protection</data>
+      <data key="d9">chunk-056ac303c97fb8156cbad15ed2fbe410</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756582606</data>
+    </edge>
+    <edge source="DSA" target="Commission Recommendation">
+      <data key="d6">8.0</data>
+      <data key="d7">The DSA includes and builds upon prior Commission Recommendations regarding the regulation of illegal online content.".</data>
+      <data key="d8">content regulation,legal development</data>
+      <data key="d9">chunk-affbd5dbcf34ebe169fa07a29874fc52</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756582252</data>
+    </edge>
+    <edge source="DSA" target="Dec 2023">
+      <data key="d6">7.0</data>
+      <data key="d7">The events in Dec 2023 highlight DSA enforcement activities concerning video hosting platforms, indicating an expansion of regulatory focus.".</data>
+      <data key="d8">enforcement activity,regulatory focus</data>
+      <data key="d9">chunk-affbd5dbcf34ebe169fa07a29874fc52</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756582253</data>
+    </edge>
+    <edge source="DSA" target="Standard Contractual Clauses">
+      <data key="d6">9.0</data>
+      <data key="d7">The inclusion of Standard Contractual Clauses is essential for compliance when transferring personal data to third countries as regulated by the DSA.".</data>
+      <data key="d8">compliance,data transfer</data>
+      <data key="d9">chunk-affbd5dbcf34ebe169fa07a29874fc52</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756582254</data>
+    </edge>
+    <edge source="DSA" target="DSA Enforcement Activity">
+      <data key="d6">10.0</data>
+      <data key="d7">DSA Enforcement Activity illustrates the practical application and adherence to the DSA regulations in real-time.".</data>
+      <data key="d8">enforcement,regulatory compliance</data>
+      <data key="d9">chunk-affbd5dbcf34ebe169fa07a29874fc52</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756582255</data>
+    </edge>
+    <edge source="Personal Data" target="Consent">
+      <data key="d6">10.0</data>
+      <data key="d7">Consent is necessary for the lawful processing of personal data under regulations like GDPR and DSA.".</data>
+      <data key="d8">data processing,legal requirement</data>
+      <data key="d9">chunk-affbd5dbcf34ebe169fa07a29874fc52</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756582252</data>
+    </edge>
+    <edge source="Trial Run of Video Replies in EU" target="Geo-handler">
+      <data key="d6">8.0</data>
+      <data key="d7">The Geo-handler will manage the rollout of the trial run to ensure compliance with EEA-only exposure requirements.</data>
+      <data key="d8">compliance,feature management</data>
+      <data key="d9">chunk-a7af9efd9e1ca7900a1c92ce052255e7</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756582601</data>
+    </edge>
+    <edge source="Trial Run of Video Replies in EU" target="Baseline Behavior">
+      <data key="d6">7.0</data>
+      <data key="d7">Baseline Behavior is utilized to collect user data and telemetry for anomaly detection during the trial run.</data>
+      <data key="d8">anomaly detection,data collection</data>
+      <data key="d9">chunk-a7af9efd9e1ca7900a1c92ce052255e7</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756582602</data>
+    </edge>
+    <edge source="Commission Recommendation / DSA preparatory materials" target="DSA VLOP Enforcement Dec2023">
+      <data key="d6">7.0</data>
+      <data key="d7">This event is based on the context and materials provided for implementing DSA obligations.</data>
+      <data key="d8">enforcement context,regulatory guidance</data>
+      <data key="d9">chunk-056ac303c97fb8156cbad15ed2fbe410</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756582603</data>
+    </edge>
+    <edge source="Art.35" target="Data Protection Impact Assessment">
+      <data key="d6">10.0</data>
+      <data key="d7">Art.35 of GDPR establishes the requirement for conducting Data Protection Impact Assessments for high-risk processing.</data>
+      <data key="d8">data protection,legal requirement</data>
+      <data key="d9">chunk-056ac303c97fb8156cbad15ed2fbe410</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756582607</data>
+    </edge>
+    <edge source="Data Protection Impact Assessment" target="High-risk Processing">
+      <data key="d6">9.0</data>
+      <data key="d7">Data Protection Impact Assessments are specifically mandated for high-risk processing activities under GDPR.</data>
+      <data key="d8">compliance,risk evaluation</data>
+      <data key="d9">chunk-056ac303c97fb8156cbad15ed2fbe410</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756582606</data>
+    </edge>
+    <edge source="Data Protection Impact Assessment" target="International Data Transfers">
+      <data key="d6">7.0</data>
+      <data key="d7">DPIAs may be particularly relevant when considering international data transfers that involve high-risk activities.</data>
+      <data key="d8">international regulation,risk assessment</data>
+      <data key="d9">chunk-056ac303c97fb8156cbad15ed2fbe410</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756582607</data>
+    </edge>
+  </graph>
+</graphml>

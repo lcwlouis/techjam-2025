@@ -1,0 +1,62 @@
+{
+  "doc-428d7f13fa6a31f5535a70103fd3d0fc": {
+    "relation_pairs": [
+      [
+        "Glow",
+        "Spanner"
+      ],
+      [
+        "Canada",
+        "jury reports"
+      ],
+      [
+        "Artificial Intelligence and Data Act",
+        "Bill C-27"
+      ],
+      [
+        "Artificial Intelligence and Data Act",
+        "transparency requirements"
+      ],
+      [
+        "Artificial Intelligence and Data Act",
+        "consultation materials"
+      ],
+      [
+        "Canada",
+        "PIPEDA"
+      ],
+      [
+        "Automated decision systems",
+        "risk management obligations"
+      ],
+      [
+        "PIPEDA",
+        "Quebec Law 25"
+      ],
+      [
+        "PIPEDA",
+        "federal privacy law (PIPEDA)"
+      ],
+      [
+        "Bill C-27/AIDA",
+        "PIPEDA"
+      ],
+      [
+        "Office of the Privacy Commissioner (OPC)",
+        "PIPEDA"
+      ],
+      [
+        "PIPEDA",
+        "privacy/algorithmic impact assessments"
+      ],
+      [
+        "Artificial Intelligence and Data Act",
+        "ISED"
+      ]
+    ],
+    "count": 13,
+    "create_time": 1756585163,
+    "update_time": 1756585163,
+    "_id": "doc-428d7f13fa6a31f5535a70103fd3d0fc"
+  }
+}

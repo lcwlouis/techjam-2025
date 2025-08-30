@@ -27,7 +27,6 @@ export default function SettingsPanel({
           method: "GET",
           cache: "no-store",
           headers: {
-            "Content-Type": "application/json",
             "Cache-Control": "no-cache",
           },
         });
@@ -53,7 +52,6 @@ export default function SettingsPanel({
       method: "GET",
       cache: "no-store",
       headers: {
-        "Content-Type": "application/json",
         "Cache-Control": "no-cache",
       },
     });
@@ -133,7 +131,7 @@ export default function SettingsPanel({
           {/* Terminology KV Textbox */}
           <div className="grid gap-2">
             <div className="flex items-center justify-between"></div>{" "}
-            <Labeled label="Feature Description">
+            <Labeled label="Terminology (term = explanation)">
               <textarea
                 className="min-h-[180px] w-full px-3 py-2 rounded-xl bg-neutral-800 border border-neutral-700 outline-none font-mono text-sm"
                 placeholder={`NR = Not recommended\nPF = Personalized feed\nGH = Geo-handler; module routing by region\n...`}
