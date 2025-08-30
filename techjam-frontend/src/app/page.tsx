@@ -5,6 +5,7 @@ import Pipeline from "./components/pipeline-instructions/pipeline-instructions";
 import SettingsPanel from "./components/settings-panel/settings-panel";
 import SubmitArea from "./components/submission-area/submission-area";
 import FinalReportSection from "./components/final-report/final-report";
+import { SectionTitle } from "./components/card-components/card-components";
 
 import { fetchEventSource } from "@microsoft/fetch-event-source"; // npm i @microsoft/fetch-event-source
 
@@ -155,13 +156,45 @@ export default function TechJamPage() {
     setError(null);
     setChatLog([]);
     setFinalOutput(null);
+    const safeIterations = parseInt(iterations || "1", 10);
+    const safeK = parseInt(k || "5", 10);
+    if (safeK < 1) {
+      alert("Min k is 1.");
+      inFlightRef.current = false;
+      setIsSubmitting(false);
+      // If this stream instance is over, clear the controller
+      abortRef.current = null;
+      return;
+    }
+    if (safeK > 10) {
+      alert("Max k is 10.");
+      inFlightRef.current = false;
+      setIsSubmitting(false);
+      // If this stream instance is over, clear the controller
+      abortRef.current = null;
+      return;
+    }
+    if (safeIterations < 1) {
+      alert("Min iterations is 1.");
+      inFlightRef.current = false;
+      setIsSubmitting(false);
+      // If this stream instance is over, clear the controller
+      abortRef.current = null;
+      return;
+    }
+    if (safeIterations > 5) {
+      alert("Max iterations is 5.");
+      inFlightRef.current = false;
+      setIsSubmitting(false);
+      // If this stream instance is over, clear the controller
+      abortRef.current = null;
+      return;
+    }
 
     // ensure any previous stream is closed
     abortRef.current?.abort();
     abortRef.current = new AbortController();
-      const safeIterations = parseInt(iterations || "1", 10);
-      const safeK = parseInt(k || "5", 10);
-      try {
+    try {
       await fetchEventSource(`${apiBase}/demo_agent_stream`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -250,35 +283,33 @@ export default function TechJamPage() {
     <div className="min-h-screen bg-geo-gavel-grid text-slate-100 p-6">
       <div className="max-w-5xl mx-auto grid gap-6 p-6">
         <header className="flex flex-col gap-2">
-          <h1 className="text-3xl font-semibold">
-            TechJam – Judge/Jury Frontend MVP
-          </h1>
+          <h1 className="text-3xl font-semibold">JurAI - Geo-regulation LLM</h1>
         </header>
 
         <Pipeline />
 
-      <SubmitArea
-        apiBase={apiBase}
-        feature={feature_name}
-        setFeature={setFeatureName}
-        featureDescription={feature_description}
-        setFeatureDescription={setFeatureDescription}
-        region={region}
-        setRegion={setRegion}
-        k={k}
-        setK={setK}
-        iterations={iterations}
-        setIterations={setIterations}
-        setResp={() => {}} 
-        setError={setError}
-        isSubmitting={isSubmitting}
-        onSubmit={streamProcessFeature}
-      />
+        <SubmitArea
+          apiBase={apiBase}
+          feature={feature_name}
+          setFeature={setFeatureName}
+          featureDescription={feature_description}
+          setFeatureDescription={setFeatureDescription}
+          region={region}
+          setRegion={setRegion}
+          k={k}
+          setK={setK}
+          iterations={iterations}
+          setIterations={setIterations}
+          setResp={() => {}}
+          setError={setError}
+          isSubmitting={isSubmitting}
+          onSubmit={streamProcessFeature}
+        />
 
         {/* Chat log */}
         {chatLog.length > 0 && (
           <section className="grid gap-4 bg-neutral-800/60 rounded-2xl p-4">
-            <h2 className="text-xl font-medium">Pipeline Chat</h2>
+            <SectionTitle>Agent Log</SectionTitle>
             <div
               ref={chatContainerRef}
               className="space-y-2 max-h-96 overflow-y-auto pr-2"
