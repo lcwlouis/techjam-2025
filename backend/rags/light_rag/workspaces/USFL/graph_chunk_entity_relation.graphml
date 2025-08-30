@@ -1,0 +1,241 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d11" for="edge" attr.name="created_at" attr.type="long" />
+  <key id="d10" for="edge" attr.name="file_path" attr.type="string" />
+  <key id="d9" for="edge" attr.name="source_id" attr.type="string" />
+  <key id="d8" for="edge" attr.name="keywords" attr.type="string" />
+  <key id="d7" for="edge" attr.name="description" attr.type="string" />
+  <key id="d6" for="edge" attr.name="weight" attr.type="double" />
+  <key id="d5" for="node" attr.name="created_at" attr.type="long" />
+  <key id="d4" for="node" attr.name="file_path" attr.type="string" />
+  <key id="d3" for="node" attr.name="source_id" attr.type="string" />
+  <key id="d2" for="node" attr.name="description" attr.type="string" />
+  <key id="d1" for="node" attr.name="entity_type" attr.type="string" />
+  <key id="d0" for="node" attr.name="entity_id" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="Jellybean">
+      <data key="d0">Jellybean</data>
+      <data key="d1">organization</data>
+      <data key="d2">Jellybean is an internal parental control system featuring notifications regarding minor access attempts to restricted materials.</data>
+      <data key="d3">chunk-b863a770e3e09f63a61ec948466e1eee</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756570051</data>
+    </node>
+    <node id="Florida, US">
+      <data key="d0">Florida, US</data>
+      <data key="d1">geo</data>
+      <data key="d2">Florida is the state where specific regulations regarding age verification and parental notifications are applicable for material deemed harmful to minors.</data>
+      <data key="d3">chunk-b863a770e3e09f63a61ec948466e1eee</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756570051</data>
+    </node>
+    <node id="Florida Age Verification for Material Harmful to Minors">
+      <data key="d0">Florida Age Verification for Material Harmful to Minors</data>
+      <data key="d1">regulation</data>
+      <data key="d2">This regulation mandates age verification procedures to prevent access by individuals under 18 years to certain materials, necessitating both anonymous and standard verification methods.</data>
+      <data key="d3">chunk-b863a770e3e09f63a61ec948466e1eee</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756570051</data>
+    </node>
+    <node id="Florida Social Media Use for Minors - Platform Characteristics">
+      <data key="d0">Florida Social Media Use for Minors - Platform Characteristics</data>
+      <data key="d1">regulation</data>
+      <data key="d2">This regulation outlines requirements for social media platforms regarding algorithms that analyze user data for content selection and notification practices.</data>
+      <data key="d3">chunk-b863a770e3e09f63a61ec948466e1eee</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756570051</data>
+    </node>
+    <node id="Section 501.1737">
+      <data key="d0">Section 501.1737</data>
+      <data key="d1">category</data>
+      <data key="d2">Section 501.1737 of the Florida Statutes addresses the age verification requirements for protecting minors from harmful materials.</data>
+      <data key="d3">chunk-b863a770e3e09f63a61ec948466e1eee</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756570051</data>
+    </node>
+    <node id="Section 501.1736">
+      <data key="d0">Section 501.1736</data>
+      <data key="d1">category</data>
+      <data key="d2">Section 501.1736 of the Florida Statutes focuses on restrictions related to algorithmic content selection and push notifications for minors.</data>
+      <data key="d3">chunk-b863a770e3e09f63a61ec948466e1eee</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756570051</data>
+    </node>
+    <node id="Section 501.1738">
+      <data key="d0">Section 501.1738</data>
+      <data key="d1">category</data>
+      <data key="d2">Section 501.1738 is referenced in the context of compliance requirements for age verification related to material harmful to minors.</data>
+      <data key="d3">chunk-b863a770e3e09f63a61ec948466e1eee</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756570051</data>
+    </node>
+    <node id="Behavioral Anomaly Detection">
+      <data key="d0">Behavioral Anomaly Detection</data>
+      <data key="d1">category</data>
+      <data key="d2">Behavioral anomaly detection refers to the method used within the parental notification system to monitor and act upon unusual access attempts by minors.</data>
+      <data key="d3">chunk-b863a770e3e09f63a61ec948466e1eee</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756570051</data>
+    </node>
+    <node id="Internal Monitoring Trigger (IMT)">
+      <data key="d0">Internal Monitoring Trigger (IMT)</data>
+      <data key="d1">category</data>
+      <data key="d2">IMT is a model used in the system for detecting anomalous behavior in user access, contrasting with standard user behavior to identify potential issues.</data>
+      <data key="d3">chunk-b863a770e3e09f63a61ec948466e1eee</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756570051</data>
+    </node>
+    <node id="Baseline Behavior (BB)">
+      <data key="d0">Baseline Behavior (BB)</data>
+      <data key="d1">category</data>
+      <data key="d2">Baseline Behavior serves as a standard for user behavior against which anomalous activities are measured in the parental notification system.</data>
+      <data key="d3">chunk-b863a770e3e09f63a61ec948466e1eee</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756570051</data>
+    </node>
+    <node id="ShadowMode">
+      <data key="d0">ShadowMode</data>
+      <data key="d1">category</data>
+      <data key="d2">ShadowMode represents a feature that allows the parental notification system to gather analytics without impacting user experience.</data>
+      <data key="d3">chunk-b863a770e3e09f63a61ec948466e1eee</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756570051</data>
+    </node>
+    <node id="Compliance Detection System (CDS)">
+      <data key="d0">Compliance Detection System (CDS)</data>
+      <data key="d1">category</data>
+      <data key="d2">CDS is a mechanism in the system designed to log compliance-related activities and ensure adherence to regulatory requirements.</data>
+      <data key="d3">chunk-b863a770e3e09f63a61ec948466e1eee</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756570051</data>
+    </node>
+    <node id="Geo-Flags">
+      <data key="d0">Geo-Flags</data>
+      <data key="d1">category</data>
+      <data key="d2">Geo-Flags are indicators used in the system to trigger alerts based on compliance with geographical laws and regulations.</data>
+      <data key="d3">chunk-b863a770e3e09f63a61ec948466e1eee</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756570051</data>
+    </node>
+    <node id="Glow">
+      <data key="d0">Glow</data>
+      <data key="d1">category</data>
+      <data key="d2">Glow is a compliance-flagging status used internally to signal geo-based alerts within the parental notification system.</data>
+      <data key="d3">chunk-b863a770e3e09f63a61ec948466e1eee</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756570052</data>
+    </node>
+    <edge source="Jellybean" target="Florida, US">
+      <data key="d6">8.0</data>
+      <data key="d7">Jellybean's parental notification system must comply with Florida regulations regarding age verification for minors." </data>
+      <data key="d8">compliance,regulatory framework</data>
+      <data key="d9">chunk-b863a770e3e09f63a61ec948466e1eee</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756570052</data>
+    </edge>
+    <edge source="Jellybean" target="Florida Age Verification for Material Harmful to Minors">
+      <data key="d6">9.0</data>
+      <data key="d7">The operation of Jellybean's system involves adhering to the Florida Age Verification regulation." </data>
+      <data key="d8">age verification,regulatory compliance</data>
+      <data key="d9">chunk-b863a770e3e09f63a61ec948466e1eee</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756570053</data>
+    </edge>
+    <edge source="Jellybean" target="Florida Social Media Use for Minors - Platform Characteristics">
+      <data key="d6">7.0</data>
+      <data key="d7">Jellybean's algorithms and notification features are influenced by the requirements set by the regulation regarding social media use for minors." </data>
+      <data key="d8">algorithmic regulation,content selection</data>
+      <data key="d9">chunk-b863a770e3e09f63a61ec948466e1eee</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756570054</data>
+    </edge>
+    <edge source="Jellybean" target="Behavioral Anomaly Detection">
+      <data key="d6">9.0</data>
+      <data key="d7">The parental control system Jellybean utilizes behavioral anomaly detection to identify when minors attempt to access restricted features." </data>
+      <data key="d8">monitoring,system functionality</data>
+      <data key="d9">chunk-b863a770e3e09f63a61ec948466e1eee</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756570055</data>
+    </edge>
+    <edge source="Florida, US" target="Section 501.1737">
+      <data key="d6">9.0</data>
+      <data key="d7">Florida's laws encompass Section 501.1737, which details age verification methods for minors." </data>
+      <data key="d8">legal framework,state regulation</data>
+      <data key="d9">chunk-b863a770e3e09f63a61ec948466e1eee</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756570053</data>
+    </edge>
+    <edge source="Florida, US" target="Section 501.1736">
+      <data key="d6">8.0</data>
+      <data key="d7">The regulations within Florida include Section 501.1736, which addresses specific characteristics regarding minor interactions with social media." </data>
+      <data key="d8">minors,regulatory context</data>
+      <data key="d9">chunk-b863a770e3e09f63a61ec948466e1eee</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756570054</data>
+    </edge>
+    <edge source="Florida Age Verification for Material Harmful to Minors" target="Section 501.1737">
+      <data key="d6">9.0</data>
+      <data key="d7">This section provides the legal basis for age verification procedures related to Jellybean's parental notifications." </data>
+      <data key="d8">age verification,regulatory details</data>
+      <data key="d9">chunk-b863a770e3e09f63a61ec948466e1eee</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756570054</data>
+    </edge>
+    <edge source="Florida Social Media Use for Minors - Platform Characteristics" target="Section 501.1736">
+      <data key="d6">8.0</data>
+      <data key="d7">The regulation outlines platform characteristics that directly impact Jellybean's parental notification system." </data>
+      <data key="d8">impact on system,platform characteristics</data>
+      <data key="d9">chunk-b863a770e3e09f63a61ec948466e1eee</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756570055</data>
+    </edge>
+    <edge source="Section 501.1737" target="Section 501.1738">
+      <data key="d6">7.0</data>
+      <data key="d7">Section 501.1738 must be adhered to in conjunction with Section 501.1737's age verification requirements." </data>
+      <data key="d8">legal compliance,regulatory relationship</data>
+      <data key="d9">chunk-b863a770e3e09f63a61ec948466e1eee</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756570052</data>
+    </edge>
+    <edge source="Behavioral Anomaly Detection" target="Internal Monitoring Trigger (IMT)">
+      <data key="d6">8.0</data>
+      <data key="d7">IMT is employed within the behavioral anomaly detection framework to flag unusual activities based on user behavior." </data>
+      <data key="d8">anomaly detection,monitoring triggers</data>
+      <data key="d9">chunk-b863a770e3e09f63a61ec948466e1eee</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756570056</data>
+    </edge>
+    <edge source="Behavioral Anomaly Detection" target="Baseline Behavior (BB)">
+      <data key="d6">8.0</data>
+      <data key="d7">Baseline Behavior serves as the standard user behavior reference for detecting anomalies in behavioral analysis." </data>
+      <data key="d8">anomaly detection,reference standard</data>
+      <data key="d9">chunk-b863a770e3e09f63a61ec948466e1eee</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756570056</data>
+    </edge>
+    <edge source="ShadowMode" target="Compliance Detection System (CDS)">
+      <data key="d6">7.0</data>
+      <data key="d7">ShadowMode operates alongside CDS to gather necessary analytics while minimizing user impact." </data>
+      <data key="d8">analytics collection,compliance</data>
+      <data key="d9">chunk-b863a770e3e09f63a61ec948466e1eee</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756570054</data>
+    </edge>
+    <edge source="Compliance Detection System (CDS)" target="Geo-Flags">
+      <data key="d6">8.0</data>
+      <data key="d7">Geo-Flags are utilized by the CDS to implement compliance checks based on geographical regulations." </data>
+      <data key="d8">compliance monitoring,geographic alerting</data>
+      <data key="d9">chunk-b863a770e3e09f63a61ec948466e1eee</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756570055</data>
+    </edge>
+    <edge source="Geo-Flags" target="Glow">
+      <data key="d6">7.0</data>
+      <data key="d7">Glow provides a status for Geo-Flags that help in monitoring compliance alerts in relation to geographical requirements." </data>
+      <data key="d8">compliance indication,geo-alerts</data>
+      <data key="d9">chunk-b863a770e3e09f63a61ec948466e1eee</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756570054</data>
+    </edge>
+  </graph>
+</graphml>

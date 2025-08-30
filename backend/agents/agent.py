@@ -15,7 +15,7 @@ logger = logging.getLogger(__name__)
 deepseek_model  = LiteLlm(model="deepseek/deepseek-chat", api_key=os.getenv("DEEPSEEK_API_KEY"))
 openai_model = LiteLlm(model="gpt-5-mini", api_key=os.getenv("OPENAI_API_KEY"),)
 
-# lightrag_retrieve_tool = LangchainTool(lightrag_retrieve_sync)
+# lightrag_retrieve_tool = LangchainTool(lightrag_retrieve)
 # naiverag_retrieve_tool = LangchainTool(naiverag_retrieve_sync)
 
 def exit_loop(tool_context: ToolContext):
@@ -53,10 +53,10 @@ def make_cross_loop(jury_name: str, critic_name: str, output_key: str, jury_mode
 # ---------------- FACTORY ----------------
 
 def make_jury_pipeline(iterations: int = 1):
-    loop_jury1 = make_cross_loop("JuryAgent1", "Critic3", "jury_report_1", openai_model, deepseek_model, iterations)
-    loop_jury2 = make_cross_loop("JuryAgent2", "Critic4", "jury_report_2", openai_model, deepseek_model, iterations)
-    loop_jury3 = make_cross_loop("JuryAgent3", "Critic1", "jury_report_3", deepseek_model, openai_model, iterations)
-    loop_jury4 = make_cross_loop("JuryAgent4", "Critic2", "jury_report_4", deepseek_model, openai_model, iterations)
+    loop_jury1 = make_cross_loop("JuryAgent1", "Critic1", "jury_report_1", openai_model, deepseek_model, iterations)
+    loop_jury2 = make_cross_loop("JuryAgent2", "Critic2", "jury_report_2", openai_model, deepseek_model, iterations)
+    loop_jury3 = make_cross_loop("JuryAgent3", "Critic3", "jury_report_3", deepseek_model, openai_model, iterations)
+    loop_jury4 = make_cross_loop("JuryAgent4", "Critic4", "jury_report_4", deepseek_model, openai_model, iterations)
 
     parallel_jury_agent = ParallelAgent(
         name="ParallelJuryAgent",

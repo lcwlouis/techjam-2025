@@ -1,0 +1,209 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d11" for="edge" attr.name="created_at" attr.type="long" />
+  <key id="d10" for="edge" attr.name="file_path" attr.type="string" />
+  <key id="d9" for="edge" attr.name="source_id" attr.type="string" />
+  <key id="d8" for="edge" attr.name="keywords" attr.type="string" />
+  <key id="d7" for="edge" attr.name="description" attr.type="string" />
+  <key id="d6" for="edge" attr.name="weight" attr.type="double" />
+  <key id="d5" for="node" attr.name="created_at" attr.type="long" />
+  <key id="d4" for="node" attr.name="file_path" attr.type="string" />
+  <key id="d3" for="node" attr.name="source_id" attr.type="string" />
+  <key id="d2" for="node" attr.name="description" attr.type="string" />
+  <key id="d1" for="node" attr.name="entity_type" attr.type="string" />
+  <key id="d0" for="node" attr.name="entity_id" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="Chat UI Overhaul">
+      <data key="d0">Chat UI Overhaul</data>
+      <data key="d1">event</data>
+      <data key="d2">The Chat UI Overhaul refers to a newly tested chat layout aimed at improving user experience in specific regions.</data>
+      <data key="d3">chunk-bddbca1d37abd901742b0ca6610124c1</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756568582</data>
+    </node>
+    <node id="Geo-handler (GH)">
+      <data key="d0">Geo-handler (GH)</data>
+      <data key="d1">organization</data>
+      <data key="d2">Geo-handler (GH) is a module responsible for routing features based on user regions to ensure compliance with varying regulations.</data>
+      <data key="d3">chunk-bddbca1d37abd901742b0ca6610124c1</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756568582</data>
+    </node>
+    <node id="ShadowMode">
+      <data key="d0">ShadowMode</data>
+      <data key="d1">organization</data>
+      <data key="d2">ShadowMode is a feature that allows for analytics collection in a non-user-impacting manner to gather usage metrics.</data>
+      <data key="d3">chunk-bddbca1d37abd901742b0ca6610124c1</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756568582</data>
+    </node>
+    <node id="NCMEC">
+      <data key="d0">NCMEC</data>
+      <data key="d1">organization</data>
+      <data key="d2">The National Center for Missing &amp; Exploited Children (NCMEC) is responsible for receiving reports of child sexual abuse content as mandated by law.</data>
+      <data key="d3">chunk-bddbca1d37abd901742b0ca6610124c1</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756568582</data>
+    </node>
+    <node id="18 U.S.C. §2258A">
+      <data key="d0">18 U.S.C. §2258A</data>
+      <data key="d1">regulation</data>
+      <data key="d2">18 U.S.C. §2258A is a US legislation imposing mandatory reporting obligations for child sexual abuse content.</data>
+      <data key="d3">chunk-bddbca1d37abd901742b0ca6610124c1</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756568582</data>
+    </node>
+    <node id="US">
+      <data key="d0">US</data>
+      <data key="d1">geo</data>
+      <data key="d2">US refers to the geographical region affected by the described regulations and features.</data>
+      <data key="d3">chunk-bddbca1d37abd901742b0ca6610124c1</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756568582</data>
+    </node>
+    <node id="Brazil">
+      <data key="d0">Brazil</data>
+      <data key="d1">geo</data>
+      <data key="d2">Brazil is one of the geographical regions where the new chat layout will be tested.</data>
+      <data key="d3">chunk-bddbca1d37abd901742b0ca6610124c1</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756568582</data>
+    </node>
+    <node id="Indonesia">
+      <data key="d0">Indonesia</data>
+      <data key="d1">geo</data>
+      <data key="d2">Indonesia is one of the geographical regions where the new chat layout will be tested.</data>
+      <data key="d3">chunk-bddbca1d37abd901742b0ca6610124c1</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756568582</data>
+    </node>
+    <node id="Canada">
+      <data key="d0">Canada</data>
+      <data key="d1">geo</data>
+      <data key="d2">Canada is one of the geographical regions where the new chat layout will be tested.</data>
+      <data key="d3">chunk-bddbca1d37abd901742b0ca6610124c1</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756568582</data>
+    </node>
+    <node id="Child Sexual Abuse Content">
+      <data key="d0">Child Sexual Abuse Content</data>
+      <data key="d1">category</data>
+      <data key="d2">Child Sexual Abuse Content refers to illegal materials that exploit or abuse minors, which providers are mandated to report under US law.</data>
+      <data key="d3">chunk-bddbca1d37abd901742b0ca6610124c1</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756568582</data>
+    </node>
+    <node id="Provider">
+      <data key="d0">Provider</data>
+      <data key="d1">organization</data>
+      <data key="d2">Provider refers to an entity that offers services and is required to comply with reporting obligations under 18 U.S.C. §2258A regarding child sexual abuse content.</data>
+      <data key="d3">chunk-bddbca1d37abd901742b0ca6610124c1</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756568582</data>
+    </node>
+    <node id="CyberTipline">
+      <data key="d0">CyberTipline</data>
+      <data key="d1">organization</data>
+      <data key="d2">CyberTipline is a reporting service operated by NCMEC for receiving reports related to child sexual abuse content.</data>
+      <data key="d3">chunk-bddbca1d37abd901742b0ca6610124c1</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1756568582</data>
+    </node>
+    <edge source="Chat UI Overhaul" target="Geo-handler (GH)">
+      <data key="d6">7.0</data>
+      <data key="d7">The Chat UI Overhaul will utilize Geo-handler (GH) to ensure location targeting during testing.</data>
+      <data key="d8">compliance framework,feature implementation</data>
+      <data key="d9">chunk-bddbca1d37abd901742b0ca6610124c1</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756568584</data>
+    </edge>
+    <edge source="Chat UI Overhaul" target="ShadowMode">
+      <data key="d6">8.0</data>
+      <data key="d7">ShadowMode will be involved in collecting usage metrics during the Chat UI Overhaul testing phase.</data>
+      <data key="d8">analytics collection,feature testing</data>
+      <data key="d9">chunk-bddbca1d37abd901742b0ca6610124c1</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756568585</data>
+    </edge>
+    <edge source="Chat UI Overhaul" target="US">
+      <data key="d6">6.0</data>
+      <data key="d7">The new chat layout will be tested in the US among other regions to evaluate its effectiveness.</data>
+      <data key="d8">feature testing,geographical implementation</data>
+      <data key="d9">chunk-bddbca1d37abd901742b0ca6610124c1</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756568585</data>
+    </edge>
+    <edge source="Chat UI Overhaul" target="Brazil">
+      <data key="d6">6.0</data>
+      <data key="d7">The new chat layout will be tested in Brazil as part of the international rollout.</data>
+      <data key="d8">feature testing,geographical implementation</data>
+      <data key="d9">chunk-bddbca1d37abd901742b0ca6610124c1</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756568586</data>
+    </edge>
+    <edge source="Chat UI Overhaul" target="Indonesia">
+      <data key="d6">6.0</data>
+      <data key="d7">The new chat layout is set to be tested in Indonesia ensuring a broad user feedback loop.</data>
+      <data key="d8">feature testing,geographical implementation</data>
+      <data key="d9">chunk-bddbca1d37abd901742b0ca6610124c1</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756568587</data>
+    </edge>
+    <edge source="Chat UI Overhaul" target="Canada">
+      <data key="d6">6.0</data>
+      <data key="d7">The new chat layout will also be evaluated in Canada as part of its testing phase.</data>
+      <data key="d8">feature testing,geographical implementation</data>
+      <data key="d9">chunk-bddbca1d37abd901742b0ca6610124c1</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756568587</data>
+    </edge>
+    <edge source="Geo-handler (GH)" target="NCMEC">
+      <data key="d6">9.0</data>
+      <data key="d7">Geo-handler (GH) will ensure that US data is processed through compliance workflows, as required by NCMEC regulations.</data>
+      <data key="d8">data compliance,reporting obligations</data>
+      <data key="d9">chunk-bddbca1d37abd901742b0ca6610124c1</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756568585</data>
+    </edge>
+    <edge source="NCMEC" target="18 U.S.C. §2258A">
+      <data key="d6">10.0</data>
+      <data key="d7">NCMEC operates under the obligations set by 18 U.S.C. §2258A to report child sexual abuse content.</data>
+      <data key="d8">child safety,regulatory compliance</data>
+      <data key="d9">chunk-bddbca1d37abd901742b0ca6610124c1</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756568584</data>
+    </edge>
+    <edge source="NCMEC" target="Provider">
+      <data key="d6">10.0</data>
+      <data key="d7">Providers must report any knowledge of Child Sexual Abuse Content to NCMEC as mandated by 18 U.S.C. §2258A.</data>
+      <data key="d8">regulatory compliance,reporting requirements</data>
+      <data key="d9">chunk-bddbca1d37abd901742b0ca6610124c1</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756568585</data>
+    </edge>
+    <edge source="NCMEC" target="CyberTipline">
+      <data key="d6">9.0</data>
+      <data key="d7">The CyberTipline serves as a tool for NCMEC to handle reports related to child sexual abuse content.</data>
+      <data key="d8">child protection,reporting mechanism</data>
+      <data key="d9">chunk-bddbca1d37abd901742b0ca6610124c1</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756568586</data>
+    </edge>
+    <edge source="18 U.S.C. §2258A" target="Child Sexual Abuse Content">
+      <data key="d6">9.0</data>
+      <data key="d7">The category of Child Sexual Abuse Content is defined and governed by the obligations laid out in 18 U.S.C. §2258A.</data>
+      <data key="d8">legal framework,protections</data>
+      <data key="d9">chunk-bddbca1d37abd901742b0ca6610124c1</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756568585</data>
+    </edge>
+    <edge source="Provider" target="CyberTipline">
+      <data key="d6">10.0</data>
+      <data key="d7">Providers are responsible for submitting reports to the CyberTipline when they obtain actual knowledge of Child Sexual Abuse Content.</data>
+      <data key="d8">regulatory compliance,reporting process</data>
+      <data key="d9">chunk-bddbca1d37abd901742b0ca6610124c1</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1756568585</data>
+    </edge>
+  </graph>
+</graphml>

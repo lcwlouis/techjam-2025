@@ -1,0 +1,58 @@
+{
+  "doc-bddbca1d37abd901742b0ca6610124c1": {
+    "relation_pairs": [
+      [
+        "18 U.S.C. §2258A",
+        "Child Sexual Abuse Content"
+      ],
+      [
+        "Chat UI Overhaul",
+        "US"
+      ],
+      [
+        "Canada",
+        "Chat UI Overhaul"
+      ],
+      [
+        "CyberTipline",
+        "Provider"
+      ],
+      [
+        "CyberTipline",
+        "NCMEC"
+      ],
+      [
+        "Geo-handler (GH)",
+        "NCMEC"
+      ],
+      [
+        "Chat UI Overhaul",
+        "ShadowMode"
+      ],
+      [
+        "Chat UI Overhaul",
+        "Indonesia"
+      ],
+      [
+        "NCMEC",
+        "Provider"
+      ],
+      [
+        "18 U.S.C. §2258A",
+        "NCMEC"
+      ],
+      [
+        "Chat UI Overhaul",
+        "Geo-handler (GH)"
+      ],
+      [
+        "Brazil",
+        "Chat UI Overhaul"
+      ]
+    ],
+    "count": 12,
+    "create_time": 1756568588,
+    "update_time": 1756568588,
+    "_id": "doc-bddbca1d37abd901742b0ca6610124c1"
+  }
+}
