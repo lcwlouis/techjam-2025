@@ -54,58 +54,95 @@ export default function TechJamPage() {
     };
   }
 
-  // // --- Streaming version of processFeature ---
-  // async function streamProcessFeature() {
-  //   if (isSubmitting) return;
-  //   setIsSubmitting(true);
-  //   setError(null);
-  //   setChatLog([]);
-  //   setFinalOutput(null);
-
-  //   try {
-  //     console.log(feature_name);
-  //     console.log(feature_description);
-  //     console.log(region);
-  //     await fetchEventSource(`${apiBase}/demo_agent_stream`, {
-  //       method: "POST",
-  //       headers: {
-  //         "Content-Type": "application/json",
-  //       },
-  //       body: JSON.stringify({
-  //         feature_name,
-  //         feature_description,
-  //         region: region ?? {},
-  //       }),
-  //       async onmessage(ev) {
-  //         if (ev.event === "message") {
-  //           const msg = JSON.parse(ev.data);
-  //           setChatLog((prev) => [...prev, msg]);
-  //         }
-  //         if (ev.event === "done") {
-  //           const final = JSON.parse(ev.data);
-  //           setFinalOutput(final);
-  //           console.log(final);
-  //         }
-  //       },
-  //       onerror(err) {
-  //         console.error("SSE error", err);
-  //         setError("Streaming connection failed");
-  //         throw err;
-  //       },
-  //     });
-  //   } catch (e: any) {
-  //     setError(e.message || "Unknown error");
-  //   } finally {
-  //     setIsSubmitting(false);
-  //   }
-  // }
-
   function safeParse<T = any>(input: unknown): T | unknown {
     if (typeof input !== "string") return input;
     try {
       return JSON.parse(input) as T;
     } catch {
       return input; // fallback to raw string if it wasn't JSON
+    }
+  }
+
+  function buildRegionCodeClient(
+    country?: string | null,
+    state?: string | null
+  ) {
+    const c = (country || "").trim().toUpperCase();
+    const s = (state || "").trim().toUpperCase();
+    return c ? `${c}${s}` : "";
+  }
+
+  async function uploadForLightragIngestion(final?: any) {
+    const out = final ?? finalOutput;
+    if (!out) return;
+
+    const fr = out.final_report;
+    const emptyObj =
+      fr && typeof fr === "object" && Object.keys(fr).length === 0;
+    if (!fr || emptyObj) {
+      setChatLog((p) => [
+        ...p,
+        {
+          author: "RAG",
+          final: false,
+          text: "Skip ingest: empty final_report",
+        },
+      ]);
+      return;
+    }
+
+    // choose ONE region code (priority: server -> user selection -> final_report hint)
+    let code = out?.rag?.region_code?.toString().trim().toUpperCase() || "";
+
+    if (!code && region?.country) {
+      code = buildRegionCodeClient(region.country, region.state ?? "");
+    }
+
+    if (!code) {
+      const frCode = fr?.region_code?.toString().trim().toUpperCase?.() || "";
+      if (frCode) code = frCode;
+    }
+
+    if (!code) {
+      setChatLog((p) => [
+        ...p,
+        { author: "RAG", final: false, text: "Skip ingest: no region_code" },
+      ]);
+      return;
+    }
+
+    try {
+      const resp = await fetch(`${apiBase}/lightrag_ingestion`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ final_report: fr, region_code: code }),
+      });
+
+      if (resp.ok) {
+        setChatLog((p) => [
+          ...p,
+          { author: "RAG", final: false, text: `Ingest ${code}: ok` },
+        ]);
+      } else {
+        const detail = await resp.text().catch(() => "");
+        setChatLog((p) => [
+          ...p,
+          {
+            author: "RAG",
+            final: false,
+            text: `Ingest ${code} failed: HTTP ${resp.status} ${detail}`.trim(),
+          },
+        ]);
+      }
+    } catch (e: any) {
+      setChatLog((p) => [
+        ...p,
+        {
+          author: "RAG",
+          final: false,
+          text: `Ingest ${code} error: ${e?.message ?? e}`,
+        },
+      ]);
     }
   }
 
@@ -164,6 +201,7 @@ export default function TechJamPage() {
             }
             console.log(final);
             setFinalOutput(final);
+            uploadForLightragIngestion(final);
             // stop stream intentionally
             abortRef.current?.abort();
             return;
@@ -264,69 +302,6 @@ export default function TechJamPage() {
             colorFromString={colorFromString}
           />
         )}
-        {/* {finalOutput && (
-          <>
-            <section className="grid gap-4 bg-neutral-800/60 rounded-2xl p-4">
-              <h2 className="text-xl font-medium">Final Report</h2>
-              <div className="grid gap-1">
-                <Row label="Feature" value={finalOutput.final_report.feature} />
-                <Row
-                  label="Feature Description"
-                  value={finalOutput.final_report.feature_description}
-                />
-                <Row
-                  label="Requires Geo-specific Logic / Confidence"
-                  value={`${
-                    finalOutput.final_report.needs_geo_specific_logic
-                      ? "Yes"
-                      : "No"
-                  } (${finalOutput.final_report.confidence * 100}%)`}
-                />
-              </div>
-            </section>
-            <section className="grid gap-4 bg-neutral-800/60 rounded-2xl p-4">
-              <div className="grid gap-3">
-                <h3 className="font-medium">Juror Breakdown</h3>
-                <div className="grid gap-3">
-                  <div className="grid gap-3">
-                    {Object.entries(finalOutput.jurors).map(
-                      ([juror, value]) => {
-                        const c = colorFromString(juror);
-                        return (
-                          <div
-                            key={juror}
-                            className="rounded-xl p-3 border"
-                            style={{
-                              borderColor: c.border,
-                              backgroundColor: c.bg,
-                            }}
-                          >
-                            <div className="flex items-center gap-2">
-                              <span
-                                aria-hidden
-                                className="inline-block w-2.5 h-2.5 rounded-full"
-                                style={{ backgroundColor: c.dot }}
-                              />
-                              <span
-                                className="font-medium"
-                                style={{ color: c.text }}
-                              >
-                                {juror}
-                              </span>
-                            </div>
-                            <div className="mt-1 text-sm text-neutral-200">
-                              {value ? String(value) : "N/A"}
-                            </div>
-                          </div>
-                        );
-                      }
-                    )}
-                  </div>
-                </div>
-              </div>
-            </section>
-          </>
-        )} */}
 
         <SettingsPanel apiBase={apiBase} setApiBase={setApiBase} />
       </div>

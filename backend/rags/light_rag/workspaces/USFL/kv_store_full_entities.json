@@ -1,0 +1,24 @@
+{
+  "doc-b863a770e3e09f63a61ec948466e1eee": {
+    "entity_names": [
+      "Florida, US",
+      "Internal Monitoring Trigger (IMT)",
+      "Geo-Flags",
+      "Baseline Behavior (BB)",
+      "Section 501.1738",
+      "Compliance Detection System (CDS)",
+      "Section 501.1737",
+      "Florida Age Verification for Material Harmful to Minors",
+      "Glow",
+      "Behavioral Anomaly Detection",
+      "ShadowMode",
+      "Jellybean",
+      "Florida Social Media Use for Minors - Platform Characteristics",
+      "Section 501.1736"
+    ],
+    "count": 14,
+    "create_time": 1756570057,
+    "update_time": 1756570057,
+    "_id": "doc-b863a770e3e09f63a61ec948466e1eee"
+  }
+}

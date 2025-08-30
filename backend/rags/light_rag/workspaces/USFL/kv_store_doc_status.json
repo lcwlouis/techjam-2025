@@ -1,0 +1,19 @@
+{
+  "doc-b863a770e3e09f63a61ec948466e1eee": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-b863a770e3e09f63a61ec948466e1eee"
+    ],
+    "content_summary": "{\"feature\": \"Jellybean (Feature name for internal parental control system)-based parental notifications\", \"feature_description\": \"Parental notifications for minor access attempts to restricted features, using behavioral anomaly detection (IMT (Intern...",
+    "content_length": 2987,
+    "created_at": "2025-08-30T16:07:07.776515+00:00",
+    "updated_at": "2025-08-30T16:07:37.505461+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20250831_000707_0e927b2f",
+    "metadata": {
+      "processing_start_time": 1756570027,
+      "processing_end_time": 1756570057
+    }
+  }
+}
